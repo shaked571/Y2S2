@@ -131,5 +131,508 @@
 307960468
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה לא ריקה.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\tau_{1},\tau_{2}$
+\end_inset
+
+ טופולוגיות על 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\tau=\tau_{1}\cap\tau_{2}$
+\end_inset
+
+.
+ נראה ש-
+\begin_inset Formula $\tau$
+\end_inset
+
+ טופולוגיה על 
+\begin_inset Formula $X$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\varnothing,X\in\tau$
+\end_inset
+
+ כי 
+\begin_inset Formula $\varnothing,X\in\tau_{1},\tau_{2}$
+\end_inset
+
+ ולכן הן גם בחיתוך.
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $I$
+\end_inset
+
+ קבוצת אינדקסים כך שלכל 
+\begin_inset Formula $\alpha\in I$
+\end_inset
+
+, 
+\begin_inset Formula $U_{\alpha}\in\tau$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $\alpha\in I$
+\end_inset
+
+, 
+\begin_inset Formula $U_{\alpha}\in\tau_{1},\tau_{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+\bigcup_{\alpha}U_{\alpha}\in\tau_{1},\tau_{2}
+\]
+
+\end_inset
+
+כי הן טופולוגיות ולכן סגורות לאיחוד, משמע
+\begin_inset Formula 
+\[
+\bigcup_{\alpha}U_{\alpha}\in\tau_{1}\cap\tau_{2}=\tau
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\tau$
+\end_inset
+
+ סגורה לאיחודים.
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $U_{1},\dotsc,U_{m}\in\tau$
+\end_inset
+
+.
+ שוב 
+\begin_inset Formula $U_{1},\dotsc,U_{m}\in\tau_{1},\tau_{2}$
+\end_inset
+
+.
+ הן סגורות לחיתוך סופי מהיותן טופולוגיות ולכן 
+\begin_inset Formula 
+\[
+\bigcap_{i=1}^{m}U_{i}\in\tau_{1},\tau_{2}\Rightarrow\bigcap_{i=1}^{m}U_{i}\in\tau_{1}\cap\tau_{2}=\tau
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+איחוד שתי טופולוגיות אינו בהכרח טופולוגיה.
+ לדוגמה, נגדיר 
+\begin_inset Formula $X=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+.
+ נגדיר
+\begin_inset Formula 
+\[
+\tau_{1}=\left\{ \varnothing,X,\left\{ 1,2,3\right\} ,\left\{ 4\right\} \right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tau_{2}=\left\{ \varnothing,X,\left\{ 1\right\} ,\left\{ 2,3,4\right\} \right\} 
+\]
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+קל לראות שהן אכן טופולוגיות 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+אולי לא חכם
+\end_layout
+
+\end_inset
+
+.
+ האיחוד
+\begin_inset Formula 
+\[
+\tau=\left\{ \varnothing,X,\left\{ 1,2,3\right\} ,\left\{ 4\right\} ,\left\{ 1\right\} ,\left\{ 2,3,4\right\} \right\} 
+\]
+
+\end_inset
+
+הוא לא טופולוגיה כי 
+\begin_inset Formula $\left\{ 1,2,3\right\} \cap\left\{ 2,3,4\right\} =\left\{ 2,3\right\} \notin\tau$
+\end_inset
+
+, משמע אין סגירות לחיתוך סופי.
+\end_layout
+
+\begin_layout Enumerate
+נבחר את המטריקה הדיסקרטית
+\begin_inset Formula 
+\[
+\delta\left(x,y\right)=\begin{cases}
+0 & x=y\\
+1 & x\neq y
+\end{cases}
+\]
+
+\end_inset
+
+הטופולוגיה 
+\begin_inset Formula $\tau$
+\end_inset
+
+ שהוא משרה היא אוסף הקבוצות הפתוחות.
+ נשים לב שלכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $B_{\frac{1}{2}}\left(x\right)=\left\{ x\right\} $
+\end_inset
+
+ הכדור הפתוח ברדיוס 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ סביב 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ לכן לכל 
+\begin_inset Formula $U\in2^{x}$
+\end_inset
+
+, 
+\begin_inset Formula $U={\displaystyle \bigcup_{x\in U}B_{\frac{1}{2}}\left(x\right)}$
+\end_inset
+
+, לכן מסגירות לאיחוד, 
+\begin_inset Formula $U\in\tau$
+\end_inset
+
+, משמע 
+\begin_inset Formula $2^{X}\subset\tau$
+\end_inset
+
+, אבל מהגדרה 
+\begin_inset Formula $\tau\subset2^{X}$
+\end_inset
+
+ ולכן יש שיוויון.
+\end_layout
+
+\begin_layout Enumerate
+לא קיימת בהכרח מטריקה כזאת.
+ דוגמה:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $X=\left\{ 1,2\right\} $
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מטריקה על 
+\begin_inset Formula $X$
+\end_inset
+
+, ו-
+\begin_inset Formula $\tau$
+\end_inset
+
+ המטריקה המושרית.
+ מחיוביות בהחלט נובע כי 
+\begin_inset Formula $\delta\left(1,2\right)>0$
+\end_inset
+
+ )כי 
+\begin_inset Formula $1\neq2$
+\end_inset
+
+(.
+ נסמן את המרחק ביניהם ב-
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+ 
+\begin_inset Formula $B_{\epsilon}\left(1\right)\in\tau$
+\end_inset
+
+ כי זו קבוצה פתוחה.
+ ראשית, 
+\begin_inset Formula $2\notin B_{\varepsilon}\left(1\right)$
+\end_inset
+
+ מבחירת 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, לכן 
+\begin_inset Formula $B_{\varepsilon}\left(1\right)\neq X$
+\end_inset
+
+.
+ בנוסף, 
+\begin_inset Formula $1\in B_{\varepsilon}\left(1\right)$
+\end_inset
+
+ כי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $B_{\varepsilon}\left(1\right)\neq\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(X,\tau\right)$
+\end_inset
+
+ מרחב טופולוגי, 
+\begin_inset Formula $B\subset\tau$
+\end_inset
+
+ אוסף קבוצות.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $1\Rightarrow2$
+\end_inset
+
+: תהי 
+\begin_inset Formula $U\in\tau$
+\end_inset
+
+.
+ כיוון ש-
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס של 
+\begin_inset Formula $\tau$
+\end_inset
+
+, קיימת 
+\begin_inset Formula $I$
+\end_inset
+
+ קבוצת אינדקסים כך שלכל 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $b_{i}\in B$
+\end_inset
+
+ ו-
+\begin_inset Formula 
+\[
+U=\bigcup_{i\in I}b_{i}
+\]
+
+\end_inset
+
+אז בפרט לכל 
+\begin_inset Formula $x\in U$
+\end_inset
+
+, קיים 
+\begin_inset Formula $i\in I$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x\in b_{i}\subset U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $2\Rightarrow3$
+\end_inset
+
+: תהי 
+\begin_inset Formula $U\in\tau$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $x\in U$
+\end_inset
+
+ יש 
+\begin_inset Formula $b_{x}\in B$
+\end_inset
+
+ כך שמתקיים 
+\begin_inset Formula $x\in b_{x}\subset U$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+\bigcup_{x}b_{x}\subset U
+\]
+
+\end_inset
+
+כי לכל 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $b_{x}\subset U$
+\end_inset
+
+.
+ מצד שני, לכל 
+\begin_inset Formula $x\in U$
+\end_inset
+
+, 
+\begin_inset Formula $x\in b_{x}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+x\in\bigcup_{x}b_{x}\Rightarrow U\subset\bigcup_{x}b_{x}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $U={\displaystyle \bigcup_{x}b_{x}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $3\Rightarrow1$
+\end_inset
+
+: נראה ש-
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס.
+ 
+\begin_inset Formula $\bigcup B=X$
+\end_inset
+
+ כי לפי ההנחה יש אוסף של קבוצות 
+\begin_inset Formula $B'\subset B$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\bigcup B'=X$
+\end_inset
+
+ ו-
+\begin_inset Formula $\bigcup B'\subset\bigcup B\subset X$
+\end_inset
+
+.
+ בנוסף, לכל 
+\begin_inset Formula $b_{1},b_{2}\in B$
+\end_inset
+
+, 
+\begin_inset Formula $b_{1},b_{2}\in\tau$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $b_{1}\cap b_{2}\in\tau$
+\end_inset
+
+.
+ לכן לפי ההנחה קיימת 
+\begin_inset Formula $I$
+\end_inset
+
+ קבוצת אינדקסים כך ש-
+\begin_inset Formula $\bigcup_{i\in I}b_{i}=b_{1}\cap b_{2}$
+\end_inset
+
+.
+ בפרט לכל 
+\begin_inset Formula $x\in b_{1}\cap b_{2}$
+\end_inset
+
+, קיים 
+\begin_inset Formula $i\in I$
+\end_inset
+
+ ו-
+\begin_inset Formula $b_{i}\in B$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x\in b_{i}\subset b_{1}\cap b_{2}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
