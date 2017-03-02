@@ -634,5 +634,661 @@ x\in\bigcup_{x}b_{x}\Rightarrow U\subset\bigcup_{x}b_{x}
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}x_{n}=x$
+\end_inset
+
+ אם"ם לכל פתוחה 
+\begin_inset Formula $U$
+\end_inset
+
+ המכילה את 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}\in U$
+\end_inset
+
+ מתקיים לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ גדול מספיק.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+: יהי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ נרצה להראות כי קיים 
+\begin_inset Formula $N_{0}\in\mathbb{N}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>N_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $d\left(x_{n},x\right)<\varepsilon$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $B_{\varepsilon}\left(x\right)$
+\end_inset
+
+ הכדור הפתוח ברדיוס 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ סביב 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $B_{\varepsilon}\left(x\right)$
+\end_inset
+
+ הוא קבוצה פתוחה, לכן מההנחה קיים 
+\begin_inset Formula $N_{0}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>N_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}\in B_{\varepsilon}\left(x\right)$
+\end_inset
+
+.
+ מהגדרה, נובע כי לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ כזה 
+\begin_inset Formula $d\left(x_{n},x\right)<\varepsilon$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+: תהי 
+\begin_inset Formula $U$
+\end_inset
+
+ קבוצה פתוחה כך ש-
+\begin_inset Formula $x\in U$
+\end_inset
+
+.
+ מהגדרה, קיים 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $B_{\varepsilon}\left(x\right)\subseteq U$
+\end_inset
+
+.
+ מההנחה קיים 
+\begin_inset Formula $N_{0}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>N_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $d\left(x_{n},n\right)<\varepsilon$
+\end_inset
+
+, משמע 
+\begin_inset Formula 
+\[
+x_{n}\in B_{\varepsilon}\left(x\right)\subseteq U\Rightarrow x_{n}\in U
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+א
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ב:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U\subseteq Y$
+\end_inset
+
+ פתוחה.
+ יהי 
+\begin_inset Formula $x_{0}\in f^{-1}\left(U\right)$
+\end_inset
+
+.
+ קיים 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $B_{\varepsilon}\left(f\left(x_{0}\right)\right)\subset U$
+\end_inset
+
+.
+ מההנחה קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ אם 
+\begin_inset Formula $d_{X}\left(x,x_{0}\right)<\delta$
+\end_inset
+
+, משמע 
+\begin_inset Formula $x\in B_{\delta}\left(x_{0}\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $d_{Y}\left(f\left(x\right),f\left(x_{0}\right)\right)<\varepsilon$
+\end_inset
+
+ משמע 
+\begin_inset Formula $f\left(x\right)\in B_{\varepsilon}\left(f\left(x_{0}\right)\right)\subseteq U$
+\end_inset
+
+.
+ לכן, 
+\begin_inset Formula $x\in f^{-1}\left(U\right)$
+\end_inset
+
+.
+ זה נכון לכל 
+\begin_inset Formula $x\in B_{\delta}\left(x_{0}\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $B_{\delta}\left(x_{0}\right)\subseteq f^{-1}\left(U\right)$
+\end_inset
+
+, משמע 
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+ פתוחה )כי בחרנו 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ שרירותי(.
+\end_layout
+
+\begin_layout Standard
+ב
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+א:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $x_{0}\in X$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $B_{\varepsilon}\left(f\left(x_{0}\right)\right)$
+\end_inset
+
+ הוא קבוצה פתוחה, לכן לפי ההנחה 
+\begin_inset Formula $S=f^{-1}\left(B_{\varepsilon}\left(f\left(x_{0}\right)\right)\right)$
+\end_inset
+
+ פתוחה ומכילה את 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ לכן קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $B_{\delta}\left(x_{0}\right)\subseteq S$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $d\left(x,x_{0}\right)<\delta$
+\end_inset
+
+, 
+\begin_inset Formula $x\in B_{\delta}\left(x_{0}\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x\in S$
+\end_inset
+
+.
+ מכך נובע כי 
+\begin_inset Formula $f\left(x\right)\in f\left(S\right)=f\left(f^{-1}\left(B_{\varepsilon}\left(f\left(x_{0}\right)\right)\right)\right)\subseteq B_{\varepsilon}\left(f\left(x_{0}\right)\right)$
+\end_inset
+
+ לכן 
+\begin_inset Formula $d\left(f\left(x\right),f\left(x_{0}\right)\right)<\varepsilon$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $B=\prod_{i=1}^{n}\left(a_{i},b_{i}\right)$
+\end_inset
+
+ תיבה פתוחה.
+ נראה שהיא אכן קבוצה פתוחה, וזה יספיק כי כל קבוצה פתוחה בטופולוגיה המטרית
+ היא איחוד של כדורים.
+ יהי 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+a_{i}<x_{i}<b_{i}
+\]
+
+\end_inset
+
+נשים לב ש-
+\begin_inset Formula $\left(a_{i},b_{i}\right)$
+\end_inset
+
+ היא קבוצה פתוחה ב-
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, לכן קיים 
+\begin_inset Formula $\varepsilon_{i}>0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $B_{\varepsilon_{i}}\left(x_{i}\right)\subseteq\left(a_{i},b_{i}\right)$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\varepsilon=\min\left\{ \varepsilon_{i}\mid1\leq i\leq n\right\} $
+\end_inset
+
+.
+ נטען כי 
+\begin_inset Formula $B_{\varepsilon}\left(x\right)\in B$
+\end_inset
+
+.
+ ואכן, לכל 
+\begin_inset Formula $y\in B_{\varepsilon}\left(x\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\Vert x-y\Vert<\varepsilon\Rightarrow\forall i\,\left|x_{i}-y_{i}\right|\leq\sqrt{\sum_{i=1}^{n}\left(x_{i}-y_{i}\right)^{2}}<\varepsilon\Rightarrow y_{i}\in B_{\varepsilon}\left(x_{i}\right)\subseteq B_{\varepsilon_{i}}\left(x_{i}\right)\subseteq\left(a_{i},b_{i}\right)
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $a_{i}<y_{i}<b_{i}$
+\end_inset
+
+, משמע 
+\begin_inset Formula $y\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בכיוון השני, יהי 
+\begin_inset Formula $B_{\varepsilon}\left(x_{o}\right)$
+\end_inset
+
+ כדור פתוח ב-
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $x\in B_{\varepsilon}\left(x_{0}\right)$
+\end_inset
+
+.
+ כיוון שזו קבוצה פתוחה קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $B_{\delta}\left(x\right)\subseteq B_{\varepsilon}\left(x_{0}\right)$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $\delta'=\frac{\delta}{\sqrt{n}}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $B_{x}=\prod_{i=1}^{n}\left(x_{i}-\delta',x_{i}+\delta'\right)$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $y\in B_{x}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+x_{i}-\delta'<y_{i}<x_{i}+\delta'\iff\left|x_{i}-y_{i}\right|<\delta'
+\]
+
+\end_inset
+
+לכן בפרט 
+\begin_inset Formula 
+\[
+d\left(x,y\right)=\sqrt{\sum_{i=1}^{n}\left(x_{i}-y_{i}\right)^{2}}<\sqrt{\sum_{i=1}^{n}\delta'^{2}}=\delta'\cdot\sqrt{n}=\delta
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $B_{x}\subseteq B_{\delta}\left(x\right)\subseteq B_{\varepsilon}\left(x_{0}\right)$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+B_{\varepsilon}\left(x_{0}\right)=\bigcup_{x\in B_{\varepsilon}\left(x_{0}\right)}B_{x}
+\]
+
+\end_inset
+
+וקיבלנו שכל כדור הוא איחוד של תיבות פתוחות.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אוסף הכדורים הסגורים אינו מהווה בסיס לטופולוגיה הסטנדרטית, כיוון שהוא מכיל
+ את כל היחידונים )לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{B}_{0}\left(x\right)=\left\{ x\right\} $
+\end_inset
+
+(.
+ אם הוא היה בסיס, בפרט יחידון היה קבוצה פתוחה, אבל זה אינו נכון ב-
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+כנ"ל.
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $\prod_{i=1}^{n}\left[x_{i},x_{i}\right]=\left\{ x\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{align*}
+[a,b) &  & \supseteq\tau_{st}=\left(a,b\right)\cup\left(\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} \right)\supseteq &  & \left(-a,a\right)\\
+(a,b] &  &  &  & \left(a,\infty\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\tau_{[a,b)}\not\subset\tau_{(a,b]}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+הקבוצה 
+\begin_inset Formula $[0,1)$
+\end_inset
+
+ נמצאת ב-
+\begin_inset Formula $\tau_{[a,b)}$
+\end_inset
+
+ והיא לא איחוד של קבוצות מהצורה 
+\begin_inset Formula $(a,b]$
+\end_inset
+
+ כי אחרת קיימת קבוצה כך ש-
+\begin_inset Formula $0\in(a,b]$
+\end_inset
+
+ אבל מכך נובע כי 
+\begin_inset Formula $0>\frac{a}{2}\in(a,b]$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\frac{a}{2}\in[0,1)$
+\end_inset
+
+, סתירה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{[a,b)}\not\supset\tau_{(a,b]}$
+\end_inset
+
+: באופן דומה מראים ל-
+\begin_inset Formula $(-1,0]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{st}\subset\tau_{[a,b)},\tau_{(a,b]}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נשתמש בלמה שהוכחנו בשיעור, שאומרת כי אם 
+\begin_inset Formula $B_{1},B_{2}$
+\end_inset
+
+ בסיסים, אז הטופולוגיה של 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+ עדינה יותר מהטפולוגיה של 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ אם"ם לכל 
+\begin_inset Formula $b\in B_{1}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in b$
+\end_inset
+
+ קיים 
+\begin_inset Formula $b'\in B_{2}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x\in b'\subseteq b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יהי קטע מהצורה 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ )זהו הבסיס של הטופלוגיה הסטנדרטית(.
+ לכל 
+\begin_inset Formula $x\in\left(a,b\right)$
+\end_inset
+
+, מתקיים כי 
+\begin_inset Formula $x\in\subseteq(a,x],[x,b)\subseteq\left(a,b\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{st}\subseteq\left(a,b\right)\cup\left(\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} \right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+ברור שהטופו' הסטנדרטית מוכלת כי הבסיס שלה מוכל בבסיס של הטופולוגיה השנייה.
+ מצד שני, לכל 
+\begin_inset Formula $X\in\left(a,b\right)\cup\left(\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} \right)$
+\end_inset
+
+, אם 
+\begin_inset Formula $X=\left(a,b\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $X$
+\end_inset
+
+ כדור פתוח, אחרת 
+\begin_inset Formula $X=\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} $
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, אם 
+\begin_inset Formula $x>1$
+\end_inset
+
+ או 
+\begin_inset Formula $x<0$
+\end_inset
+
+ אז 
+\begin_inset Formula $x\in\left(x,b\right)\subset\left(a,b\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in\left(a,x\right)\subseteq\left(a,b\right)$
+\end_inset
+
+.
+ אחרת 
+\begin_inset Formula $0\leq x<1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
