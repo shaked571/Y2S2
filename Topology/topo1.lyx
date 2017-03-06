@@ -1289,6 +1289,89 @@ B_{\varepsilon}\left(x_{0}\right)=\bigcup_{x\in B_{\varepsilon}\left(x_{0}\right
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\left(-a,a\right)\not\subset\left(a,\infty\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נראה ש-
+\begin_inset Formula $\left(1,\infty\right)\notin\tau_{\left(-a,a\right)}$
+\end_inset
+
+.
+ ואכן, אם הוא שייך, אזי קיים קטע מהצורה 
+\begin_inset Formula $\left(-a,a\right)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $1\in\left(-a,a\right)\subset\left(1,\infty\right)$
+\end_inset
+
+, אבל אם כך 
+\begin_inset Formula $1<a\iff-1<-a$
+\end_inset
+
+ משמע 
+\begin_inset Formula 
+\[
+-1\in\left(-a,a\right)\Rightarrow-1\in\left(1,\infty\right)
+\]
+
+\end_inset
+
+סתירה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(a,\infty\right)\not\subset\left(-a,a\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נראה ש-
+\begin_inset Formula $\left(-1,1\right)\notin\tau_{\left(a,\infty\right)}$
+\end_inset
+
+.
+ אבל זה ישירות מהעובדה שהטופולוגיה היא איחוד של איברים מהבסיס, וכיוון שכל
+ איבר בבסיס הוא קטע לא חסום מלעיל, לא יכול להיות שאיחוד שלהם חסום מלעיל,
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(-a,a\right),\left(a,\infty\right)\subset\tau_{st}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(-a,a\right)$
+\end_inset
+
+ ישירות מכך שזה קטע פתוח
+\backslash
+כדור פתוח ולכן מוכל בבסיס הסטנדרטי.
+ ל-
+\begin_inset Formula $\left(a,\infty\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\bigcup_{n=\lceil a\rceil}^{\infty}\left(a,n\right)=\left(a,\infty\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \end_body
 \end_document
