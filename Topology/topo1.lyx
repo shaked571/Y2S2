@@ -1123,8 +1123,9 @@ B_{\varepsilon}\left(x_{0}\right)=\bigcup_{x\in B_{\varepsilon}\left(x_{0}\right
 \begin_layout Enumerate
 \begin_inset Formula 
 \begin{align*}
-[a,b) &  & \supseteq\tau_{st}=\left(a,b\right)\cup\left(\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} \right)\supseteq &  & \left(-a,a\right)\\
-(a,b] &  &  &  & \left(a,\infty\right)
+[a,b) &  & \supseteq\tau_{st}=\supseteq &  & \left(-a,a\right)\\
+(a,b] &  &  &  & \left(a,\infty\right)\\
+\left(a,b\right)\cup\left(\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} \right) &  &  &  & \tau_{cofin}
 \end{align*}
 
 \end_inset
@@ -1180,7 +1181,102 @@ B_{\varepsilon}\left(x_{0}\right)=\bigcup_{x\in B_{\varepsilon}\left(x_{0}\right
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\tau_{st}\subset\tau_{[a,b)},\tau_{(a,b]}$
+\begin_inset Formula $\tau_{[a,b)}\not\supset\tau_{\left(a,b\right)\cup\left(\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} \right)}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נסתכל על 
+\begin_inset Formula $\left(-1,1\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ נמצא בה.
+ לכל קבוצה מהצורה 
+\begin_inset Formula $[a,b)$
+\end_inset
+
+ שמכילה את 
+\begin_inset Formula $0$
+\end_inset
+
+ ניתן למצוא 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\frac{1}{n}<b$
+\end_inset
+
+, אז אם 
+\begin_inset Formula $\left(-1,1\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} $
+\end_inset
+
+ מורכבת מאיחוד של קטעים כאלה נקבל סתירה לכך שהקבוצה לא מכילה אף מספר מהצורה
+ 
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{[a,b)},\tau_{(a,b]}\not\subset\tau_{\left(a,b\right)\cup\left(\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} \right)}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+הקבוצה 
+\begin_inset Formula $[2,3)$
+\end_inset
+
+ לא איחוד של קבוצות מהבסיס כי אחרת יש קטע מהצורה 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $\left(a,b\right)\backslash\left\{ \frac{1}{n}\right\} $
+\end_inset
+
+ כך ש-
+\begin_inset Formula $2\in\left(a,b\right)$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $a<2$
+\end_inset
+
+ ולכן גם 
+\begin_inset Formula $\frac{a+2}{2}$
+\end_inset
+
+ בקטע )או מספר קרוב לו שאינו מהצורה 
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+(, אבל הוא לא מוכל ב-
+\begin_inset Formula $[2,3)$
+\end_inset
+
+.
+ באופן דומה מראים עם הקטע 
+\begin_inset Formula $(2,3]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{(a,b]}\supset\tau_{\left(a,b\right)\cup\left(\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} \right)}$
 \end_inset
 
 :
@@ -1219,6 +1315,87 @@ B_{\varepsilon}\left(x_{0}\right)=\bigcup_{x\in B_{\varepsilon}\left(x_{0}\right
 \end_layout
 
 \begin_layout Standard
+לקטע מהצורה 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ נראה בסעיף הבא.
+ לכן נראה לקטע מהצורה 
+\begin_inset Formula $V=\left(a,b\right)\backslash\left\{ \frac{1}{n}\right\} $
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $x\in V$
+\end_inset
+
+ אם 
+\begin_inset Formula $x>1$
+\end_inset
+
+ או 
+\begin_inset Formula $x<0$
+\end_inset
+
+ אז אפשר למצוא קבוצה כמו בלמה לקטע 
+\begin_inset Formula $\left(1,b\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+ וסיימנו.
+ אחרת 
+\begin_inset Formula $0\leq x<1$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $x>0$
+\end_inset
+
+, קיים 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\frac{1}{n+1}<x<\frac{1}{n}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $x\in(\max\left\{ a,\frac{1}{n+1}\right\} ,x]\subset V$
+\end_inset
+
+.
+ אחרת 
+\begin_inset Formula $x=0$
+\end_inset
+
+, ואז בהכרח 
+\begin_inset Formula $a<0$
+\end_inset
+
+, לכן מתקיים 
+\begin_inset Formula $x\in(a,0]\subset V$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{st}\subset\tau_{[a,b)},\tau_{(a,b]}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נשתמש בלמה שהוכחנו בשיעור.
+\end_layout
+
+\begin_layout Standard
 יהי קטע מהצורה 
 \begin_inset Formula $\left(a,b\right)$
 \end_inset
@@ -1244,49 +1421,6 @@ B_{\varepsilon}\left(x_{0}\right)=\bigcup_{x\in B_{\varepsilon}\left(x_{0}\right
 
 \begin_layout Standard
 ברור שהטופו' הסטנדרטית מוכלת כי הבסיס שלה מוכל בבסיס של הטופולוגיה השנייה.
- מצד שני, לכל 
-\begin_inset Formula $X\in\left(a,b\right)\cup\left(\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} \right)$
-\end_inset
-
-, אם 
-\begin_inset Formula $X=\left(a,b\right)$
-\end_inset
-
- אז 
-\begin_inset Formula $X$
-\end_inset
-
- כדור פתוח, אחרת 
-\begin_inset Formula $X=\left(a,b\right)\backslash\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} $
-\end_inset
-
-.
- יהי 
-\begin_inset Formula $x\in X$
-\end_inset
-
-, אם 
-\begin_inset Formula $x>1$
-\end_inset
-
- או 
-\begin_inset Formula $x<0$
-\end_inset
-
- אז 
-\begin_inset Formula $x\in\left(x,b\right)\subset\left(a,b\right)$
-\end_inset
-
- או 
-\begin_inset Formula $x\in\left(a,x\right)\subseteq\left(a,b\right)$
-\end_inset
-
-.
- אחרת 
-\begin_inset Formula $0\leq x<1$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -1370,6 +1504,70 @@ B_{\varepsilon}\left(x_{0}\right)=\bigcup_{x\in B_{\varepsilon}\left(x_{0}\right
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{cofin}\subset\tau_{st}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U\in\tau_{cofin}$
+\end_inset
+
+.
+ נתון כי 
+\begin_inset Formula $U^{c}$
+\end_inset
+
+ סופית, ולכן ניתן לרשום אותה כ-
+\begin_inset Formula $U^{c}=\left\{ x_{1},\dotsc x_{m}\right\} $
+\end_inset
+
+, כך ש-
+\begin_inset Formula $x_{1}<...<x_{m}$
+\end_inset
+
+.
+ לכן אפשר לרשום את 
+\begin_inset Formula $U$
+\end_inset
+
+ כ-
+\begin_inset Formula 
+\[
+\left(-\infty,x_{1}\right)\cup\left(x_{1},x_{2}\right)\cup...\cup\left(x_{m},\infty\right)
+\]
+
+\end_inset
+
+ואלו איברים בטופלוגיה הסטנדרטית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{cofin}\not\subset\tau_{\left(-a,a\right)},\tau_{\left(a,\infty\right)}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+הקבוצה 
+\begin_inset Formula $\mathbb{R}\backslash\left\{ 0\right\} $
+\end_inset
+
+ לא מוכלת באף אחת מהטופולוגיות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{cofin}$
+\end_inset
+
+ לא מכילה אף אחד מהטופולוגיות האחרות כי כל אחת מהן מכילה קבוצה שהמשלים שלה
+ אינסופי.
 \end_layout
 
 \end_deeper
