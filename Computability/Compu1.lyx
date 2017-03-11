@@ -102,6 +102,10 @@
 1
 \end_layout
 
+\begin_layout Author
+עופר יהודה
+\end_layout
+
 \begin_layout Enumerate
 \begin_inset ERT
 status open
@@ -245,6 +249,10 @@ status open
 \end_inset
 
 (.
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -264,10 +272,26 @@ status open
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset ERT
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/ofer/Downloads/New Doc 2017-03-06.jpg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -363,6 +387,10 @@ status open
 \end_inset
 
  שוב.
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -548,6 +576,10 @@ status open
 \end_inset
 
  אבל היא לא מתאימה לאף תבנית של שרשור.
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -788,6 +820,30 @@ val\left(w\right)\equiv1\cdot2+w_{n}=2+w_{n}\mod3
 
 \end_deeper
 \end_deeper
+\begin_layout Enumerate
+המצב המקבל באוטומט הוא 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+, ומהסעיף הקודם 
+\begin_inset Formula 
+\[
+\delta^{*}\left(q_{0},w\right)=q_{0}\iff val\left(w\right)\equiv0\mod3\iff val\left(w\right)\text{ is divisible by 3}
+\]
+
+\end_inset
+
+לכן מילה בשפה של האוטומט זו מילה שמייצגת מספר בינארי מתחלק ב-
+\numeric on
+3
+\numeric off
+.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\Sigma$
@@ -807,26 +863,139 @@ val\left(w\right)\equiv1\cdot2+w_{n}=2+w_{n}\mod3
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset ERT
-status open
+תהי מילה 
+\begin_inset Formula $w=w_{1}\dotsc w_{n}$
+\end_inset
 
-\begin_layout Plain Layout
+.
+ נגדיר אוטומט, 
+\begin_inset Formula $A=\left\langle Q,\Sigma,q_{0},\delta,F\right\rangle $
+\end_inset
 
-\end_layout
+, כאשר
+\begin_inset Formula 
+\begin{align*}
+Q=\left\{ q_{i}\mid0\leq i\leq n\right\} \\
+F=q_{n}
+\end{align*}
 
 \end_inset
 
+ונגדיר את פונקצית המעברים להיות
+\begin_inset Formula 
+\[
+\delta\left(q_{i},\sigma\right)=\begin{cases}
+q_{i+1} & \sigma=w_{i+1}\\
+\text{\ensuremath{\text{sink}}} & \text{else}
+\end{cases}
+\]
 
+\end_inset
+
+כעת, 
+\begin_inset Formula $\delta^{*}\left(q_{0},w\right)=q_{n}$
+\end_inset
+
+ ישירות מההגדרה.
+ אם 
+\begin_inset Formula $w'\neq w$
+\end_inset
+
+, אז קיים 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w'_{i}\neq w_{i}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\delta\left(q_{i-1},w'_{i}\right)$
+\end_inset
+
+ תשלח את 
+\begin_inset Formula $w'$
+\end_inset
+
+ לבור דוחה ולכן הוא לא יהיה בשפה.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset ERT
-status open
+תהי 
+\begin_inset Formula $L$
+\end_inset
 
-\begin_layout Plain Layout
+ שפה סופית.
+ נראה באינדוקציה על 
+\begin_inset Formula $\left|L\right|$
+\end_inset
 
+ כי קיים לה אוטומט.
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Formula $\left|L\right|=0,1$
+\end_inset
+
+: הראנו בסעיפים הקודמים.
+\end_layout
+
+\begin_layout Itemize
+נניח כי הטענה נכונה ל-
+\begin_inset Formula $\left|L\right|=n$
+\end_inset
+
+ ונראה ל-
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $w\in L$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $L'=L\backslash w$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left|L'\right|=n$
+\end_inset
+
+ ולכן מהנחת האינדוקציה קיים 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ אוטומט של השפה.
+ בסעיף קודם קיים 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ אוטומט של השפה 
+\begin_inset Formula $\left\{ w\right\} $
+\end_inset
+
+.
+ בפרט, 
+\begin_inset Formula $L=L'\cup\left\{ w\right\} $
+\end_inset
+
+, אבל הראנו בכיתה שאיחוד של שפות רגולריות הוא שפה רגולרי ולכן קיים 
+\begin_inset Formula $A$
+\end_inset
+
+ אוטומט שהשפה שלו היא 
+\begin_inset Formula $L$
+\end_inset
+
+, כנדרש.
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -936,6 +1105,560 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L_{even}=\left\{ w\in\Sigma^{*}\mid\text{even\left(w\right)}\in L\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נניח כי 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית.
+ יהי 
+\begin_inset Formula $A=\left\langle Q,\Sigma,q_{0},\delta,F\right\rangle $
+\end_inset
+
+ האוטומט שלה.
+ נגדיר אוטומט חדש 
+\begin_inset Formula $A'=\left\langle Q',\Sigma,q_{0},\delta',F'\right\rangle $
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\begin{align*}
+Q' & =Q\cup\left\{ q'\mid q\in Q\right\} \\
+F' & =F\cup\left\{ q'\mid q\in F\right\} 
+\end{align*}
+
+\end_inset
+
+משמע על כל מצב מוסיפים מצב חדש, והמצב החדש מקבל אם המצב המקורי מקבל.
+\begin_inset Formula 
+\[
+\delta'\left(s,\sigma\right)=\begin{cases}
+q' & s=q\\
+\delta\left(s,\sigma\right) & s=q'
+\end{cases}
+\]
+
+\end_inset
+
+משמע אם 
+\begin_inset Formula $s$
+\end_inset
+
+ מצב ישן אז בכל מקרה פונקציית המעברים תתאים לו את המצב החדש שהוספנו, אחרת
+ נשתמש בפונקצית המעברים המקורית על המצב המקורי המתאים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נטען את הדבר הבא: בהינתן 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $w=w_{1}\dots w_{n}$
+\end_inset
+
+ תהי
+\begin_inset Formula 
+\[
+r'_{0},r'_{1},\dots,r'_{n}
+\]
+
+\end_inset
+
+הריצה שלה באוטומט 
+\begin_inset Formula $A'$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+r'_{0,}r'_{2},\dots,r'_{2\cdot\lfloor\frac{n}{2}\rfloor}
+\]
+
+\end_inset
+
+היא הריצה של 
+\begin_inset Formula $\text{even}\left(w\right)$
+\end_inset
+
+ ב-
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחה: באינדוקציה על 
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|w\right|=0$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\text{even}\left(w\right)=\varepsilon$
+\end_inset
+
+.
+ הריצה של 
+\begin_inset Formula $w$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+r'_{0}
+\]
+
+\end_inset
+
+ומתקיים 
+\begin_inset Formula $r'_{0}=q_{0}$
+\end_inset
+
+ ואכן הריצה של המילה הריקה ב-
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נניח ל-
+\begin_inset Formula $\left|w\right|=n$
+\end_inset
+
+ ונראה ל-
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נחלק למקרים: אם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא מחלק של 
+\begin_inset Formula $n+1$
+\end_inset
+
+, אז אם 
+\begin_inset Formula $w=w'\cdot w_{n+1}$
+\end_inset
+
+, מתקיים כי 
+\begin_inset Formula $even\left(w'\right)=even\left(w\right)$
+\end_inset
+
+.
+ תהא
+\begin_inset Formula 
+\[
+r'_{0},r'_{1},\dotsc,r'_{n+1}
+\]
+
+\end_inset
+
+ הריצה של 
+\begin_inset Formula $w$
+\end_inset
+
+ ב-
+\begin_inset Formula $A'$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula 
+\[
+r'_{0},r'_{1},\dotsc,r'_{n}
+\]
+
+\end_inset
+
+הריצה של 
+\begin_inset Formula $w'$
+\end_inset
+
+ ומהנחת האינדוקציה
+\begin_inset Formula 
+\[
+r'_{0,}r'_{2},\dots,r'_{2\cdot\lfloor\frac{n}{2}\rfloor}
+\]
+
+\end_inset
+
+ הריצה של 
+\begin_inset Formula $even\left(w'\right)$
+\end_inset
+
+ ב-
+\begin_inset Formula $A$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $2\cdot\lfloor\frac{n+1}{2}\rfloor=2\cdot\lfloor\frac{n}{2}\rfloor$
+\end_inset
+
+ ולכן זו גם הריצה המתאימה לפי הטענה ל-
+\begin_inset Formula $\text{even}\left(w\right)$
+\end_inset
+
+, ומכיוון שמתקיים 
+\begin_inset Formula $even\left(w'\right)=even\left(w\right)$
+\end_inset
+
+ זו אכן הריצה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כן מחלק של 
+\begin_inset Formula $n+1$
+\end_inset
+
+, אז 
+\begin_inset Formula $\text{even}\left(w\right)=\text{even}\left(w'\right)\cdot w_{n+1}$
+\end_inset
+
+.
+ תהא 
+\begin_inset Formula 
+\[
+r'_{0},\dots,r'_{n+1}
+\]
+
+\end_inset
+
+הריצה של 
+\begin_inset Formula $w$
+\end_inset
+
+ ב-
+\begin_inset Formula $A'$
+\end_inset
+
+.
+ מהנחת האינדוקציה 
+\begin_inset Formula 
+\[
+r'_{0},\dotsc,r'_{2\lfloor\frac{n}{2}\rfloor}
+\]
+
+\end_inset
+
+הריצה של 
+\begin_inset Formula $\text{even}\left(w'\right)$
+\end_inset
+
+ ב-
+\begin_inset Formula $A$
+\end_inset
+
+.
+ בנוסף מתקיים 
+\begin_inset Formula $r'_{2\lfloor\frac{n}{2}\rfloor}=r'_{n-1}$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $r'_{n-1}\in Q$
+\end_inset
+
+, נסמנו ב-
+\begin_inset Formula $q$
+\end_inset
+
+ לכן לפי הגדרת פונקציית המעברים,
+\begin_inset Formula 
+\[
+r'_{n}=\delta'\left(q,w_{n}\right)=q'
+\]
+
+\end_inset
+
+ו-
+\begin_inset Formula 
+\[
+r'_{n+1}=\delta'\left(q',w_{n+1}\right)=\delta\left(q,w_{n+1}\right)=\delta\left(r'_{n-1},w_{n+1}\right)
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula 
+\[
+r'_{0},\dotsc,r'_{2\lfloor\frac{n}{2}\rfloor},r'_{2\lfloor\frac{n}{2}\rfloor+1(=n+1)}
+\]
+
+\end_inset
+
+הריצה החוקית של 
+\begin_inset Formula $\text{even\left(w\right)}$
+\end_inset
+
+ ב-
+\begin_inset Formula $A$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+אזי תהא 
+\begin_inset Formula $w=w_{1}\dots w_{n}\in\Sigma^{*}$
+\end_inset
+
+.
+ אם
+\begin_inset Formula 
+\[
+r_{0},...,r_{n}
+\]
+
+\end_inset
+
+הריצה של 
+\begin_inset Formula $w$
+\end_inset
+
+ ב-
+\begin_inset Formula $A'$
+\end_inset
+
+ מתקיים כי
+\begin_inset Formula 
+\[
+r_{n}\in F'\iff r_{2\cdot\lfloor\frac{n}{2}\rfloor}\in F'
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $n$
+\end_inset
+
+ זוגי אז פשוט כי יש שיוויון, אחרת מהטענה 
+\begin_inset Formula $r_{n-1}\in Q$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $r_{n}$
+\end_inset
+
+ יהיה המצב החדש שהוספנו ל-
+\begin_inset Formula $A'$
+\end_inset
+
+, ופשוט הגדרנו אותו להיות מקבל אם ורק אם 
+\begin_inset Formula $r_{n-1}$
+\end_inset
+
+ מקבל.
+\end_layout
+
+\begin_layout Standard
+בפרט 
+\begin_inset Formula $r_{2\cdot\lfloor\frac{n}{2}\rfloor}\in Q$
+\end_inset
+
+ כי הוא תמיד שייך לריצה של 
+\begin_inset Formula $\text{even}\left(w\right)$
+\end_inset
+
+, לכן אם 
+\begin_inset Formula $r_{2\cdot\lfloor\frac{n}{2}\rfloor}\in F'$
+\end_inset
+
+ אז מהגדרת 
+\begin_inset Formula $F'$
+\end_inset
+
+, 
+\begin_inset Formula $r_{2\cdot\lfloor\frac{n}{2}\rfloor}\in F$
+\end_inset
+
+.
+ סה"כ קיבלנו
+\begin_inset Formula 
+\[
+w\in L\left(A'\right)\iff\text{even}\left(w\right)\in L\left(A\right)=L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+מתקיים כי 
+\begin_inset Formula $K=L\cap L_{even}$
+\end_inset
+
+ ולכן מסגירות לחיתוך של שפות רגולריות הטענה מתקבלת.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula 
+\[
+K=\left\{ w\mid w\in L\wedge\text{even}\left(w\right)\in L\right\} 
+\]
+
+\end_inset
+
+אז המילים ב-
+\begin_inset Formula $\overline{K}$
+\end_inset
+
+ הן המילים שמקיימות את השלילה של תנאי זה, משמע
+\begin_inset Formula 
+\[
+\overline{K}=\left\{ w\mid w\notin L\vee\text{even}\left(w\right)\notin L\right\} 
+\]
+
+\end_inset
+
+אפשר לראות זאת מחוקי דה-מורגן:
+\begin_inset Formula 
+\[
+\overline{K}=\overline{L\cap L_{even}}=\overline{L}\cup\overline{L_{even}}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
