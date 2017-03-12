@@ -743,8 +743,111 @@ H_{f}=\begin{bmatrix}2 & 1\\
 
 \end_inset
 
+לכן
+\begin_inset Formula 
+\[
+\nabla f\left(0,0,0\right)=\begin{bmatrix}0\\
+0\\
+0
+\end{bmatrix}
+\]
+
+\end_inset
+
+כעת נחשב את ההסיאן.
+\begin_inset Formula 
+\[
+H_{f}=\begin{bmatrix}2a & 0 & 2a\\
+0 & 2b & -2b\\
+2a & -2b & 2
+\end{bmatrix}
+\]
+
+\end_inset
+
+כדי שיהיה מינימום מקומי, המטריצה צריכה להיות חיובית ממש, מכלל יעקובי נדרוש
+\begin_inset Formula 
+\begin{align*}
+2a>0 & \iff & a>0\\
+2a\cdot2b-0>0 & \iff & a\cdot b>0\\
+8ab-8ab^{2}-8a^{2}b>0 & \iff & -ab\left(a+b-1\right)>0
+\end{align*}
+
+\end_inset
+
+אז מהא"ש הראשון נסיק כי 
+\begin_inset Formula $b>0$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $a\cdot b>0$
+\end_inset
+
+ משמע, 
+\begin_inset Formula $-ab<0$
+\end_inset
+
+.
+ אז נקבל כי 
+\begin_inset Formula 
+\[
+a+b-1<0\iff a+b<1
+\]
+
+\end_inset
+
+סה"כ
+\begin_inset Formula 
+\[
+0<a,b<1
+\]
+
+\end_inset
+
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+כדי שיהיה מקסימום מקומי, המטריצה צריכה להיות שלילית ממש, מכלל יעקובי נדרוש
+\begin_inset Formula 
+\begin{align*}
+a & <0\\
+a\cdot b & >0\\
+-ab\left(a+b-1\right) & <0
+\end{align*}
+
+\end_inset
+
+לכן בהכרח 
+\begin_inset Formula $b<0$
+\end_inset
+
+, משמע 
+\begin_inset Formula 
+\[
+a+b-1>0
+\]
+
+\end_inset
+
+משמע 
+\begin_inset Formula $a+b>1$
+\end_inset
+
+.
+ התנאים 
+\begin_inset Formula $a,b<0$
+\end_inset
+
+ ו-
+\begin_inset Formula $a+b>1$
+\end_inset
+
+ לא יכולים להתקיים יחדיו ולכן לא יכול להיות מקסימום מקומי.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
