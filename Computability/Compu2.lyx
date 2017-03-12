@@ -1,0 +1,638 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\rightmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+חישוביות - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+30790468
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ שפות רגולריות ויהיו 
+\begin_inset Formula $A_{1},A_{2}$
+\end_inset
+
+ ה-
+\begin_inset Formula $DFA$
+\end_inset
+
+ שלהם.
+ נגדיר אוטומט 
+\begin_inset Formula $A=\left\langle Q,\Sigma,q_{0},\delta,F\right\rangle $
+\end_inset
+
+ כך:
+\begin_inset Formula 
+\[
+Q=Q_{1}\times Q_{2}\times\left\{ 0,1\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q_{0}=\left(q_{1,0},q_{2,0},0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q=\left(q_{1},q_{2},n\right),\,\delta\left(q,\sigma\right)=\begin{cases}
+\left(\delta_{1}\left(q_{1},\sigma\right),q_{2},1\right) & n=0\\
+\left(q_{1},\delta_{2}\left(q_{2},\sigma\right),0\right) & n=1
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=\left\{ \left(q_{1},q_{2},n\right)\mid n=0,\,q_{1}\in F_{1},\,q_{2}\in F_{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+להוכיח
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L_{1},L_{1}\cup L_{2}$
+\end_inset
+
+ רגולריות.
+ דוגמה נגדית: 
+\begin_inset Formula $\Sigma=\left\{ 0,1\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $L_{1}=\Sigma^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{2}=\left\{ 0^{n}1^{n}\mid n\geq0\right\} $
+\end_inset
+
+.
+ הראנו בכיתה ש-
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ לא רגולרית.
+ לעומת זאת, 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ רגולרית כי האוטומט המתאים הוא אוטומט עם מצב מקבל אחד.
+ 
+\begin_inset Formula $L_{1}\cup L_{2}=L_{1}$
+\end_inset
+
+ רגולרי.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ רגולריות אז 
+\begin_inset Formula $L_{1}\backslash L_{2}$
+\end_inset
+
+ רגולרית.
+ הוכחה:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{1}\backslash L_{2}=L_{1}\cap\overline{L_{2}}
+\]
+
+\end_inset
+
+הראנו תרגיל קודם שהשפות הרגולריות סגורות למשלים, לכן 
+\begin_inset Formula $\overline{L_{2}}$
+\end_inset
+
+ רגולרית.
+ בכיתה הראנו כי השפות הרגולריות סגורות לחיתוך ולכן מתקבלת הטענה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ רגולריות אז 
+\begin_inset Formula $L_{1}\triangle L_{2}$
+\end_inset
+
+ רגולרית.
+ הוכחה:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מתקיים כי 
+\begin_inset Formula 
+\begin{align*}
+L_{1}\triangle L_{2} & =\left(L_{1}\cup L_{2}\right)\backslash\left(L_{1}\cap L_{2}\right)=\left(L_{1}\cup L_{2}\right)\cap\overline{\left(L_{1}\cap L_{2}\right)}=\left(L_{1}\cup L_{2}\right)\cap\left(\overline{L_{1}}\cup\overline{L_{2}}\right)=\\
+= & \left(L_{1}\cap\overline{L_{1}}\right)\cup\left(L_{1}\cap\overline{L_{2}}\right)\cup\left(L_{2}\cap\overline{L_{1}}\right)\cup\left(L_{2}\cap\overline{L_{2}}\right)=\left(L_{1}\cap\overline{L_{2}}\right)\cup\left(L_{2}\cap\overline{L_{1}}\right)=\left(L_{1}\backslash L_{2}\right)\cup\left(L_{2}\backslash L_{1}\right)
+\end{align*}
+
+\end_inset
+
+מהסעיף הקודם 
+\begin_inset Formula $L_{1}\backslash L_{2},L_{2}\backslash L_{1}$
+\end_inset
+
+ רגולריות, והראנו בכיתה שהשפות הרגולריות סגורות לאיחוד, לכן הטענה מתקבלת.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $A$
+\end_inset
+
+ האוטומט של 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $\delta$
+\end_inset
+
+ פונקציית המעברים שלה, ונרחיב אותה לקבל מילים.
+ נגדיר אוטומט חדש 
+\begin_inset Formula $A'$
+\end_inset
+
+ זהה ל-
+\begin_inset Formula $A$
+\end_inset
+
+ למעט קבוצת המצבים המקבלים 
+\begin_inset Formula $F'$
+\end_inset
+
+ שתוגדר
+\begin_inset Formula 
+\[
+F'=\left\{ q\in Q\mid\exists w\in L_{2},\,\delta\left(q,w\right)\in F\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+להוכיח
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה רגולרית.
+ יהי 
+\begin_inset Formula $A=\left\langle Q,\Sigma,q_{0},\delta,F\right\rangle $
+\end_inset
+
+ ה-
+\begin_inset Formula $DFA$
+\end_inset
+
+ שלה.
+ נגדיר 
+\begin_inset Formula $A'=\left\langle Q',\Sigma,Q_{0},\delta',F'\right\rangle $
+\end_inset
+
+ אוטומט 
+\begin_inset Formula $NFA$
+\end_inset
+
+ כך
+\begin_inset Formula 
+\[
+Q'=Q
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q_{0}=F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta'\left(q,\sigma\right)=\left\{ q'\in Q\mid\delta\left(q',\sigma\right)=q\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F'=\left\{ q_{0}\right\} 
+\]
+
+\end_inset
+
+ נראה כי 
+\begin_inset Formula $L\left(A'\right)=L^{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $a_{n}\dotsc a_{1}=w\in L^{R}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $a_{1}\dotsc a_{n}\in L$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $r_{0}r_{1}\dotsc r_{n}$
+\end_inset
+
+ הריצה של 
+\begin_inset Formula $a_{1}\dotsc a_{n}$
+\end_inset
+
+ ב-
+\begin_inset Formula $A$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $r_{n}\dotsc r_{0}$
+\end_inset
+
+ ריצה מקבלת ב-
+\begin_inset Formula $A'$
+\end_inset
+
+ של 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ ראשית 
+\begin_inset Formula $r_{n}\in F$
+\end_inset
+
+ )כי 
+\begin_inset Formula $a_{1}\dotsc a_{n}$
+\end_inset
+
+ מילה ב-
+\begin_inset Formula $L$
+\end_inset
+
+( ולכן 
+\begin_inset Formula $r_{n}\in Q_{0}$
+\end_inset
+
+.
+ שנית, לכל 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+, 
+\begin_inset Formula $r_{i-1}\in\delta'\left(r_{i},a_{i}\right)$
+\end_inset
+
+ כי 
+\begin_inset Formula $\delta\left(r_{i-1},a_{i}\right)=r_{i}$
+\end_inset
+
+.
+ אזי זו אכן ריצה חוקית של 
+\begin_inset Formula $w$
+\end_inset
+
+ ב-
+\begin_inset Formula $A'$
+\end_inset
+
+.
+ לבסוף, 
+\begin_inset Formula $r_{0}=q_{0}$
+\end_inset
+
+ מהגדרת ריצה ב-
+\begin_inset Formula $DFA$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $r_{o}\in F'$
+\end_inset
+
+.
+ אז זו ריצה מקבלת ולכן 
+\begin_inset Formula $w\in L\left(A'\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $a_{n}\dotsc a_{1}=w\in L\left(A'\right)$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $r_{n}\dotsc r_{1}r_{0}$
+\end_inset
+
+ ריצה מקבלת של 
+\begin_inset Formula $w$
+\end_inset
+
+ ב-
+\begin_inset Formula $A'$
+\end_inset
+
+.
+ נטען כי 
+\begin_inset Formula $r_{0}r_{1}\dotsc r_{n}$
+\end_inset
+
+ ריצה מקבלת של 
+\begin_inset Formula $a_{1}\dotsc a_{n}$
+\end_inset
+
+ ב-
+\begin_inset Formula $A$
+\end_inset
+
+.
+ ראשית, 
+\begin_inset Formula $r_{0}\in F'=\left\{ q_{0}\right\} \Rightarrow r_{0}=q_{0}$
+\end_inset
+
+.
+ שנית, לכל 
+\begin_inset Formula $0\leq i\leq n-1$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\left(r_{i},a_{i+1}\right)=r_{i+1}$
+\end_inset
+
+ כי 
+\begin_inset Formula $r_{i}\in\delta'\left(r_{i+1},a_{i+1}\right)$
+\end_inset
+
+.
+ לבסוף 
+\begin_inset Formula $r_{n}\in Q_{0}=F$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

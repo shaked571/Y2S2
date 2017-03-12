@@ -380,5 +380,371 @@ H_{f}\left(4,2\right)=\begin{bmatrix}\frac{\partial^{2}f}{\partial^{2}x} & \frac
  ולכן לפי כלל יעקובי, המטריצה חיובית ממש, משמע זו נקודת מינימום.
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sum_{i=1}^{n}\lambda_{i}x_{i}$
+\end_inset
+
+.
+ לא כל ה-
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ שווים לאפס.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\lambda_{i}\neq0$
+\end_inset
+
+.
+ כיוון ש-
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה ליניארית, היא גזירה בכל נק'.
+ נזכור כי
+\begin_inset Formula 
+\[
+\nabla f\left(x\right)=\begin{bmatrix}\frac{\partial f}{\partial x_{1}}\\
+\\
+\\
+\frac{\partial f}{\partial x_{n}}
+\end{bmatrix}
+\]
+
+\end_inset
+
+לכן מספיק שנראה כי לכל 
+\begin_inset Formula $x=\left(x_{1},...,x_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{\partial f}{\partial x_{i}}\neq0$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\frac{\partial f}{\partial x_{i}}\left(x\right) & =\lim_{h\to0}\frac{f\left(x_{1},...,x_{i}+h,...,x_{n}\right)-f\left(x_{1},...,x_{n}\right)}{h}=\\
+=\lim_{h\to\infty} & \frac{\sum_{\substack{j=1\\
+j\neq i
+}
+}^{n}\lambda_{j}x_{j}+\lambda_{i}\left(x_{i}+h\right)-\sum_{j=1}^{n}\lambda_{j}x_{j}}{h}=\lim_{h\to\infty}\frac{\lambda_{i}h}{h}=\lambda_{i}\neq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הראנו שמקסימום ומינימום של פונקציה גזירה הן נקודות קריטיות, משמע הנגזרת
+ מתאפסת בהן.
+ לכל נקודה שלא על השפה יש סביבה פתוחה ולכן 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה בה, אבל הראנו שהגרדיינט לא מתאפס אף פעם משמע הנגזרת לא מתאפסת אף
+ פעם, לכן הנקודה לא קריטית ובפרט לא מקסימום או מינימום.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+חישובים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x^{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נבנה קירוב ליניארי בנק' 
+\begin_inset Formula $\left(2,3\right)$
+\end_inset
+
+.
+ נשים לב ש-
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה בנק' זו כי בסביבה קטנה מספיק של 
+\begin_inset Formula $\left(2,3\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x}\left(x,y\right)=y\cdot x^{y-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial y}\left(x,y\right)=x^{y}\log x
+\]
+
+\end_inset
+
+אלו פונקציות רציפות.
+ לכן
+\begin_inset Formula 
+\begin{align*}
+f\left(\left(2,3\right)+\left(0.02,0.01\right)\right) & =f\left(2,3\right)+Df\left(2,3\right)\cdot\begin{bmatrix}0.02\\
+0.01
+\end{bmatrix}=8+\begin{bmatrix}3\cdot2^{2} & 8\cdot\log2\end{bmatrix}\cdot\begin{bmatrix}0.02\\
+0.01
+\end{bmatrix}=\\
+= & 8+0.24+0.055451774=8.295451774
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נחשב את הנגזרות מסדר שני בסביבה של 
+\begin_inset Formula $\left(5,2\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial^{2}x}\left(x,y\right)=y\cdot\left(y-1\right)\cdot x^{y-2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial x\partial y}\left(x,y\right)=x^{y-1}+y\cdot x^{y-1}\cdot\log x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial^{2}y}\left(x,y\right)=x^{y}\log^{2}x
+\]
+
+\end_inset
+
+כעת לפי הפיתוח מסדר שני של טור טיילור
+\begin_inset Formula 
+\begin{align*}
+f\left(\left(5,2\right)+\left(0.01,0.01\right)\right) & =f\left(5,2\right)+Df\left(5,2\right)\begin{bmatrix}0.01\\
+0.01
+\end{bmatrix}+\begin{bmatrix}0.01 & 0.01\end{bmatrix}Hf\left(5,2\right)\begin{bmatrix}0.01\\
+0.01
+\end{bmatrix}=\\
+= & 25+\begin{bmatrix}2\cdot5 & 25\log5\end{bmatrix}\begin{bmatrix}0.01\\
+0.01
+\end{bmatrix}+\begin{bmatrix}0.01 & 0.01\end{bmatrix}\begin{bmatrix}2 & 5+10\log5\\
+5+10\log5 & 25\cdot\log^{2}5
+\end{bmatrix}\begin{bmatrix}0.01\\
+0.01
+\end{bmatrix}=\\
+= & 25+0.502359478+0.010894438=25.513253916
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+המשטח 
+\begin_inset Formula $x^{2}-yz=7$
+\end_inset
+
+.
+ נרצה למזער את 
+\begin_inset Formula $dist\left(x,y,z\right)=\sqrt{x^{2}+y^{2}+z^{2}}$
+\end_inset
+
+.
+ זה שקול למזעור של 
+\begin_inset Formula $dist^{2}\left(x,y,z\right)$
+\end_inset
+
+.
+ נוריד מימד דרך האילוץ, 
+\begin_inset Formula $x^{2}=7+yz$
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+f\left(y,z\right)=dist^{2}\left(\sqrt{7+yz},y,z\right)=7+yz+y^{2}+z^{2}
+\]
+
+\end_inset
+
+ נגזור ונחפש נק' קריטיות:
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial y}\left(y,z\right)=z+2y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dfrac{\partial f}{\partial z}\left(y,z\right)=y+2z
+\]
+
+\end_inset
+
+ אז
+\begin_inset Formula 
+\begin{align*}
+z+2y & =0\\
+y+2z & =0
+\end{align*}
+
+\end_inset
+
+נקבל
+\begin_inset Formula 
+\begin{align*}
+z+2y & =0\\
+y+2z-2z-4y & =0
+\end{align*}
+
+\end_inset
+
+...
+\begin_inset Formula 
+\begin{align*}
+z+2y & =0\\
+-3y & =0
+\end{align*}
+
+\end_inset
+
+לכן 
+\begin_inset Formula 
+\[
+\nabla f\left(y,z\right)=0\iff y,z=0
+\]
+
+\end_inset
+
+כעת נראה שזו אכן נק' מינימום.
+ נחשב את ההסיאן:
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial^{2}y}=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial y\partial z}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial^{2}z}=2
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+H_{f}=\begin{bmatrix}2 & 1\\
+1 & 2
+\end{bmatrix}
+\]
+
+\end_inset
+
+ואכן 
+\begin_inset Formula $2>0$
+\end_inset
+
+, 
+\begin_inset Formula $2\cdot2-1\cdot1=3>0$
+\end_inset
+
+ לכן מכלל יעקובי המטריצה חיובית ממש, משמע זו נק' מינימום של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ נחזור ל-
+\begin_inset Formula $dist$
+\end_inset
+
+, ונקבל כי המינימום מתקבל ב-
+\begin_inset Formula 
+\[
+\left(\sqrt{7},0,0\right),\left(-\sqrt{7},0,0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y,z\right)=ax^{2}+2axz+by^{2}-2byz+z^{2}$
+\end_inset
+
+.
+ ראשית נראה מה נדרוש מ-
+\begin_inset Formula $a,b$
+\end_inset
+
+ ע"מ שהנגזרת תתאפס ב-
+\begin_inset Formula $\left(0,0,0\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\nabla f\left(x,y,z\right)=\begin{bmatrix}2ax+2az\\
+2by-2bz\\
+2ax-2by+2z
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
