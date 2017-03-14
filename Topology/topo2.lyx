@@ -131,9 +131,691 @@
 307960468
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}_{d}$
+\end_inset
+
+ - הישר הממשי עם הטופו' הדיסקרטית.
+ נשים לב שהקבוצה 
+\begin_inset Formula $\left\{ \left\{ a\right\} \mid a\in\mathbb{R}\right\} $
+\end_inset
+
+ היא בסיס של הטופולוגיה כי היא כיסוי ולכל 
+\begin_inset Formula $x\in V_{1}\cap V_{2}$
+\end_inset
+
+ חיתוך איברי בסיס, 
+\begin_inset Formula $x\in\left\{ x\right\} \subset V_{1}\cap V_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ - הישר הממשי עם הטופ' הסטנדרטית.
+\end_layout
+
+\begin_layout Standard
+מטענה שהראנו בכיתה, 
+\begin_inset Formula $\left\{ \left\{ a\right\} \times\left(b,c\right)\mid a,b,c\in\mathbb{R}\right\} $
+\end_inset
+
+ הוא בסיס לטופולוגית המכפלה )אוסף כל המכפלות של קבוצות בסיסיות(.
+ מספיק שנראה כי כל טופולוגיה מכילה את הבסיס של השנייה ונקבל הכלה דו-כיוונית
+ משמע שיוויון )זה ינבע מסגירות לאיחוד של קבוצות פתוחות בטופולוגיה(.
+\end_layout
+
+\begin_layout Standard
+יהא 
+\begin_inset Formula $\left(\left(a_{1},b_{1}\right),\left(a_{2},b_{2}\right)\right)$
+\end_inset
+
+ קבוצה בסיסית בטופולוגית הסדר על 
+\begin_inset Formula $\mathbb{R\times R}$
+\end_inset
+
+.
+ מתקיים
+\begin_inset Formula 
+\[
+\left(\left(a_{1},b_{1}\right),\left(a_{2},b_{2}\right)\right)=\left\{ \left(x,y\right)\in\mathbb{R}^{2}\mid\left(a_{1}<x\vee\left(a_{1}=x\wedge b_{1}<y\right)\right)\wedge\left(x<a_{2}\vee\left(x=a_{2}\wedge y<b_{2}\right)\right)\right\} 
+\]
+
+\end_inset
+
+לכן אם 
+\begin_inset Formula $a_{1}<a_{2}$
+\end_inset
+
+ נוכל לרשום
+\begin_inset Formula 
+\[
+\left(\left(a_{1},b_{1}\right),\left(a_{2},b_{2}\right)\right)=\left\{ a_{1}\right\} \times\left(b_{1},\infty\right)\cup\left(a_{1},a_{2}\right)\times\mathbb{R}\cup\left\{ a_{2}\right\} \times\left(-\infty,b_{2}\right)
+\]
+
+\end_inset
+
+אחרת 
+\begin_inset Formula $a_{1}=a_{2}$
+\end_inset
+
+ ונרשום
+\begin_inset Formula 
+\[
+\left(\left(a_{1},b_{1}\right),\left(a_{2},b_{2}\right)\right)=\left\{ a_{1}\right\} \times\left(b_{1},b_{2}\right)
+\]
+
+\end_inset
+
+בכל מקרה ניתן להציג את איבר הבסיס כאיחוד של קבוצות פתוחות בטופולוגיית המכפלה.
+\end_layout
+
+\begin_layout Standard
+לחילופין, תהא 
+\begin_inset Formula $\left\{ a\right\} \times\left(b,c\right)$
+\end_inset
+
+ קבוצה בסיסית בטופולוגית המכפלה.
+ אז
+\begin_inset Formula 
+\[
+\left\{ a\right\} \times\left(b,c\right)=\left(\left(a,b\right),\left(a,c\right)\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\left(\left(a,b\right),\left(a,c\right)\right)$
+\end_inset
+
+ הוא הקטע הפתוח בטופולוגיה המושרית מהסדר הלקסיקוגרפי.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $TBD$
+\end_inset
+
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(X,<\right)$
+\end_inset
+
+ קבוצה עם סדר מלא.
+ נשים לב כי 
+\begin_inset Formula $\left[a,b\right]^{c}=\left(-\infty,a\right)\cup\left(b,\infty\right)$
+\end_inset
+
+, איחוד של שתי קבוצות פתוחות ולכן קבוצה פתוחה.
+ אז המשלים של 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ פתוח ולכן לפי הגדרה 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ קבוצה סגורה.
+ בפרט, 
+\begin_inset Formula $\left(a,b\right)\subseteq\left[a,b\right]$
+\end_inset
+
+ ולכן הסגור 
+\begin_inset Formula $\overline{\left(a,b\right)}\subseteq\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+דוגמה להכלה ממש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X=\left\{ 0\right\} \cup\left[1,2\right]\cup\left\{ 3\right\} $
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left[0,3\right]=X$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(0,3\right)=\left[1,2\right]$
+\end_inset
+
+.
+ הקטעים 
+\begin_inset Formula $[0,1)=\left\{ 0\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $(2,3]=\left\{ 3\right\} $
+\end_inset
+
+ בבסיס ולכן קבוצות פתוחות, ולכן גם 
+\begin_inset Formula $\left\{ 0\right\} \cup\left\{ 3\right\} $
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $\left[1,2\right]=X\backslash\left(\left\{ 0\right\} \cup\left\{ 3\right\} \right)$
+\end_inset
+
+ ולכן קבוצה סגורה, משמע 
+\begin_inset Formula 
+\[
+\left(0,3\right)=\left[1,2\right]\subsetneq\left\{ 0\right\} \cup\left[1,2\right]\cup\left\{ 3\right\} =\left[0,3\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A,B,A_{\alpha}$
+\end_inset
+
+ קבוצות במ"ט 
+\begin_inset Formula $\left(X,\tau\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A\cap B}=\overline{A}\cap\overline{B}$
+\end_inset
+
+.
+ דוגמה נגדית: 
+\begin_inset Formula $X=\mathbb{R}$
+\end_inset
+
+ עם הטופ' הסטנדרטית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $A=\left(0,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $B=\left(1,2\right)$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+\overline{\left(0,1\right)\cap\left(1,2\right)}=\overline{\varnothing}=\varnothing\neq\left\{ 1\right\} =\left[0,1\right]\cap\left[1,2\right]=\overline{\left(0,1\right)}\cap\overline{\left(1,2\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\cup B\right)^{\circ}=A^{\circ}\cup B^{\circ}$
+\end_inset
+
+.
+ דוגמה נגדית: 
+\begin_inset Formula $X=\mathbb{R}$
+\end_inset
+
+ עם הטופ' הסטנדרטית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $A=\left[0,1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $B=\left[1,2\right]$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+\left(\left[0,1\right]\cup\left[1,2\right]\right)^{\circ}=\left(0,2\right)\neq\left(0,1\right)\cup\left(1,2\right)=\left[0,1\right]^{\circ}\cup\left[1,2\right]^{\circ}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bigcup\overline{A_{\alpha}}\subset\overline{\bigcup A_{\alpha}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $A_{\alpha}\subset\bigcup A_{\alpha}\subset\overline{\bigcup A_{\alpha}}$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $\overline{\bigcup A_{\alpha}}$
+\end_inset
+
+ קבוצה סגורה ולכן ממינימליות הסגור 
+\begin_inset Formula $\overline{A_{\alpha}}\subset\overline{\bigcup A_{\alpha}}$
+\end_inset
+
+.
+ מכיוון שזה נכון לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, מתקיים
+\begin_inset Formula 
+\[
+\bigcup\overline{A_{\alpha}}\subset\overline{\bigcup A_{\alpha}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bigcup\overline{A_{\alpha}}=\overline{\bigcup A_{\alpha}}$
+\end_inset
+
+ .
+ דוגמה נגדית:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $X=\mathbb{R}$
+\end_inset
+
+ עם הטופ' הסטנדרטית.
+ אזי
+\begin_inset Formula 
+\[
+\mathbb{Q}=\bigcup_{q\in\mathbb{Q}}\left\{ q\right\} =\bigcup_{q\in\mathbb{Q}}\overline{\left\{ q\right\} }\subsetneq\overline{\bigcup_{q\in\mathbb{Q}}\left\{ q\right\} }=\overline{\mathbb{Q}}=\mathbb{R}
+\]
+
+\end_inset
+
+כאשר השיוויון השני נכון כי יחידון היא קבוצה סגורה ולכן הסגור זהה.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(X,\tau_{X}\right),\left(Y,\tau_{Y}\right)$
+\end_inset
+
+ מ"ט.
+ 
+\begin_inset Formula $A\subset X$
+\end_inset
+
+, 
+\begin_inset Formula $B\subset Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $A,B$
+\end_inset
+
+ סגורות.
+ אזי 
+\begin_inset Formula $A^{c},B^{c}$
+\end_inset
+
+ פתוחות.
+ לכן לפי הגדרה הקבוצות 
+\begin_inset Formula $A^{c}\times Y$
+\end_inset
+
+ , 
+\begin_inset Formula $X\times B^{c}$
+\end_inset
+
+ פתוחות בטופולוגית המכפלה.
+ מתקיים
+\begin_inset Formula 
+\[
+A\times B=A\times Y\cap X\times B
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula 
+\[
+\left(A\times B\right)^{c}=\left(A\times Y\cap X\times B\right)^{c}=\left(A\times Y\right)^{c}\cup\left(X\times B\right)^{c}=\left(A^{c}\times Y\right)\cup\left(X\times B^{c}\right)
+\]
+
+\end_inset
+
+איחוד של פתוחות ולכן פתוחה.
+ המשלים פתוח ולכן 
+\begin_inset Formula $A\times B$
+\end_inset
+
+ סגורה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A\times B}=\overline{A}\times\overline{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\subseteq$
+\end_inset
+
+: 
+\begin_inset Formula $A\subset\overline{A}$
+\end_inset
+
+, 
+\begin_inset Formula $B\subset\overline{B}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $A\times B\subset\overline{A}\times\overline{B}$
+\end_inset
+
+.
+ בפרט מהסעיף הקודם 
+\begin_inset Formula $\overline{A}\times\overline{B}$
+\end_inset
+
+ קבוצה סגורה ולכן 
+\begin_inset Formula $\overline{A\times B}\subseteq\overline{A}\times\overline{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\supseteq$
+\end_inset
+
+: נשתמש בטענה:
+\begin_inset Formula 
+\[
+x\in\overline{A}\iff\forall U_{open},\,x\in U\Rightarrow U\cap A\neq\varnothing
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(a,b\right)\in\overline{A}\times\overline{B}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $S$
+\end_inset
+
+ קבוצה פתוחה ב-
+\begin_inset Formula $X\times Y$
+\end_inset
+
+ שמכילה את 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ מהגדרת טופ' המכפלה קיימות 
+\begin_inset Formula $U\subset X$
+\end_inset
+
+, 
+\begin_inset Formula $V\subset Y$
+\end_inset
+
+ פתוחות כך ש-
+\begin_inset Formula $\left(a,b\right)\in U\times V\subseteq S$
+\end_inset
+
+.
+ נזכור כי 
+\begin_inset Formula $a\in\overline{A}$
+\end_inset
+
+, 
+\begin_inset Formula $b\in\overline{B}$
+\end_inset
+
+, ולכן מהטענה מתקיים כי 
+\begin_inset Formula $U\cap A,V\cap B\neq\varnothing$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $a'\in U\cap A$
+\end_inset
+
+, 
+\begin_inset Formula $b'\in V\cap B$
+\end_inset
+
+, אז 
+\begin_inset Formula $\left(a',b'\right)\in U\times V\subset S$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(a',b'\right)\in A\times B$
+\end_inset
+
+ לכן 
+\begin_inset Formula $S\cap A\times B\neq\varnothing$
+\end_inset
+
+.
+ מהטענה, 
+\begin_inset Formula $\left(a,b\right)\in\overline{A\times B}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+מ"ט הוא האוסדורף אם"ם קבוצת האלכסון 
+\begin_inset Formula $\triangle=\left\{ \left(x,x\right)\mid x\in X\right\} $
+\end_inset
+
+ סגורה ב-
+\begin_inset Formula $X\times X$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+: נראה שהמשלים של 
+\begin_inset Formula $\triangle$
+\end_inset
+
+ פתוח.
+ 
+\begin_inset Formula 
+\[
+\triangle^{c}=\left\{ \left(a,b\right)\mid a,b\in X,\,a\neq b\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a,b\in X$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $a\neq b$
+\end_inset
+
+.
+ מתכונת האוסדורף קיימות פתוחות 
+\begin_inset Formula $U_{(a,b),1},U_{\left(a,b\right),2}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $a\in U_{\left(a,b\right),1},b\in U_{\left(a,b\right),2}$
+\end_inset
+
+ ו-
+\begin_inset Formula $U_{\left(a,b\right),1}\cap U_{\left(a,b\right),2}=\varnothing$
+\end_inset
+
+.
+ לפי הגדרת טופ' המכפלה 
+\begin_inset Formula $U_{\left(a,b\right),1}\times U_{\left(a,b\right),2}$
+\end_inset
+
+ פתוחה.
+ בנוסף, 
+\begin_inset Formula $U_{\left(a,b\right),1}\times U_{\left(a,b\right),2}\subset\triangle^{c}$
+\end_inset
+
+ כי אם 
+\begin_inset Formula $\left(x,x\right)\in U_{\left(a,b\right),1}\times U_{\left(a,b\right),2}$
+\end_inset
+
+ נקבל סתירה לזרות שלהן.
+ לכן
+\begin_inset Formula 
+\[
+\triangle^{c}=\bigcup_{\substack{a,b\in X\\
+a\neq b
+}
+}U_{\left(a,b\right),1}\times U_{\left(a,b\right),2}
+\]
+
+\end_inset
+
+איחוד של פתוחות ולכן קבוצה פתוחה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+: נובע כי 
+\begin_inset Formula $\triangle^{c}$
+\end_inset
+
+ פתוח.
+ יהיו 
+\begin_inset Formula $x_{1},x_{2}\in X$
+\end_inset
+
+, 
+\begin_inset Formula $x_{1}\neq x_{2}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left(x_{1},x_{2}\right)\in\triangle^{c}$
+\end_inset
+
+.
+ מהגדרת טופ' המכפלה קיימות 
+\begin_inset Formula $U_{1},U_{2}$
+\end_inset
+
+ פתוחות כך ש-
+\begin_inset Formula $\left(x_{1},x_{2}\right)\in U_{1}\times U_{2}\subset\triangle^{c}$
+\end_inset
+
+.
+ בפרט נובע כי לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $\left(x,x\right)\notin U_{1}\times U_{2}$
+\end_inset
+
+, משמע 
+\begin_inset Formula $x\notin U_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $x\notin U_{2}$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+U_{1}\cap U_{2}=\varnothing
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
