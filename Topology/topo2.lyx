@@ -237,21 +237,51 @@
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Note Comment
-status open
+\begin_inset Formula $L$
+\end_inset
 
-\begin_layout Plain Layout
-\begin_inset Formula $TBD$
+ ישר במישור.
+ מספיק שנבין איך נראות הקבוצות הבסיסיות כחיתוך עם 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+הקבוצות הבסיסיות הן מהצורה 
+\begin_inset Formula $\left(a_{1},b_{1}\right)\times\left(a_{2},b_{2}\right)$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+L\cap\left(a_{1},b_{1}\right)\times\left(a_{2},b_{2}\right)=\left\{ \left(x,y\right)\mid a_{1}<x<a_{2},\,b_{1}<y<b_{2},\,\left(x,y\right)\in L\right\} 
+\]
+
+\end_inset
+
+קטע פתוח על הישר.
+\end_layout
+
+\begin_layout Enumerate
+הקבוצות הבסיסיות הן מהצורה 
+\begin_inset Formula $[a_{1},b_{1})\times\left(a_{2},b_{2}\right)$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\]
+
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\left(X,<\right)$
 \end_inset
