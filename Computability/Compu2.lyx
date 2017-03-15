@@ -144,6 +144,15 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\langle Q,\Sigma,\delta,q_{0},F\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 יהיו 
 \begin_inset Formula $L_{1},L_{2}$
@@ -417,6 +426,285 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{REG}$
+\end_inset
+
+ סגורה לכוכב.
+ תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה רגולרית ויהי 
+\begin_inset Formula $A=\left\langle Q,\Sigma,\delta,q_{0},F\right\rangle $
+\end_inset
+
+ האוטומט המתאים לה.
+ נגדיר 
+\begin_inset Formula $A'$
+\end_inset
+
+ אוטומט מסוג 
+\begin_inset Formula $NFA$
+\end_inset
+
+, כך ש-
+\begin_inset Formula 
+\[
+A'=\left\langle Q,\Sigma,\delta',Q_{0},F\right\rangle 
+\]
+
+\end_inset
+
+כך ש-
+\begin_inset Formula 
+\[
+Q_{0}=\left\{ q_{0}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta'\left(q,\sigma\right)=\begin{cases}
+\left\{ q_{0}\right\}  & q\in F,\sigma=\epsilon\\
+\left\{ \delta\left(q,\sigma\right)\right\}  & \text{else}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+טענה: 
+\begin_inset Formula $L\left(A'\right)=L^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחה: 
+\begin_inset Formula $L^{*}\subseteq L\left(A'\right)$
+\end_inset
+
+.
+ נראה באינדוקציה על 
+\begin_inset Formula $n$
+\end_inset
+
+ מספר המילים המשורשרות מ-
+\begin_inset Formula $L$
+\end_inset
+
+ ב-
+\begin_inset Formula $w\in L^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=0$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $w=\varepsilon$
+\end_inset
+
+.
+ הריצה 
+\begin_inset Formula 
+\[
+q_{start}
+\]
+
+\end_inset
+
+מקבלת וזו ריצה של 
+\begin_inset Formula $w$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+נניח ל-
+\begin_inset Formula $n$
+\end_inset
+
+ ונראה ל-
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $w$
+\end_inset
+
+ מורכבת מ-
+\begin_inset Formula $n+1$
+\end_inset
+
+ מילים משורשרות מ-
+\begin_inset Formula $L$
+\end_inset
+
+.
+ אז קיימת 
+\begin_inset Formula $l\in L$
+\end_inset
+
+ ו-
+\begin_inset Formula $w'$
+\end_inset
+
+ מורכבת מ-
+\begin_inset Formula $n$
+\end_inset
+
+ מילים משורשרות כך ש-
+\begin_inset Formula $w=w'l$
+\end_inset
+
+.
+ מהנחת האינדוקציה קיימת ריצה מקבלת
+\begin_inset Formula 
+\[
+r_{0}...r_{m}
+\]
+
+\end_inset
+
+של 
+\begin_inset Formula $w'$
+\end_inset
+
+.
+ בנוסף 
+\begin_inset Formula $l\in L$
+\end_inset
+
+ ולכן יש ריצה מקבלת ב-
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r'_{0},...,r'_{k}
+\]
+
+\end_inset
+
+נטען כי
+\begin_inset Formula 
+\[
+r_{0},...,r_{m},r'_{0},...r'_{k},q_{start}
+\]
+
+\end_inset
+
+ריצה חוקית של 
+\begin_inset Formula $w$
+\end_inset
+
+ )היא מקבלת כי שמנו מצב מקבל בסוף(.
+ לכל 
+\begin_inset Formula $0\leq i<m$
+\end_inset
+
+ התנאי הנדרש מתקיים כי זו ריצה חוקית של 
+\begin_inset Formula $w'$
+\end_inset
+
+ שמוכל ב-
+\begin_inset Formula $w$
+\end_inset
+
+.
+ כעת 
+\begin_inset Formula $r'_{0}\in\delta'\left(r_{m},\varepsilon\right)$
+\end_inset
+
+ כי מכך ש-
+\begin_inset Formula $r_{m}$
+\end_inset
+
+ המצב האחרון בריצה מקבלת ב-
+\begin_inset Formula $A'$
+\end_inset
+
+ בהכרח 
+\begin_inset Formula $r_{m}=q_{start}$
+\end_inset
+
+.
+ בנוסף 
+\begin_inset Formula $r'_{0}=q_{0}\in\delta'\left(q_{start},\varepsilon\right)$
+\end_inset
+
+ כנדרש.
+ לכל 
+\begin_inset Formula $1\leq j\leq k$
+\end_inset
+
+, נראה כי מתקיים
+\begin_inset Formula 
+\[
+r'_{j}\in q'\left(r'_{j-1},l_{j}\right)=\left\{ \delta\left(r'_{j-1},l_{j}\right)\right\} =\left\{ r'_{j}\right\} 
+\]
+
+\end_inset
+
+כי 
+\begin_inset Formula $r'_{j}\in Q$
+\end_inset
+
+.
+ לבסוף, 
+\begin_inset Formula 
+\[
+q_{start}\in\delta'\left(r'_{k},\varepsilon\right)=\left\{ q_{start}\right\} 
+\]
+
+\end_inset
+
+כי 
+\begin_inset Formula $r'_{k}\in F$
+\end_inset
+
+ )זה היה מצב מקבל ב-
+\begin_inset Formula $A$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 תהי 
 \begin_inset Formula $L$
