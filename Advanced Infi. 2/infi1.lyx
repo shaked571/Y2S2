@@ -241,25 +241,78 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-כנראה צריך להראות שהנגזרות החלקיות רציפות
+נראה שהנגזרות החלקיות רציפות בכל נק' ומכך ינבע כי הפונקציה גזירה בכל נק'.
 \end_layout
+
+\begin_deeper
+\begin_layout Standard
+בכל נק' 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ או 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+, הנגזרות החלקיות הן פונקציה רציונלית ולכן רציפה.
+ נראה שב-
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ הנגזרות החלקיות רציפות.
+ נשים לב שמתקיים
+\begin_inset Formula 
+\[
+-2=\frac{-2x^{4}-4x^{2}y^{2}-2y^{4}}{\left(x^{2}+y^{2}\right)^{2}}=\frac{x^{4}+4x^{2}y^{2}-y^{4}}{\left(x^{2}+y^{2}\right)^{2}}\leq\frac{2x^{4}+4x^{2}y^{2}+2y^{4}}{\left(x^{2}+y^{2}\right)^{2}}=2
+\]
 
 \end_inset
 
 
+\begin_inset Formula 
+\[
+-2=\frac{-2x^{4}-4x^{2}y^{2}-2y^{4}}{\left(x^{2}+y^{2}\right)^{2}}\leq\frac{x^{4}-4x^{2}y^{2}-y^{4}}{\left(x^{2}+y^{2}\right)^{2}}\leq\frac{2x^{4}+4x^{2}y^{2}+2y^{4}}{\left(x^{2}+y^{2}\right)^{2}}=2
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\lim_{\left(x_{n},y_{n}\right)\to0}\left|x_{n}\frac{x_{n}^{4}-4x_{n}^{2}y_{n}^{2}-y_{n}^{4}}{\left(x_{n}^{2}+y_{n}^{2}\right)^{2}}\right|=\left|x_{n}\right|\left|\frac{x_{n}^{4}-4x_{n}^{2}y_{n}^{2}-y_{n}^{4}}{\left(x_{n}^{2}+y_{n}^{2}\right)^{2}}\right|\leq\left|x_{n}\right|\cdot2\to0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{\left(x_{n},y_{n}\right)\to0}\left|y_{n}\frac{x_{n}^{4}+4x_{n}^{2}y_{n}^{2}-y_{n}^{4}}{\left(x_{n}^{2}+y_{n}^{2}\right)^{2}}\right|=\left|y_{n}\right|\left|\frac{x_{n}^{4}+4x_{n}^{2}y_{n}^{2}-y_{n}^{4}}{\left(x_{n}^{2}+y_{n}^{2}\right)^{2}}\right|\leq\left|y_{n}\right|\cdot2\to0
+\]
+
+\end_inset
+
+ולכן כיוון שהגבול בערך מוחלט הוא אפס, גם הגבול הרגיל הוא אפס כנדרש.
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
-\begin_inset ERT
-status open
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial x\partial y}\left(0,0\right)=\lim_{h\to0}\frac{\frac{\partial f}{\partial x}\left(0,0+h\right)-\frac{\partial f}{\partial x}\left(0,0\right)}{h}=\frac{h\cdot\frac{0^{4}+4\cdot0^{2}h^{2}-h^{4}}{\left(0^{2}+h^{2}\right)^{2}}-0}{h}=\frac{-h^{4}}{h^{4}}=-1
+\]
 
-\begin_layout Plain Layout
+\end_inset
 
-\end_layout
+
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial y\partial x}\left(0,0\right)=\lim_{h\to0}\frac{\frac{\partial f}{\partial y}\left(0+h,0\right)-\frac{\partial f}{\partial y}\left(0,0\right)}{h}=\frac{h\cdot\frac{h^{4}-4\cdot h^{2}\cdot0^{2}-0^{4}}{\left(h^{2}+0^{2}\right)^{2}}}{h}=\frac{h^{4}}{h^{4}}=1
+\]
 
 \end_inset
 
@@ -455,16 +508,64 @@ j\neq i
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Note Comment
-status open
+\begin_inset Formula $f\left(x,y\right)=\lambda_{1}x+\lambda_{2}y$
+\end_inset
 
-\begin_layout Plain Layout
-חישובים
-\end_layout
+.
+ נרצה למקסם את 
+\begin_inset Formula $f$
+\end_inset
+
+ על מעגל היחידה.
+ נשים לב ש-
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\left\langle \begin{array}{c}
+\lambda_{1}\\
+\lambda_{2}
+\end{array}\mid\begin{array}{c}
+x\\
+y
+\end{array}\right\rangle 
+\]
 
 \end_inset
 
+המכפלה הסקלרית.
+ מא"ש קושי שוורץ מתקיים כי
+\begin_inset Formula 
+\[
+\left|f\left(x,y\right)\right|\leq\sqrt{\lambda_{1}^{2}+\lambda_{2}^{2}}\cdot\sqrt{x^{2}+y^{2}}=\sqrt{\lambda_{1}^{2}+\lambda_{2}^{2}}\cdot1
+\]
 
+\end_inset
+
+בפרט אנחנו יודעים שמתקבל שיוויון אמ"מ 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ כפולה סקלרית של 
+\begin_inset Formula $\left(\lambda_{1},\lambda_{2}\right)$
+\end_inset
+
+.
+ לכן צריך להתקיים
+\begin_inset Formula 
+\[
+\left(t\cdot\lambda_{1}\right)^{2}+\left(t\cdot\lambda_{2}\right)^{2}=1\iff t=\pm\sqrt{\frac{1}{\lambda_{1}^{2}+\lambda_{2}^{2}}}
+\]
+
+\end_inset
+
+סה"כ קיבלנו כי הנק' בה מתקבל המקסימום היא 
+\begin_inset Formula $\left(\sqrt{\frac{1}{\lambda_{1}^{2}+\lambda_{2}^{2}}}\lambda_{1},\sqrt{\frac{1}{\lambda_{1}^{2}+\lambda_{2}^{2}}}\lambda_{2}\right)$
+\end_inset
+
+ )מליניאריות אחת היא המינימום והשנייה המקס'( והערך המתקבל הוא 
+\begin_inset Formula $\sqrt{\lambda_{1}^{2}+\lambda_{2}^{2}}$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
