@@ -254,16 +254,8 @@
 \begin_inset Formula $\left(a_{1},b_{1}\right)\times\left(a_{2},b_{2}\right)$
 \end_inset
 
-.
- אזי
-\begin_inset Formula 
-\[
-L\cap\left(a_{1},b_{1}\right)\times\left(a_{2},b_{2}\right)=\left\{ \left(x,y\right)\mid a_{1}<x<a_{2},\,b_{1}<y<b_{2},\,\left(x,y\right)\in L\right\} 
-\]
-
-\end_inset
-
-קטע פתוח על הישר.
+, תיבות פתוחות במישור.
+ לכן החיתוך של כל ישר איתן יהיה קטע פתוח על הישר.
 \end_layout
 
 \begin_layout Enumerate
@@ -271,14 +263,54 @@ L\cap\left(a_{1},b_{1}\right)\times\left(a_{2},b_{2}\right)=\left\{ \left(x,y\ri
 \begin_inset Formula $[a_{1},b_{1})\times\left(a_{2},b_{2}\right)$
 \end_inset
 
- אז
-\begin_inset Formula 
-\[
-\]
-
+, תיבות שמכילות את הצלע השמאלית שלהן.
+ אם 
+\begin_inset Formula $L$
 \end_inset
 
+ מאוזן, אז כל קטע על הישר שמתקבל מהחיתוך יהיה קטע חצי פתוח )כמו שבציר ה-
+\begin_inset Formula $X$
+\end_inset
 
+(.
+ אם 
+\begin_inset Formula $L$
+\end_inset
+
+ מאונך אז כל קטע שיתקבל מהחיתוך יהיה קטע פתוח.
+ אחרת נוכל לקבל גם קטעים פתוחים וגם קטעים חצי פתוחים, כי אם הישר חותך את
+ הצלע השמאלית של התיבה אז יתקבל קטע חצי פתוח, אחרת כל הצלעות האחרות לא מוכלות
+ ולכן יתקבל קטע פתוח.
+\end_layout
+
+\begin_layout Enumerate
+הקבוצות הבסיסיות הן מהצורה 
+\begin_inset Formula $[a_{1},b_{1})\times[a_{2},b_{2})$
+\end_inset
+
+ תיבות שמכילות את הצלע התחתונה והשמאלית.
+ אם 
+\begin_inset Formula $L$
+\end_inset
+
+ מאונך או מאוזן נקבל קטע חצי פתוח על הישר.
+ אם 
+\begin_inset Formula $L$
+\end_inset
+
+ בעל שיפוע חיובי אז הוא חייב לחתוך את התיבה בצלע התחתונה או השמאלית, לכן
+ תמיד יתקבל קטע חצי פתוח.
+ אם 
+\begin_inset Formula $L$
+\end_inset
+
+ בעל שיפוע שלילי, אז נוכל לקבל את כל סוגי הקטעים )פתוח, סגור, חצי-פתוח לשני
+ הכיוונים( כי 
+\begin_inset Formula $L$
+\end_inset
+
+ חותך את התיבה או מהצלע העליונה )שלא מוכלת( או מהצלע השמאלית )שכן מוכלת(
+ ויוצא או מהצלע הימנית )שלא מוכלת( או מהצלע התחתונה )שכן מוכלת(.
 \end_layout
 
 \end_deeper
