@@ -150,58 +150,30 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-יהיו 
-\begin_inset Formula $L_{1},L_{2}$
-\end_inset
-
- שפות רגולריות ויהיו 
-\begin_inset Formula $A_{1},A_{2}$
-\end_inset
-
- ה-
-\begin_inset Formula $DFA$
-\end_inset
-
- שלהם.
- נגדיר אוטומט 
-\begin_inset Formula $A=\left\langle Q,\Sigma,q_{0},\delta,F\right\rangle $
-\end_inset
-
- כך:
+ לפי הגדרה 
 \begin_inset Formula 
 \[
-Q=Q_{1}\times Q_{2}\times\left\{ 0,1\right\} 
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-q_{0}=\left(q_{1,0},q_{2,0},0\right)
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-q=\left(q_{1},q_{2},n\right),\,\delta\left(q,\sigma\right)=\begin{cases}
-\left(\delta_{1}\left(q_{1},\sigma\right),q_{2},1\right) & n=0\\
-\left(q_{1},\delta_{2}\left(q_{2},\sigma\right),0\right) & n=1
+\delta^{*}\left(q,w\right)=\begin{cases}
+q, & w=\varepsilon\\
+\delta\left(\delta^{*}\left(q,w'\right),\sigma\right), & w=w'\cdot\sigma,\,w'\in\Sigma^{*},\sigma\in\Sigma
 \end{cases}
 \]
 
 \end_inset
 
+יהיו 
+\begin_inset Formula $u,v\in\Sigma^{*}$
+\end_inset
 
+.
+ נוכיח באינדוקציה על 
+\begin_inset Formula $\left|v\right|$
+\end_inset
+
+ כי 
 \begin_inset Formula 
 \[
-F=\left\{ \left(q_{1},q_{2},n\right)\mid n=0,\,q_{1}\in F_{1},\,q_{2}\in F_{2}\right\} 
+\delta^{*}\left(q,uv\right)=\delta^{*}\left(\delta^{*}\left(q,u\right),v\right)
 \]
 
 \end_inset
@@ -210,13 +182,89 @@ F=\left\{ \left(q_{1},q_{2},n\right)\mid n=0,\,q_{1}\in F_{1},\,q_{2}\in F_{2}\r
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\begin_inset Note Comment
-status open
+\begin_layout Description
+בסיס: 
+\begin_inset Formula $v=\varepsilon$
+\end_inset
 
-\begin_layout Plain Layout
-להוכיח
+.
+ אז
+\begin_inset Formula 
+\[
+\delta^{*}\left(q,uv\right)=\delta^{*}\left(q,u\right)\underbrace{=}_{\text{def.}}\delta^{*}\left(\delta^{*}\left(q,u\right),\varepsilon\right)=\delta^{*}\left(\delta^{*}\left(q,u\right),v\right)
+\]
+
+\end_inset
+
+
 \end_layout
+
+\begin_layout Description
+הנחה: נניח את נכונות הטענה ל-
+\begin_inset Formula $\left|v\right|=n$
+\end_inset
+
+ ונראה ל-
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+שלב: תהי 
+\begin_inset Formula $v\in\Sigma^{*}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|v\right|=n+1$
+\end_inset
+
+.
+ נניח כי 
+\begin_inset Formula $v=v'\sigma$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $\left|v'\right|=n$
+\end_inset
+
+.
+ בנוסף 
+\begin_inset Formula $uv=uv'\sigma$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+\delta^{*}\left(q,uv\right)\underbrace{=}_{uv\neq\varepsilon}\delta\left(\delta^{*}\left(q,uv'\right),\sigma\right)\underbrace{=}_{\text{ind.}}\delta\left(\delta^{*}\left(\delta^{*}\left(q,u\right),v'\right),\sigma\right)
+\]
+
+\end_inset
+
+נסמן את 
+\begin_inset Formula $\delta^{*}\left(q,u\right)=q'\in Q$
+\end_inset
+
+ מצב כלשהו, אז
+\begin_inset Formula 
+\[
+\delta\left(\delta^{*}\left(\delta^{*}\left(q,u\right),v'\right),\sigma\right)=\delta\left(\delta^{*}\left(q',v'\right),\sigma\right)\underbrace{=}_{\text{def.}}\delta^{*}\left(q',v'\sigma\right)=\delta^{*}\left(q',v\right)
+\]
+
+\end_inset
+
+נחליף חזרה את 
+\begin_inset Formula $q'$
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+\delta^{*}\left(q,uv\right)=\delta^{*}\left(q',v\right)=\delta^{*}\left(\delta^{*}\left(q,u\right),v\right)
+\]
 
 \end_inset
 
@@ -224,6 +272,193 @@ status open
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\langle Q,\Sigma,\delta,Q_{0},F\right\rangle $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\delta^{*}\colon2^{Q}\times\Sigma^{*}\to2^{Q}$
+\end_inset
+
+ מוגדרת כך:
+\begin_inset Formula 
+\[
+\delta^{*}\left(S,w\right)=\begin{cases}
+S, & w=\varepsilon\\
+\left\{ t\mid\exists s\in S\text{ s.t }t\in\delta\left(s,\sigma\right)\right\} , & w=\sigma\in\Sigma\\
+\delta^{*}\left(\delta^{*}\left(S,w'\right),\sigma\right), & w=w'\cdot\sigma
+\end{cases}
+\]
+
+\end_inset
+
+יהיו 
+\begin_inset Formula $u,v\in\Sigma^{*}$
+\end_inset
+
+.
+ נוכיח באינדוקציה על 
+\begin_inset Formula $\left|v\right|$
+\end_inset
+
+ כי 
+\begin_inset Formula 
+\[
+\delta^{*}\left(S,uv\right)=\delta^{*}\left(\delta^{*}\left(S,u\right),v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+בסיס: 
+\begin_inset Formula $v=\varepsilon$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+\delta^{*}\left(S,uv\right)=\delta^{*}\left(S,u\right)\underbrace{=}_{\text{def.}}\delta^{*}\left(\delta^{*}\left(S,u\right),\varepsilon\right)=\delta^{*}\left(\delta^{*}\left(S,u\right),v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הנחה: נניח כי הטענה נכונה ל-
+\begin_inset Formula $\left|v\right|=n$
+\end_inset
+
+, ונראה ל-
+\begin_inset Formula $\left|v\right|=n+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+שלב: תהי 
+\begin_inset Formula $v\in\Sigma^{*}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|v\right|=n+1$
+\end_inset
+
+.
+ אז קיימת 
+\begin_inset Formula $v'\in\Sigma^{*}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\sigma\in\Sigma$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $v=v'\sigma$
+\end_inset
+
+.
+ בפרט, 
+\begin_inset Formula $uv=uv'\sigma$
+\end_inset
+
+.
+ לכן,
+\begin_inset Formula 
+\[
+\delta^{*}\left(S,uv\right)=\delta^{*}\left(S,uv'\sigma\right)=\delta^{*}\left(\delta^{*}\left(S,uv'\right),\sigma\right)\underbrace{=}_{\text{ind.}}\delta^{*}\left(\delta^{*}\left(\delta^{*}\left(S,u\right),v'\right),\sigma\right)
+\]
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $S'=\delta^{*}\left(S,u\right)\subseteq Q$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula 
+\[
+\delta^{*}\left(\delta^{*}\left(\delta^{*}\left(S,u\right),v'\right),\sigma\right)=\delta^{*}\left(\delta^{*}\left(S',v'\right),\sigma\right)\underbrace{=}_{\text{def.}}\delta^{*}\left(S',v'\sigma\right)=\delta^{*}\left(S',v\right)
+\]
+
+\end_inset
+
+שוב, נחליף חזרה את הסימון בהגדרה ונקבל
+\begin_inset Formula 
+\[
+\delta^{*}\left(S,uv\right)=\delta^{*}\left(S',v\right)=\delta^{*}\left(\delta^{*}\left(S,u\right),v\right)
+\]
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+בתרגיל הקודם הוכחנו כי בהינתן 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית, השפה 
+\begin_inset Formula $L_{even}$
+\end_inset
+
+ )כל המילים שהאותיות הזוגיות מרכיבות מילה ב-
+\begin_inset Formula $L$
+\end_inset
+
+( רגולרית.
+ עשינו זאת ע"י הוספת מצבי ביניים שמתאימים לאותיות האי זוגיות לכל מצב באוטומט.
+ ניתן להוסיף את הכפייה כי המילה זוגית ע"י כך שהמצבים החדשים שהוספנו לא יהיו
+ מקבלים.
+ באופן דומה היה ניתן להגדיר גם את 
+\begin_inset Formula $L_{odd}$
+\end_inset
+
+ ולהראות שהיא רגולרית, וגם פה להוסיף את הכפייה שהמילה זוגית.
+ לכן 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ רגולריות, אז מתקיים כי 
+\begin_inset Formula $L_{1,odd},L_{2,even}$
+\end_inset
+
+ עם מילים זוגיות רגולריות, ואז 
+\begin_inset Formula $\mathcal{I}\left(L_{1},L_{2}\right)=L_{1,odd}\cap L_{2,even}$
+\end_inset
+
+ כי זה בדיוק אוסף כל המילים הזוגיות שהאותיות האי-זוגיות מרכיבות מילים ב-
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ וכל האותיות הזוגיות מרכיבות מילים ב-
+\begin_inset Formula $L_{2}$
+\end_inset
+
+, ומכיוון שהמילה זוגית מספר האותיות הזוגיות שווה למספר האותיות האי-זוגיות,
+ כנדרש.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 \begin_inset ERT
 status open
@@ -386,14 +621,170 @@ F'=\left\{ q\in Q\mid\exists w\in L_{2},\,\delta\left(q,w\right)\in F\right\}
 
 \end_inset
 
+אז לכל 
+\begin_inset Formula $w_{1}\in L\left(A'\right)$
+\end_inset
 
-\begin_inset Note Comment
-status open
+, אם 
+\begin_inset Formula 
+\[
+r_{0}...r_{k}
+\]
 
-\begin_layout Plain Layout
-להוכיח
-\end_layout
+\end_inset
 
+הריצה המתאימה ב-
+\begin_inset Formula $A'$
+\end_inset
+
+, אז 
+\begin_inset Formula $r_{k}\in F'$
+\end_inset
+
+, משמע קיימת 
+\begin_inset Formula $w_{2}\in L_{2}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\delta\left(r_{k},w_{2}\right)\in F$
+\end_inset
+
+.
+ 
+\begin_inset Formula $r_{k}=\delta\left(q_{0},w_{1}\right)$
+\end_inset
+
+, לכן משאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\begin_inset Formula 
+\[
+\delta\left(\delta\left(q_{0},w_{1}\right),w_{2}\right)=\delta\left(q_{0},w_{1}w_{2}\right)\in F
+\]
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משמע 
+\begin_inset Formula $w_{1}w_{2}\in L_{1}$
+\end_inset
+
+ כנדרש.
+ בכיוון השני, תהי 
+\begin_inset Formula $w_{1}\in\text{RightDiv}\left(L_{1},L_{2}\right)$
+\end_inset
+
+.
+ אז קיים 
+\begin_inset Formula $w_{2}\in L_{2}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+w_{1}w_{2}\in L_{1}
+\]
+
+\end_inset
+
+תהי 
+\begin_inset Formula 
+\[
+r_{0}...r_{k}
+\]
+
+\end_inset
+
+הריצה המתאימה ב-
+\begin_inset Formula $A$
+\end_inset
+
+.
+ בפרט, קיים 
+\begin_inset Formula $0\leq j\leq k$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $r_{j}=\delta\left(r_{0},w_{1}\right)$
+\end_inset
+
+, ונובע כי 
+\begin_inset Formula 
+\[
+r_{k}=\delta\left(r_{0},w_{1}w_{2}\right)=\delta\left(\delta\left(r_{0},w_{1}\right),w_{2}\right)=\delta\left(r_{j},w_{2}\right)\in F
+\]
+
+\end_inset
+
+, לכן לפי הגדרה 
+\begin_inset Formula $r_{j}\in F'$
+\end_inset
+
+, משמע
+\begin_inset Formula 
+\[
+r_{0}...r_{j}
+\]
+
+\end_inset
+
+ריצה מקבלת ב-
+\begin_inset Formula $A'$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $w_{1}\in L\left(A'\right)$
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -413,6 +804,71 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /cs/stud/ofer1992/Downloads/New Doc 2017-03-19_1.jpg
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /cs/stud/ofer1992/Downloads/New Doc 2017-03-19_2.jpg
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset ERT
 status open
@@ -428,8 +884,32 @@ status open
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset ERT
+\begin_inset Float figure
+wide false
+sideways false
 status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /cs/stud/ofer1992/Downloads/New Doc 2017-03-19 (1).jpg
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -453,43 +933,16 @@ status open
 \begin_inset Formula $A=\left\langle Q,\Sigma,\delta,q_{0},F\right\rangle $
 \end_inset
 
- האוטומט המתאים לה.
- נגדיר 
-\begin_inset Formula $A'$
-\end_inset
-
- אוטומט מסוג 
+ ה-
 \begin_inset Formula $NFA$
 \end_inset
 
-, כך ש-
-\begin_inset Formula 
-\[
-A'=\left\langle Q,\Sigma,\delta',Q_{0},F\right\rangle 
-\]
-
+ המתאים לה.
+ נשתמש באוטומט 
+\begin_inset Formula $A'$
 \end_inset
 
-כך ש-
-\begin_inset Formula 
-\[
-Q_{0}=\left\{ q_{0}\right\} 
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\delta'\left(q,\sigma\right)=\begin{cases}
-\left\{ q_{0}\right\}  & q\in F,\sigma=\epsilon\\
-\left\{ \delta\left(q,\sigma\right)\right\}  & \text{else}
-\end{cases}
-\]
-
-\end_inset
-
-
+ שהגדרנו בתרגול.
 \end_layout
 
 \begin_deeper
@@ -701,6 +1154,10 @@ q_{start}\in\delta'\left(r'_{k},\varepsilon\right)=\left\{ q_{start}\right\}
 \end_inset
 
 (.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
