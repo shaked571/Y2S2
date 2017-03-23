@@ -1,0 +1,873 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding cp1255
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\rightmargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+חישוביות
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma=\left\{ 0,1,2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L_{1}=\left\{ 0^{n}1^{n}2^{n}\mid n\geq0\right\} $
+\end_inset
+
+.
+ נניח בשלילה כי 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ רגולרית.
+ יהי 
+\begin_inset Formula $p>0$
+\end_inset
+
+ קבוע הניפוח שלה.
+ תהי 
+\begin_inset Formula $w=0^{p}1^{p}2^{p}$
+\end_inset
+
+.
+ אזי מלמת הניפוח, אפשר להציג את 
+\begin_inset Formula $w=xyz$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+.
+ כיוון ש-
+\begin_inset Formula $\left|xy\right|<p$
+\end_inset
+
+, נובע כי 
+\begin_inset Formula $y=0^{\left|y\right|}$
+\end_inset
+
+.
+ גם המילה 
+\begin_inset Formula $xz$
+\end_inset
+
+ אמורה להיות בשפה מהלמה, אבל כעת מספר ה-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שונה ממספר האפסים )הורדנו לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחד כשהורדנו את 
+\begin_inset Formula $y$
+\end_inset
+
+(, סתירה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{2}=\left\{ 1^{2^{n}}\mid n\geq0\right\} $
+\end_inset
+
+.
+ נניח בשלילה כי היא רגולרית, ויהי 
+\begin_inset Formula $p>0$
+\end_inset
+
+ קבוע הניפוח.
+ יהי 
+\begin_inset Formula $n$
+\end_inset
+
+ מינימלי כך ש-
+\begin_inset Formula $p<2^{n}$
+\end_inset
+
+.
+ אזי המילה 
+\begin_inset Formula $w=1^{2^{n}}$
+\end_inset
+
+ מקיימת כי 
+\begin_inset Formula $\left|w\right|>p$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $xyz$
+\end_inset
+
+ ההצגה של 
+\begin_inset Formula $w$
+\end_inset
+
+ המקיימת את תנאי הלמה.
+ אז 
+\begin_inset Formula $0<\left|y\right|\leq p$
+\end_inset
+
+.
+ נטען כי המילה 
+\begin_inset Formula $xyyz$
+\end_inset
+
+ אינה בשפה.
+ 
+\begin_inset Formula 
+\[
+\left|xyyz\right|=\left|xyz\right|+\left|y\right|=2^{n}+\left|y\right|\leq2^{n}+p<2^{n}+2^{n}=2^{n+1}
+\]
+
+\end_inset
+
+קיבלנו כי
+\begin_inset Formula 
+\[
+2^{n}<\left|xyyz\right|<2^{n+1}
+\]
+
+\end_inset
+
+אבל כל מילה בשפה 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ אורכה חזקה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, סתירה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{3}=\left\{ 1^{k}\mid k\text{ is a prime}\right\} $
+\end_inset
+
+.
+ נניח בשלילה כי היא רגולרית.
+ יהי 
+\begin_inset Formula $p>0$
+\end_inset
+
+ קבוע הניפוח.
+ יהי 
+\begin_inset Formula $k$
+\end_inset
+
+ הראשוני הראשון שגדול מ-
+\begin_inset Formula $p$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left|1^{k}\right|>p$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $1^{k}=xyz$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $0<\left|y\right|\leq p$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+xy^{k+1}z=1^{k+k\left|y\right|}
+\]
+
+\end_inset
+
+גם אמורה להיות מילה בשפה, אבל
+\begin_inset Formula 
+\[
+\left|xy^{k+1}z\right|=k+\left|y\right|\cdot k=k\cdot\left(1+\left|y\right|\right)
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $k\cdot\left(1+\left|y\right|\right)$
+\end_inset
+
+ אינו מספר ראשוני )כי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $1+\left|y\right|$
+\end_inset
+
+ מחלק שלו(, משמע 
+\begin_inset Formula $1^{k\left(1+\left|y\right|\right)}$
+\end_inset
+
+ לא בשפה, סתירה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{4}=\left\{ 0^{i}1^{j}\mid i,j\geq0,\,i>j\right\} $
+\end_inset
+
+.
+ נניח בשלילה כי היא רגולרית, ויהי 
+\begin_inset Formula $p>0$
+\end_inset
+
+ קבוע הניפוח.
+ המילה 
+\begin_inset Formula $w=0^{p}1^{p-1}$
+\end_inset
+
+ אורכה גדול מ-
+\begin_inset Formula $p$
+\end_inset
+
+ ולכן היא קיימים 
+\begin_inset Formula $xyz$
+\end_inset
+
+ כמו בלמה.
+ נשים לב ש-
+\begin_inset Formula $xy=0^{\left|xy\right|}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+.
+ מהלמה, המילה
+\begin_inset Formula 
+\[
+xz=0^{p-\left|y\right|}1^{p-1}
+\]
+
+\end_inset
+
+ בשפה, אבל 
+\begin_inset Formula $i'=p-\left|y\right|\leq p-1=\left|j\right|$
+\end_inset
+
+ בסתירה להגדרת השפה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+הטעות של עידו היא שהוא הניח חלוקה ספציפית, משמע הניח כי 
+\begin_inset Formula $x=a^{p-2}$
+\end_inset
+
+ וכו'.
+ הלמה לא מבטיחה לנו את זה, היא רק מבטיחה קיום כלשהו של חלוקה לפי תנאי הלמה.
+\end_layout
+
+\begin_layout Enumerate
+ניקח את המילה 
+\begin_inset Formula $w=a^{p}ba^{p}$
+\end_inset
+
+.
+ לפי הלמה קיימת חלוקה 
+\begin_inset Formula $xyz$
+\end_inset
+
+.
+ בפרט נובע כי 
+\begin_inset Formula $xy=a^{\left|xy\right|}$
+\end_inset
+
+ )כי 
+\begin_inset Formula $\left|xy\right|\leq p$
+\end_inset
+
+(.
+ לכן המילה
+\begin_inset Formula 
+\[
+xz=a^{p-\left|y\right|}ba^{p}
+\]
+
+\end_inset
+
+כבר לא בשפה, כי 
+\begin_inset Formula $b$
+\end_inset
+
+ אמור להופיע פעמיים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+דוגמה נגדית: תהי 
+\begin_inset Formula $L=\left\{ 1^{2^{n}}\mid n\geq0\right\} $
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $L_{bin}=\left\{ 10^{n}\mid n\geq0\right\} $
+\end_inset
+
+.
+ זו אכן שפה רגולרית, אבל הראנו כי 
+\begin_inset Formula $L$
+\end_inset
+
+ אינה רגולרית.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma=\left\{ 0,1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L_{1}=\left\{ w\in\Sigma^{*}\mid w\text{ starts with 1 and ends with 0}\right\} $
+\end_inset
+
+.
+ ביטוי רגולרי:
+\begin_inset Formula 
+\[
+1\cdot\left(0\cup1\right)\cdot0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{2}=\left\{ w\in\Sigma^{*}\mid\text{the length of w is at most 5}\right\} $
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $R_{n}=\underbrace{\left(0\cup1\right)\cdot...\cdot\left(0\cup1\right)}_{\text{n times}}$
+\end_inset
+
+.
+ ביטוי רגולרי:
+\begin_inset Formula 
+\[
+\left(\varepsilon\cup\left(R_{1}\cup\left(R_{2}\cup\left(R_{3}\cup\left(R_{4}\cup R_{5}\right)\right)\right)\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L=\left\{ a^{i}b^{j}c^{k}\mid2\vert i\,\vee\,j=k\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p=2$
+\end_inset
+
+ קבוע הניפוח.
+ תהי 
+\begin_inset Formula $w=a^{i}b^{j}c^{k}\in L$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|w\right|>2$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $i=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $w=b^{j}c^{k}$
+\end_inset
+
+ ונבחר 
+\begin_inset Formula $x=\varepsilon$
+\end_inset
+
+, 
+\begin_inset Formula $y=b$
+\end_inset
+
+ ו-
+\begin_inset Formula $z$
+\end_inset
+
+ שאר המילה.
+ אז 
+\begin_inset Formula $\left|y\right|>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left|xy\right|=\left|b\right|\leq2$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $s$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+y^{s}z=b^{j-1+s}c
+\]
+
+\end_inset
+
+בכל מקרה מספר המופעים של 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא אפס, זוגי ולכן המילה בשפה.
+ אם 
+\begin_inset Formula $i>0$
+\end_inset
+
+ וזוגי אז נבחר 
+\begin_inset Formula $x=\varepsilon,y=aa$
+\end_inset
+
+ ו-
+\begin_inset Formula $z$
+\end_inset
+
+ מה שנותר.
+ אז
+\begin_inset Formula 
+\[
+y^{s}z=a^{i-2+2\left|s\right|}b^{j}c^{k}
+\]
+
+\end_inset
+
+ולכן בכל מקרה במילה החדשה מספר המופעים של 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא זוגי ולכן זו מילה.
+ אם 
+\begin_inset Formula $i>0$
+\end_inset
+
+ ואי-זוגי, אז נבחר 
+\begin_inset Formula $x=\varepsilon,y=a$
+\end_inset
+
+ ו-
+\begin_inset Formula $z$
+\end_inset
+
+ השאר.
+ בכיוון ש-
+\begin_inset Formula $w$
+\end_inset
+
+ מילה בשפה ו-
+\begin_inset Formula $i$
+\end_inset
+
+ אי-זוגי, בהכרח 
+\begin_inset Formula $j=k$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula 
+\[
+y^{s}z=a^{i-1+\left|s\right|}b^{j}c^{k}
+\]
+
+\end_inset
+
+עדיין מקיימת כי 
+\begin_inset Formula $j=k$
+\end_inset
+
+ ולכן בשפה כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נניח בשלילה כי היא רגולרית.
+ השפה 
+\begin_inset Formula $L'$
+\end_inset
+
+ שמכילה את כל המילים ש-
+\begin_inset Formula $a$
+\end_inset
+
+ מופיע בהן פעם אחת רגולרית, לכן מסגירות לחיתוך נקבל כי 
+\begin_inset Formula $L\cap L'=\left\{ ab^{j}c^{j}\mid j\geq0\right\} $
+\end_inset
+
+ רגולרית.
+ מלמת הניפוח יהיה 
+\begin_inset Formula $p>0$
+\end_inset
+
+ קבוע הניפוח.
+ אז למילה 
+\begin_inset Formula $w=ab^{p}c^{p}$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $w=xyz$
+\end_inset
+
+ עם התנאים בלמה.
+ ע"י ניפוח אנחנו יכולים להוסיף רק 
+\begin_inset Formula $a$
+\end_inset
+
+ או 
+\begin_inset Formula $b$
+\end_inset
+
+, לכן בכל מקרה נקבל מילה שלא יכולה להיות בשפה.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
