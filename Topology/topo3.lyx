@@ -142,8 +142,207 @@ status open
 \end_inset
 
 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב מטרי דיסקרטי.
+ 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ עם המטריקה הסטנדרטית.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+כל פונקציה מ-
+\begin_inset Formula $X$
+\end_inset
+
+ ל-
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ היא רציפה כי כל תת קבוצה של 
+\begin_inset Formula $X$
+\end_inset
+
+ פתוחה, ולכן התנאי לרציפות מתקיים באופן טריוויאלי.
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $f\colon\mathbb{R}\to X$
+\end_inset
+
+ רציפה לא קבועה.
+ יהיה 
+\begin_inset Formula $y\in\text{Im}f$
+\end_inset
+
+.
+ בנוסף מההנחה 
+\begin_inset Formula $\text{Im}f\backslash\left\{ y\right\} \neq\varnothing$
+\end_inset
+
+.
+ שתיהן פתוחות כי הן נמצאות בטופולוגיה הדיסקרטית, ולכן 
+\begin_inset Formula $A=f^{-1}\left(\left\{ y\right\} \right),\,B=f^{-1}\left(\text{Im}f\backslash\left\{ y\right\} \right)$
+\end_inset
+
+ שתיהן פתוחות וזרות )זרות כי הן מקורות של איברים שונים, אז מחד-ערכיות(.
+ בנוסף 
+\begin_inset Formula $A\cup B=\mathbb{R}$
+\end_inset
+
+, כי לכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+f\left(x\right)=y\Rightarrow x\in A
+\]
+
+\end_inset
+
+או 
+\begin_inset Formula 
+\[
+f\left(x\right)\neq y\Rightarrow f\left(x\right)\in\text{Im}f\backslash\left\{ y\right\} \Rightarrow x\in B
+\]
+
+\end_inset
+
+כעת, יהי 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ קיים קטע 
+\begin_inset Formula $\left(c,d\right)\subset\mathbb{R}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $a\in\left(c,d\right)\subset A$
+\end_inset
+
+.
+ כעת בהכרח קיים 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $b\leq c$
+\end_inset
+
+ או 
+\begin_inset Formula $b\geq d$
+\end_inset
+
+ )אחרת נסיק כי 
+\begin_inset Formula $B$
+\end_inset
+
+ ריקה וזו סתירה(.
+ נניח בה"כ 
+\begin_inset Formula $b\leq c$
+\end_inset
+
+.
+ נגדיר
+\begin_inset Formula 
+\[
+C=\left\{ c'\mid\left(c',d\right)\subseteq A\right\} 
+\]
+
+\end_inset
+
+אז קבוצה זו לא ריקה חסומה מלרע ע"י 
+\begin_inset Formula $b$
+\end_inset
+
+ ולכן יש לה אינפימום 
+\begin_inset Formula $m<a$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $m$
+\end_inset
+
+ היא מינימום כי לכל 
+\begin_inset Formula $x\in\left(m,d\right)$
+\end_inset
+
+ נבחר 
+\begin_inset Formula $m<x'<x$
+\end_inset
+
+, אז ממינימליות 
+\begin_inset Formula $m$
+\end_inset
+
+ 
+\begin_inset Formula $x'\in C$
+\end_inset
+
+, לכן 
+\begin_inset Formula $x\in\left(x',d\right)\subset A$
+\end_inset
+
+, משמע 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left(m,d\right)\subset A$
+\end_inset
+
+.
+ כעת, אין קטע פתוח שמכסה את 
+\begin_inset Formula $m$
+\end_inset
+
+ ומוכל רק באחת הקבוצות, כי אם 
+\begin_inset Formula $m\in\left(x,y\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(x,y\right)\cap\left(m,d\right)\subseteq A$
+\end_inset
+
+ והחיתוך לא ריק.
+ מצד שני 
+\begin_inset Formula $x<m$
+\end_inset
+
+ משמע 
+\begin_inset Formula $\left(x,d\right)\not\subseteq A$
+\end_inset
+
+ )בפרט יש נקודות מ-
+\begin_inset Formula $B$
+\end_inset
+
+ בקטע 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ כי 
+\begin_inset Formula $m<y$
+\end_inset
+
+( ולכן 
+\begin_inset Formula $\left(x,y\right)\cap B\neq\varnothing$
+\end_inset
+
+.
+ סתירה.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $X$
 \end_inset
@@ -615,7 +814,7 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-ג' 
+א' 
 \begin_inset Formula $\Leftarrow$
 \end_inset
 
@@ -624,39 +823,60 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-תהא 
-\begin_inset Formula $A\subset X$
+תהי 
+\begin_inset Formula $x\in\overline{A}$
 \end_inset
 
 .
- 
-\begin_inset Formula $\overline{f\left(A\right)}$
+ תהי 
+\begin_inset Formula $U$
 \end_inset
 
- קבוצה סגורה ולכן 
-\begin_inset Formula $f^{-1}\left(\overline{f\left(A\right)}\right)$
+ פתוחה המכילה את 
+\begin_inset Formula $f\left(x\right)$
 \end_inset
 
- סגורה.
- 
-\begin_inset Formula $A\subset f^{-1}\left(\overline{f\left(A\right)}\right)$
+.
+ אזי 
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+ גם פתוחה, ומכילה את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ לכן מכך ש-
+\begin_inset Formula $x$
+\end_inset
+
+ בסגור של 
+\begin_inset Formula $A$
+\end_inset
+
+, נובע כי 
+\begin_inset Formula $f^{-1}\left(U\right)\cap A\neq\varnothing$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $y$
+\end_inset
+
+ בחיתוך.
+ אז 
+\begin_inset Formula $U\cap f\left(A\right)\neq\varnothing$
 \end_inset
 
  כי 
-\begin_inset Formula $f\left(A\right)\subset\overline{f\left(A\right)}$
+\begin_inset Formula $f\left(y\right)\in U$
 \end_inset
 
-.
- ממינימליות הסגור נובע כי 
-\begin_inset Formula $\overline{A}\subset f^{-1}\left(\overline{f\left(A\right)}\right)$
+ ו-
+\begin_inset Formula $f\left(y\right)\in f\left(A\right)$
 \end_inset
 
-.
- אז 
-\begin_inset Formula $f\left(\overline{A}\right)\subset f\left(f^{-1}\left(\overline{f\left(A\right)}\right)\right)\subset f\overline{\left(A\right)}$
-\end_inset
-
-.
+, כנדרש.
 \end_layout
 
 \end_deeper
@@ -665,7 +885,69 @@ status open
 \begin_inset Formula $\Leftarrow$
 \end_inset
 
- א': תהא 
+ ג':
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A\subset Y$
+\end_inset
+
+.
+ נרצה להראות כי 
+\begin_inset Formula $f^{-1}\left(A\right)$
+\end_inset
+
+ סגורה ב-
+\begin_inset Formula $X$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $x\in\overline{f^{-1}\left(A\right)}$
+\end_inset
+
+, אז 
+\begin_inset Formula $f\left(x\right)\in f\left(\overline{f^{-1}\left(A\right)}\right)\subset\overline{f\left(f^{-1}\left(A\right)\right)}\subset\overline{A}=A$
+\end_inset
+
+ )כי 
+\begin_inset Formula $A$
+\end_inset
+
+ סגורה(.
+ לכן 
+\begin_inset Formula $x\in f^{-1}\left(A\right)$
+\end_inset
+
+, סה"כ קיבלנו כי 
+\begin_inset Formula $\overline{f^{-1}\left(A\right)}\subseteq f^{-1}\left(A\right)$
+\end_inset
+
+ ומכך נובע כי 
+\begin_inset Formula $f^{-1}\left(A\right)=\overline{f^{-1}\left(A\right)}$
+\end_inset
+
+, משמע 
+\begin_inset Formula $f^{-1}\left(A\right)$
+\end_inset
+
+ סגורה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ג' 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ א':
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהי 
 \begin_inset Formula $U$
 \end_inset
 
@@ -678,9 +960,183 @@ status open
 \begin_inset Formula $Y\backslash U$
 \end_inset
 
- סגורה.
+ סגורה ב-
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ מהנחה 
+\begin_inset Formula $f^{-1}\left(Y\backslash U\right)$
+\end_inset
+
+ סגורה ב-
+\begin_inset Formula $X$
+\end_inset
+
+.
+ נטען כי 
+\begin_inset Formula 
+\[
+f^{-1}\left(Y\backslash U\right)=X\backslash f^{-1}\left(U\right)
+\]
+
+\end_inset
+
+ואכן לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ בצד הימני, 
+\begin_inset Formula 
+\[
+f\left(x\right)\notin U\Rightarrow f\left(x\right)\in Y\backslash U\Rightarrow x\in f^{-1}\left(Y\backslash U\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ בצד השמאלי,
+\begin_inset Formula 
+\[
+f\left(x\right)\in Y\backslash U\Rightarrow f\left(x\right)\notin U\Rightarrow x\notin f^{-1}\left(U\right)\Rightarrow x\in X\backslash f^{-1}\left(U\right)
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $X\backslash f^{-1}\left(U\right)$
+\end_inset
+
+ סגורה, ולכן 
+\begin_inset Formula $X\backslash\left(X\backslash f^{-1}\left(U\right)\right)=f^{-1}\left(U\right)$
+\end_inset
+
+ פתוחה כנדרש.
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+א' 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ד':
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהא 
+\begin_inset Formula $x\in X$
+\end_inset
+
+.
+ תהא 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה המכילה את 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $V=f^{-1}\left(U\right)$
+\end_inset
+
+ פתוחה ומכילה את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ בפרט, 
+\begin_inset Formula $f\left(V\right)\subseteq U$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ד' 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ א':
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה ב-
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $x\in f^{-1}\left(U\right)$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ פתוחה המכילה את 
+\begin_inset Formula $x$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $f\left(V_{x}\right)\subset U$
+\end_inset
+
+.
+ נטען כי
+\begin_inset Formula 
+\[
+f^{-1}\left(U\right)=\bigcup_{x\in f^{-1}\left(U\right)}V_{x}
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ ישיר כי 
+\begin_inset Formula $x\in V_{x}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ מצד שני, לכל 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $V_{x}\subseteq f^{-1}\left(U\right)$
+\end_inset
+
+ ולכן גם האיחוד מוכל ב-
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+ איחוד של פתוחות ולכן פתוחה בעצמה.
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document
