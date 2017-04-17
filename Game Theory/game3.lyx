@@ -293,18 +293,1126 @@ q+2\left(1-q\right)=3q\iff4q=2\iff q=\frac{1}{2}
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset ERT
-status open
+\begin_inset Formula 
+\[
+\begin{bmatrix}6 & 3 & 1\\
+2 & 4 & 5
+\end{bmatrix}
+\]
 
-\begin_layout Plain Layout
+\end_inset
 
+נחפש נק' שיווי משקל לפי חלוקה למקרים:
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+שני השחקנים משחקים עם אסטרטגיות טהורות.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אין אף נקודה שהיא מקסימלית בעמודה שלה )משמע שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא ירצה להחליף( וגם מינימלית בשורה שלה )משמע שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא ירצה להחליף( לכן אין נק' שיווי משקל.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מערב ושחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+טהור:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בחר ב-
+\begin_inset Formula $\begin{bmatrix}1\\
+0\\
+0
+\end{bmatrix}$
+\end_inset
+
+ נקבל כי נרצה למקסם את 
+\begin_inset Formula $\begin{bmatrix}p & 1-p\end{bmatrix}\begin{bmatrix}6\\
+2
+\end{bmatrix}=6p+2\cdot\left(1-p\right)=4p+2$
+\end_inset
+
+ משמע נרצה ש-
+\begin_inset Formula $p=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בחר ב-
+\begin_inset Formula $\begin{bmatrix}0\\
+1\\
+0
+\end{bmatrix}$
+\end_inset
+
+ נקבל כי נרצה למקסם את 
+\begin_inset Formula $\begin{bmatrix}p & 1-p\end{bmatrix}\begin{bmatrix}3\\
+4
+\end{bmatrix}=3p+4\cdot\left(1-p\right)=4-p$
+\end_inset
+
+ משמע נרצה ש-
+\begin_inset Formula $p=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בחר ב-
+\begin_inset Formula $\begin{bmatrix}0\\
+0\\
+1
+\end{bmatrix}$
+\end_inset
+
+ נקבל כי נרצה למקסם את 
+\begin_inset Formula $\begin{bmatrix}p & 1-p\end{bmatrix}\begin{bmatrix}1\\
+5
+\end{bmatrix}=p+5\cdot\left(1-p\right)=5-4p$
+\end_inset
+
+ משמע נרצה ש-
+\begin_inset Formula $p=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בכל מקרה נקבל שוב אסטרטגיה טהורה ולכן אין נק' שיווי משקל במקרה זה.
+\end_layout
+
+\begin_layout Standard
+אם שחקן 
+\begin_inset Formula $1$
+\end_inset
+
+ טהור ו-
+\begin_inset Formula $2$
+\end_inset
+
+ מערב אז
+\end_layout
+
+\begin_layout Itemize
+אם שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בחר ב-
+\begin_inset Formula $\begin{bmatrix}1\\
+0
+\end{bmatrix}$
+\end_inset
+
+ אז נרצה למזער את 
+\begin_inset Formula $\begin{bmatrix}6 & 3 & 1\end{bmatrix}\begin{bmatrix}p\\
+q\\
+1-p-q
+\end{bmatrix}=6p+3q+1-p-q=5p+2q+1$
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $p,q=0$
+\end_inset
+
+ ונקבל מינימום, אבל במצב זה 
+\begin_inset Formula $1-p-q=1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אם שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בחר ב-
+\begin_inset Formula $\begin{bmatrix}0\\
+1
+\end{bmatrix}$
+\end_inset
+
+ אז נרצה למזער את 
+\begin_inset Formula $\begin{bmatrix}2 & 4 & 5\end{bmatrix}\begin{bmatrix}p\\
+q\\
+1-p-q
+\end{bmatrix}=2p+4q+5-5p-5q=5-3p-q$
+\end_inset
+
+מכך ש-
+\begin_inset Formula $0\leq1-p-q$
+\end_inset
+
+ משמע 
+\begin_inset Formula $-q\geq p-1$
+\end_inset
+
+נובע כי
+\begin_inset Formula 
+\[
+5-3p-q\geq5-3p+p-1=4-2p\geq2
+\]
+
+\end_inset
+
+ והמינימום מתקבל כאשר 
+\begin_inset Formula $p=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בכל מקרה חזרנו לאסטרטגיה טהורה ולכן מהמקרה הראשון אין נק' שיווי משקל.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נניח שני השחקנים מערבים.
+ אז שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חייב להיות אדיש לבחירת האסטרטגיה של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, משמע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula 
+\begin{align*}
+6p+3q+1-p-q & =2p+4q+5-5p-5q\\
+\iff & 5p+2q+1=5-3p-q\\
+\iff & 8p+3q=4\\
+\iff & q=\frac{4-8p}{3}
+\end{align*}
+
+\end_inset
+
+בפרט
+\begin_inset Formula 
+\[
+0\leq4-8p\leq3\iff-3\leq8p-4\leq0\iff1\leq8p\leq4\iff\frac{1}{8}\leq p\leq\frac{1}{2}
+\]
+
+\end_inset
+
+אז האסטרטגיה האופטימלית היא מהצורה 
+\begin_inset Formula $\begin{bmatrix}p\\
+\frac{4-8p}{3}\\
+1-\frac{4-8p}{3}-p
+\end{bmatrix}$
+\end_inset
+
+.
+ נמצא לאיזה 
+\begin_inset Formula $p$
+\end_inset
+
+ נקבל ערך מינימלי:
+\begin_inset Formula 
+\[
+6p+4-8p+1-p-\frac{4-8p}{3}=\frac{-9p+15-4+8p}{3}=\frac{-p+11}{3}
+\]
+
+\end_inset
+
+הערך המינימלי יתקבל כש-
+\begin_inset Formula $p$
+\end_inset
+
+ מקסימלי, משמע 
+\begin_inset Formula $p=\frac{1}{2}$
+\end_inset
+
+.
+ לכן סה"כ האסטרטגיה האופטימלית היא 
+\begin_inset Formula $\begin{bmatrix}\frac{1}{2}\\
+0\\
+\frac{1}{2}
+\end{bmatrix}$
+\end_inset
+
+, וערך המשחק הוא 
+\begin_inset Formula $3\frac{1}{2}$
+\end_inset
+
+.
+ כעת מכך שכבר מצאנו אסט' אופטימלית לשחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כשנחפש אסט' אופטימלית לשחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נהיה חייבים לדרוש מראש כי שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אדיש לאסט'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, אחרת נקבל סתירה לאופטימליות האסט' שמצאנו.
+ לכן
+\begin_inset Formula 
+\[
+4p+2=5-4p\iff8p=3\iff p=\frac{3}{8}
+\]
+
+\end_inset
+
+והאסט' האופטימלית של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא 
+\begin_inset Formula $\begin{bmatrix}\frac{3}{8}\\
+\frac{5}{8}
+\end{bmatrix}$
+\end_inset
+
+ ואכן הרווח המובטח הוא שוב 
+\begin_inset Formula $3\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula 
@@ -672,18 +1780,130 @@ b_{i}=a_{i}+i=x+i<x+y-x=y
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Formula $P\subseteq\hat{P}$
 \end_inset
 
+.
+ באינדוקציה על 
+\begin_inset Formula $n$
+\end_inset
 
+:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+בסיס: 
+\begin_inset Formula $P_{0}\subset\hat{P}$
+\end_inset
+
+ כי 
+\begin_inset Formula $P_{0}=\left\{ \left(0,0\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נניח כי 
+\begin_inset Formula $P_{n}\subset\hat{P}$
+\end_inset
+
+ ונראה כי 
+\begin_inset Formula $P_{n+1}\subset\hat{P}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה כי 
+\begin_inset Formula $P_{n+1}\nsubseteq\hat{P}$
+\end_inset
+
+.
+ אז קיים 
+\begin_inset Formula $\left(x,y\right)\in P_{n+1}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left(x,y\right)\notin\hat{P}$
+\end_inset
+
+.
+ מסעיף ב' קיים מהלך חוקי המתחיל ב-
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ ומסתיים ב-
+\begin_inset Formula $\left(x',y'\right)\in\hat{P}$
+\end_inset
+
+.
+ אבל מהגדרת 
+\begin_inset Formula $P_{n+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(x',y'\right)\in N_{i}$
+\end_inset
+
+.
+ לכן קיים מהלך חוקי המתחיל ב-
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+ ומסתיים ב-
+\begin_inset Formula $\left(x'',y''\right)\in P_{i}$
+\end_inset
+
+.
+ מצד שני מסעיף א' 
+\begin_inset Formula $\left(x'',y''\right)\notin\hat{P}$
+\end_inset
+
+ בסתירה להנחת האינדוקציה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{P}\subseteq P$
+\end_inset
+
+.
+ בגלל שהמשחק מאוזן, מספיק שנראה כי 
+\begin_inset Formula $N\cap\hat{P}=\varnothing$
+\end_inset
+
+ )כי כל מצב הוא או ב-
+\begin_inset Formula $P$
+\end_inset
+
+ או ב-
+\begin_inset Formula $N$
+\end_inset
+
+(.
+ ואכן אם היה מצב 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ בחיתוך, אז היה מהלך חוקי שמתחיל בו ומסתיים ב-
+\begin_inset Formula $\left(x',y'\right)\in P$
+\end_inset
+
+.
+ אבל מסעיף א' נובע כי 
+\begin_inset Formula $\left(x',y'\right)\notin\hat{P}$
+\end_inset
+
+ בסתירה לכך ש-
+\begin_inset Formula $P\subset\hat{P}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 מצב משחק זה שייך לקבוצה 
@@ -708,8 +1928,694 @@ status open
 \end_inset
 
 .
- כעת כל מהלך שיבצע נעשה בכיוון ההפוך.
 \end_layout
 
+\begin_layout Enumerate
+בהנחה וזה נים בו האחרון שלוקח מנצח, בכיתה הראנו כי אפשר לדעת לפי סכום נים
+ של המספרים הבינארים האם זה מצב 
+\begin_inset Formula $N$
+\end_inset
+
+ או 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+9 & =1001\\
+10 & =1010\\
+11 & =1011\\
+12 & =1100
+\end{align*}
+
+\end_inset
+
+הסכום נים הוא
+\begin_inset Formula 
+\[
+0100
+\]
+
+\end_inset
+
+לכן זהו מצב מנצח.
+ המהלך המנצח הוא לקחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+גפרורים מהערימה של ה-
+\numeric on
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכך הסכום נים יתאפס.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מבחינת מצבי משחק ומהלכים חוקיים, אפשר להתאים אותם בצורה חח"על ששומרת על
+ ההגיון של המשחק כי בסופו של דבר גם ב-
+\begin_inset Formula $G_{1}\oplus G_{2}$
+\end_inset
+
+ וגם ב-
+\begin_inset Formula $G$
+\end_inset
+
+ יש 
+\begin_inset Formula $n$
+\end_inset
+
+ ערימות של גפרורים.
+ לבסוף, המצב המנצח הוא גם זהה כיוון שבשניהם נדרוש שכל הערימות ריקות )ב-
+\begin_inset Formula $G$
+\end_inset
+
+ פשוט לפי החוקים וב-
+\begin_inset Formula $G_{1}\oplus G_{2}$
+\end_inset
+
+ כי אחרת אחד המשחקים לא הסתיים(.
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $x\in N_{G_{1}}$
+\end_inset
+
+ ו-
+\begin_inset Formula $y\in P_{G_{2}}$
+\end_inset
+
+.
+ אז קיימים 
+\begin_inset Formula $i,j$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $y\in P_{G_{2},i}$
+\end_inset
+
+ ו-
+\begin_inset Formula $x\in N_{G_{1},j}$
+\end_inset
+
+.
+ נראה את הטענה באינדוקציה על הסכום 
+\begin_inset Formula $i+j$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בסיס: 
+\begin_inset Formula $i+j=1$
+\end_inset
+
+.
+ אז בהכרח 
+\begin_inset Formula $i=0$
+\end_inset
+
+, משמע המשחק 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ נגמר כבר.
+ אז במהלך הבא השחקן יביא את 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ למצב ב-
+\begin_inset Formula $P_{G_{1},0}$
+\end_inset
+
+ משמע הוא ינצח.
+\end_layout
+
+\begin_layout Itemize
+נניח שהטענה נכונה ל-
+\begin_inset Formula $i+j<n$
+\end_inset
+
+ ונראה ל-
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נבחר במהלך החוקי שמתחיל ב-
+\begin_inset Formula $x\in N_{G_{1},j}$
+\end_inset
+
+ ונגמר ב-
+\begin_inset Formula $x'\in P_{G_{1},j-1}$
+\end_inset
+
+.
+ כעת, מצב המשחק הוא 
+\begin_inset Formula $\left(x',y\right)\in P_{G_{1},j-1}\times P_{G_{2},i}$
+\end_inset
+
+.
+ אם השחקן השני יבחר לשחק ב-
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ נקבל לכל מהלך 
+\begin_inset Formula $\left(x'',y\right)\in N_{G_{1},j-2}\times P_{G_{2},i}$
+\end_inset
+
+ ומהנחת האינדוקציה )
+\begin_inset Formula $j-2+i<j+i$
+\end_inset
+
+( מצב זה נמצא ב-
+\begin_inset Formula $N_{G_{1}\oplus G_{2}}$
+\end_inset
+
+.
+ באותו אופן אם הוא יבחר לשחק ב-
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ נקבל מצב משחק 
+\begin_inset Formula $\left(x',y'\right)\in P_{G_{1},j-1}\times N_{G_{2},i-1}$
+\end_inset
+
+ ושוב מהנחת האינדוקציה 
+\begin_inset Formula $\left(x',y'\right)\in N_{G_{1}\oplus G_{2}}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left(x',y\right)$
+\end_inset
+
+ היה ב-
+\begin_inset Formula $P$
+\end_inset
+
+, משמע 
+\begin_inset Formula $\left(x,y\right)\in N_{G_{1}\oplus G_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם אין מצבים חוקיים אנחנו במצב סופי ולכן 
+\begin_inset Formula $\left(x,y\right)\in P_{G_{1}\oplus G_{2},0}$
+\end_inset
+
+.
+ אחרת, כיוון שכל מהלך יוביל אותנו למצב זהה לסעיף ב', נקבל שהמצב החדש יהיה
+ ב-
+\begin_inset Formula $N_{G_{1}\oplus G_{2}}$
+\end_inset
+
+, נסיק כי 
+\begin_inset Formula $\left(x,y\right)\in P_{G_{1}\oplus G_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G_{1},G_{2}$
+\end_inset
+
+ שני משחקי נים עם ערימה אחת וגפרור אחד.
+ זה מצב מנצח בשניהם, אבל ב-
+\begin_inset Formula $G_{1}\oplus G_{2}$
+\end_inset
+
+ זה מצב מפסיד כיוון שאין ברירה לשחקן הראשון אלא לנצח במשחק הראשון, ולהשאיר
+ לשחקן השני ניצחון במשחק האחרון.
+\end_layout
+
+\begin_layout Enumerate
+שוב 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ משחק נים עם ערימה אחת בעלת גפרור אחד, אבל 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ בעל שני גפרורים.
+ כעת יכול השחקן הראשון ב-
+\begin_inset Formula $G_{1}\oplus G_{2}$
+\end_inset
+
+ להביא את 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ למצב של 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ ואז השחקן השני יהיה במצב זהה לסעיף ד', משמע יפסיד.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+בעץ עם שני קודקודים זה ישיר.
+ יהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף ונניח שיש לפחות שלושה קודקודים, ונניח בשלילה שאין אף עלה בגרף.
+ אז לכל קודקוד יש לפחות שני שכנים שונים.
+ נניח כי 
+\begin_inset Formula $V=\left(v_{1},...,v_{n}\right)$
+\end_inset
+
+.
+ אז תהיה 
+\begin_inset Formula 
+\[
+u_{1},...,u_{n},u_{n+1}
+\]
+
+\end_inset
+
+סדרת קודקודים כך ש-
+\begin_inset Formula $u_{1}=v_{1}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $2\leq i\leq n$
+\end_inset
+
+, מתקיים כי 
+\begin_inset Formula $u_{i-1},u_{i+1}$
+\end_inset
+
+ שכנים שונים של הקודקוד 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ )מההנחה בשלילה ניתן לבחור כאלה(.
+ משובך היונים בהכרח יש שני קודקודים זהים בסדרה זו, 
+\begin_inset Formula $u_{i},u_{j}$
+\end_inset
+
+, נניח בה"כ 
+\begin_inset Formula $i<j$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $j\neq i+1$
+\end_inset
+
+ כי הגרף לא רפלקסיבי, ו-
+\begin_inset Formula $j\neq i+2$
+\end_inset
+
+ כי אחרת מבניית הסדרה 
+\begin_inset Formula $u_{i},u_{i+2}$
+\end_inset
+
+ לא שכנים שונים של 
+\begin_inset Formula $u_{i+1}$
+\end_inset
+
+.
+ אז ב-
+\begin_inset Formula $u_{i},u_{i+1},u_{i+2},\dots,u_{j}$
+\end_inset
+
+ יש לפחות שלושה קודקודים שונים והקודקוד הראשון והאחרון זהים, משמע זהו מעגל,
+ בסתירה להגדרת העץ.
+\end_layout
+
+\begin_layout Enumerate
+דוגמא נגדית:
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/ofer/Pictures/Screenshot from 2017-04-17 11-11-46.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\numeric on
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עלים.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+באינדוקציה על מספר הקודקודים בעץ:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בסיס: 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ ברור.
+\end_layout
+
+\begin_layout Itemize
+נניח שהטענה נכונה ל-
+\begin_inset Formula $n$
+\end_inset
+
+ ונראה ל-
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $T=\left\langle V,E\right\rangle $
+\end_inset
+
+ עץ בעל 
+\begin_inset Formula $n+1$
+\end_inset
+
+ קודקודים.
+ מסעיף א' יש בעץ עלה 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ נגדיר עץ חדש 
+\begin_inset Formula $T'$
+\end_inset
+
+ ללא 
+\begin_inset Formula $v$
+\end_inset
+
+ וללא הצלע 
+\begin_inset Formula $\left(v,u\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $u$
+\end_inset
+
+ השכן היחיד של 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $T'$
+\end_inset
+
+ גם עץ, כיוון שהוא עדיין חסר מעגלים )לא הוספנו צלעות חדשות( והוא עדיין קשיר
+ )לכל מסלול שעבר דרך 
+\begin_inset Formula $v$
+\end_inset
+
+ יש מסלול שמתחיל ומסתיים באותם קודקודים ללא 
+\begin_inset Formula $v$
+\end_inset
+
+, מכך שהוא עלה(.
+ בנוסף ל-
+\begin_inset Formula $T'$
+\end_inset
+
+ יש 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים, ולכן מהנחת האינדוקציה יש בו 
+\begin_inset Formula $n-1$
+\end_inset
+
+ צלעות.
+ כיוון שהסרנו רק צלע אחת מ-
+\begin_inset Formula $T$
+\end_inset
+
+ ע"מ לקבל את 
+\begin_inset Formula $T'$
+\end_inset
+
+, נסיק כי ב-
+\begin_inset Formula $T$
+\end_inset
+
+ יש 
+\begin_inset Formula $n$
+\end_inset
+
+ צלעות כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+דוגמא נגדית: 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/ofer/Pictures/Screenshot from 2017-04-17 10-03-38.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+חמישה קודקודים, ארבע צלעות, לא עץ.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
