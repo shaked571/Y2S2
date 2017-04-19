@@ -1,0 +1,1028 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\rightmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+טופולוגיה - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $J$
+\end_inset
+
+ קבוצת אינדקסים.
+ נגדיר על 
+\begin_inset Formula $R^{J}$
+\end_inset
+
+ שלוש טופולוגיות.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ טופולוגית הקופסה
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\tau_{2}$
+\end_inset
+
+ טופולוגית המכפלה
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\tau_{3}$
+\end_inset
+
+ הטופולוגיה המושרית מהמטריקה 
+\begin_inset Formula $p\left(x,y\right)=\min\left\{ \sup\left\{ d\left(x_{\alpha},y_{\alpha}\mid\alpha\in J\right)\right\} ,1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז 
+\begin_inset Formula $\tau_{2}\subseteq\tau_{1}$
+\end_inset
+
+ כי הבסיס של 
+\begin_inset Formula $\tau_{2}$
+\end_inset
+
+ הוא מהצורה 
+\begin_inset Formula 
+\[
+\prod_{\alpha\in J}U_{\alpha}
+\]
+
+\end_inset
+
+כאשר למעט מספר סופי של אינדקסים 
+\begin_inset Formula $U_{\alpha}=\mathbb{R}$
+\end_inset
+
+ )באינדקסים האחרים קבוצה פתוחה(.
+ לעומת זאת ב-
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ הבסיס הוא מהצורה
+\begin_inset Formula 
+\[
+\prod_{\alpha\in J}U_{\alpha}
+\]
+
+\end_inset
+
+ללא הגבלה.
+ מכך שהבסיס של 
+\begin_inset Formula $\tau_{2}$
+\end_inset
+
+ מוכל בבסיס של 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ נובעת ההכלה.
+\end_layout
+
+\begin_layout Standard
+ננסה להבין את הבסיס של 
+\begin_inset Formula $\tau_{3}$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $r\geq=1$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+B_{r}\left(x\right)=\mathbb{R}^{J}
+\]
+
+\end_inset
+
+כי לכל 
+\begin_inset Formula $y_{1},y_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $p\left(y_{1},y_{2}\right)\leq1$
+\end_inset
+
+.
+ אחרת, 
+\begin_inset Formula $r<1$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+p\left(x,y\right)<r\iff\sup\left\{ d\left(x_{\alpha},y_{\alpha}\right)\mid\alpha\in J\right\} <r\iff\exists\epsilon>0\,\,\,\forall\alpha\in J\,\,\,d\left(x_{\alpha},y_{\alpha}\right)<r-\epsilon
+\]
+
+\end_inset
+
+משמע
+\begin_inset Formula 
+\[
+B_{r}\left(x\right)=\bigcup_{n=1}^{\infty}\left(\prod_{\alpha\in J}B_{r-\frac{1}{n}}\left(x_{\alpha}\right)\right)
+\]
+
+\end_inset
+
+אז הבסיס של 
+\begin_inset Formula $\tau_{3}$
+\end_inset
+
+ מוכל ב-
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ כי כל איבר בסיס הוא איחוד של איברים בבסיס של 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ )
+\begin_inset Formula $\prod_{\alpha\in J}B_{r-\frac{1}{n}}\left(x_{\alpha}\right)$
+\end_inset
+
+ איבר בבסיס של טופולוגית הקופסה(.
+ כיוון שהבסיס מוכל וטופולוגיה סגורה לאיחודים, גם 
+\begin_inset Formula $\tau_{3}$
+\end_inset
+
+ מוכל.
+ לעומת זאת 
+\begin_inset Formula $\tau_{2}$
+\end_inset
+
+ לא מוכל ב-
+\begin_inset Formula $\tau_{3}$
+\end_inset
+
+ כי בהינתן 
+\begin_inset Formula $\alpha_{0}\in J$
+\end_inset
+
+, הקבוצה 
+\begin_inset Formula 
+\[
+\prod_{\alpha\in J}U_{\alpha}
+\]
+
+\end_inset
+
+כאשר ל-
+\begin_inset Formula $U_{\alpha_{0}}=B_{1}\left(0\right)$
+\end_inset
+
+ וכל השאר 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ שייכת ל-
+\begin_inset Formula $\tau_{2}$
+\end_inset
+
+ אבל היא לא איחוד של איברים מבסיס 
+\begin_inset Formula $\tau_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת נניח 
+\begin_inset Formula $J=\mathbb{N}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\prod_{i=1}^{\infty}B_{1}\left(i\right)$
+\end_inset
+
+ פתוחה ב-
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ אבל לא ב-
+\begin_inset Formula $\tau_{2}$
+\end_inset
+
+ או ב-
+\begin_inset Formula $\tau_{3}$
+\end_inset
+
+, והקבוצה 
+\begin_inset Formula $\bigcup_{n=1}^{\infty}\left(\prod_{\alpha\in J}B_{1-\frac{1}{n}}\left(0\right)\right)$
+\end_inset
+
+ פתוחה ב-
+\begin_inset Formula $\tau_{3}$
+\end_inset
+
+ אבל לא פתוחה ב-
+\begin_inset Formula $\tau_{2}$
+\end_inset
+
+ )אם היא הייתה איחוד של איברי בסיס מ-
+\begin_inset Formula $\tau_{2}$
+\end_inset
+
+ אז כל איברי הבסיס היו מהצורה שלאף קואורדינטה הם לא כל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ בסתירה להגדרתם(.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ X_{\alpha}\right\} _{\alpha\in J}$
+\end_inset
+
+ מרחבי האוסדורף.
+ נראה כי בטופ' המכפלה 
+\begin_inset Formula $\prod X_{\alpha}$
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\a}{\alpha}
+\end_inset
+
+ האוסדורף ומכך ינבע כי זה נכון גם לטופ' הקופסה.
+ יהיו 
+\begin_inset Formula $x_{1},x_{2}\in\prod X_{\a}$
+\end_inset
+
+ שונות.
+ אזי קיים 
+\begin_inset Formula $\alpha_{0}\in J$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x_{1,\a_{0}}\neq x_{2,\a_{0}}$
+\end_inset
+
+.
+ המרחב 
+\begin_inset Formula $X_{\a_{0}}$
+\end_inset
+
+ הוא האוסדורף, לכן קיימות 
+\begin_inset Formula $U_{1},U_{2}$
+\end_inset
+
+ פתוחות בטופ' של 
+\begin_inset Formula $X_{\a_{0}}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x_{1}\in U_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{2}\in U_{2}$
+\end_inset
+
+ ו-
+\begin_inset Formula $U_{1}\cap U_{2}=\varnothing$
+\end_inset
+
+.
+ כעת, הקבוצות
+\begin_inset Formula 
+\[
+\pi^{-1}\left(U_{1}\right),\pi^{-1}\left(U_{2}\right)
+\]
+
+\end_inset
+
+זרות )כי אם יש איבר בחיתוך אז הקואורדינטה ה-
+\begin_inset Formula $\a_{0}$
+\end_inset
+
+ שלו שייכת גם ל-
+\begin_inset Formula $U_{1},U_{2}$
+\end_inset
+
+ בסתירה לזרות שלהן(, פתוחות מהגדרת טופ' המכפלה ו-
+\begin_inset Formula 
+\[
+x_{1}\in\pi^{-1}\left(U_{1}\right),\,x_{2}\in\pi^{-1}\left(U_{2}\right)
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ X_{\a}\right\} _{\a\in J}$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $A_{\a}\subseteq X_{\a}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\a$
+\end_inset
+
+.
+ נראה ש-
+\begin_inset Formula $\prod_{\a}\overline{A_{\a}}=\overline{\prod_{\a}A_{\a}}$
+\end_inset
+
+ בשתי הטופולוגיות.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\prod_{\a}\overline{A_{\a}}\supseteq\overline{\prod_{\a}A_{\a}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\a_{0}\in J$
+\end_inset
+
+, ההטלה 
+\begin_inset Formula $\pi_{\a_{0}}$
+\end_inset
+
+ העתקה רציפה, ולכן מתקיים 
+\begin_inset Formula $\pi_{\a_{0}}\left(\overline{A}\right)\subset\overline{\pi_{\alpha_{0}}\left(A\right)}$
+\end_inset
+
+ )הוכח בתרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+(.
+ לכן 
+\begin_inset Formula $\pi_{\a_{0}}\left(\overline{\prod_{\a}\left(A_{\a}\right)}\right)\subset\overline{\pi_{\a_{0}}\left(\prod_{\a}\left(A_{\a}\right)\right)}=\overline{A_{\a_{0}}}$
+\end_inset
+
+.
+ בפרט נובעת מכך ההכלה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\prod_{\a}\overline{A_{\a}}\subseteq\overline{\prod_{\a}A_{\a}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהי 
+\begin_inset Formula $x\in\prod_{\a}\overline{A}_{\a}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $B=\prod_{\a}U_{\a}$
+\end_inset
+
+ קבוצת בסיס בטופ' הקופסה כך ש-
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+ נרצה להראות כי 
+\begin_inset Formula $B\cap\prod_{\a}A_{\a}\neq\varnothing$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $\a_{0}\in J$
+\end_inset
+
+, 
+\begin_inset Formula $x_{\a_{0}}\in\overline{A_{\a_{0}}}$
+\end_inset
+
+ ו-
+\begin_inset Formula $x_{\a_{0}}\in U_{\a_{0}}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $V_{\a_{0}}=U_{\a_{0}}\cap A_{\a_{0}}\neq\varnothing$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\prod_{\a}V_{a}\neq\varnothing$
+\end_inset
+
+, ו-
+\begin_inset Formula 
+\begin{align*}
+\prod_{\a}V_{\a} & \subseteq\prod_{\a}A_{\a}\\
+\prod_{\a}V_{\a} & \subseteq\prod_{\a}U_{\a}=B
+\end{align*}
+
+\end_inset
+
+בפרט החיתוך ביניהם לא ריק כנדרש.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $X=\left[0,1\right]^{\omega}$
+\end_inset
+
+ עם טופ' הקופסה.
+ 
+\begin_inset Formula $A=(0,1]^{\omega}$
+\end_inset
+
+.
+ משאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, 
+\begin_inset Formula $\overline{A}=X$
+\end_inset
+
+.
+ נטען כי 
+\begin_inset Formula $0=\left(0,0,0,...\right)\in\overline{A}$
+\end_inset
+
+ לא גבול של סדרה ב-
+\begin_inset Formula $A$
+\end_inset
+
+.
+ נניח בשלילה שכן, ותהא 
+\begin_inset Formula $\left\{ x_{n}\right\} \subseteq A$
+\end_inset
+
+ סדרה מתכנסת אליו.
+ אז לכל 
+\begin_inset Formula $0\in U$
+\end_inset
+
+ פתוחה החל מ-
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+, לכל 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $x_{n}\in U$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+U_{i}=\left[0,1\right]\backslash\left\{ x_{i}^{i}\right\} 
+\]
+
+\end_inset
+
+)הקטע 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ פחות 
+\begin_inset Formula $i$
+\end_inset
+
+ הקואורדינטה ה-
+\begin_inset Formula $i$
+\end_inset
+
+ של האיבר ה-
+\begin_inset Formula $i$
+\end_inset
+
+ בסדרה(.
+ זו קבוצה פתוחה ב-
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ ובפרט מכילה את 
+\begin_inset Formula $0$
+\end_inset
+
+ )כי 
+\begin_inset Formula $x_{i}^{i}\neq0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+(.
+ לכן
+\begin_inset Formula 
+\[
+U=\prod_{i=1}^{\infty}U_{i}
+\]
+
+\end_inset
+
+פתוחה בטופ' הקופסה, ו-
+\begin_inset Formula $0\in U$
+\end_inset
+
+.
+ לכן מההנחה קיים 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $x_{n}\in U$
+\end_inset
+
+.
+ אבל מבניית 
+\begin_inset Formula $U$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n_{0}+1}^{n_{0}+1}\notin U_{n_{0}+1}$
+\end_inset
+
+, משמע 
+\begin_inset Formula $x_{n_{0}+1}\notin U$
+\end_inset
+
+, סתירה.
+ מכך נסיק כי אין מטריקה המשרה את טופ' הקופסה, כי בטופולוגיה מטרית כל נק'
+ גבול היא גם גבול של סדרה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C$
+\end_inset
+
+ קבוצת קנטור.
+ 
+\begin_inset Formula $f\colon\left\{ 0,1\right\} ^{\omega}\to C$
+\end_inset
+
+ מוגדרת ע"י 
+\begin_inset Formula 
+\[
+f\left(x\right)=\sum_{i=1}^{\infty}2x_{i}\cdot3^{-i}
+\]
+
+\end_inset
+
+צ"ל כי 
+\begin_inset Formula $f$
+\end_inset
+
+ הומאומורפיזם.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+חח"ע: יהיו 
+\begin_inset Formula $x,y\in\left\{ 0,1\right\} ^{\omega}$
+\end_inset
+
+ שונים, ונניח 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ האינדקס הראשון בו הם שונים.
+ בה"כ נניח 
+\begin_inset Formula $x_{n}=1$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula 
+\[
+\sum_{i=1}^{\infty}2x_{i}\cdot3^{-i}\geq\sum_{i=1}^{n-1}2x_{i}\cdot3^{-i}+2x_{n}\cdot3^{-n}
+\]
+
+\end_inset
+
+נשים לב כי 
+\begin_inset Formula 
+\[
+\sum_{i=n+1}^{\infty}3^{-i}=3^{-\left(n+1\right)}\sum_{i=0}^{\infty}3^{-i}=3^{-\left(n+1\right)}\frac{1}{\frac{2}{3}}=\frac{1}{2}3^{-n}<3^{-n}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\begin{align*}
+\sum_{i=1}^{n-1}2x_{i}\cdot3^{-i}+2\cdot\left(1\right)\cdot3^{-n} & >\sum_{i=1}^{n-1}2y_{i}\cdot3^{-i}+2\cdot\sum_{i=n+1}^{\infty}3^{-i}>\\
+> & \sum_{i=1}^{n-1}2y_{i}\cdot3^{-i}+\sum_{i=n}^{\infty}2y_{i}\cdot3^{-i}=\sum_{i=1}^{\infty}2y_{i}\cdot3^{-i}
+\end{align*}
+
+\end_inset
+
+כאשר המעבר האחרון מוצדק כי 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\begin_inset Formula $y_{n}=0$
+\end_inset
+
+.
+ סה"כ קיבלנו
+\begin_inset Formula 
+\[
+f\left(x\right)>f\left(y\right)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Description
+על: תהי 
+\begin_inset Formula $x\in C$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $\left\{ x_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ הפיתוח הטרינארי שלה, משמע לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $x_{i}\in\left\{ 0,1,2\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula 
+\[
+\sum_{i=1}^{\infty}x_{i}\cdot3^{-i}=x
+\]
+
+\end_inset
+
+מתכונות קבוצת קנטור, לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $x\in C_{n}$
+\end_inset
+
+ גורר כי 
+\begin_inset Formula $x_{1},...,x_{n}\neq1$
+\end_inset
+
+.
+ כיוון ש-
+\begin_inset Formula $x\in C$
+\end_inset
+
+ אז 
+\begin_inset Formula $x\in C_{n}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, משמע לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $x_{n}\in\left\{ 0,2\right\} $
+\end_inset
+
+.
+ לכן אם נגדיר 
+\begin_inset Formula $x'_{n}=\frac{1}{2}x_{n}$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+f\left(\left\{ x'_{n}\right\} \right)=x
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_layout Description
+רציפה: 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
