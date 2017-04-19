@@ -1020,9 +1020,614 @@ f\left(\left\{ x'_{n}\right\} \right)=x
 \end_layout
 
 \begin_layout Description
-רציפה: 
+רציפה: מספיק שנראה כי לכל קבוצת בסיס 
+\begin_inset Formula $B$
+\end_inset
+
+ ב-
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $f^{-1}\left(B\right)$
+\end_inset
+
+ פתוחה.
+ קבוצת בסיס 
+\begin_inset Formula $B$
+\end_inset
+
+ היא מהצורה 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a,b\in\left[0,1\right]$
+\end_inset
+
+ או מהצורה 
+\begin_inset Formula $[0,b)$
+\end_inset
+
+ או 
+\begin_inset Formula $(a,1]$
+\end_inset
+
+.
+ למעשה מספיק שנראה כי המקור של קרניים פתוח כי
+\begin_inset Formula 
+\[
+\left(a,b\right)=[0,b)\cap(a,1]
+\]
+
+\end_inset
+
+ואם המקור של הקרניים פתוחות גם המקור של החיתוך פתוח כי 
+\begin_inset Formula $f$
+\end_inset
+
+ חח"ע.
+ נניח 
+\begin_inset Formula $B=[0,b)$
+\end_inset
+
+ ל-
+\begin_inset Formula $b>0$
+\end_inset
+
+.
+ נניח כי
+\begin_inset Formula 
+\[
+0.x_{1}x_{2}x_{3}...
+\]
+
+\end_inset
+
+הפיתוח הטרינארי של 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ נגדיר לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ בו 
+\begin_inset Formula $x_{n}\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $U_{n}\subseteq\left\{ 0,1\right\} ^{\omega}$
+\end_inset
+
+, כך
+\begin_inset Formula 
+\[
+U_{n}=\left(\prod_{i=1}^{n-1}\left\{ 0,\lfloor\frac{x_{i}}{2}\rfloor\right\} \right)\times\left\{ 0\right\} \times\prod_{i=n+1}^{\infty}\left\{ 0,1\right\} 
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\lfloor\frac{x_{i}}{2}\rfloor=1$
+\end_inset
+
+ אם 
+\begin_inset Formula $x_{i}=2$
+\end_inset
+
+ אחרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+(.
+ אם 
+\begin_inset Formula $x_{n}=0$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+U_{n}=\varnothing
+\]
+
+\end_inset
+
+ נשים לב כי זו קבוצה פתוחה כי 
+\begin_inset Formula $\left\{ 0,\lfloor\frac{x_{i}}{2}\rfloor\right\} $
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פתוחה ב-
+\begin_inset Formula $\left\{ 0,1\right\} $
+\end_inset
+
+ ויש מספר סופי של קבוצות כאלו במכפלה ולכן 
+\begin_inset Formula $U_{n}$
+\end_inset
+
+ פתוחה בטופ' המכפלה.
+ בנוסף נשים לב כי
+\begin_inset Formula 
+\[
+U_{n}\subset f^{-1}\left([0,b)\right)
+\]
+
+\end_inset
+
+כי לכל 
+\begin_inset Formula $u\in U_{n}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\forall i,\,1\leq i\leq n-1\,\,2u_{i}\leq x_{i}
+\]
+
+\end_inset
+
+ו-
+\begin_inset Formula 
+\[
+u_{n}<x_{n}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+f\left(u\right)<b
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $U=\bigcup_{n=1}^{\infty}U_{n}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $U$
+\end_inset
+
+ איחוד של פתוחות ולכן פתוחה.
+ נטען כי 
+\begin_inset Formula $f^{-1}\left([0,b)\right)=U$
+\end_inset
+
+.
+ ואכן, לכל 
+\begin_inset Formula $c\in C$
+\end_inset
+
+, 
+\begin_inset Formula $0\leq c<b$
+\end_inset
+
+, נניח
+\begin_inset Formula 
+\[
+0.y_{1}y_{2}y_{3}...
+\]
+
+\end_inset
+
+הפיתוח הטרינארי של 
+\begin_inset Formula $c$
+\end_inset
+
+, אז קיים 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ מינימלי כך ש-
+\begin_inset Formula $y_{n}\neq x_{n}$
+\end_inset
+
+, ממינימליות בהכרח 
+\begin_inset Formula $y_{n}<x_{n}$
+\end_inset
+
+ )אחרת נקבל כי 
+\begin_inset Formula $c>b$
+\end_inset
+
+( וכיוון ש-
+\begin_inset Formula $y_{n}\in\left\{ 0,2\right\} $
+\end_inset
+
+ )כי 
+\begin_inset Formula $c$
+\end_inset
+
+ בקבוצת קנטור(, 
+\begin_inset Formula $y_{n}=0$
+\end_inset
+
+.
+ לכן אם נגדיר 
+\begin_inset Formula $u=\left\{ u_{n}\right\} =\left\{ \frac{y_{n}}{2}\right\} $
+\end_inset
+
+ נקבל כי 
+\begin_inset Formula 
+\[
+u\in U_{n}
+\]
+
+\end_inset
+
+כי לכל 
+\begin_inset Formula $1\leq i\leq n-1$
+\end_inset
+
+, 
+\begin_inset Formula $u_{i}\in\left\{ 0,u_{i}\right\} =\left\{ 0,\lfloor\frac{y_{i}}{2}\rfloor\right\} =\left\{ 0,\lfloor\frac{x_{i}}{2}\rfloor\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $u_{n}=0$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $u=f^{-1}\left(c\right)\in U$
+\end_inset
+
+.
+ קיבלנו
+\begin_inset Formula 
+\[
+f^{-1}\left([0,b)\right)\subset U
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $f\left(U\right)\subset[0,b)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $U\subset f^{-1}\left([0,b)\right)$
+\end_inset
+
+, סה"כ
+\begin_inset Formula 
+\[
+f^{-1}\left([0,b)\right)=U
+\]
+
+\end_inset
+
+בצורה דומה, במקרה ש-
+\begin_inset Formula $B=(a,1]$
+\end_inset
+
+ נגדיר לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ בו 
+\begin_inset Formula $x_{n}\neq2$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+U_{n}=\left(\prod_{i=1}^{n-1}\left\{ \lceil\frac{x_{i}}{2}\rceil,2\right\} \right)\times\left\{ 2\right\} \times\prod_{i=n+1}^{\infty}\left\{ 0,1\right\} 
+\]
+
+\end_inset
+
+אחרת 
+\begin_inset Formula $U_{n}=0$
+\end_inset
+
+ ובצורה דומה נוכיח כי גם 
+\begin_inset Formula $U=U_{n}$
+\end_inset
+
+ פתוחה ו-
+\begin_inset Formula $U=f^{-1}\left((a,1]\right)$
+\end_inset
+
+.
 \end_layout
 
+\begin_layout Description
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+רציפה: נראה כי לכל 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה, 
+\begin_inset Formula $f\left(U\right)$
+\end_inset
+
+ פתוחה.
+ מספיק שנראה לקבוצה בסיסית 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $B$
+\end_inset
+
+ מהצורה
+\begin_inset Formula 
+\[
+\prod_{i=1}^{\infty}U_{i}
+\]
+
+\end_inset
+
+כאשר במספר סופי של 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $U_{i}\neq\left\{ 0,1\right\} $
+\end_inset
+
+ ובשאר היא 
+\begin_inset Formula $\left\{ 0,1\right\} $
+\end_inset
+
+.
+ כיוון ש-
+\begin_inset Formula $f$
+\end_inset
+
+ חח"ע ולכן
+\begin_inset Formula 
+\[
+f\left(A\cap B\right)=f\left(A\right)\cap f\left(B\right)
+\]
+
+\end_inset
+
+מספיק שנראה זאת לקבוצה בה יש רק 
+\begin_inset Formula $i$
+\end_inset
+
+ אחד בו 
+\begin_inset Formula $U_{i}\neq\left\{ 0,1\right\} $
+\end_inset
+
+ )כי אז נקבל את 
+\begin_inset Formula $B$
+\end_inset
+
+ מחיתוך סופי של פתוחות ולכן 
+\begin_inset Formula $f\left(B\right)$
+\end_inset
+
+ תהיה גם חיתוך סופי של פתוחות ולכן פתוחה(.
+ אז בה"כ 
+\begin_inset Formula $B=\prod_{i=1}^{n-1}\left\{ 0,1\right\} \times\left\{ t\right\} \times\prod_{i=n+1}^{\infty}\left\{ 0,1\right\} $
+\end_inset
+
+, כאשר 
+\begin_inset Formula $t\in\left\{ 0,1\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ נגדיר
+\begin_inset Formula 
+\[
+S=\bigcup_{x\in\left\{ 0,1\right\} ^{n-1}}\left(f\left(x,t,0,0...\right)-\frac{1}{2\cdot3^{n}},f\left(x,t,1,1...\right)+\frac{1}{2\cdot3^{n}}\right)
+\]
+
+\end_inset
+
+זו קבוצה פתוחה ב-
+\begin_inset Formula $C$
+\end_inset
+
+ כי היא איחוד של קטעים פתוחים )אם אחד הגבולות קטן מאפס או גדול מאחד נסכים
+ כי זו הקרן המתאימה, זו עדיין קבוצה פתוחה(.
+ נטען כי 
+\begin_inset Formula $f\left(B\right)=S$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $b\in B$
+\end_inset
+
+, 
+\begin_inset Formula $b=\left(b_{1},b_{2},...,t,b_{n+1},...\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(b_{1},...,t,0,0...\right)-\frac{1}{2\cdot3^{n}}<f\left(b\right)<f\left(b_{1},...,t,1,1...\right)+\frac{1}{2\cdot3^{n}}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $f\left(b\right)$
+\end_inset
+
+ נמצא באחד הקטעים באיחוד ולכן 
+\begin_inset Formula $f\left(B\right)\subseteq S$
+\end_inset
+
+.
+ מצד שני, אם 
+\begin_inset Formula $b\in B^{c}$
+\end_inset
+
+ אז 
+\begin_inset Formula $b=\left(b_{1},b_{2},...,\overline{t},b_{n+1},...\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\overline{t}=\left[t+1\right]_{2}$
+\end_inset
+
+.
+ נניח בשלילה שקיים 
+\begin_inset Formula $x\in\left\{ 0,1\right\} ^{n-1}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+f\left(b\right)\in\left(f\left(x,t,0,0...\right)-\frac{1}{2\cdot3^{n}},f\left(x,t,1,1...\right)+\frac{1}{2\cdot3^{n}}\right)
+\]
+
+\end_inset
+
+אז לכל 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+ נובע 
+\begin_inset Formula $b_{i}=x_{i}$
+\end_inset
+
+ כי אחרת נניח 
+\begin_inset Formula $i$
+\end_inset
+
+ המינימלי בו 
+\begin_inset Formula $b_{i}\neq x_{i}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $b_{i}<x_{i}$
+\end_inset
+
+ אז 
+\begin_inset Formula $b_{i}=0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\begin{align*}
+f\left(b\right) & \leq f\left(b_{1},...,b_{i-1},b_{i},1,1,...\right)=f\left(b_{1},...,b_{i-1},0,0,...\right)+\sum_{j=i+1}^{\infty}\frac{2}{3^{j}}=f\left(x_{1},...,x_{i-1},0,0,...\right)+\frac{1}{3^{i}}\\
+= & f\left(x_{1},...,x_{i-1},0,0,...\right)+\frac{2}{3^{i}}-\frac{1}{3^{i}}=f\left(x_{1},...,x_{i-1},x_{i},0,...\right)-\frac{1}{3^{i}}\leq f\left(x,t,0,0,...\right)-\frac{1}{2\cdot3^{n}}
+\end{align*}
+
+\end_inset
+
+סתירה.
+ אם 
+\begin_inset Formula $b_{i}>x_{i}$
+\end_inset
+
+ אז 
+\begin_inset Formula $b_{i}=1$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\begin{align*}
+f\left(b\right) & \geq f\left(b_{1},...,b_{i-1},b_{i},0,0,...\right)=f\left(b_{1},...,b_{i-1},0,0,...\right)+\frac{2}{3^{i}}=f\left(b_{1},...,b_{i-1},0,1,1,...\right)+\frac{1}{3^{i}}\\
+= & f\left(x_{1},...,x_{i-1},x_{i},1,1,...\right)+\frac{1}{3^{i}}\geq f\left(x,t,0,0,...\right)+\frac{1}{2\cdot3^{n}}
+\end{align*}
+
+\end_inset
+
+ושוב סתירה.
+ בפרט נובע 
+\begin_inset Formula $b_{n}=x_{n}$
+\end_inset
+
+, אבל 
+\begin_inset Formula $b_{n}=\overline{t}$
+\end_inset
+
+ ו-
+\begin_inset Formula $x_{n}=t$
+\end_inset
+
+, סתירה לכך שהם שונים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+קיבלנו כי 
+\begin_inset Formula $f\left(B^{c}\right)\cap S=\varnothing$
+\end_inset
+
+.
+ כיוון ש-
+\begin_inset Formula $f$
+\end_inset
+
+ על בהכרח 
+\begin_inset Formula $f\left(B\right)=S$
+\end_inset
+
+, כנדרש.
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document
