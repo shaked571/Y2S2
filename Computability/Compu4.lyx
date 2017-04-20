@@ -302,6 +302,156 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $A=\left\langle Q,\Sigma,\delta,q_{0},F\right\rangle $
+\end_inset
+
+ אוטומט דטרמיניסטי 
+\begin_inset Formula $\left|Q\right|=n$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $Q=\left\{ q_{0},...,q_{n-1}\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $q_{0}=q_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F=\left\{ q_{n-1}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $1\leq i<n$
+\end_inset
+
+, לכל 
+\begin_inset Formula $\sigma\in\Sigma$
+\end_inset
+
+, 
+\begin_inset Formula $d\left(q_{i},\sigma\right)=q_{i+1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $d\left(q_{n},\sigma\right)=q_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אז 
+\begin_inset Formula $q_{0}\sim_{\left(n-3\right)}q_{1}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי לכל 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|w\right|\leq n-3$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\delta\left(q_{0},w\right)=q_{\left|w\right|}\neq q_{n-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta^{*}\left(q_{1},w\right)=q_{\left|w\right|+1}\neq q_{n-1}
+\]
+
+\end_inset
+
+ולכן שניהם לא במצב מקבל בכל מקרה.
+ אבל ל-
+\begin_inset Formula $w=\sigma^{n-2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta\left(q_{0},w\right)=q_{n-2}\notin F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta\left(q_{0},w\right)=q_{n-2+1}=q_{n-1}\in F
+\]
+
+\end_inset
+
+משמע 
+\begin_inset Formula $q_{0}\not\sim_{\left(n-2\right)}q_{1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $L=\left\{ a^{n}b^{n}c^{k}\mid k,n\in\mathbb{N\cup}\left\{ 0\right\} \right\} $
 \end_inset
@@ -309,5 +459,324 @@ status open
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $G=\left\langle V,\Sigma,R,S\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $V=\left\{ A,B\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Sigma=\left\{ a,b,c\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R$
+\end_inset
+
+ יהיה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $A\to Ac\mid B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B\to aBb\mid\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $S=\left\{ A\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $PDA$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+missing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L=\left\{ ww\mid w\in\left\{ 0,1\right\} ^{*}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $w=0^{p}10^{p}1$
+\end_inset
+
+.
+ נניח 
+\begin_inset Formula $p\geq3$
+\end_inset
+
+.
+ נגדיר 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $u=0^{\lceil\frac{p-1}{2}\rceil+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v,y=0^{\lfloor\frac{p-1}{2}\rfloor}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $z=u\cdot1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז 
+\begin_inset Formula $w=uvxyz$
+\end_inset
+
+ כי 
+\begin_inset Formula $uvx=0^{\lceil\frac{p-1}{2}\rceil+1}0^{\lfloor\frac{p-1}{2}\rfloor}1=0^{p}1$
+\end_inset
+
+ )
+\begin_inset Formula $\lceil\frac{p-1}{2}\rceil+1+\lfloor\frac{p-1}{2}\rfloor=p-1+1=p$
+\end_inset
+
+( ו-
+\begin_inset Formula $yz=yu\cdot1=vu1=0^{p}1$
+\end_inset
+
+.
+ כעת, 
+\begin_inset Formula 
+\[
+\left|vy\right|=\left|0^{2\cdot\lfloor\frac{p-1}{2}\rfloor}\right|\geq\left|0^{p-2}\right|=p-2>0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|vxy\right|=\left|vy\right|+1\leq\left|0^{p-1}\right|+1=p-1+1=p
+\]
+
+\end_inset
+
+לבסוף, לכל 
+\begin_inset Formula $i\in\mathbb{N}\cup\left\{ 0\right\} $
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+uv^{i}x=v^{i}ux=y^{i}u\cdot1=y^{i}z
+\]
+
+\end_inset
+
+כאשר שינוי סדר מתאפשר כי 
+\begin_inset Formula $u$
+\end_inset
+
+ ו-
+\begin_inset Formula $v$
+\end_inset
+
+ שתיהן רק אפסים.
+ לכן אם נסמן 
+\begin_inset Formula $uv^{i}x=w'$
+\end_inset
+
+ נקבל כי
+\begin_inset Formula 
+\[
+uv^{i}xy^{i}z=w'w'\Rightarrow wv^{i}xy^{i}z\in L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $p\geq1$
+\end_inset
+
+.
+ נניח בשלילה כי 
+\begin_inset Formula $L\in CFL$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+קלט: 
+\begin_inset Formula $A$
+\end_inset
+
+ אוטומט דטרמיניסטי מעל 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+פלט: אמת אם"ם 
+\begin_inset Formula $w\in L\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+אלגוריתם: נגדיר 
+\begin_inset Formula $q=q_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $i=1$
+\end_inset
+
+.
+ כל עוד 
+\begin_inset Formula $i\leq\left|w\right|$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula $q=\delta\left(q,w_{i}\right)$
+\end_inset
+
+.
+ בסוף הריצה נחזיר אמת אמ"מ 
+\begin_inset Formula $q\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+זמן
+\begin_inset space ~
+\end_inset
+
+ריצה: 
+\begin_inset Formula $O\left(\left|w\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document
