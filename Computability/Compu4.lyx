@@ -514,16 +514,41 @@ status open
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $PDA$
+נגדיר 
+\begin_inset Formula $M=\left\langle Q,\Sigma,\Gamma,\delta,q_{0},F\right\rangle $
+\end_inset
+
+ כך:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $Q=\left\{ q_{1},q_{2},q_{3},q_{4}\right\} $
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Sigma=\left\{ a,b,c\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Gamma=\left\{ \$,0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-missing
 \end_layout
 
 \end_inset
@@ -531,6 +556,72 @@ missing
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\delta\left(q_{0},\varepsilon,\varepsilon\right)=\left\{ \left\langle q_{1},\$\right\rangle \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\delta\left(q_{0},\varepsilon,\varepsilon\right)=\left\{ \left\langle q_{3},\varepsilon\right\rangle \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\delta\left(q_{1},a,\varepsilon\right)=\left\{ \left\langle q_{1},0\right\rangle \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\delta\left(q_{1},b,0\right)=\left\{ \left\langle q_{2},\varepsilon\right\rangle \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\delta\left(q_{2},b,0\right)=\left\{ \left\langle q_{2},\varepsilon\right\rangle \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\delta\left(q_{2},\varepsilon,\$\right)=\left\{ \left\langle q_{3},\varepsilon\right\rangle \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\delta\left(q_{3},c,\varepsilon\right)=\left\{ \left\langle q_{3},\varepsilon\right\rangle \right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $q_{0}=q_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F=\left\{ q_{3}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $L=\left\{ ww\mid w\in\left\{ 0,1\right\} ^{*}\right\} $
@@ -686,6 +777,194 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L=\left\{ w\#x\mid w,x\in\left\{ 0,1\right\} ^{*},\left|w\right|=\left|x\right|,w\neq x\right\} $
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $p\geq1$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $m=$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $w=w'\#x=0^{m}1^{p}\#0^{p}1^{m}$
+\end_inset
+
+.
+ נניח כי 
+\begin_inset Formula $w=uvxyz$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\left|vy\right|>0$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|vxy\right|\leq p$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $vxy$
+\end_inset
+
+ תת-מחרוזת של 
+\begin_inset Formula $w'$
+\end_inset
+
+ בלבד או של 
+\begin_inset Formula $x$
+\end_inset
+
+ בלבד אז ע"י ניפוח נוכל לקבל מילה חדשה 
+\begin_inset Formula $w''\#x'$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|w''\right|\neq\left|x'\right|$
+\end_inset
+
+, משמע לא בשפה.
+ לכן 
+\begin_inset Formula $\#$
+\end_inset
+
+ חייבת להופיע ב-
+\begin_inset Formula $vxy$
+\end_inset
+
+.
+ היא לא יכולה להופיע ב-
+\begin_inset Formula $v$
+\end_inset
+
+ או 
+\begin_inset Formula $y$
+\end_inset
+
+ כי אחרת נוכל לייצר מילה עם יותר מסולמית אחת ושוב נקבל מילה שלא בשפה.
+ לכן בהכרח 
+\begin_inset Formula $\#$
+\end_inset
+
+ ב-
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אז 
+\begin_inset Formula $v$
+\end_inset
+
+ תת מחרוזת של 
+\begin_inset Formula $w'$
+\end_inset
+
+ ו-
+\begin_inset Formula $y$
+\end_inset
+
+ תת מחרוזת של 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ בפרט נסיק מכך כי בהכרח 
+\begin_inset Formula $\left|v\right|=\left|y\right|$
+\end_inset
+
+ )כי אחרת שוב נוכל לקבל מילה עם תתי מילים באורכים שונים(.
+ מכך ש-
+\begin_inset Formula $\left|vxy\right|\leq p$
+\end_inset
+
+ בהכרח ב-
+\begin_inset Formula $v$
+\end_inset
+
+ מופיעה רק האות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וב-
+\begin_inset Formula $y$
+\end_inset
+
+ רק האות 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ כעת
+\begin_inset Formula 
+\[
+m=p-\left|v\right|+i\cdot\left|v\right|\iff\frac{m-p}{\left|v\right|}=i-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 \begin_inset ERT
 status open
@@ -776,6 +1055,472 @@ status open
 .
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+קלט: 
+\begin_inset Formula $A$
+\end_inset
+
+ אוטומט לא-דטרמיניסטי מעל 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+פלט: אמת אם"ם 
+\begin_inset Formula $w\in L\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+אלגוריתם: נמיר את ה-
+\begin_inset Formula $NFA$
+\end_inset
+
+ לחסר מעברי 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נבנה טבלה בגודל 
+\begin_inset Formula $\left|Q\right|\times\left|w\right|$
+\end_inset
+
+.
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{\left|Q\right|}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $w_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $w_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $w_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נמלא אותה עמודה עמודה כאשר נתחיל מצד שמאל.
+ לעמודה הכי שמאלית נבדוק האם לכל 
+\begin_inset Formula $1\leq i\leq\left|Q\right|$
+\end_inset
+
+ האם 
+\begin_inset Formula $\delta\left(q_{i},w_{n}\right)\cap F\neq\varnothing$
+\end_inset
+
+.
+ אם כן נסמן 
+\begin_inset Formula $\mathbb{T}$
+\end_inset
+
+.
+ בשאר העמודות הבאות, לכל תא 
+\begin_inset Formula $\left(q_{i},w_{j}\right)$
+\end_inset
+
+ נבדוק האם קיים 
+\begin_inset Formula $q\in\delta\left(q_{i},w_{j}\right)$
+\end_inset
+
+ כך שב- 
+\begin_inset Formula $\left(q,w_{j+1}\right)$
+\end_inset
+
+ סימנו 
+\begin_inset Formula $\mathbb{T}$
+\end_inset
+
+, אם כן נסמן גם ב-
+\begin_inset Formula $\left(q_{i},w_{j}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{T}$
+\end_inset
+
+.
+ לבסוף, נבדוק האם קיים 
+\begin_inset Formula $q_{0}\in Q_{0}$
+\end_inset
+
+ כך שב-
+\begin_inset Formula $\left(q_{0},w_{1}\right)$
+\end_inset
+
+ סימנו 
+\begin_inset Formula $\mathbb{T}$
+\end_inset
+
+.
+ אם כן נחזיר אמת, אחרת שקר.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+זמן
+\begin_inset space ~
+\end_inset
+
+ריצה: המרת ה-
+\begin_inset Formula $NFA$
+\end_inset
+
+ לחסר מעברי 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ נעשה ב-
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מילוי כל תא בטבלה נעשה ב-
+\begin_inset Formula $O\left(\left|Q\right|\right)$
+\end_inset
+
+, יש 
+\begin_inset Formula $\left|Q\right|\times\left|w\right|$
+\end_inset
+
+ תאים לכן סה"כ זמן הריצה של האלגוריתם הוא 
+\begin_inset Formula $O\left(\left|Q\right|^{2}\times\left|w\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_deeper
 \end_body
