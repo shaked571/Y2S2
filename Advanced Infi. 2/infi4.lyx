@@ -182,6 +182,163 @@
 \end_layout
 
 \begin_layout Section*
+קושייה שנייה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /cs/stud/ofer1992/Downloads/New Doc 2017-04-25.jpg
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+קושייה שלישית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta\left(x,y\right)$
+\end_inset
+
+ צפיפות מסה של גוף במישור.
+ 
+\begin_inset Formula $M=\int\int_{\mathbb{R}^{2}}\delta\left(x,y\right)dA$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $K=\left\{ \left(x,y\right)\mid\sqrt{x^{2}+y^{2}}\leq a,\theta\in\left[0,d\right]\right\} $
+\end_inset
+
+ נעשה פרמטריזציה פולרית, נגדיר 
+\begin_inset Formula $x=r\cos\theta,y=r\sin\theta$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+M_{x}=\int\int_{K}x\cdot1dK=\int_{r=0}^{a}\int_{\theta=0}^{d}r^{2}\cos\theta d\theta dr=\int_{r=0}^{a}r^{2}\left[\sin\theta\right]_{0}^{d}dr=\sin d\int_{r=0}^{a}r^{2}dr=\sin d\left[\frac{r^{3}}{3}\right]_{0}^{a}=\frac{a^{3}\sin d}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{y}=\int\int_{K}y\cdot1dK=\int_{r=0}^{a}\int_{\theta=0}^{d}r^{2}\sin\theta d\theta dr=\int_{r=0}^{a}r^{2}\left[-\cos\theta\right]_{0}^{d}dr=\left(1-\cos d\right)\int_{r=0}^{a}r^{2}dr=\left(1-\cos d\right)\left[\frac{r^{3}}{3}\right]_{0}^{a}=\frac{a^{3}\left(1-\cos d\right)}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=\int\int_{K}1dK=\int_{r=0}^{a}\int_{\theta=0}^{d}rd\theta dr=\int_{r=0}^{a}rddr=\frac{da^{2}}{2}
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+Mean_{x}=\frac{M_{x}}{M}=\frac{\left(1-\cos d\right)a^{3}\cdot\frac{1}{3}}{da^{2}\frac{1}{2}}=\frac{1-\cos d}{d}a\cdot\frac{2}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Mean_{y}=\frac{M_{y}}{M}=\frac{\sin da^{3}\frac{1}{3}}{da^{2}\frac{1}{2}}=\frac{2\sin d}{3d}a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נחשב את מרכז המסה של הקבוצה 
+\begin_inset Formula 
+\[
+K=\left\{ \left(x,y\right)\mid\left|y\right|\leq\tan\frac{\theta}{2}\cdot x,\,\,0\leq x\leq a\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=\int\int_{K}1dK=\int_{x=0}^{a}\int_{y=-\tan\frac{\theta}{2}x}^{\tan\frac{\theta}{2}x}1dydx=\int_{x=0}^{a}2\tan\frac{\theta}{2}xdx=\tan\frac{\theta}{2}a^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{x}=\int\int_{K}xdK=\int_{x=0}^{a}\int_{-\tan\frac{\theta}{2}x}^{\tan\frac{\theta}{2}x}xdydx=2\tan\frac{\theta}{2}\int_{0}^{a}x^{2}dx=\frac{2}{3}\tan\frac{\theta}{2}a^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{y}=\int\int_{K}ydK=\int_{x=0}^{a}\int_{-\tan\frac{\theta}{2}x}^{\tan\frac{\theta}{2}x}ydydx=\int_{x=0}^{a}\left[\frac{y^{2}}{2}\right]_{-\tan\frac{\theta}{2}x}^{\tan\frac{\theta}{2}x}dx=\frac{1}{2}\int_{0}^{a}\tan^{2}\frac{\theta}{2}x^{2}-\tan^{2}\frac{\theta}{2}x^{2}dx=\frac{1}{2}\cdot0=0
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+Mean_{x}=\frac{M_{x}}{M}=\frac{\frac{2}{3}\tan\frac{\theta}{2}a^{3}}{\tan\frac{\theta}{2}a^{2}}=\frac{2a}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Mean_{y}=\frac{M_{y}}{M}=\frac{0}{M}=0
+\]
+
+\end_inset
+
+לכן מרכז המסה הוא הנק' 
+\begin_inset Formula $\left(\frac{2}{3}a,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
 קושייה רביעית
 \end_layout
 
@@ -426,6 +583,71 @@ f'\left(x\right)=\frac{3}{2}\cdot\left(a^{\nicefrac{2}{3}}-x^{\nicefrac{2}{3}}\r
 קושייה שמינית
 \end_layout
 
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\gamma_{n}\colon\left[0,1\right]\to\mathbb{R}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma_{n}\left(t\right)=\left(\frac{1}{n}\cos\left(2\pi nt\right),\frac{1}{n}\sin\left(2\pi nt\right)\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\gamma_{n}\to0$
+\end_inset
+
+ במ"ש כי
+\begin_inset Formula 
+\[
+\Vert\gamma_{n}\left(t\right)\Vert=\sqrt{\frac{1}{n^{2}}\cos^{2}\left(2\pi nt\right)+\frac{1}{n^{2}}\sin\left(2\pi nt\right)}=\frac{1}{n}\cdot1=\frac{1}{n}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\Vert\gamma_{n}\Vert_{\infty}=\frac{1}{n}\xrightarrow[n\to\infty]{}0
+\]
+
+\end_inset
+
+ מצד שני
+\begin_inset Formula 
+\[
+\gamma_{n}'\left(t\right)=\left(-\frac{1}{n}\sin\left(2\pi nt\right)\cdot2\pi n,\frac{1}{n}\cos\left(2\pi nt\right)\cdot2\pi n\right)=\left(-2\pi\sin\left(2\pi nt\right),2\pi\cos\left(2\pi nt\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left(\gamma_{n}\right)=\int_{0}^{1}\Vert\gamma_{n}'\left(t\right)\Vert dt=\int_{0}^{1}2\pi\sqrt{\sin^{2}\left(2\pi nt\right)+\cos^{2}\left(2\pi nt\right)}dt=\int_{0}^{1}2\pi\cdot dt=2\pi
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+L\left(\gamma_{n}\right)\xrightarrow[n]{}2\pi
+\]
+
+\end_inset
+
+מצד שני
+\begin_inset Formula 
+\[
+L\left(\gamma_{\infty}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 קושייה תשיעית
 \end_layout
@@ -485,7 +707,7 @@ f'\left(x\right)=\frac{3}{2}\cdot\left(a^{\nicefrac{2}{3}}-x^{\nicefrac{2}{3}}\r
  מתאפסת.
 \begin_inset Formula 
 \[
-0=\Vert t\left(s\right)\Vert^{2}'=\left(\sum_{i=1}^{n}t_{i}\left(s\right)^{2}\right)^{'}=2\sum_{i=1}^{n}t_{i}\left(s\right)\cdot t_{i}'\left(s\right)=2\cdot t\left(s\right)\cdot t'\left(s\right)
+0=\left(\Vert t\left(s\right)\Vert^{2}\right)'=\left(\sum_{i=1}^{n}t_{i}\left(s\right)^{2}\right)^{'}=2\sum_{i=1}^{n}t_{i}\left(s\right)\cdot t_{i}'\left(s\right)=2\cdot t\left(s\right)\cdot t'\left(s\right)
 \]
 
 \end_inset
