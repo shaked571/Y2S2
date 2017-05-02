@@ -1,0 +1,17 @@
+\begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto] 
+   \node[state,initial] (q_0)   {$q_0$}; 
+   \node[state] (q_1) [right=of q_0] {$q_1$}; 
+   \node[state] (q_2) [right=of q_1] {$q_2$}; 
+   \node[state] (q_3) [right=of q_2] {$q_3$};
+   \node[state] (q_4) [right=of q_3] {$q_4$};
+   \node[state] (q_r) [below=of q_0] {$q_{rej}$};
+   \node[state] (q_a) [right=of q_r] {$q_{acc}$};
+
+    \path[->] 
+    (q_0) edge  node {aXR} (q_1)
+          edge  node {bXR} (q_r)
+    (q_1) edge  node  {1} (q_2)
+          edge [loop above] node {0} ()
+    (q_2) edge  node [swap] {0} (q_3) 
+          edge [loop below] node {1} ();
+\end{tikzpicture}
