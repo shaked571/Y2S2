@@ -7,11 +7,11 @@
 \textclass article
 \begin_preamble
 \usepackage{tikz}
-\usetikzlibrary{automata,positioning}
+\usetikzlibrary{automata,positioning,arrows}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language hebrew
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -75,7 +75,124 @@
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Title
+חישוביות - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M=\left\langle Q,\Sigma,\Gamma,\delta,q_{0},q_{acc},q_{rej}\right\rangle $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Gamma=\Sigma\cup\left\{ X\right\} $
+\end_inset
+
+.
+ שאר הדברים מתוארים בדיאגרמה.
+
+\lang english
+ 
+\lang hebrew
+דרך הפעולה של המכונה היא, בתחילת כל איטרציה היא מוחקת 
+\begin_inset Formula $a$
+\end_inset
+
+ אחד, מוחקת 
+\begin_inset Formula $b$
+\end_inset
+
+ אחד ומוחקת 
+\begin_inset Formula $c$
+\end_inset
+
+ אחד.
+ לאחר מכן חוזרת לראש הסרט.
+ מדלגת על כל ה-
+\begin_inset Formula $X$
+\end_inset
+
+ )אותיות מחוקות(.
+ אם היא הגיעה לסוף הסרט משמע מחקנו את כל האותיות ומספרן היה שווה ולכן נלך
+ ל-
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+.
+ אחרת אם נתקלנו ב-
+\begin_inset Formula $a$
+\end_inset
+
+ נתחיל את סבב המחיקה הבא.
+ בכל שלב מפגש באות לא צפויה )
+\begin_inset Formula $c$
+\end_inset
+
+ לפני 
+\begin_inset Formula $b$
+\end_inset
+
+ וכו'( נעבור ל-
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+.
+\lang english
+
 \begin_inset CommandInset include
 LatexCommand include
 filename "graph1.txt.txt"
@@ -83,6 +200,644 @@ filename "graph1.txt.txt"
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $L\subset\text{REG}$
+\end_inset
+
+ ויהיה 
+\begin_inset Formula $A=\left\langle Q',\Sigma,\delta',q_{0},F\right\rangle $
+\end_inset
+
+ האוטומט שלה.
+ נגדיר מכונת טיורינג
+\begin_inset Formula 
+\[
+M=\left\langle Q,\Sigma,\Gamma,\delta,q_{0},q_{acc},q_{rej}\right\rangle 
+\]
+
+\end_inset
+
+כאשר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $Q=Q'\cup\left\{ q_{acc},q_{rej}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Gamma=\Sigma\cup\left\{ \sqcup\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\begin{align*}
+\delta\left(q,\sigma\right) & =\begin{cases}
+\left\langle \delta'\left(q,\sigma\right),\sigma,R\right\rangle  & \sigma\in\Sigma\\
+\left\langle q_{acc},\sqcup,L\right\rangle  & \sigma=\sqcup,q\in F\\
+\left\langle q_{rej},\sqcup,L\right\rangle  & \sigma=\sqcup,q\notin F
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{0}=q_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בתחילת הריצה הקלט מופיע על הסרט.
+ למכונת הטיורינג אותם מצבים כמו לאוטומט, והיא מדמה ריצה של המילה על ידי
+ כך שבכל שלב היא קוראת את האות בתא, עוברת למצב שהאוטומט היה עובר אליו וזזה
+ תא אחד ימינה.
+ ברגע שנגיע ל-
+\begin_inset Formula $\sqcup$
+\end_inset
+
+ נדע שהגענו לסוף המילה ולכן על פי המצב שבו אנו נמצאים נעבור למצב המקבל או
+ הדוחה ונעצור.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט.
+ נגדיר מכונת טיורינג 
+\begin_inset Formula $M'=\left\langle Q',\Sigma,\Gamma',\delta',q_{0},q_{acc},q_{rej}\right\rangle $
+\end_inset
+
+ עם ריסט שמאלי כך: נחליף את א"ב הסרט ב-
+\begin_inset Formula $\Gamma'=\Gamma\times\left\langle 0,1\right\rangle $
+\end_inset
+
+.
+ כאשר המספר מסמן את התא משמאל למיקום האחרון שבו הראש היה לפני 
+\begin_inset Formula $RESET$
+\end_inset
+
+.
+ בתחילת הריצה נמיר את הקלט על הסרט בפורמט החדש, ונתחיל לרוץ כמו 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ ברגע שנגיע למצב בו 
+\begin_inset Formula $M$
+\end_inset
+
+ תזוז תא שמאלה, נקרא ל
+\begin_inset Formula $RESET$
+\end_inset
+
+, נחזור להתחלה ונרוץ חזרה ימינה עד התא שבו רשום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נגדיר מכונת טיורינג עם 
+\begin_inset Formula $\Gamma=\left\{ 0,1,|\right\} $
+\end_inset
+
+.
+ כעת, כל עוד המספר שרשום על הסרט שונה מאפס, נחסר אחד מהמספר, נזיז את כל
+ הספרות תא אחד ימינה ונרשום בתא הראשון משמאל למספר את הסימן 
+\begin_inset Formula $|$
+\end_inset
+
+.
+ כאשר יוותרו רק אפסים במספר, ניפטר מהם ונחליף את כל ה-
+\begin_inset Formula $|$
+\end_inset
+
+ ב-
+\begin_inset Formula $1$
+\end_inset
+
+.
+ המכונה עובדת כי מספר ה-
+\begin_inset Formula $|$
+\end_inset
+
+ זהה למספר הפעמים שהחסרנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהמספר, וזה בדיוק ערכו.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+זמן הריצה יהיה 
+\begin_inset Formula $O\left(n\log n\right)$
+\end_inset
+
+ כיוון שפעולת החיסור נעשית ב-
+\begin_inset Formula $O\left(\log n\right)$
+\end_inset
+
+ )מוצאים את הספרה הראשונה מימין ששונה מאפס, משנים אותה ל-
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והופכים את כל הספרות מימינה ל-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לוקח לכל היותר 
+\begin_inset Formula $2\log n$
+\end_inset
+
+ צעדים(.
+ הזזת המספר תא ימינה לוקחת גם 
+\begin_inset Formula $O\left(\log n\right)$
+\end_inset
+
+ צעדים, ולכן כיוון שיש בדיוק 
+\begin_inset Formula $n$
+\end_inset
+
+ אחדים שניתן להחסיר מהמספר נקבל שזמן הריצה הוא כנדרש.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נגדיר מכונה חדשה 
+\begin_inset Formula $M'$
+\end_inset
+
+, עם 
+\begin_inset Formula $\Gamma'=\Gamma\cup Q$
+\end_inset
+
+ למען הנוחות נניח כי יש לנו שני סרטי עבודה.
+ בסרט הראשון נריץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ כרגיל, אבל לפני כל פעולה בסרט של 
+\begin_inset Formula $M$
+\end_inset
+
+, נשמור בסרט השני את הקונפיגורציה של הסרט )כל האותיות לפני הראש, המצב שבו
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ נמצאת והאותיות החל מהראש(, ולאחר מכן נעבור על הסרט השני ונבדוק האם כבר
+ היינו בקונפיגורציה כזאת.
+ אם כן, נעצור.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+כוכב-
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Star
+\begin_inset Formula $\left(w=w_{1}...w_{n}\right)$
+\end_inset
+
+:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+for 
+\begin_inset Formula $1\leq i\leq n:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+if 
+\begin_inset Formula $\left(w_{1}...w_{i}\right)\in L\left(M\right):$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+if Star
+\begin_inset Formula $\left(w_{i+1}...w_{n}\right):$
+\end_inset
+
+ return true
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return false
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+השלמה-
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Complementation(w):
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if 
+\begin_inset Formula $w\in L\left(M\right):$
+\end_inset
+
+ return false
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+else: return true
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+נשים לב שכיוון ש-
+\begin_inset Formula $L\left(M\right)\in R$
+\end_inset
+
+ ניתן לדעת בזמן סופי האם 
+\begin_inset Formula $w\in L\left(M\right)$
+\end_inset
+
+ או לא.
+\end_layout
+
+\begin_layout Enumerate
+חיתוך-
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Intersection
+\begin_inset Formula $\left(w\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+run 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ on w
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if both TM halted on 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+, return true
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+שרשור- בהינתן מילה 
+\begin_inset Formula $w=w_{1}...w_{n}$
+\end_inset
+
+, ישנן 
+\begin_inset Formula $n+1$
+\end_inset
+
+ חלוקות אפשריות של המילה ל-
+\begin_inset Formula 
+\[
+w_{1}...w_{j},w_{j+1}...w_{n}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $0\leq j\leq n$
+\end_inset
+
+ )אם יש חריגה נתייחס למילה כמילה הריקה(.
+ לכן נריץ במקביל את 
+\begin_inset Formula $2n+2$
+\end_inset
+
+ המכונות ואם נקבל זוג 
+\begin_inset Formula $M_{1}^{j},M_{2}^{j}$
+\end_inset
+
+ שעצר על 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ נעצור על 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+.
 \end_layout
 
 \end_body

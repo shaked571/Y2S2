@@ -1,0 +1,1386 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\rightmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תורת המשחקים - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{bmatrix}1,8 & 1,2 & 0,0\\
+1,4 & 2,12 & 9,3
+\end{bmatrix}
+\]
+
+\end_inset
+
+נשים לב כי עמודה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ נשלטת ע"י עמודות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ו-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן אפשר להתעלם ממנה.
+ נקבל מטריצה
+\begin_inset Formula 
+\[
+\begin{bmatrix}1,8 & 1,2\\
+1,4 & 2,12
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+האם יש שיווי משקל טהור?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כן, 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+ נק' שיווי משקל.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+האם יש שיווי משקל שהוא טהור לשחקן אחד ומעורב לשחקן השני?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ משחק טהור, אז גם 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ישחק טהור כי יש יחס סדר חזק בין העמודות, לכן נחזור לנק' מהמקרה הקודם.
+\end_layout
+
+\begin_layout Enumerate
+אם שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק טהור, אז 
+\begin_inset Formula $\begin{bmatrix}p\\
+1-p
+\end{bmatrix}$
+\end_inset
+
+ האסט' של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ אם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בחר את עמודה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אז נחזור למקרה הראשון כי שחקן אחד ימקסם את הרווח אם יבחר אסט' טהורה.
+ לכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך להתקיים
+\begin_inset Formula 
+\[
+8p+4-4p=u_{2}\left(\begin{bmatrix}p\\
+1-p
+\end{bmatrix},\begin{bmatrix}1\\
+0
+\end{bmatrix}\right)\geq u_{2}\left(\begin{bmatrix}p\\
+1-p
+\end{bmatrix},\begin{bmatrix}0\\
+1
+\end{bmatrix}\right)=2p+12-12p
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+4p+4\geq12-10p\iff14p\geq8\iff p\geq\frac{4}{7}
+\]
+
+\end_inset
+
+אז כיוון שלכל 
+\begin_inset Formula $x\in\triangle_{1}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+u_{1}\left(x,\begin{bmatrix}1\\
+0
+\end{bmatrix}\right)=1
+\]
+
+\end_inset
+
+כל נק' מהצורה 
+\begin_inset Formula $\left(\begin{bmatrix}p\\
+1-p
+\end{bmatrix},\begin{bmatrix}1\\
+0
+\end{bmatrix}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p\geq\frac{4}{7}$
+\end_inset
+
+ היא נק' שיווי משקל.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+שני השחקנים מערבים.
+ שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ישחק באסט' מעורבת אם"ם הוא אדיש בין האסט' שלו, משמע
+\begin_inset Formula 
+\[
+u_{2}\left(\begin{bmatrix}p\\
+1-p
+\end{bmatrix},\begin{bmatrix}1\\
+0
+\end{bmatrix}\right)=u_{1}\left(\begin{bmatrix}p\\
+1-p
+\end{bmatrix},\begin{bmatrix}0\\
+1
+\end{bmatrix}\right)
+\]
+
+\end_inset
+
+זה קורה רק אם 
+\begin_inset Formula $p=\frac{4}{7}$
+\end_inset
+
+.
+ לכן שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בוחר באסט' 
+\begin_inset Formula $\begin{bmatrix}\frac{4}{7}\\
+\frac{3}{7}
+\end{bmatrix}$
+\end_inset
+
+.
+ באותה מידה שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך להיות אדיש בין האסט' שלו, משמע
+\begin_inset Formula 
+\[
+u_{1}\left(\begin{bmatrix}1\\
+0
+\end{bmatrix},\begin{bmatrix}q\\
+1-q
+\end{bmatrix}\right)=u_{1}\left(\begin{bmatrix}0\\
+1
+\end{bmatrix},\begin{bmatrix}q\\
+1-q
+\end{bmatrix}\right)
+\]
+
+\end_inset
+
+משמע
+\begin_inset Formula 
+\[
+q+1-q=q+2-2q\iff q=1
+\]
+
+\end_inset
+
+משמע שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא יערב, ולכן אין נק' שיווי משקל מעורבת לגמרי.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(x_{0},y_{0}\right)\in\triangle_{1}\times\triangle_{2}$
+\end_inset
+
+ נק' שיווי משקל.
+ צ"ל: 
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}u\left(x_{0},y\right)=\max_{x\in\triangle_{1}}\min_{y\in\triangle_{2}}u\left(x,y\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\max_{x\in\triangle_{1}}u\left(x,y_{0}\right)=\min_{y\in\triangle_{2}}\max_{x\in\triangle_{1}}u\left(x,y\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $x\in\triangle_{1}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}u\left(x,y\right)\leq u\left(x,y_{0}\right)\leq u\left(x_{0},y_{0}\right)
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula 
+\[
+\max_{x\in\triangle_{1}}\min_{y\in\triangle_{1}}u\left(x,y\right)\leq u\left(x_{0},y_{0}\right)
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $u\left(x_{0},y_{0}\right)\leq u\left(x_{0},y\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $y\in\triangle_{2}$
+\end_inset
+
+ כי זו נק' שיווי משקל, ולכן
+\begin_inset Formula 
+\[
+\max_{x\in\triangle_{1}}\min_{y\in\triangle_{1}}u\left(x,y\right)\leq\min_{y\in\triangle_{2}}u\left(x_{0},y\right)
+\]
+
+\end_inset
+
+באופן דומה גם 
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}\max_{x\in\triangle_{1}}u\left(x,y\right)\geq\max_{x\in\triangle_{1}}u\left(x,y_{0}\right)
+\]
+
+\end_inset
+
+ הכיוון השני של אי השיוויונים ישיר מכך ש-
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ו-
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ נמצאים בקבוצה עליה לוקחים את המינימום והמקס'.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{0}\in\triangle_{1}$
+\end_inset
+
+,
+\begin_inset Formula $y_{0}\in\triangle_{2}$
+\end_inset
+
+ אסט' ביטחון מקסימלי.
+ אז
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}u\left(x_{0},y\right)=\max_{x\in\triangle_{1}}\min_{y\in\triangle_{2}}u\left(x,y\right)=u\left(x_{0},y_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\max_{x\in\triangle_{1}}u\left(x,y_{0}\right)=\min_{y\in\triangle_{2}}\max_{x\in\triangle_{1}}u\left(x,y\right)=u\left(x_{0},y_{0}\right)
+\]
+
+\end_inset
+
+סה"כ קיבלנו
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}u\left(x_{0},y\right)=u\left(x_{0},y_{0}\right)=\max_{x\in\triangle_{1}}u\left(x,y_{0}\right)
+\]
+
+\end_inset
+
+לפי הגדרה 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+ נק' שיווי משקל.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right)$
+\end_inset
+
+ נקודות שיווי משקל.
+ מכך שהן נק' שיווי משקל מתקיים
+\begin_inset Formula 
+\[
+u\left(x_{1},y_{1}\right)\leq u\left(x_{1},y_{2}\right)\leq u\left(x_{2},y_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(x_{2},y_{2}\right)\leq u\left(x_{2},y_{1}\right)\leq u\left(x_{1},y_{1}\right)
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $u\left(x_{1},y_{1}\right)=u\left(x_{1},y_{2}\right)=u\left(x_{2},y_{1}\right)=u\left(x_{2},y_{2}\right)=\max\min u\left(x,y\right)$
+\end_inset
+
+.
+ בפרט לכל 
+\begin_inset Formula $x'\in\triangle_{1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(x_{1},y_{2}\right)=u\left(x_{2},y_{2}\right)\geq u\left(x',y_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(x_{2},y_{1}\right)=u\left(x_{1},y_{1}\right)\geq u\left(x',y_{1}\right)
+\]
+
+\end_inset
+
+ולכל 
+\begin_inset Formula $y'\in\triangle_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(x_{1},y_{2}\right)=u\left(x_{1},y_{1}\right)\leq u\left(x_{1},y'\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(x_{2},y_{1}\right)=u\left(x_{2},y_{2}\right)\leq u\left(x_{2},y'\right)
+\]
+
+\end_inset
+
+משמע גם 
+\begin_inset Formula $\left(x_{1},y_{2}\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left(x_{2},y_{1}\right)$
+\end_inset
+
+ נק' שיווי משקל.
+\end_layout
+
+\begin_layout Enumerate
+לא.
+ לדוגמה ב-
+\begin_inset Formula 
+\[
+\begin{bmatrix}1,8 & 1,2 & 0,0\\
+1,4 & 2,12 & 9,3
+\end{bmatrix}
+\]
+
+\end_inset
+
+ראינו כי 
+\begin_inset Formula $\left(1,1\right),\left(2,2\right)$
+\end_inset
+
+ נק' שיווי משקל, אבל 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+ אינה נק' שיווי משקל.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{bmatrix}0 & 0 & -2 & 3 & 4 & 5 & 6 & 7\\
+0 & 0 & 0 & -2 & 3 & 4 & 5 & 6\\
+2 & 0 & 0 & 0 & -2 & 3 & 4 & 5\\
+-3 & 2 & 0 & 0 & 0 & -2 & 3 & 4\\
+-4 & -3 & 2 & 0 & 0 & 0 & -2 & 3\\
+-5 & -4 & -3 & 2 & 0 & 0 & 0 & -2\\
+-6 & -5 & -4 & -3 & 2 & 0 & 0 & 0\\
+-7 & -6 & -5 & -4 & -3 & 2 & 0 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+המטריצה ממשיכה בתבנית דומה עד אינסוף ימינה ולמטה.
+\begin_inset Formula 
+\[
+a_{ij}=\begin{cases}
+j-i & i-j\geq3\\
+2 & i-j=2\\
+0 & \left|i-j\right|\leq1\\
+-2 & i-j=-2\\
+i-j & i-j\leq-3
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נשים לב שכל שורה שולטת על שורה שנמצאת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקומות מתחתיה ולכן ניתן להיפטר מכל השורות למעט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ השורות הראשונות, ולהישאר עם המטריצה
+\begin_inset Formula 
+\[
+\begin{bmatrix}0 & 0 & -2 & 3 & 4 & 5 & 6 & 7 & ...\\
+0 & 0 & 0 & -2 & 3 & 4 & 5 & 6 & ...\\
+2 & 0 & 0 & 0 & -2 & 3 & 4 & 5 & ...\\
+-3 & 2 & 0 & 0 & 0 & -2 & 3 & 4 & ...\\
+-4 & -3 & 2 & 0 & 0 & 0 & -2 & 3 & ...
+\end{bmatrix}
+\]
+
+\end_inset
+
+באותו אופן כל עמודה שולטת על עמודה שנמצאת 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקומות משמאלה ולכן ניתן להיפטר מכל העמודות למעט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+העמודות הראשונות ולקבל
+\begin_inset Formula 
+\[
+\begin{bmatrix}0 & 0 & -2 & 3 & 4\\
+0 & 0 & 0 & -2 & 3\\
+2 & 0 & 0 & 0 & -2\\
+-3 & 2 & 0 & 0 & 0\\
+-4 & -3 & 2 & 0 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

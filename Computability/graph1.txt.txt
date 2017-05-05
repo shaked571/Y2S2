@@ -1,17 +1,25 @@
-\begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto] 
+\begin{tikzpicture}[shorten >=2pt,node distance=4cm,on grid,auto] 
    \node[state,initial] (q_0)   {$q_0$}; 
    \node[state] (q_1) [right=of q_0] {$q_1$}; 
    \node[state] (q_2) [right=of q_1] {$q_2$}; 
    \node[state] (q_3) [right=of q_2] {$q_3$};
-   \node[state] (q_4) [right=of q_3] {$q_4$};
-   \node[state] (q_r) [below=of q_0] {$q_{rej}$};
-   \node[state] (q_a) [right=of q_r] {$q_{acc}$};
+   \node[state] (q_4) [below=of q_2] {$q_4$};
+   \node[state] (q_r) [below=of q_1] {$q_{rej}$};
+   \node[state] (q_a) [below=of q_r] {$q_{acc}$};
 
     \path[->] 
-    (q_0) edge  node {aXR} (q_1)
-          edge  node {bXR} (q_r)
-    (q_1) edge  node  {1} (q_2)
-          edge [loop above] node {0} ()
-    (q_2) edge  node [swap] {0} (q_3) 
-          edge [loop below] node {1} ();
+    (q_0) edge  node {$a\to X,R$} (q_1)
+          edge  node [below,sloped] {$[b,c]\to X,R$} (q_r)
+    (q_1) edge  node  {$b\to X,R$} (q_2)
+          edge [loop above] node {$[a,X]\to [a,X],R$} ()
+	  edge  node [sloped,below] {$c\to X,R$} (q_r)
+    (q_2) edge  node [swap] {$c\to X,R$} (q_3) 
+	  edge  node [sloped] {$a\to X,R$} (q_r)
+          edge [loop above] node {$[b,X]\to [b,X],R$} ()
+    (q_3) edge [loop above] node {$[a,b,c,X]\to [a,b,c,X],L$} ()
+          edge  node [sloped] {$\sqcup \to \sqcup ,R$} (q_4)
+    (q_4) edge [loop below] node {$X\to X,R$} ()
+ 	  edge  node [sloped, above] {$\sqcup \to \sqcup, L$} (q_a)
+          edge  node [sloped] {$a \to X,R$} (q_1)
+          edge  node {$[b,c] \to X,R$} (q_r);
 \end{tikzpicture}
