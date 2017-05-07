@@ -400,16 +400,57 @@ L\left(\gamma\right)=\int_{c}^{d}\sqrt{\rho^{2}+\left(\rho'\right)^{2}}d\theta
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
+\begin_inset Formula $\overline{f}\left(x,y\right)=g\left(\sqrt{x^{2}+y^{2}}\right)\left(x,y\right)$
+\end_inset
 
-\begin_layout Plain Layout
-
+.
 \end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\gamma\left(t\right)=\left(R\cos t,R\sin t\right)$
+\end_inset
+
+ מסילה לאורך מעגל קונצנטרי.
+\begin_inset Formula 
+\begin{align*}
+\int_{\gamma}\left\langle \overline{f}\left(\gamma\left(t\right)\right)\mid\gamma'\left(t\right)\right\rangle dt & =\int_{\gamma}\left\langle g\left(R\right)\left(R\cos t,R\sin t\right)\mid\left(-R\sin t,R\cos t\right)\right\rangle dt=\\
+= & \int_{\gamma}g\left(R\right)\left(-R^{2}\cos t\sin t+R^{2}\sin t\cos t\right)dt=\\
+= & \int_{\gamma}g\left(R\right)\cdot0dt=0
+\end{align*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+לא.
+ דוגמה נגדית:
+\end_layout
+
+\begin_layout Section*
+שאלה שתים-עשרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{f}\left(\overline{x}\right)=\begin{array}{c}
+f_{1}\left(x_{1}\right)\\
+\vdots\\
+f_{n}\left(x_{n}\right)
+\end{array}$
+\end_inset
+
+, 
+\begin_inset Formula $f_{i}\colon\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ רציפות.
+ נראה כי 
+\begin_inset Formula $\overline{f}$
+\end_inset
+
+ שדה הנוצר מגראדיינטים.
 \end_layout
 
 \end_body
