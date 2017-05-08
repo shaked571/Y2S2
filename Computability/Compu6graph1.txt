@@ -1,0 +1,15 @@
+\begin{tikzpicture}[shorten >=2pt,node distance=4cm,on grid,auto] 
+    \node[state,initial] (q_0)   {$q_0$};
+    \node[state] (q_1) [right=of q_0] {$q_1$};
+    \node[state] (q_2) [right=of q_1] {$q_2$};
+    \node[state] (q_r) [below=of q_0] {$q_{rej}$};
+    \node[state] (q_a) [right=of q_r] {$q_{acc}$};
+    
+    \path[->] 
+    (q_0) edge  node {$0\to 1,R$} (q_1)
+          edge  node {$1\to 1,R$} (q_r)
+    (q_1) edge  node {$0\to 1,R$} (q_2)
+          edge  node {$1\to 1,R$} (q_r)
+    (q_2) edge  node {$0\to 1,R$} (q_a)
+          edge  node {$1\to 1,R$} (q_r);
+\end{tikzpicture}

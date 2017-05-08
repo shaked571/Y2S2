@@ -1,0 +1,799 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning,arrows}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\rightmargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+חישוביות - תרגיל 
+\numeric on
+6
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $L\in\text{coRE}$
+\end_inset
+
+.
+ נרצה לראות כי 
+\begin_inset Formula $L^{*}\in\text{coRE}$
+\end_inset
+
+.
+ מספיק שנראה כי יש 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט שעוצרת ומחזירה 
+\begin_inset Formula $q_{\text{rej}}$
+\end_inset
+
+ על כל 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w\notin L^{*}$
+\end_inset
+
+, ואם 
+\begin_inset Formula $w\in L^{*}$
+\end_inset
+
+ אז היא או עוצרת ומחזירה 
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+ או לא עוצרת.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכל 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, יש מספר סופי של דרכים שבהן ניתן לחלק אותה לתתי מילים,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ בדיוק 
+\begin_inset Formula $2^{\left|w\right|-1}$
+\end_inset
+
+ דרכים.
+ יש ל-
+\begin_inset Formula $L$
+\end_inset
+
+ מ"ט 
+\begin_inset Formula $M'$
+\end_inset
+
+ כמו שתיארנו מעלה כי היא ב-
+\begin_inset Formula $\text{coRE}$
+\end_inset
+
+.
+ לכן נריץ במקביל לכל היותר 
+\begin_inset Formula $2^{\left|w\right|-1}\cdot\left|w\right|$
+\end_inset
+
+ מכונות כאלה לפי כל החלוקות האפשריות, כאשר לכל תת מילה בחלוקה נתאים מכונה.
+ אם 
+\begin_inset Formula $w\notin L^{*}$
+\end_inset
+
+, אז לכל חלוקה לפחות מכונה אחת שרצה על מילה מהחלוקה עוצרת ומחזירה 
+\begin_inset Formula $q_{\text{rej}}$
+\end_inset
+
+ )כי לכל 
+\begin_inset Formula $w_{1}\cdot\dotsc\cdot w_{n}=w\notin L^{*}$
+\end_inset
+
+ בהכרח קיים 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w_{i}\notin L$
+\end_inset
+
+(.
+ ברגע שבחלוקה עצרה מכונה אחת אנחנו יכולים לפסול את החלוקה, ולכן נוכל לפסול
+ את כל החלוקות ולהחזיר 
+\begin_inset Formula $q_{\text{rej}}$
+\end_inset
+
+.
+ אם קיימת חלוקה שבה כל המכונות מחזירות 
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+ נחזיר 
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+ ואם יש חלוקה שאף מכונה בה לא עצרה לא נעצור.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\colon\Sigma^{*}\to\Sigma^{*}$
+\end_inset
+
+ חשיבה, 
+\begin_inset Formula $L\subseteq\Sigma^{*}$
+\end_inset
+
+ שפה כך ש-
+\begin_inset Formula $L\in RE$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+צ"ל: 
+\begin_inset Formula $f\left(L\right)=\left\{ f\left(x\right)\colon x\in L\right\} \in RE$
+\end_inset
+
+.
+ כיוון ש-
+\begin_inset Formula $L\in RE$
+\end_inset
+
+ יש 
+\begin_inset Formula $E$
+\end_inset
+
+ אנומרטור כך ש-
+\begin_inset Formula $L\left(E\right)=L$
+\end_inset
+
+.
+ כיוון ש-
+\begin_inset Formula $f$
+\end_inset
+
+ חשיבה יש 
+\begin_inset Formula $M'$
+\end_inset
+
+ מ"ט שמחשב אותה.
+ נגדיר את 
+\begin_inset Formula $M$
+\end_inset
+
+ כך:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ תריץ את 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ אחרי כל מחרוזת 
+\begin_inset Formula $s$
+\end_inset
+
+ ש-
+\begin_inset Formula $E$
+\end_inset
+
+ מדפיסה, 
+\begin_inset Formula $M$
+\end_inset
+
+ תריץ את 
+\begin_inset Formula $M'$
+\end_inset
+
+ על 
+\begin_inset Formula $s$
+\end_inset
+
+ ותשווה את 
+\begin_inset Formula $w$
+\end_inset
+
+ עם 
+\begin_inset Formula $f\left(s\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם נגיע ל-
+\begin_inset Formula $f\left(s\right)$
+\end_inset
+
+ שזהה ל-
+\begin_inset Formula $w$
+\end_inset
+
+, נעצור ונקבל.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $w\in f\left(L\right)$
+\end_inset
+
+, אז יש 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w=f\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x\in L\Rightarrow x\in L\left(E\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x$
+\end_inset
+
+ יודפס מתישהו, משמע נעצור ונקבל.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f^{-1}\left(L\right)=\left\{ y\colon f\left(y\right)\in L\right\} \in RE$
+\end_inset
+
+.
+ נבנה מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+, כך שבהינתן 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, נריץ את 
+\begin_inset Formula $M'$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ )המ"ט שמחשב את 
+\begin_inset Formula $f$
+\end_inset
+
+(, וכעת נריץ את 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ )המ"ט שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+( על סרט הקלט.
+ אם 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ עוצר על 
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+, תחזיר גם 
+\begin_inset Formula $M'$
+\end_inset
+
+ 
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\text{add(operand)}$
+\end_inset
+
+- נחבר את האופרנד שפורסר עם הערך במיקום בסרט החישוב שמיועד ל-
+\begin_inset Formula $c\left(0\right)$
+\end_inset
+
+, נשחרר את הפקודה הנוכחית ונסמן את הבאה.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\text{readto(operand)}$
+\end_inset
+
+- סרוק את סרט ה-
+\begin_inset Formula $\text{RAM}$
+\end_inset
+
+ עד שנמצא את התא הנכון, ונעתיק אליו את המספר המסומן בסרט הקלט.
+ אם אין תא כזה, ניצור אחד חדש.
+ נשחרר את המספר בסרט הקלט ונסמן את המספר הבא, נשחרר את הפקודה בסרט הקלט
+ ונסמן את הבאה.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\text{jump-if>0(operand)}$
+\end_inset
+
+- נבדוק אם יש במיקום המיועד ל-
+\begin_inset Formula $c\left(0\right)$
+\end_inset
+
+ בסרט החישוב ספרה שונה מאפס, אם כן, נקרא ל-
+\begin_inset Formula $\text{jump(operand)}$
+\end_inset
+
+, אחרת נשחרר את הפקודה הנוכחית ונסמן את הבאה.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\text{accept}$
+\end_inset
+
+- נעבור למצב 
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\text{store}$
+\end_inset
+
+- 
+\begin_inset Formula $O\left(n\log k\right)$
+\end_inset
+
+ כמו ב-
+\begin_inset Formula $\text{load}$
+\end_inset
+
+, כי יש לכל היותר מספר קבוע של פעולות נוספות )יצירת תא חדש(.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\text{sub}$
+\end_inset
+
+- גם 
+\begin_inset Formula $O\left(\log k\right)$
+\end_inset
+
+ עם חיסור ארוך.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\text{jump}$
+\end_inset
+
+- 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+.
+ ללא תלות במספר הצעדים 
+\begin_inset Formula $n$
+\end_inset
+
+ שכבר ביצעה המכונה, גודל הקפיצה לא יכול להיות גדול ממספר הפקודות במכונה,
+ שהוא סופי וקבוע.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\text{reject}$
+\end_inset
+
+- 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+על כל פעולה כזאת צריך להוסיף את המחיר של הערכת אופרנד, 
+\begin_inset Formula $O\left(n\log k\right)$
+\end_inset
+
+.
+ סה"כ נקבל כי על 
+\begin_inset Formula $n$
+\end_inset
+
+ צעדים במכונת ה-
+\begin_inset Formula $\text{RAM}$
+\end_inset
+
+ נצטרך לבצע 
+\begin_inset Formula $O\left(n^{2}\log k\right)$
+\end_inset
+
+ צעדים, יכול להיות שנצטרך להכפיל בעוד 
+\begin_inset Formula $n$
+\end_inset
+
+ בגלל המחיר של סימולציה של כמה סרטים שונים.
+ בכל מקרה הסימולציה פולינומיאלית.
+ גם מבחינת מקום הסימולציה פולינומיאלית.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט, אנחנו רוצים להחליט אם 
+\begin_inset Formula $L\left(M\right)\neq\varnothing$
+\end_inset
+
+.
+ אלגוריתם שגוי: נבנה מ-
+\begin_inset Formula $M$
+\end_inset
+
+ גרף מכוון בו המצבים הם קודקודים, ויש צלע 
+\begin_inset Formula $\left(q,q'\right)$
+\end_inset
+
+ אם יש 
+\begin_inset Formula $\sigma,\tau\in\Gamma$
+\end_inset
+
+ ו-
+\begin_inset Formula $D\in\left\{ L,R\right\} $
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\delta\left(q,\sigma\right)=\left(q',\tau,D\right)$
+\end_inset
+
+.
+ נריץ 
+\begin_inset Formula $BFS$
+\end_inset
+
+ מ-
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ ונראה אם ניתן להגיע ל-
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+.
+ אם כן אז 
+\begin_inset Formula $L\left(M\right)\neq\varnothing$
+\end_inset
+
+, אחרת 
+\begin_inset Formula $L\left(M\right)=\varnothing$
+\end_inset
+
+.
+ דוגמא נגדית:
+\lang english
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "Compu6graph1.txt"
+
+\end_inset
+
+
+\lang hebrew
+מהאלגוריתם נקבל כי 
+\begin_inset Formula $L\left(M\right)=\varnothing$
+\end_inset
+
+, אבל ברור כי אף פעם לא נגיע ל-
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ כאשר הסרט מצביע על 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E_{TM}=\left\{ \left\langle M\right\rangle \mid L\left(M\right)=\varnothing\right\} $
+\end_inset
+
+.
+ נוכיח כי 
+\begin_inset Formula $\overline{E_{TM}}\in RE$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\overline{E_{TM}}=\left\{ \left\langle M\right\rangle \mid L\left(M\right)\neq\varnothing\right\} $
+\end_inset
+
+.
+ אפשר למספר את 
+\begin_inset Formula $\Sigma^{*}$
+\end_inset
+
+ כי היא בת מנייה.
+ לכן, נגדיר 
+\begin_inset Formula $M_{\overline{E}}$
+\end_inset
+
+ מ"ט שבדומה להוכחה כי לכל 
+\begin_inset Formula $L\in RE$
+\end_inset
+
+ קיים אנומרטור, תריץ בכל שלב 
+\begin_inset Formula $i$
+\end_inset
+
+ צעדים על 
+\begin_inset Formula $i$
+\end_inset
+
+ המילים הראשונות ב-
+\begin_inset Formula $\Sigma^{*}$
+\end_inset
+
+.
+ אם ל-
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ הקלט יש מילה 
+\begin_inset Formula $w$
+\end_inset
+
+ בשפה, אז אחרי מספר סופי של צעדים נסיים להריץ את 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+על 
+\begin_inset Formula $w$
+\end_inset
+
+, ולכן בסימולציה נגיע ל-
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+ ונשלח גם את 
+\begin_inset Formula $M_{\overline{E}}$
+\end_inset
+
+ ל-
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

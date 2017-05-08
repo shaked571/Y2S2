@@ -811,6 +811,74 @@ status open
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+נניח בשלילה כי יש מסילה 
+\begin_inset Formula $f\colon\left[a,b\right]\to L^{*}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $f\left(a\right)=\left(1,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(b\right)=\left(\Omega,0\right)$
+\end_inset
+
+.
+ מערך הביניים 
+\begin_inset Formula $\left[\left(1,0\right),\left(\Omega,0\right)\right]\subseteq f\left(\left[a,b\right]\right)$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $\alpha\in\Omega$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula 
+\[
+U_{\alpha}=f^{-1}\left(\left(\alpha,0\right),\left(\alpha^{+},0\right)\right)
+\]
+
+\end_inset
+
+נשים לב שזו קבוצה פתוחה.
+ בנוסף נשים לב כי אם 
+\begin_inset Formula $\alpha,\beta\in\Omega$
+\end_inset
+
+ שונים אז 
+\begin_inset Formula $U_{\alpha}\cap U_{\beta}=\varnothing$
+\end_inset
+
+.
+ מכך שהן פתוחות, אפשר למצוא לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $q_{\alpha}\in U_{\alpha}$
+\end_inset
+
+.
+ נשים לב ש-
+\begin_inset Formula $\alpha\to q_{\alpha}$
+\end_inset
+
+ היא אם כך העתקה חח"ע שהטווח של הרציונליים.
+ בפרט נובע מכך כי
+\begin_inset Formula 
+\[
+\left|\Omega\right|=\left|\Omega\backslash\left\{ 0\right\} \right|\leq\left|\mathbb{Q}\right|
+\]
+
+\end_inset
+
+בסתירה לכך שהוא סודר שאינו בן מנייה.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $X=\left(\left[0,1\right]\cap\mathbb{Q}\right)\times\left\{ 0\right\} \subseteq\mathbb{R}^{2}$
@@ -1120,6 +1188,19 @@ t_{1}v=t_{1}u\iff t_{1}\left(v-u\right)=0
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \end_body
 \end_document
