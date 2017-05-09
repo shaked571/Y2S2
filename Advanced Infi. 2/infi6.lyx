@@ -360,9 +360,10 @@
 \begin{align*}
 \int_{\gamma}\overline{f} & =\int_{0}^{\frac{\pi}{2}}\left\langle \left(\cos2t,-2\left(1+\frac{t}{\pi}\right)\sin\left(2t\right)\right)\mid\left(\frac{1}{\pi},1\right)\right\rangle dt=\\
 = & \int_{0}^{\frac{\pi}{2}}\frac{\cos2t}{\pi}-2\left(1+\frac{t}{\pi}\right)\sin2tdt=\\
-= & \left[\frac{\sin2t}{2\pi}+\cos2t+\pi\left(t\cos2t-\sin2t\right)\right]_{0}^{\frac{\pi}{2}}=\\
-= & \left(\frac{0}{2\pi}+\left(-1\right)+\pi\left(\frac{\pi}{2}\cdot\left(-1\right)-0\right)\right)-\left(\frac{0}{2\pi}+1+\pi\left(0\cdot\left(1\right)-0\right)\right)=\\
-= & -\frac{\pi^{2}}{2}-2
+= & \int_{0}^{\frac{\pi}{2}}\frac{\cos2t}{\pi}-2\sin2t-\frac{2t}{\pi}\sin2tdt=\\
+= & \left[\frac{\sin2t}{2\pi}+\cos2t+\frac{1}{\pi}\left(t\cos2t-\sin2t\right)\right]_{0}^{\frac{\pi}{2}}=\\
+= & \left(\frac{0}{2\pi}+\left(-1\right)+\frac{1}{\pi}\left(\frac{\pi}{2}\cdot\left(-1\right)-\left(0\right)\right)\right)-\left(\frac{0}{2\pi}+1+\frac{1}{\pi}\left(0\cdot\left(1\right)-0\right)\right)=\\
+= & -1-\frac{1}{2}-1=-2\frac{1}{2}
 \end{align*}
 
 \end_inset
@@ -543,6 +544,51 @@ f_{n}\left(x_{n}\right)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section*
+שאלה שלוש-עשרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma$
+\end_inset
+
+ היא ספרית ולכן 
+\begin_inset Formula $\Vert\gamma\left(t\right)\Vert=1$
+\end_inset
+
+, משמע 
+\begin_inset Formula $\left\langle \gamma\left(t\right)\mid\gamma\left(t\right)\right\rangle $
+\end_inset
+
+ קבועה.
+ לכן
+\begin_inset Formula 
+\[
+\left(\left\langle \gamma\left(t\right)\mid\gamma\left(t\right)\right\rangle \right)'=2\left(\gamma_{1}\left(t\right)\gamma_{1}'\left(t\right)+\gamma_{2}\left(t\right)\gamma_{2}'\left(t\right)+\gamma_{3}\left(t\right)\gamma_{3}'\left(t\right)\right)=0
+\]
+
+\end_inset
+
+נגזור שוב ונקבל כי
+\begin_inset Formula 
+\begin{align*}
+0 & =\gamma_{1}'^{2}\left(t\right)+\gamma_{1}\left(t\right)\gamma_{1}^{''}\left(t\right)+\gamma_{2}'^{2}\left(t\right)+\gamma_{2}\left(t\right)\gamma_{2}^{''}\left(t\right)+\gamma_{3}'^{2}\left(t\right)+\gamma_{3}\left(t\right)\gamma_{3}^{''}\left(t\right)=\\
+= & \Vert\gamma'\left(t\right)\Vert^{2}+\left\langle \gamma\left(t\right)\mid\gamma''\left(t\right)\right\rangle =1+\left\langle \gamma\left(t\right)\mid\gamma''\left(t\right)\right\rangle 
+\end{align*}
+
+\end_inset
+
+קיבלנו כי
+\begin_inset Formula 
+\[
+1=\left|\left\langle \gamma\left(t\right)\mid\gamma''\left(t\right)\right\rangle \right|\leq\Vert\gamma\left(t\right)\Vert\cdot\Vert\gamma''\left(t\right)\Vert=\Vert\gamma''\left(t\right)\Vert
+\]
+
+\end_inset
+
+כנדרש.
 \end_layout
 
 \end_body
