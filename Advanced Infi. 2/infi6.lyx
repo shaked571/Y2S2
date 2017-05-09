@@ -300,13 +300,70 @@
 שאלה שישית
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
+\begin_layout Enumerate
+\begin_inset Formula $\gamma\left(t\right)=\left(2t^{3},2t^{2}+1\right)$
+\end_inset
 
-\begin_layout Plain Layout
+, 
+\begin_inset Formula $\overline{f}\left(x,y\right)=\left(x+y,x-y\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\int_{\gamma}\overline{f}=\int_{0}^{1}\left\langle f\left(\gamma\left(t\right)\right)\mid\gamma'\left(t\right)\right\rangle dt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma'\left(t\right)=\left(6t^{2},4t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{\gamma}\overline{f} & =\int_{0}^{1}\left\langle \left(2t^{3}+2t^{2}+1,2t^{3}-2t^{2}-1\right)\mid\left(6t^{2},4t\right)\right\rangle dt=\\
+= & \int_{0}^{1}\left(2t^{3}+2t^{2}+1\right)6t^{2}+\left(2t^{3}-2t^{2}-1\right)4tdt\\
+= & \int_{0}^{1}12t^{5}+12t^{4}+6t^{2}+8t^{4}-8t^{3}-4tdt=\\
+= & \int_{0}^{1}12t^{5}+20t^{4}-8t^{3}+6t^{2}-4tdt=\\
+= & \left[2t^{6}+4t^{5}-2t^{4}+2t^{3}-2t^{2}\right]_{0}^{1}=2+4-2+2-2=4
+\end{align*}
+
+\end_inset
+
 
 \end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{f}\left(x,y\right)=\left(\cos\left(2y\right),-2x\sin\left(2y\right)\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma\left(t\right)=\left(1+\frac{t}{\pi},t\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\gamma'\left(t\right)=\left(\frac{1}{\pi},1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{\gamma}\overline{f} & =\int_{0}^{\frac{\pi}{2}}\left\langle \left(\cos2t,-2\left(1+\frac{t}{\pi}\right)\sin\left(2t\right)\right)\mid\left(\frac{1}{\pi},1\right)\right\rangle dt=\\
+= & \int_{0}^{\frac{\pi}{2}}\frac{\cos2t}{\pi}-2\left(1+\frac{t}{\pi}\right)\sin2tdt=\\
+= & \left[\frac{\sin2t}{2\pi}+\cos2t+\pi\left(t\cos2t-\sin2t\right)\right]_{0}^{\frac{\pi}{2}}=\\
+= & \left(\frac{0}{2\pi}+\left(-1\right)+\pi\left(\frac{\pi}{2}\cdot\left(-1\right)-0\right)\right)-\left(\frac{0}{2\pi}+1+\pi\left(0\cdot\left(1\right)-0\right)\right)=\\
+= & -\frac{\pi^{2}}{2}-2
+\end{align*}
 
 \end_inset
 
@@ -451,6 +508,41 @@ f_{n}\left(x_{n}\right)
 \end_inset
 
  שדה הנוצר מגראדיינטים.
+ נגדיר 
+\begin_inset Formula $F\colon\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $F\left(\overline{x}\right)=\sum_{i=1}^{n}F_{i}\left(x_{i}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $F_{i}$
+\end_inset
+
+ פונק' קדומה של 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+, קיימות מרציפות.
+ אז
+\begin_inset Formula 
+\[
+\nabla F\left(\overline{x}\right)=\begin{bmatrix}\frac{\partial F}{\partial x_{1}}\\
+\vdots\\
+\frac{\partial F}{\partial x_{n}}
+\end{bmatrix}=\begin{bmatrix}F_{1}'\left(x_{1}\right)\\
+\vdots\\
+F_{n}'\left(x_{n}\right)
+\end{bmatrix}=\begin{bmatrix}f_{1}\left(x_{1}\right)\\
+\vdots\\
+f_{n}\left(x_{n}\right)
+\end{bmatrix}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
