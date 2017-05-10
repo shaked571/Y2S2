@@ -227,6 +227,10 @@
 \end_inset
 
  ואם יש חלוקה שאף מכונה בה לא עצרה לא נעצור.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -411,6 +415,22 @@
 \end_inset
 
 .
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -427,6 +447,457 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\subseteq\Sigma^{*}$
+\end_inset
+
+.
+ צ"ל: 
+\begin_inset Formula $L\in\text{RE}$
+\end_inset
+
+ אם"ם יש מונה 
+\begin_inset Formula $E$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(E\right)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+: נניח 
+\begin_inset Formula $L\in\text{RE}$
+\end_inset
+
+.
+ נבנה מונה שמדפיס את כל המילים ב-
+\begin_inset Formula $L$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ נבחר מספור כלשהוא של 
+\begin_inset Formula $\Sigma^{*}$
+\end_inset
+
+ )קיים כי היא בת מנייה(.
+ נגדיר 
+\begin_inset Formula $E$
+\end_inset
+
+ מ"ט שפועלת כלולאה.
+ באיטרציה ה-
+\begin_inset Formula $i$
+\end_inset
+
+, היא תריץ במקביל את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $i$
+\end_inset
+
+ המילים הראשונות ב-
+\begin_inset Formula $\Sigma^{*}$
+\end_inset
+
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ צעדים כל מילה.
+ כל מילה שהסימולציה של 
+\begin_inset Formula $M$
+\end_inset
+
+ עליה הגיע למצב מקבל נדפיס.
+ אז לכל 
+\begin_inset Formula $w\in L$
+\end_inset
+
+, קיים מספר 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w$
+\end_inset
+
+ במקום ה-
+\begin_inset Formula $k$
+\end_inset
+
+ במספור של 
+\begin_inset Formula $\Sigma^{*}$
+\end_inset
+
+, וקיים מספר 
+\begin_inset Formula $j$
+\end_inset
+
+ של צעדים בריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ לכן באיטרציה ה-
+\begin_inset Formula $\max\left\{ k,j\right\} $
+\end_inset
+
+ המילה 
+\begin_inset Formula $w$
+\end_inset
+
+ תודפס, משמע 
+\begin_inset Formula $w\in L\left(E\right)$
+\end_inset
+
+.
+ לחילופין, כל מילה ב-
+\begin_inset Formula $L\left(E\right)$
+\end_inset
+
+ היא מילה שיש לה ריצה מקבלת ב-
+\begin_inset Formula $M$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $L\left(E\right)\subseteq L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+: נניח כי קיים 
+\begin_inset Formula $E$
+\end_inset
+
+ מונה כך ש-
+\begin_inset Formula $L\left(E\right)=L$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט כך שבהינתן קלט 
+\begin_inset Formula $w$
+\end_inset
+
+, בכל ידפיס מילה מ-
+\begin_inset Formula $E$
+\end_inset
+
+ וישווה אותה ל-
+\begin_inset Formula $w$
+\end_inset
+
+.
+ כיוון שכל מילה 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ תופיע אחרי מספר סופי של צעדים, 
+\begin_inset Formula $M$
+\end_inset
+
+ תעצור ותחזיר 
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $M$
+\end_inset
+
+ מזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+, משמע 
+\begin_inset Formula $L\in\text{RE}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+סדר מינלקס - 
+\begin_inset Formula $w,w'\in\Sigma^{*}$
+\end_inset
+
+ אז 
+\begin_inset Formula $w<w'$
+\end_inset
+
+ אם
+\begin_inset Formula 
+\[
+\left|w\right|<\left|w'\right|\vee\left(\left|w\right|=\left|w'\right|\wedge w<_{LEX}w'\right)
+\]
+
+\end_inset
+
+תהי 
+\begin_inset Formula $L\subseteq\Sigma^{*}$
+\end_inset
+
+.
+ צ"ל: 
+\begin_inset Formula $L\in\text{R}$
+\end_inset
+
+ אם"ם קיים 
+\begin_inset Formula $E$
+\end_inset
+
+ מונה כך ש-
+\begin_inset Formula $L\left(E\right)=L$
+\end_inset
+
+ ו-
+\begin_inset Formula $E$
+\end_inset
+
+ מדפיסה מילים בסדר מינלקס.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+: נניח 
+\begin_inset Formula $L\in\text{R}$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט שמכריע אותה.
+ נגדיר מונה 
+\begin_inset Formula $E$
+\end_inset
+
+ שבכל שלב מייצר את המילה הבאה בסדר המינלקס בצורה הבאה:
+\end_layout
+
+\begin_layout Itemize
+בשלב הראשון-נריץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על המילה הריקה.
+ לפי תשובת 
+\begin_inset Formula $M$
+\end_inset
+
+ נדפיס.
+\end_layout
+
+\begin_layout Itemize
+בהינתן מילה 
+\begin_inset Formula $w=w_{1}...w_{n}$
+\end_inset
+
+ בסרט העבודה, נעביר את הראש ל-
+\begin_inset Formula $w_{n}$
+\end_inset
+
+.
+ אם אפשר, נחליף אותו באות הבאה בסדר על 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ אם הוא מקסימלי, נעבור ל-
+\begin_inset Formula $w_{n-1}$
+\end_inset
+
+ ונחזור על התהליך.
+ אם החלפנו אות, נריץ על המילה החדשה את 
+\begin_inset Formula $M$
+\end_inset
+
+ ונדפיס בהתאם לתשובה.
+ אם לא החלפנו אף אות, נחליף את כל האותיות באות המינימלית ב-
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, נוסיף 
+\begin_inset Formula $w_{n+1}$
+\end_inset
+
+ האות המינימלית מימין ונריץ עליה את 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כיוון ש-
+\begin_inset Formula $M$
+\end_inset
+
+ מכריעה, אין סכנה שנתקע על קלט, וברור שאנחנו מדפיסים את המילים בסדר המינלקס,
+ ומדפיסים כל מילה אפשרית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+: נניח יש 
+\begin_inset Formula $E$
+\end_inset
+
+ מונה כבנתונים.
+ נגדיר אותה מכונה כמו בסעיף הקודם.
+ ההבדל הוא שכעת, כיוון ש-
+\begin_inset Formula $E$
+\end_inset
+
+ מדפיסה בסדר מינלקס, בהינתן מילה 
+\begin_inset Formula $w$
+\end_inset
+
+, כש-
+\begin_inset Formula $E$
+\end_inset
+
+ תדפיס מילה 
+\begin_inset Formula $w'$
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $\left|w\right|<\left|w\right|'$
+\end_inset
+
+ )זה יקרה אחרי זמן סופי כי יש מספר סופי של מילים עם אורך חסום שניתן לייצר
+ מקבוצה סופית( נדע ש-
+\begin_inset Formula $w$
+\end_inset
+
+ לא יכולה להיות בשפה ולכן נעצור.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $L\in\text{RE}$
+\end_inset
+
+ אינסופית.
+ יהי 
+\begin_inset Formula $E$
+\end_inset
+
+ המונה שלה.
+ נגדיר 
+\begin_inset Formula $E'$
+\end_inset
+
+ מונה חדש, שמסמלצ את 
+\begin_inset Formula $E$
+\end_inset
+
+, מדפיס את המילה הראשונה ש-
+\begin_inset Formula $E$
+\end_inset
+
+ מדפיס, ולאחר מכן, שולף מ-
+\begin_inset Formula $E$
+\end_inset
+
+ מילים עד שהוא מוצא מילה שגדולה בסדר מינלקס מהמילה האחרונה ש-
+\begin_inset Formula $E'$
+\end_inset
+
+ הדפיס.
+ כיוון ש-
+\begin_inset Formula $L$
+\end_inset
+
+ אינסופית, תמיד אחרי מספר סופי של צעדים 
+\begin_inset Formula $E$
+\end_inset
+
+ ידפיס מילה כזו, לכן גם 
+\begin_inset Formula $E'$
+\end_inset
+
+ מדפיס אינסוף מילים שונות.
+ מהסעיף הקודם 
+\begin_inset Formula $L\left(E'\right)\in\text{R}$
+\end_inset
+
+, ו-
+\begin_inset Formula $L\left(E'\right)\subseteq L\left(E\right)=L$
+\end_inset
+
+ כנדרש.
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset ERT
 status open
@@ -615,6 +1086,22 @@ status open
  בגלל המחיר של סימולציה של כמה סרטים שונים.
  בכל מקרה הסימולציה פולינומיאלית.
  גם מבחינת מקום הסימולציה פולינומיאלית.
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -671,16 +1158,23 @@ status open
 
 .
  דוגמא נגדית:
-\lang english
+\end_layout
 
+\begin_deeper
+\begin_layout Standard
+
+\lang english
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
+preview true
 filename "Compu6graph1.txt"
 
 \end_inset
 
 
-\lang hebrew
+\end_layout
+
+\begin_layout Standard
 מהאלגוריתם נקבל כי 
 \begin_inset Formula $L\left(M\right)=\varnothing$
 \end_inset
@@ -694,8 +1188,25 @@ filename "Compu6graph1.txt"
 \end_inset
 
 .
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $E_{TM}=\left\{ \left\langle M\right\rangle \mid L\left(M\right)=\varnothing\right\} $
 \end_inset
@@ -765,6 +1276,22 @@ filename "Compu6graph1.txt"
 \end_inset
 
 .
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -792,6 +1319,152 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $S$
+\end_inset
+
+ קבוצה של מ"ט מכריעות ונניח כי 
+\begin_inset Formula $L_{S}=\left\{ \left\langle M\right\rangle \mid M\in S\right\} \in\text{RE}$
+\end_inset
+
+ יהי 
+\begin_inset Formula $E$
+\end_inset
+
+ מונה שלה.
+ נניח בשלילה כי לכל 
+\begin_inset Formula $D$
+\end_inset
+
+ מכריעה, 
+\begin_inset Formula $D\in S$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט כך: 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת כקלט זוג 
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+.
+ היא מריצה את המכונה ה-
+\begin_inset Formula $i$
+\end_inset
+
+ שמודפסת על הקלט 
+\begin_inset Formula $i$
+\end_inset
+
+ ומחזירה 
+\begin_inset Formula $q_{\text{rej}}$
+\end_inset
+
+ אם המכונה מחזירה 
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+, אחרת מחזירה 
+\begin_inset Formula $q_{\text{acc}}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ מכריעה כי כל מכונה ב-
+\begin_inset Formula $E$
+\end_inset
+
+ מכריעה, משמע 
+\begin_inset Formula $M\in S$
+\end_inset
+
+ ולכן יש 
+\begin_inset Formula $j\in\mathbb{N}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+המילה ה-
+\begin_inset Formula $j$
+\end_inset
+
+ שמודפסת ב-
+\begin_inset Formula $E$
+\end_inset
+
+.
+ נשאל, מה 
+\begin_inset Formula $M$
+\end_inset
+
+ מחזירה על 
+\begin_inset Formula $\left(j\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+M\left(j\right)=\begin{cases}
+accept & \text{if }M\text{ rejects on }j\\
+reject & \text{if }M\text{ accepts on }j
+\end{cases}
+\]
+
+\end_inset
+
+קיבלנו סתירה.
+\end_layout
+
+\begin_layout Enumerate
+הראנו כי אם 
+\begin_inset Formula $L_{s}\in\text{RE}$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $D$
+\end_inset
+
+ מכריעה כך ש-
+\begin_inset Formula $D\notin S$
+\end_inset
+
+.
+ בפרט נובע כי 
+\begin_inset Formula $S\neq\left\{ M\mid M\text{ is a decider}\right\} $
+\end_inset
+
+.
+ השקילות של הטענה היא כי אם 
+\begin_inset Formula $S=\left\{ M\mid M\text{ is a decider}\right\} $
+\end_inset
+
+ אז 
+\begin_inset Formula $L_{S}\notin\text{RE`}$
+\end_inset
+
+, אבל במקרה זה 
+\begin_inset Formula $L_{S}=\left\{ \left\langle M\right\rangle \mid M\in S\right\} =\left\{ \left\langle M\right\rangle \mid M\text{ is a decider}\right\} $
+\end_inset
+
+.
 \end_layout
 
 \end_deeper

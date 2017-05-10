@@ -1,0 +1,1414 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding cp1255
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\rightmargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תורת המשחקים - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}a & 0\\
+0 & b
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נתון 
+\begin_inset Formula $a\cdot b<0$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $\overline{x}\in\triangle_{\Sigma_{1}}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\overline{x}=\begin{pmatrix}x\\
+1-x
+\end{pmatrix}$
+\end_inset
+
+.
+ מהטענה שראינו בכיתה
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}u\left(\overline{x},y\right)=\min\left\{ u\left(\overline{x},e_{1}\right),u\left(\overline{x},e_{2}\right)\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(\overline{x},e_{1}\right)=ax
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(\overline{x},e_{2}\right)=b\left(1-x\right)
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $a>0$
+\end_inset
+
+ אז 
+\begin_inset Formula $b<0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+b\left(1-x\right)\leq0\leq a\cdot x
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}u\left(\overline{x},y\right)=b\left(1-x\right)
+\]
+
+\end_inset
+
+ כעת הערך המקס' מתקבל כאשר 
+\begin_inset Formula $x=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\overline{x}=\begin{pmatrix}1\\
+0
+\end{pmatrix}$
+\end_inset
+
+ אסט' ביטחון מקסימלי עבור שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $a<0$
+\end_inset
+
+ אז 
+\begin_inset Formula $b>0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+ax\leq0\leq b\left(1-x\right)
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}u\left(\overline{x},y\right)=ax
+\]
+
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}[2]{\begin{bmatrix}#1\\
+#2
+\end{bmatrix}}
+\end_inset
+
+והערך המקס' מתקבל כאשר 
+\begin_inset Formula $x=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\overline{x}=\vec 01$
+\end_inset
+
+ אסט' ביטחון מקס' עבור שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\overline{y}\in\triangle_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{y}=\vec y{1-y}$
+\end_inset
+
+.
+ שוב מהטענה
+\begin_inset Formula 
+\[
+\max_{x\in\triangle_{1}}u\left(x,\overline{y}\right)=\max_{x\in\triangle_{1}}\left\{ u\left(e_{1},\overline{y}\right),u\left(e_{2},\overline{y}\right)\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(e_{1},\overline{y}\right)=ay
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(e_{2},\overline{y}\right)=b\left(1-y\right)
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $a>0$
+\end_inset
+
+ אז 
+\begin_inset Formula $b<0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+b\left(1-y\right)\leq0\leq a\cdot y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\max_{x\in\triangle_{1}}u\left(x,\overline{y}\right)=ay
+\]
+
+\end_inset
+
+והמינימום מתקבל כאשר 
+\begin_inset Formula $y=0$
+\end_inset
+
+, משמע 
+\begin_inset Formula $\overline{y}=\vec 01$
+\end_inset
+
+ אסט' ביטחון מקסימלי עבור שחקן 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $a<0$
+\end_inset
+
+ אז 
+\begin_inset Formula $b>0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+ay\leq0\leq b\left(1-y\right)
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\max_{x\in\triangle_{1}}u\left(x,\overline{y}\right)=b\left(1-y\right)
+\]
+
+\end_inset
+
+והמינימום מתקבל כאשר 
+\begin_inset Formula $y=1$
+\end_inset
+
+ משמע 
+\begin_inset Formula $\overline{y}=\vec 10$
+\end_inset
+
+ אסט' ביטחון מקסימלית עבור שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ נשים לב שבכל מקרה התקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן ערך המשחק הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נשאר עם אותם סימונים.
+ נשים לב שמתקיים
+\begin_inset Formula 
+\[
+ax\leq b\left(1-x\right)\iff x\leq\frac{b}{a+b}
+\]
+
+\end_inset
+
+לכן במקרה זה 
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}u\left(\overline{x},y\right)=ax
+\]
+
+\end_inset
+
+והמקס' מתקבל כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ מקס', במקרה זה כאשר 
+\begin_inset Formula $x=\frac{b}{a+b}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\overline{x}=\vec{\frac{b}{a+b}}{\frac{a}{a+b}}$
+\end_inset
+
+ והערך המובטח הוא 
+\begin_inset Formula $\frac{ab}{a+b}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $x\geq\frac{b}{a+b}$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}u\left(\overline{x},y\right)=b\left(1-x\right)
+\]
+
+\end_inset
+
+והמקס' מתקבל כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ מינ', במקרה זה כאשר 
+\begin_inset Formula $x=\frac{b}{a+b}$
+\end_inset
+
+ וחזרנו למקרה הקודם.
+ באופן דומה
+\begin_inset Formula 
+\[
+ay\leq b\left(1-y\right)\iff y\leq\frac{b}{a+b}
+\]
+
+\end_inset
+
+לכן במקרה זה
+\begin_inset Formula 
+\[
+\max_{x\in\triangle_{1}}u\left(x,\overline{y}\right)=b\left(1-y\right)
+\]
+
+\end_inset
+
+והמינ' מתקבל כאשר 
+\begin_inset Formula $y$
+\end_inset
+
+ מקס', משמע 
+\begin_inset Formula $y=\frac{b}{a+b}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\overline{y}=\vec{\frac{b}{a+b}}{\frac{a}{a+b}}$
+\end_inset
+
+.
+ באופן דומה גם במקרה השני, לכן ערך המשחק הוא 
+\begin_inset Formula $\frac{ab}{a+b}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma=\left\{ 2,3\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $u\left(i,j\right)=\left(-1\right)^{i+j}\cdot i\cdot j$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מטריצת המשחק היא
+\begin_inset Formula 
+\[
+\begin{bmatrix}4 & -6\\
+-6 & 9
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עבור שחקן
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+גם 
+\begin_inset Formula $2$
+\end_inset
+
+ וגם 
+\begin_inset Formula $3$
+\end_inset
+
+ אסט' ביטחון מקס כי לשתיהן יש אסט' ששחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מבטיח רווח של 
+\begin_inset Formula $-6$
+\end_inset
+
+.
+ באופן דומה הן גם אסט' ביטחון מקסימלי של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+שוב, בהינתן 
+\begin_inset Formula $\overline{x}=\vec x{1-x}$
+\end_inset
+
+ אסט' של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+,
+\begin_inset Formula 
+\[
+\min_{y\in\triangle_{2}}u\left(\overline{x},y\right)=\min\left\{ u\left(\overline{x},e_{1}\right),u\left(\overline{x},e_{2}\right)\right\} 
+\]
+
+\end_inset
+
+נקבל כי
+\begin_inset Formula 
+\[
+u\left(\overline{x},e_{1}\right)=4x-6\left(1-x\right)=10x-6\leq-15x+9=-6x+9\left(1-x\right)=u\left(\overline{x},e_{2}\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $x\leq\frac{3}{5}$
+\end_inset
+
+, ואז המקס' מתקבל כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ מקסימלי לכן 
+\begin_inset Formula $\overline{x}=\vec{\frac{3}{5}}{\frac{2}{5}}$
+\end_inset
+
+, וכאשר 
+\begin_inset Formula $x\geq\frac{3}{5}$
+\end_inset
+
+ אז המקס' מתקבל כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ מינימלי ולכן נקבל אותה אסט'.
+ הערך המובטח הוא 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כעת ל-
+\begin_inset Formula $\overline{y}=\vec y{1-y}$
+\end_inset
+
+ נחזור על התהליך, ונקבל כי 
+\begin_inset Formula $\overline{y}=\vec{\frac{3}{5}}{\frac{2}{5}}$
+\end_inset
+
+ אסט' ביטחון מקס', כי
+\begin_inset Formula 
+\[
+\begin{bmatrix}4 & -6\\
+-6 & 9
+\end{bmatrix}\cdot\vec{\frac{3}{5}}{\frac{2}{5}}=\vec 00
+\]
+
+\end_inset
+
+ולכן לכל אסט' של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, הרווח יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ כיוון שזה ערך המשחק, זה גם הכי טוב שאסט' ביטחון מקס' יכולה להציע, לכן בהכרח
+ 
+\begin_inset Formula $\overline{y}$
+\end_inset
+
+ אסט' ביטחון מקס'.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{bmatrix}0 & -1 & 0 & 0 & 1\\
+1 & 0 & -1 & 0 & 0\\
+0 & 1 & 0 & -1 & 0\\
+0 & 0 & 1 & 0 & -1\\
+-1 & 0 & 0 & 1 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ערך המשחק הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי המטריצה אנטי-סימטרית.
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $\overline{x}=\begin{bmatrix}x_{1}\\
+x_{2}\\
+x_{3}\\
+x_{4}\\
+x_{5}
+\end{bmatrix}$
+\end_inset
+
+ אסט' ביטחון מקס.
+ אז צריך להתקיים
+\begin_inset Formula 
+\[
+\min\left\{ x_{2}-x_{5},-x_{1}+x_{3},-x_{2}+x_{4},-x_{3}+x_{5},x_{1}-x_{4}\right\} =0
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\begin{align*}
+x_{2} & \geq x_{5}\\
+x_{3} & \geq x_{1}\\
+x_{4} & \geq x_{2}\\
+x_{5} & \geq x_{3}\\
+x_{1} & \geq x_{4}
+\end{align*}
+
+\end_inset
+
+משמע
+\begin_inset Formula 
+\[
+x_{2}\geq x_{5}\geq x_{3}\geq x_{1}\geq x_{4}\geq x_{2}
+\]
+
+\end_inset
+
+לכן כולם שווים ומכך ש-
+\begin_inset Formula $\sum_{i=1}^{5}x_{i}=1$
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $\overline{x}=\begin{bmatrix}\nicefrac{1}{5}\\
+\nicefrac{1}{5}\\
+\nicefrac{1}{5}\\
+\nicefrac{1}{5}\\
+\nicefrac{1}{5}
+\end{bmatrix}$
+\end_inset
+
+.
+ באופן דומה אם 
+\begin_inset Formula $\overline{y}=\begin{bmatrix}y_{1}\\
+y_{2}\\
+y_{3}\\
+y_{4}\\
+y_{5}
+\end{bmatrix}$
+\end_inset
+
+ אסט' ביטחון מקס' של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ אז 
+\begin_inset Formula 
+\[
+\max\left\{ -y_{2}+y_{5},y_{1}-y_{3},y_{2}-y_{4},y_{3}-y_{5},-y_{1}+y_{4}\right\} =0
+\]
+
+\end_inset
+
+ושוב נסיק שכולם שווים ולכן 
+\begin_inset Formula $\overline{y}=\overline{x}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נשים לב שבמקרה שתואר אפשר לתאר את המשחק 
+\begin_inset Formula $G_{1}+G_{2}$
+\end_inset
+
+ עם המטריצה
+\begin_inset Formula 
+\[
+\begin{bmatrix}v_{1} & 0\\
+0 & v_{2}
+\end{bmatrix}
+\]
+
+\end_inset
+
+כי במקרה בו שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בוחר את משחק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא תמיד משחק באותה אסט' 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ שמבטיחה לו לפחות 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ רווח, ואם שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בוחר את משחק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא תמיד משחק באותה אסט' 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ שמבטיחה לו לכל היותר 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ רווח, לכן אם שניהם בוחרים אותו משחק תמיד הרווח שלהם הוא ערך המשחק.
+ באופן דומה גם ל-
+\begin_inset Formula $G_{2}$
+\end_inset
+
+.
+ אז חזרנו למקרה השני בשאלה 
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם 
+\begin_inset Formula $a=v_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $b=v_{2}$
+\end_inset
+
+ ולכן ערך המשחק הוא
+\begin_inset Formula 
+\[
+\frac{ab}{a+b}=\frac{v_{1}v_{2}}{v_{1}+v_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

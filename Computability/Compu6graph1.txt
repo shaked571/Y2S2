@@ -8,8 +8,8 @@
     \path[->] 
     (q_0) edge  node {$0\to 1,R$} (q_1)
           edge  node {$1\to 1,R$} (q_r)
-    (q_1) edge  node {$0\to 1,R$} (q_2)
-          edge  node {$1\to 1,R$} (q_r)
-    (q_2) edge  node {$0\to 1,R$} (q_a)
-          edge  node {$1\to 1,R$} (q_r);
+    (q_1) edge  node {$0\to 1,L$} (q_2)
+          edge  node [below, sloped] {$1\to 1,R$} (q_r)
+    (q_2) edge  node [below, sloped] {$0\to 1,R$} (q_a)
+          edge  node [below, sloped] {$1\to 1,R$} (q_r);
 \end{tikzpicture}

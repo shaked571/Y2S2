@@ -299,22 +299,46 @@
 \end_inset
 
  קשיר.
- נניח בשלילה כי 
-\begin_inset Formula $A^{\circ}$
+ דוגמה נגדית: 
+\begin_inset Formula $X=\left\{ 1,2,3,4\right\} $
 \end_inset
 
- לא קשיר.
+, 
+\begin_inset Formula $\tau=\left\{ \varnothing,X,\left\{ 1,2,4\right\} ,\left\{ 2,3\right\} ,\left\{ 1,3,4\right\} \right\} $
+\end_inset
+
+.
  
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Formula $A=\left\{ 2,3,4\right\} $
 \end_inset
 
+.
+ אז 
+\begin_inset Formula $A$
+\end_inset
 
+ קשיר כי 
+\begin_inset Formula $\tau_{A}=\left\{ \varnothing,A,\left\{ 2,4\right\} ,\left\{ 2,3\right\} ,\left\{ 3,4\right\} \right\} $
+\end_inset
+
+, אין שתי קבוצות פתוחות זרות שונות מהריקה.
+ אבל 
+\begin_inset Formula $A^{\circ}=\left\{ 2,3\right\} $
+\end_inset
+
+ לא קשיר כי 
+\begin_inset Formula $A^{\circ}=\left\{ 2\right\} \cup\left\{ 3\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $\left\{ 2\right\} =A^{\circ}\cap\left\{ 1,2,4\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ 3\right\} =A^{\circ}\cap\left\{ 1,3,4\right\} $
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -363,17 +387,24 @@ status open
 \end_inset
 
  קשיר.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+ דוגמה נגדית: 
+\begin_inset Formula $X=\mathbb{R}$
 \end_inset
 
+, 
+\begin_inset Formula $A=\left(-\infty,0\right)\cup\left(0,\infty\right)$
+\end_inset
 
+.
+ ברור כי 
+\begin_inset Formula $A$
+\end_inset
+
+ לא קשירה, אבל 
+\begin_inset Formula $\partial A=\left\{ 0\right\} $
+\end_inset
+
+ קשירה.
 \end_layout
 
 \begin_layout Enumerate
@@ -1189,16 +1220,63 @@ t_{1}v=t_{1}u\iff t_{1}\left(v-u\right)=0
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset ERT
-status open
+נוסיף לקבוצה את הנק' 
+\begin_inset Formula $p'=\left(0,0\right)$
+\end_inset
 
-\begin_layout Plain Layout
-
-\end_layout
+ ואת כל הקטעים שמחברים בינה לנק' בקבוצה.
+ 
+\begin_inset Formula 
+\[
+\left(\left[-1,0\right]\cap\mathbb{Q}\right)\times\left\{ 1\right\} 
+\]
 
 \end_inset
 
+אז כל נק' חדשה שאינה 
+\begin_inset Formula $p'$
+\end_inset
 
+ אינה קשירה מקומית באופן דומה לסעיף הקודם.
+ הנק' 
+\begin_inset Formula $p$
+\end_inset
+
+ אינה קשירה מקומית כי לכל כדור סביבה, נמצא נק' 
+\begin_inset Formula $\left(r,1\right)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $r\in\mathbb{R\backslash Q}$
+\end_inset
+
+ והיא בכדור, ונפריד את הכדור לקבוצה הפתוחה של כל הקטעים שהקצה שלהם 
+\begin_inset Formula $\left(q,1\right)$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $q<r$
+\end_inset
+
+ והמשלים שלה.
+ באופן דומה גם 
+\begin_inset Formula $p'$
+\end_inset
+
+ לא קשירה, לכן אף נק' לא קשירה מקומית.
+ לבסוף, היא קשירה מסילתית כי המסילה 
+\begin_inset Formula $\gamma\left(t\right)=\left(0,t\right)$
+\end_inset
+
+ מחברת בין 
+\begin_inset Formula $p$
+\end_inset
+
+ ל-
+\begin_inset Formula $p'$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
