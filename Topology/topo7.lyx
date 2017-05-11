@@ -1,0 +1,346 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\rightmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+טופולוגיה - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+30790468
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $SL_{n}\left(\mathbb{R}\right)=\left\{ a\in M_{n}\left(\mathbb{R}\right)\mid\det A=1\right\} $
+\end_inset
+
+.
+ נשים לב שזו תת קבוצה בל מרחב מטרי ולכן קומפקטיות שקולה לקומפקטיות סדרתית.
+ דוגמה נגדית: 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ לסדרה 
+\begin_inset Formula $a_{n}=\begin{array}{cc}
+n & 0\\
+0 & \frac{1}{n}
+\end{array}$
+\end_inset
+
+ אין אף תת סדרה מתכנסת כי התכנסות שקולה להתכנסות קואורדינטה קואורדינטה ול-
+\begin_inset Formula $n$
+\end_inset
+
+ אין ת"ס מתכנסת.
+ בנוסף 
+\begin_inset Formula $\left\{ a_{n}\right\} \subseteq SL_{2}\left(\mathbb{R}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S^{1}$
+\end_inset
+
+ ספירת היחידה קומפ' ב-
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ כי היא סגורה וחסומה, ומכפלה סופית של קומפקטיות היא קומפקטית, לכן 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+ קומפ'.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T,T'$
+\end_inset
+
+ טופולוגיות על 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $T\subseteq T'$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $T$
+\end_inset
+
+ קומפ' לא מבטיח ש-
+\begin_inset Formula $T'$
+\end_inset
+
+ קומפ'.
+ דוגמה: אם 
+\begin_inset Formula $T$
+\end_inset
+
+ הטופ' הטריוויאלית, אז כל כיסוי פתוח הוא סופי ולכן 
+\begin_inset Formula $X$
+\end_inset
+
+ קומפ', אבל ברור שיש מרחבים שבהם 
+\begin_inset Formula $X$
+\end_inset
+
+ לא קומפקטי.
+\end_layout
+
+\begin_layout Itemize
+נניח 
+\begin_inset Formula $T'$
+\end_inset
+
+ קומפ'.
+ יהי כיסוי פתוח של 
+\begin_inset Formula $X$
+\end_inset
+
+ ע"י קבוצות מ-
+\begin_inset Formula $T$
+\end_inset
+
+.
+ אז הן פתוחות ב-
+\begin_inset Formula $T'$
+\end_inset
+
+ ולכן קיים תת-כיסוי סופי.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נניח בשלילה כי 
+\begin_inset Formula $T\nsubseteq T'$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $A\in T'\backslash T$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $A^{c}$
+\end_inset
+
+ סגור ב-
+\begin_inset Formula $T'$
+\end_inset
+
+ ולכן קומפ' אבל לא קומפ' ב-
+\begin_inset Formula $T$
+\end_inset
+
+ )כי אחרת היה סגור מהאוסדורף(.
+ אז אם 
+\begin_inset Formula $T'_{A^{c}},T_{A^{c}}$
+\end_inset
+
+ הטופולוגיות המושרות, מתקיים 
+\begin_inset Formula $T_{A^{c}}\subset T'_{A^{c}}$
+\end_inset
+
+ ולכן מהסעיף הקודם 
+\begin_inset Formula $A^{c}$
+\end_inset
+
+ כן קומפ' ב-
+\begin_inset Formula $T$
+\end_inset
+
+, סתירה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
