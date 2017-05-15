@@ -185,6 +185,148 @@
 שאלה ראשונה
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $\overline{f}\left(x,y,z\right)=\left(y,z,x\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f'\left(x,y,z\right)=\begin{bmatrix}0 & 1 & 0\\
+0 & 0 & 1\\
+1 & 0 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+השדה לא משמר לוקלית כי המטריצה לא סימטרית ולכן בפרט לא משמר.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{f}\left(x,y,z\right)=\left(ax,by,cz\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a,b,c\in\mathbb{R}$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+f'\left(x,y,z\right)=\begin{bmatrix}a & 0 & 0\\
+0 & b & 0\\
+0 & 0 & c
+\end{bmatrix}
+\]
+
+\end_inset
+
+ולכן השדה משמר לוקלית.
+ כעת הפונקציה 
+\begin_inset Formula $\overline{F}\left(x,y,z\right)=\frac{a}{2}x^{2}+\frac{b}{2}y^{2}+\frac{c}{2}z^{2}$
+\end_inset
+
+ מקיימת כי
+\begin_inset Formula 
+\[
+\nabla\overline{F}=\begin{bmatrix}ax\\
+by\\
+cz
+\end{bmatrix}=\overline{f}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\overline{F}$
+\end_inset
+
+ הפוטנציאל של 
+\begin_inset Formula $\overline{f}$
+\end_inset
+
+, משמע 
+\begin_inset Formula $\overline{f}$
+\end_inset
+
+ שדה משמר.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{f}\colon\mathbb{R}^{2}\backslash\left\{ \left(-t,t\right)\mid t\in\mathbb{R}\right\} \to\mathbb{R}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{f}\left(x,y\right)=\left(\frac{3y-x}{\left(x+y\right)^{3}},\frac{y-3x}{\left(x+y\right)^{3}}\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\frac{\partial f_{1}}{\partial y}=\frac{3\left(x+y\right)^{3}-\left(3y-x\right)\cdot3\left(x+y\right)^{2}}{\left(x+y\right)^{6}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial f_{1}}{\partial x}=\frac{-3\left(x+y\right)^{3}-\left(y-3x\right)\cdot3\left(x+y\right)^{2}}{\left(x+y\right)^{6}}
+\]
+
+\end_inset
+
+נראה שהם שווים.
+\begin_inset Formula 
+\begin{align*}
+3\left(x+y\right)^{3}-\left(3y-x\right)\cdot3\left(x+y\right)^{2} & =-3\left(x+y\right)^{3}-\left(y-3x\right)\cdot3\left(x+y\right)^{2}\\
+6\left(x+y\right)^{3} & =\left(3y-x\right)3\left(x+y\right)^{2}-\left(y-3x\right)3\left(x+y\right)^{2}\\
+2\left(x+y\right)^{3} & =3y\left(x+y\right)^{2}-x\left(x+y\right)^{2}-y\left(x+y\right)^{2}+3x\left(x+y\right)^{2}\\
+2\left(x+y\right)^{3} & =2x\left(x+y\right)^{2}+2y\left(x+y\right)^{2}
+\end{align*}
+
+\end_inset
+
+ואכן יש שיוויון, לכן השדה משמר מקומית.
+ שנית, נשים לב כי מכך שאין קשירות מסילתית בתחום של 
+\begin_inset Formula $f$
+\end_inset
+
+, כל מסילה 
+\begin_inset Formula $\gamma\colon\left[a,b\right]\to\mathbb{R}^{2}\backslash\left\{ \left(-t,t\right)\right\} $
+\end_inset
+
+ חייבת לקיים 
+\begin_inset Formula $\text{Im}\gamma\subseteq\left\{ \left(x,y\right)\mid x+y>0\right\} $
+\end_inset
+
+ או 
+\begin_inset Formula $\text{Im}\gamma\subseteq\left\{ \left(x,y\right)\mid x+y<0\right\} $
+\end_inset
+
+.
+ שני קבוצות אלה הן תחומים פשוטי קשר ולכן אם נצמצם את 
+\begin_inset Formula $f$
+\end_inset
+
+ לאחד מהם היא תהא משמרת בו.
+ לכן לכל מסילה סגורה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, מכך שתמונתה חייבת להיות באחד מהם, מתקיים כי 
+\begin_inset Formula $\int_{\gamma}\overline{f}d\gamma=0$
+\end_inset
+
+ משמע 
+\begin_inset Formula $\overline{f}$
+\end_inset
+
+ משמר גם בתחום המקורי.
+\end_layout
+
 \begin_layout Section*
 שאלה רביעית
 \end_layout
@@ -497,6 +639,101 @@ u_{i}\cdot v_{j}=u_{j}\cdot v_{i}\iff\frac{u_{i}}{u_{j}}=\frac{v_{i}}{v_{j}}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section*
+שאלה שביעית
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\norm}[1]{\Vert#1\Vert}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\in\text{GL}_{n}\left(\mathbb{R}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma\colon\left[a,b\right]\to\mathbb{R}^{n}$
+\end_inset
+
+ רגולרית, 
+\begin_inset Formula $\delta\left(t\right)=M\gamma\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\delta'\left(t\right)=\left(M\gamma\left(t\right)\right)'=M'\left(\gamma\left(t\right)\right)\gamma'\left(t\right)=M\gamma'\left(t\right)
+\]
+
+\end_inset
+
+כיוון ש-
+\begin_inset Formula $M$
+\end_inset
+
+ הפיכה, 
+\begin_inset Formula $\gamma'\left(t\right)\neq0\Rightarrow M\gamma'\left(t\right)\neq0$
+\end_inset
+
+.
+ בפרט לכל 
+\begin_inset Formula $t\in\left[a,b\right]$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\Vert\delta'\left(t\right)\Vert=\Vert M\gamma'\left(t\right)\Vert>0
+\]
+
+\end_inset
+
+כיוון שזו פונקציה רציפה
+\begin_inset Formula 
+\[
+Len\left(\delta\right)=\int_{a}^{b}\norm{\delta'\left(t\right)}dt>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נשים לב כי מתקיים
+\begin_inset Formula 
+\[
+\norm{\delta\left(t\right)}=\norm{M\gamma'\left(t\right)}\leq\norm M_{\text{op}}\norm{\gamma'\left(t\right)}
+\]
+
+\end_inset
+
+ו-
+\begin_inset Formula 
+\[
+\norm{\gamma'\left(t\right)}=\norm{M^{-1}\cdot M\gamma'\left(t\right)}\leq\norm{M^{-1}}_{\text{op}}\norm{M\gamma'\left(t\right)}\iff\norm{M\gamma'\left(t\right)}\geq\norm{M^{-1}}_{\text{op}}^{-1}\norm{\gamma'\left(t\right)}
+\]
+
+\end_inset
+
+סה"כ
+\begin_inset Formula 
+\[
+\norm{M^{-1}}_{\text{op}}^{-1}\norm{\gamma'\left(t\right)}\leq\norm{\delta'\left(t\right)}\leq\norm M_{\text{op}}\norm{\gamma'\left(t\right)}
+\]
+
+\end_inset
+
+והשאר מתקבל ממונוטוניות האינטגרל.
 \end_layout
 
 \end_body
