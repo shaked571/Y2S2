@@ -132,6 +132,10 @@
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset FormulaMacro
+\newcommand{\norm}[1]{\Vert#1\Vert}
+\end_inset
+
 נסמן 
 \begin_inset Formula $M$
 \end_inset
@@ -196,5 +200,623 @@ u\left(tx_{1}+\left(1-t\right)x_{2},y\right)=tu\left(x_{1},y\right)+\left(1-t\ri
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $C\subseteq R^{n}$
+\end_inset
+
+ קמורה קומפקטית ולא ריקה.
+ 
+\begin_inset Formula $p\colon\mathbb{R}^{n}\to C$
+\end_inset
+
+ המתאימה לכל נק' 
+\begin_inset Formula $x$
+\end_inset
+
+ את הנק' הקרובה ביותר אליה ב-
+\begin_inset Formula $c$
+\end_inset
+
+.
+ נצטרך להראות קיום, יחידות ורציפות.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+קיום: תהי 
+\begin_inset Formula $x\in\mathbb{R}^{3}$
+\end_inset
+
+ נסמן הפונקציה שמתאימה לכל 
+\begin_inset Formula $c\in C$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+c\to\norm{c-x}
+\]
+
+\end_inset
+
+היא פונקציה רציפה שתחומה קומפקטי, לכן היא מקבלת מינימום בנק' 
+\begin_inset Formula $c_{\min}\in C$
+\end_inset
+
+, משמע 
+\begin_inset Formula $\inf_{c\in C}\norm{x-c}=\norm{x-c_{\min}}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Itemize
+יחידות: יהיו 
+\begin_inset Formula $c_{1},c_{2}\in C$
+\end_inset
+
+ נק' קרובות ביותר ל-
+\begin_inset Formula $x$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $c=\frac{1}{2}c_{1}+\frac{1}{2}c_{2}$
+\end_inset
+
+ אז מקמירות 
+\begin_inset Formula $c\in C$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula 
+\[
+\norm{x-c}=\norm{x-\frac{1}{2}c_{1}-\frac{1}{2}c_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+רציפות: תהא 
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\norm{f\left(x\right)-f\left(y\right)}=\norm{f\left(x\right)-x+y-f\left(y\right)+x-y}\leq$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נראה כי תמיד קיים.
+ נוכיח באופן דומה להוכחה בתרגול, ונשתמש באותם סימונים
+\begin_inset Formula 
+\[
+Q=\left\{ \left(e,t\right)\mid e-\text{edge},t-\text{triangle},\,\,e\in t,\,\,\text{type}\left(e\right)=\left(1,2\right)\right\} 
+\]
+
+\end_inset
+
+אז בתרגול ראינו כי
+\begin_inset Formula 
+\[
+N_{123}+2N_{112}+2N_{122}=\left|Q\right|=A_{12}+2B_{12}
+\]
+
+\end_inset
+
+כעת כדי להשתמש באותו נימוק לכך ש-
+\begin_inset Formula $N_{123}$
+\end_inset
+
+ אי זוגי נצטרך להראות כי 
+\begin_inset Formula $A_{12}$
+\end_inset
+
+ אי-זוגי.
+ נשים לב כי כל צלע מסוג 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+ על השפה חייבת להכיל אחד מהקודקודים 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ כי כל צלע שהיא תת-צלע ממש בשפה מכילה שני קודקודים זהים לפי חוקי הצביעה.
+ נראה שיש צלע כזו, ונראה מה היא צריכה לקיים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם היא מכילה את 
+\begin_inset Formula $A$
+\end_inset
+
+, אז 
+\begin_inset Formula $A$
+\end_inset
+
+ בהכרח מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן הקודקוד השני שלה חייב להיות בפנים של צלע, ומסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, אבל קודקוד כזה מופיע רק ב-
+\begin_inset Formula $BC$
+\end_inset
+
+, סתירה.
+\end_layout
+
+\begin_layout Itemize
+אם היא מכילה את 
+\begin_inset Formula $B$
+\end_inset
+
+ אז 
+\begin_inset Formula $B$
+\end_inset
+
+ מקבל 
+\begin_inset Formula $1$
+\end_inset
+
+ ולכן הקודקוד השני חייב להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, משמע על הצלע 
+\begin_inset Formula $AC$
+\end_inset
+
+, ושוב סתירה.
+\end_layout
+
+\begin_layout Itemize
+לכן היא חייבת להכיל את 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $C$
+\end_inset
+
+ צבוע ב-
+\numeric on
+1
+\numeric off
+, אז הקודקוד השני יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, משמע על הצלע 
+\begin_inset Formula $AC$
+\end_inset
+
+, והוא חייב להיות הקרוב ביותר ל-
+\begin_inset Formula $C$
+\end_inset
+
+, משמע יש רק צלע אחת.
+ אם 
+\begin_inset Formula $C$
+\end_inset
+
+ צבוע ב-
+\numeric on
+2
+\numeric off
+, אז הקודקוד השני יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, משמע על הצלע 
+\begin_inset Formula $BC$
+\end_inset
+
+, ושוב הוא חייב להיות הכי קרוב, משמע יש צלע אחת אפשרית.
+\end_layout
+
+\begin_layout Standard
+ראינו כי בכל מקרה יש רק צלע אחת מסוג 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+ על השפה, לכן 
+\begin_inset Formula $A_{12}$
+\end_inset
+
+ אי זוגי כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\colon\triangle_{2}\to\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x,y,z\right)=\left(\frac{y+z}{2},\frac{y}{2},\frac{2x+z}{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{y+z}{2}+\frac{y}{2}+\frac{2x+z}{2}=\frac{2x+2y+2z}{2}=x+y+z=1$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\text{Im}f\subseteq\triangle_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+ נק' שבת של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\begin{align*}
+x & =\frac{y+z}{2}\\
+y & =\frac{y}{2}\\
+z & =\frac{2x+z}{2}
+\end{align*}
+
+\end_inset
+
+כעת, 
+\begin_inset Formula $y=\frac{y}{2}\Rightarrow y=0$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\begin{align*}
+x & =\frac{z}{2}\\
+y & =0\\
+z & =\frac{2x+z}{2}=\frac{2\frac{z}{2}+z}{2}=z
+\end{align*}
+
+\end_inset
+
+משמע לכל 
+\begin_inset Formula $z\in\mathbb{R}$
+\end_inset
+
+, הנק' 
+\begin_inset Formula $\left(\frac{z}{2},0,z\right)$
+\end_inset
+
+ היא נק' שבת של 
+\begin_inset Formula $f$
+\end_inset
+
+ כאשר תחומה 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ וכל נק' היא מצורה זו.
+ נצטמצם חזרה ל-
+\begin_inset Formula $\triangle_{2}$
+\end_inset
+
+ ונקבל כי
+\begin_inset Formula 
+\[
+\frac{z}{2}+0+z=1\iff3z=2\iff z=\frac{2}{3}
+\]
+
+\end_inset
+
+סה"כ נק' השבת היחידה היא 
+\begin_inset Formula $\left(\frac{1}{3},0,\frac{2}{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נראה באינדוקציה על 
+\begin_inset Formula $n$
+\end_inset
+
+ כמות הקודקודים בחלוקה.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+בסיס: נניח 
+\begin_inset Formula $n=1$
+\end_inset
+
+, משמע יש לנו 
+\begin_inset Formula $x_{0}<x_{1}$
+\end_inset
+
+.
+ אז מההנחה 
+\begin_inset Formula $c\left(x_{0}\right)=1,c\left(x_{1}=2\right)$
+\end_inset
+
+ לכן הקטע 
+\begin_inset Formula $\left[x_{0},x_{1}\right]$
+\end_inset
+
+ מסומן בתגיות שונות.
+\end_layout
+
+\begin_layout Description
+שלב: נניח שהטענה נכונה ל-
+\begin_inset Formula $k<n$
+\end_inset
+
+ ונראה ל-
+\begin_inset Formula $n$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ הקודקוד המינימלי המקיים 
+\begin_inset Formula $c\left(x_{i}\right)=2$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $i>0$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $i=n$
+\end_inset
+
+ אז הקטע היחיד שמסומן בתגיות שונות הוא 
+\begin_inset Formula $\left[x_{n-1},x_{n}\right]$
+\end_inset
+
+ ולכן יש מספר זוגי.
+ אחרת 
+\begin_inset Formula $i<n$
+\end_inset
+
+.
+ אז החלוקה 
+\begin_inset Formula 
+\[
+x_{0}<...<x_{i}
+\]
+
+\end_inset
+
+עומדת בתנאי הטענה ולכן יש מספר אי זוגי של קטעים מסומנים בתגיות שונות.
+ אם לכל 
+\begin_inset Formula $x_{j}>x_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $c\left(x_{j}\right)=2$
+\end_inset
+
+ אז סיימנו, אחרת יהי 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ הקודקוד המינימלי שמקיים 
+\begin_inset Formula $x_{j}>x_{i}$
+\end_inset
+
+ ו-
+\begin_inset Formula $c\left(x_{j}\right)=1$
+\end_inset
+
+.
+ אז החלוקה
+\begin_inset Formula 
+\[
+x_{j}<...<x_{n}
+\]
+
+\end_inset
+
+גם עומדת בתנאי הטענה ולכן יש בה מספר אי זוגי של קטעים מסומנים בתגיות שונות.
+ לבסוף נשים לב שבחלוקה
+\begin_inset Formula 
+\[
+x_{i}<...<x_{j}
+\]
+
+\end_inset
+
+יש בדיוק קטע אחד המסומן בתגיות שונות והוא 
+\begin_inset Formula $\left[x_{j-1},x_{j}\right]$
+\end_inset
+
+ )ממינימליות 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ מובטח שכל שאר הקודקודים ביניהם צבועים ב-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(.
+ כיוון שכל קטע בחלוקה המקורית חייב להופיע באחד מתתי חלוקות אלו, נקבל שמספר
+ הקטעים אי זוגי כנדרש.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
