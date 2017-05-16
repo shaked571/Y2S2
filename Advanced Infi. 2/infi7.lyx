@@ -557,12 +557,24 @@ u_{i}\cdot v_{j}=u_{j}\cdot v_{i}\iff\frac{u_{i}}{u_{j}}=\frac{v_{i}}{v_{j}}
 \begin_inset Formula $w$
 \end_inset
 
-, שטח המקבילון הוא שטח מקבילית זו כפול הגובה, וגודל הגובה ל-
+, שטח המקבילון הוא שטח מקבילית זו כפול הגובה, וגודל הגובה הוא-
 \begin_inset Formula 
 \[
 \Vert u\Vert\cos\theta=\frac{u\cdot\left(v\times w\right)}{\Vert v\times w\Vert}
 \]
 
+\end_inset
+
+כאשר 
+\begin_inset Formula $\theta$
+\end_inset
+
+ הזווית בין 
+\begin_inset Formula $v\times w$
+\end_inset
+
+ ל-
+\begin_inset Formula $u$
 \end_inset
 
  כי 

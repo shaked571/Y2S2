@@ -150,17 +150,16 @@ status open
 \end_inset
 
 .
- נשים לב שזו תת קבוצה בל מרחב מטרי ולכן קומפקטיות שקולה לקומפקטיות סדרתית.
+ נשים לב שזו תת קבוצה של מרחב מטרי ולכן קומפקטיות שקולה לקומפקטיות סדרתית.
  דוגמה נגדית: 
 \begin_inset Formula $n=2$
 \end_inset
 
 .
  לסדרה 
-\begin_inset Formula $a_{n}=\begin{array}{cc}
-n & 0\\
+\begin_inset Formula $a_{n}=\begin{bmatrix}n & 0\\
 0 & \frac{1}{n}
-\end{array}$
+\end{bmatrix}$
 \end_inset
 
  אין אף תת סדרה מתכנסת כי התכנסות שקולה להתכנסות קואורדינטה קואורדינטה ול-
@@ -175,19 +174,71 @@ n & 0\\
 .
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
-\begin_inset ERT
+\begin_inset Formula $O_{n}\left(\mathbb{R}\right)$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f\left(A\right)=A^{t}A$
+\end_inset
+
+.
+ זו העתקה רציפה כי 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-
+אחר כך
 \end_layout
 
 \end_inset
 
+.
+ נשים לב כי 
+\begin_inset Formula $O_{n}=f^{-1}\left(\left\{ Id\right\} \right)$
+\end_inset
 
+ לכן היא סגורה.
+ בנוסף היא חסומה כי לכל 
+\begin_inset Formula $A\in O_{n}$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $v\in\mathbb{R}^{n}$
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}[1]{\Vert#1\Vert}
+\end_inset
+
+, 
+\begin_inset Formula $\Vert v\Vert=1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\norm{Av}=\sqrt{\left(Av\right)^{t}\left(Av\right)}=\sqrt{v^{t}\left(A^{t}A\right)v}=\sqrt{v^{t}v}=\norm v=1
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $O_{n}\subseteq B_{2}\left(0\right)$
+\end_inset
+
+.
+ אז הקבוצה סגורה וחסומה במרחב איזומורפי ל-
+\begin_inset Formula $\mathbb{R}^{n^{2}}$
+\end_inset
+
+ ולכן היא קומפקטית.
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $S^{1}$
 \end_inset
@@ -317,18 +368,67 @@ status open
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+נגדיר את הכיסוי 
+\begin_inset Formula $\left\{ U_{z}\right\} _{z\in\mathbb{Z}}$
 \end_inset
 
+ כך ש-
+\begin_inset Formula $U_{z}=\left\{ z\right\} \times\left\{ 0,1\right\} $
+\end_inset
 
+.
+ זהו כיסוי פתוח.
+ ברור שאין לו תת-כיסוי סופי כי כל תת-כיסוי כזה מכיל רק מספר סופי של 
+\begin_inset Formula $z\in\mathbb{Z}$
+\end_inset
+
+.
+ לכן המרחב לא קומפקטי.
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+כעת, נגדיר את הסדרה 
+\begin_inset Formula $a_{n}=\left(n,0\right)$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $\left(z,i\right)\in\mathbb{Z}\times\left\{ 0,1\right\} $
+\end_inset
+
+, מתקיים כי לסביבה 
+\begin_inset Formula $S=\left\{ z\right\} \times\left\{ 0,1\right\} $
+\end_inset
+
+ לכל 
+\begin_inset Formula $n>z$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}\notin S$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\left(z,i\right)$
+\end_inset
+
+ לא נק' גבול של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ או של ת"ס שלה, ולכן המרחב לא קומפקטי סידרתית.
+\end_layout
+
+\begin_layout Standard
+לבסוף, תהי 
+\begin_inset Formula $A\subseteq\mathbb{Z}\times\left\{ 0,1\right\} $
+\end_inset
+
+ אינסופית.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset ERT
 status open
@@ -342,5 +442,156 @@ status open
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ קומפ' אם"ם לכל אוסף 
+\begin_inset Formula $C$
+\end_inset
+
+ של קבוצות סגורות במרחב המקיימות את תכונת החיתוך הסופי, החיתוך אינו ריק.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+: נראה כי אם 
+\begin_inset Formula $\bigcap C=\varnothing$
+\end_inset
+
+ אז 
+\begin_inset Formula $X$
+\end_inset
+
+ לא קומפ' תהי 
+\begin_inset Formula $C$
+\end_inset
+
+ אוסף קבוצות סגורות במרחב המקיימות את תכונת החיתוך הסופי.
+ לכל 
+\begin_inset Formula $C'$
+\end_inset
+
+ תת אוסף,
+\begin_inset Formula 
+\[
+X\backslash\left(\bigcap C'\right)=\bigcup\left(X\backslash C'\right)
+\]
+
+\end_inset
+
+כעת אם 
+\begin_inset Formula $\bigcap C=\varnothing$
+\end_inset
+
+, אז 
+\begin_inset Formula $\left\{ X\backslash c\right\} _{c\in C}$
+\end_inset
+
+ כיסוי של 
+\begin_inset Formula $X$
+\end_inset
+
+, אבל אין לו תת-כיסוי סופי כי אחרת נקבל סתירה לתכונת החיתוך הסופי, לכן 
+\begin_inset Formula $X$
+\end_inset
+
+ לא קומפ'.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+: נניח כי 
+\begin_inset Formula $X$
+\end_inset
+
+ לא קומפ' ונראה כי יש אוסף קבוצות סגורות 
+\begin_inset Formula $C$
+\end_inset
+
+ שמקיים חיתוך סופי אבל החיתוך שלו ריק.
+ אז יש 
+\begin_inset Formula $\left\{ U_{\alpha}\right\} _{\alpha\in I}$
+\end_inset
+
+ כיסוי פתוח ללא תת-כיסוי סופי.
+ נגדיר 
+\begin_inset Formula $C_{\alpha}=X\backslash U_{\alpha}$
+\end_inset
+
+.
+ אלו קבוצות סגורות.
+ לכל מספר סופי של אינדקסים
+\begin_inset Formula 
+\[
+C_{\alpha_{1}}\cap...\cap C_{\alpha_{n}}=X\backslash\left(U_{\alpha_{1}}\cup...\cup U_{\alpha_{n}}\right)\neq\varnothing
+\]
+
+\end_inset
+
+לכן תכונת החיתוך הסופי מתקיימת.
+ אבל
+\begin_inset Formula 
+\[
+\bigcap_{\alpha\in I}C_{\alpha}=X\backslash\left(\bigcup_{\alpha\in I}U_{\alpha}\right)=X\backslash X=\varnothing
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $X_{1},X_{2}$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $A_{i}\subseteq X_{i}$
+\end_inset
+
+ קבוצות, 
+\begin_inset Formula $h\colon X_{1}\to X_{2}$
+\end_inset
+
+ הומיאו'.
+ נגדיר על 
+\begin_inset Formula $X_{1}\sqcup X_{2}$
+\end_inset
+
+ יחס שקילות:
+\begin_inset Formula 
+\[
+\forall x,y\in X_{1}\sqcup X_{2},\,\,x\sim y\iff x\in A_{1}\wedge y=h\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ניקח 
+\begin_inset Formula $X_{i}=\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{i}=\mathbb{R}\backslash\left\{ 0\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $h=\text{id}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
