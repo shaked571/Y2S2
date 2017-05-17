@@ -185,17 +185,7 @@ status open
 \end_inset
 
 .
- זו העתקה רציפה כי 
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-אחר כך
-\end_layout
-
-\end_inset
-
-.
+ זו העתקה רציפה כי היא שרשור של חיבור וכפלים של קואורדינטות.
  נשים לב כי 
 \begin_inset Formula $O_{n}=f^{-1}\left(\left\{ Id\right\} \right)$
 \end_inset
@@ -430,18 +420,161 @@ status open
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset ERT
-status open
+נבחר את 
+\begin_inset Formula $X=\Omega$
+\end_inset
 
-\begin_layout Plain Layout
+, הסודר לא בן-מנייה הראשון עם טופולוגיית הסדר.
+ נראה שהוא לא קומפקטי: נגדיר 
+\begin_inset Formula $C=\Omega\backslash\left\{ \text{limit ordinals and \varnothing}\right\} $
+\end_inset
 
-\end_layout
+, כל הסודרים שאינם גבוליים.
+ נשים לב שזהו כיסוי פתוח, כיוון שלכל 
+\begin_inset Formula $\beta\in C$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\alpha\in\Omega$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\beta=\alpha+1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left\{ \beta\right\} =\left(\alpha,\alpha+2\right)$
+\end_inset
+
+.
+ זה כיסוי, כיוון שלכל 
+\begin_inset Formula $\alpha\in\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha<\alpha+1\in\Omega$
+\end_inset
+
+ משמע 
+\begin_inset Formula $\alpha\in\alpha+1\in C$
+\end_inset
+
+ )סדר השייכות(.
+ נניח בשלילה כי 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ קומפקטית.
+ אז יש 
+\begin_inset Formula $\beta_{1},...,\beta_{n}$
+\end_inset
+
+ כיסוי סופי.
+ בפרט
+\begin_inset Formula 
+\[
+\Omega=\beta_{1}\cup...\cup\beta_{n}
+\]
 
 \end_inset
 
+אבל מהגדרת 
+\begin_inset Formula $\Omega$
+\end_inset
 
+ אלו סודרים בני מנייה, משמע גם 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ סודר בן מנייה )כי הוא איחוד סופי של בני מנייה( בסתירה להגדרתו.
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+כעת לקומפקטיות סדרתית.
+ תהי 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ סדרת סודרים ב-
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula 
+\[
+\alpha_{1}={\displaystyle \bigcup_{i=1}^{\infty}a_{n}}
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $\alpha_{1}=\sup\left\{ a_{n}\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ איחוד בן מנייה של סודרים בני מנייה ולכן 
+\begin_inset Formula $\alpha_{1}\in\Omega$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ ספורימום ממש אז יש ת"ס מונוטונית עולה שמתכנסת אליו.
+ אחרת נבנה ברקורסיה ת"ס מונוטונית יורדת.
+ יהיה 
+\begin_inset Formula $n_{k}$
+\end_inset
+
+ האינדקס של 
+\begin_inset Formula $\alpha_{k}$
+\end_inset
+
+, אז נגדיר 
+\begin_inset Formula 
+\[
+\alpha_{k+1}=\bigcup_{i=n_{k}+1}^{\infty}a_{n}
+\]
+
+\end_inset
+
+אם הוא סופרימום ממש, אז יש ת"ס מונוטונית עולה אליו.
+ אחרת נמשיך.
+ הסדרה 
+\begin_inset Formula $\alpha_{k}$
+\end_inset
+
+ מונוטונית יורדת וחסומה מלרע ולכן הקבוצה 
+\begin_inset Formula 
+\[
+\left\{ \beta\in\Omega\mid\forall k\,\beta\leq\alpha_{k}\right\} 
+\]
+
+\end_inset
+
+לא ריקה, ולכן יש לה סופרימום 
+\begin_inset Formula $\kappa$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula 
+\[
+\kappa=\inf\left\{ \alpha_{k}\right\} 
+\]
+
+\end_inset
+
+ולכן הסדרה מתכנסת אליו.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $X$
 \end_inset
@@ -590,6 +723,158 @@ C_{\alpha_{1}}\cap...\cap C_{\alpha_{n}}=X\backslash\left(U_{\alpha_{1}}\cup...\
 \end_inset
 
 .
+ נסמן את 
+\begin_inset Formula $\mathbb{R}\sqcup\mathbb{R}=\mathbb{R}\times\left\{ 1,2\right\} $
+\end_inset
+
+ יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ המרחב המתקבל.
+ תהי 
+\begin_inset Formula $x\in X$
+\end_inset
+
+.
+ נגדיר
+\begin_inset Formula 
+\[
+f\left(\left[x\right]\right)=\begin{cases}
+0 & x=0_{1},0_{2}\\
+x & x=\left\{ \left(x,1\right),\left(x,2\right)\right\} 
+\end{cases}
+\]
+
+\end_inset
+
+נשים לב כי הפונקציה על וכמעט חח"ע, היא רק שולחת את האפסים לאותו איבר.
+ מספיק שנראה כי יש הומיאומורפיזם לקטע פתוח.
+ אזי נחלק למקרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $x=\left[x'\right]_{\sim},x'\neq0_{1},0_{2}$
+\end_inset
+
+.
+ במקרה זה הקבוצה 
+\begin_inset Formula $A=\left\{ \left[y\right]_{\sim}\mid\left|x'-y\right|<x'\right\} $
+\end_inset
+
+ פתוחה ב-
+\begin_inset Formula $X$
+\end_inset
+
+ כתמונה של הקבוצה
+\begin_inset Formula 
+\[
+B_{\left|x\right|}\left(x\right)\times\left\{ 1,2\right\} 
+\]
+
+\end_inset
+
+כעת הצמצום 
+\begin_inset Formula $f\vert_{A}$
+\end_inset
+
+ הוא חח"ע כי התחום לא מכיל את האפסים.
+ התמונה שלו היא 
+\begin_inset Formula $B_{\left|x\right|}\left(x\right)$
+\end_inset
+
+ שהוא קטע פתוח ב-
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, והיא הומיאומורפית כי היא מתנהגת "כמו" העתקת הזהות.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x=0_{1}$
+\end_inset
+
+, במקרה זה 
+\begin_inset Formula $A=X\backslash\left\{ 0_{2}\right\} $
+\end_inset
+
+היא קבוצה פתוחה כי היא התמונה של
+\begin_inset Formula 
+\[
+\mathbb{R}\times\left\{ 0\right\} \cup\left(\left(-\infty,0\right)\cup\left(0,\infty\right)\right)\times\left\{ 1\right\} 
+\]
+
+\end_inset
+
+וזו קבוצה פתוחה.
+ שוב 
+\begin_inset Formula $f\vert_{A}$
+\end_inset
+
+ חח"ע כי הוצאנו אחד מהאפסים מהתחום, והפעם התמונה שלה היא 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ והיא מתנהגת כמו הזהות, לכן הומיאומורפיזם.
+ באופן דומה מראים גם למקרה 
+\begin_inset Formula $x=0_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המרחב אינו האוסדורף כי לא ניתן למצוא שתי פתוחות שמפרידות את 
+\begin_inset Formula $0_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $0_{2}$
+\end_inset
+
+.
+ אם היו כאלה אז המקורות שלהן גם פתוחים ומכילים את 
+\begin_inset Formula $0_{1},0_{2}$
+\end_inset
+
+.
+ ניקח שני קטעים פתוחים סביבם שמספיק קטנים כדי להיות מוכלים בשני המקורות.
+ אז יש 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ שונה מ-
+\begin_inset Formula $0_{1},0_{2}$
+\end_inset
+
+ שנמצא בשני הקטעים, לכן הוא נמצא גם בשתי התמונות, סתירה לזרות.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נשאר באותו מרחב וניקח את הקבוצות 
+\begin_inset Formula $A=\left[-1,1\right]\backslash\left\{ 0\right\} \cup\left\{ 0_{1}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left[-1,1\right]\backslash\left\{ 0\right\} \cup\left\{ 0_{2}\right\} $
+\end_inset
+
+.
+ שתיהן הומיאומורפיות לקטע 
+\begin_inset Formula $\left[-1,1\right]$
+\end_inset
+
+ ב-
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ולכן קומפקטיות, אבל החיתוך שלהן הומיאומורפי ל-
+\begin_inset Formula $[-1,0)\cup(0,-1]$
+\end_inset
+
+ שאינו קומפקטי.
 \end_layout
 
 \end_deeper
