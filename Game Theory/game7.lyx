@@ -200,6 +200,100 @@ u\left(tx_{1}+\left(1-t\right)x_{2},y\right)=tu\left(x_{1},y\right)+\left(1-t\ri
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+כעת, תהא 
+\begin_inset Formula $y$
+\end_inset
+
+ אסט' ביטחון מקסימלי של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ אז
+\begin_inset Formula 
+\[
+\max_{x\in\triangle_{1}}\min_{y'\in\triangle_{2}}u\left(x,y'\right)=\min_{y'\in\triangle_{2}}u\left(x_{1},y'\right)\leq u\left(x_{1},y\right)\leq\max_{x\in\triangle_{1}}u\left(x,y\right)=\min_{y'\in\triangle_{2}}\max_{x\in\triangle_{1}}u\left(x,y'\right)
+\]
+
+\end_inset
+
+כעת ממשפט המינמקס שני צידי האי-שיוויון שווים ולכן 
+\begin_inset Formula $u\left(x_{1},y\right)=\min_{y\in\triangle_{2}}u\left(x_{1},y'\right)$
+\end_inset
+
+.
+ באותו אופן מראים כי 
+\begin_inset Formula $u\left(x_{2},y\right)=\min_{y'\in\triangle_{2}}u\left(x_{2},y'\right)$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+u\left(tx_{1}+\left(1-t\right)x_{2},y\right)=tu\left(x_{1},y\right)+\left(1-t\right)u\left(x_{2},y\right)=\max_{x\in\triangle_{1}}\min_{y'\in\triangle_{2}}u\left(x,y'\right)
+\]
+
+\end_inset
+
+אז האסט' יכולה להבטיח לפחות את ערך המשחק אבל בגלל שזה ערך המשחק אז היא לא
+ יכולה יותר מזה.
+ לכן זו אסט' ביטחון מקסימלי כנדרש.
+ באופן דומה מראים גם לאסט של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $C\subseteq R^{n}$
 \end_inset
@@ -250,6 +344,7 @@ c\to\norm{c-x}
  כנדרש.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 יחידות: יהיו 
 \begin_inset Formula $c_{1},c_{2}\in C$
@@ -261,36 +356,254 @@ c\to\norm{c-x}
 
 .
  נגדיר 
-\begin_inset Formula $c=\frac{1}{2}c_{1}+\frac{1}{2}c_{2}$
+\begin_inset Formula 
+\[
+f\left(t\right)=\norm{td_{1}-\left(1-t\right)d_{2}-x}
+\]
+
 \end_inset
 
- אז מקמירות 
-\begin_inset Formula $c\in C$
+נשים לב שמתקיים כי
+\begin_inset Formula 
+\[
+\norm{td_{1}-\left(1-t\right)d_{2}-x}\leq\norm{td_{1}-tx}+\norm{\left(1-t\right)d_{2}-\left(1-t\right)x}=\norm{d_{1}-x}=\norm{d_{2}-x}
+\]
+
+\end_inset
+
+מא"ש המשולש ומכך שהמרחק המינימלי הוא יחיד.
+ לכן ממינימליות הנק' ב-
+\begin_inset Formula $c$
+\end_inset
+
+ נסיק כי בהכרח 
+\begin_inset Formula $f$
+\end_inset
+
+ קבועה.
+ לכן
+\begin_inset FormulaMacro
+\newcommand{\inner}[2]{\left\langle #1\mid#2\right\rangle }
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(t\right)=2\inner{d_{1}-d_{2}}{\left(td_{1}-\left(1-t\right)d_{2}-x\right)}=0
+\]
+
+\end_inset
+
+בפרט נובע כי 
+\begin_inset Formula $d_{1}-d_{2}\perp td_{1}-\left(1-t\right)d_{2}-x$
 \end_inset
 
 .
- אז 
+ כעת,
 \begin_inset Formula 
 \[
-\norm{x-c}=\norm{x-\frac{1}{2}c_{1}-\frac{1}{2}c_{2}}
+\norm{d_{1}-x}^{2}=\norm{td_{1}-\left(1-t\right)d_{2}-x-\left(1-t\right)d_{1}+\left(1-t\right)d_{2}}^{2}=\norm{td_{1}-\left(1-t\right)d_{2}-x}^{2}+\norm{\left(1-t\right)d_{1}-\left(1-t\right)d_{2}}^{2}
+\]
+
+\end_inset
+
+כי גם 
+\begin_inset Formula $\left(1-t\right)d_{1}-\left(1-t\right)d_{2}$
+\end_inset
+
+ מאונך לוקטור וממשפט פיתגורס.
+ כעת אם 
+\begin_inset Formula $d_{1}\neq d_{2}$
+\end_inset
+
+ נקבל כי 
+\begin_inset Formula 
+\[
+\norm{d_{1}-x}^{2}>\norm{td_{1}-\left(1-t\right)d_{2}-x}^{2}
+\]
+
+\end_inset
+
+בסתירה לכך ש-
+\begin_inset Formula $d_{1}$
+\end_inset
+
+ במרחק מינימלי מ-
+\begin_inset Formula $x$
+\end_inset
+
+ ב-
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+רציפות: יהיו 
+\begin_inset Formula $x,y\in\mathbb{R}^{n}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $z\in\mathbb{R}^{n}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $t\in\mathbb{R}^{n}$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+\rho_{z}\left(t\right)=\norm{z-\left(1-t\right)p\left(y\right)-tp\left(x\right)}^{2}
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+\rho'_{z}\left(t\right)=2\inner{p\left(y\right)-p\left(x\right)}{z-\left(1-t\right)p\left(y\right)-tp\left(x\right)}
+\]
+
+\end_inset
+
+לכן מינימום מתקבל כאשר
+\begin_inset Formula 
+\begin{align*}
+\inner{p\left(y\right)-p\left(x\right)}{z-\left(1-t\right)p\left(y\right)-tp\left(x\right)} & =0\\
+t\inner{p\left(y\right)-p\left(x\right)}{p\left(y\right)-p\left(x\right)}+\inner{p\left(y\right)-p\left(x\right)}{z-p\left(y\right)} & =0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t=\frac{\inner{p\left(y\right)-p\left(x\right)}{z-p\left(y\right)}}{\norm{p\left(y\right)-p\left(x\right)}^{2}}
+\]
+
+\end_inset
+
+נשים לב שהוא מוגדר ביחידות והוא מינימום כי אם נגזור שוב ישאר רק 
+\begin_inset Formula $\norm{p\left(y\right)-p\left(x\right)}^{2}$
+\end_inset
+
+ שהוא חיובי.
+ כעת נשים לב כי
+\begin_inset Formula 
+\[
+\rho_{x}\left(t\right)
+\]
+
+\end_inset
+
+מקבל מינימום בקטע 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ ב-
+\begin_inset Formula $t=1$
+\end_inset
+
+ כי ממינימליות המרחק של ההטלה ומקמירות 
+\begin_inset Formula 
+\[
+\norm{x-\left(1-t\right)p\left(y\right)-tp\left(x\right)}^{2}>\norm{x-p\left(x\right)}^{2}
+\]
+
+\end_inset
+
+בפרט לא יכול להיות כי יש נק' מינימום ב-
+\begin_inset Formula $t<0$
+\end_inset
+
+ כי אז נקבל שמרציפות צריכה להיות גם נק' מקסימום אבל ראינו כי יש רק מינימום,
+ לכן 
+\begin_inset Formula $t\geq1$
+\end_inset
+
+ מתקבל המינימום..
+ באופן דומה ל-
+\begin_inset Formula $\rho_{y}\left(t\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\norm{y-\left(1-t\right)p\left(y\right)-tp\left(x\right)}^{2}>\norm{y-p\left(y\right)}
+\]
+
+\end_inset
+
+מתקבל מינימום ב-
+\begin_inset Formula $t=0$
+\end_inset
+
+ בקטע 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ ולכן המינימום הגלובלי חייב להיות ב-
+\begin_inset Formula $t\leq0$
+\end_inset
+
+.
+ אבל לפי הביטוי שקיבלנו לנק' המינימום
+\begin_inset Formula 
+\[
+\frac{\inner{p\left(y\right)-p\left(x\right)}{y-p\left(y\right)}}{\norm{p\left(y\right)-p\left(x\right)}^{2}}\leq0
 \]
 
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+\frac{\inner{p\left(y\right)-p\left(x\right)}{x-p\left(y\right)}}{\norm{p\left(y\right)-p\left(x\right)}^{2}}\geq1
+\]
 
-\begin_layout Itemize
-רציפות: תהא 
-\begin_inset Formula $x_{n}\to x$
 \end_inset
 
-.
- 
-\begin_inset Formula $\norm{f\left(x\right)-f\left(y\right)}=\norm{f\left(x\right)-x+y-f\left(y\right)+x-y}\leq$
+ נחסר אותם ונקבל
+\begin_inset Formula 
+\[
+\frac{\inner{p\left(y\right)-p\left(x\right)}{x-p\left(y\right)}}{\norm{p\left(y\right)-p\left(x\right)}^{2}}-\frac{\inner{p\left(y\right)-p\left(x\right)}{y-p\left(y\right)}}{\norm{p\left(y\right)-p\left(x\right)}^{2}}\geq1
+\]
+
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\frac{\inner{p\left(y\right)-p\left(x\right)}{x-y}}{\norm{p\left(y\right)-p\left(x\right)}^{2}}\geq1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\inner{p\left(y\right)-p\left(x\right)}{x-y}\geq\norm{p\left(y\right)-p\left(x\right)}^{2}
+\]
+
+\end_inset
+
+ומא"ש קושי שוורץ
+\begin_inset Formula 
+\[
+\norm{x-y}\norm{p\left(y\right)-p\left(x\right)}\geq\norm{p\left(y\right)-p\left(x\right)}^{2}\iff\norm{x-y}\geq\norm{p\left(y\right)-p\left(x\right)}
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $p$
+\end_inset
+
+ ליפשיצית ולכן רציפה כנדרש.
 \end_layout
 
 \end_deeper

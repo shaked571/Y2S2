@@ -236,6 +236,10 @@ L\notin\text{RE}
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -251,6 +255,511 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L_{\forall100}\in\text{coRE}$
+\end_inset
+
+.
+ נבנה מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ ונרוץ על המילים בסדר לקסיקוגרפי, ונחזיר 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+ אם הגענו למילה שלא מקבלת תוך-
+\numeric on
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צעדים.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{\exists100x}\in\text{RE}$
+\end_inset
+
+.
+ נבנה מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ ונרוץ על המילים בסדר לקסיקוגרפי, ונחזיר 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ אם הגענו למילה 
+\begin_inset Formula $w$
+\end_inset
+
+ שמקבלת תוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $100\cdot\left|w\right|$
+\end_inset
+
+ צעדים.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{100c}\in\text{coRE}$
+\end_inset
+
+.
+ נסמלץ ריצה על המילה ואם השתמשנו ביותר מ-
+\numeric on
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תאים נחזיר 
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{2017}\in R$
+\end_inset
+
+.
+ בהינתן קידוד 
+\begin_inset Formula $\left\langle M\right\rangle $
+\end_inset
+
+ של מכונה, נספור את כמות המצבים בו לפי הקידוד )יש כמות סופית( ונקבל אם יש
+ פחות מ-
+\numeric on
+2017
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+נראה כי 
+\begin_inset Formula $A_{TM}\leq CFL_{TM}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{TM}\leq\overline{CFL_{TM}}$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+ נגדיר את המכונה 
+\begin_inset Formula $M'$
+\end_inset
+
+ כך: הא"ב של 
+\begin_inset Formula $M'$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\left\{ 0,1,2\right\} $
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $x\in\left\{ 0^{n}1^{n}2^{n}\mid n\in\mathbb{N}\right\} $
+\end_inset
+
+ אז 
+\begin_inset Formula $M'$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ אחרת היא מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ אז קל לראות שהרדוקציה חשיבה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \in A_{TM}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L\left(M'\right)=\Sigma^{*}$
+\end_inset
+
+, משמע 
+\begin_inset Formula $L\left(M'\right)\in CFL$
+\end_inset
+
+ משמע 
+\begin_inset Formula $\left\langle M'\right\rangle \in CFL$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \notin A_{TM}$
+\end_inset
+
+ אז 
+\begin_inset Formula $L\left(M'\right)=\left\{ 0^{n}1^{n}2^{n}\mid n\in\mathbb{N}\right\} $
+\end_inset
+
+, לא חסרת הקשר לכן 
+\begin_inset Formula $\left\langle M'\right\rangle \notin CFL_{TM}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיבלנו כי 
+\begin_inset Formula $A_{TM}\leq CFL_{TM}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $CFL_{TM}\notin\text{coRE}$
+\end_inset
+
+.
+ כעת, בשביל הרדוקציה השניה נגדיר את 
+\begin_inset Formula $M'$
+\end_inset
+
+ לפעול כך.
+ בהינתן 
+\begin_inset Formula $x\in\left\{ 0,1,2\right\} ^{*}$
+\end_inset
+
+ 
+\begin_inset Formula $M'$
+\end_inset
+
+ מריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ קיבלה אותו, אז 
+\begin_inset Formula $M'$
+\end_inset
+
+ בודקת האם 
+\begin_inset Formula $x\in\left\{ 0^{n}1^{n}2^{n}\mid n\in\mathbb{N}\right\} $
+\end_inset
+
+ ומחזירה תשובה בהתאם.
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא קיבלה את 
+\begin_inset Formula $w$
+\end_inset
+
+ נדחה.
+ כעת,
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \in A_{TM}$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $L\left(M'\right)=\left\{ 0^{n}1^{n}2^{n}\right\} $
+\end_inset
+
+, משמע 
+\begin_inset Formula $\left\langle M'\right\rangle \in\overline{CFL_{TM}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left\langle M,w\right\rangle \notin A_{TM}$
+\end_inset
+
+ אז או ש-
+\begin_inset Formula $M$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $w$
+\end_inset
+
+ או שהיא נתקעת.
+ בכל מקרה לא נקבל אף מילה ולכן 
+\begin_inset Formula $L\left(M'\right)=\varnothing\in CFL$
+\end_inset
+
+, משמע 
+\begin_inset Formula $\left\langle M'\right\rangle \notin\overline{CFL_{TM}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מרדוקציה זו נסיק כי 
+\begin_inset Formula $CFL_{TM}\notin\text{RE}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L_{q}\in?$
+\end_inset
+
+.
+ נראה כי 
+\begin_inset Formula $A_{TM}\leq L_{q}$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+ נתאים את המילה 
+\begin_inset Formula $\left\langle M',q_{acc}\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M'$
+\end_inset
+
+ מתעלמת מהקלט שלה ומריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ ומחזירה את תשובתה.
+ אז 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+, אז בפרט המצב 
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ מתקבל ב-
+\begin_inset Formula $M'$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left\langle M',q_{acc}\right\rangle \in L_{q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+, אז גם 
+\begin_inset Formula $M'$
+\end_inset
+
+ לא מגיעה ל-
+\begin_inset Formula $q_{acc}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left\langle M',q_{acc}\right\rangle \notin L_{q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $L_{q}\notin\text{coRE}$
+\end_inset
+
+.
+ נציג מ"ט 
+\begin_inset Formula $M'$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $L_{q}$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $\left\langle M,q\right\rangle $
+\end_inset
+
+, נסדר את כל המילים בשפה בסדר 
+\begin_inset Formula $\text{minLEX}$
+\end_inset
+
+, ובאיטרציה ה-
+\begin_inset Formula $n$
+\end_inset
+
+ נריץ את המכונה 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $n$
+\end_inset
+
+ המילים הראשונות 
+\begin_inset Formula $n$
+\end_inset
+
+ צעדים, ונבדוק האם הגענו באחת המילים למצב 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ אם יש מילה כזאת, היא תופיע מתישהו בסדר ולכן אחרי מספר סופי של צעדים גם
+ נגיע איתה ל-
+\begin_inset Formula $q$
+\end_inset
+
+ ונחזיר אמת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 מכיוון ש-
 \begin_inset Formula $L_{2}$
@@ -306,24 +815,28 @@ w_{2} & w\notin L_{1}
 \end_inset
 
 .
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 הטעות היא שהרדוקציה אינה חשיבה.
- בשביל להיות חשיבה אנו זקוקים לכך ששפת מכונות הטיורינג שמקבלות כל מילה תהיה
- ב-
-\begin_inset Formula $\text{R}$
+ הרדוקציה דורשת שנוכל להכריע האם 
+\begin_inset Formula $M\in ALL_{TM}$
 \end_inset
 
-, והיא לא.
- 
-\begin_inset Note Comment
-status open
+ או לא, אבל ראינו כי לא רק שלא ניתן להכריע את 
+\begin_inset Formula $ALL_{TM}$
+\end_inset
 
-\begin_layout Plain Layout
-לפרמל
-\end_layout
+ אלא 
+\begin_inset Formula $ALL_{TM}\notin\text{RE\cup coRE}$
+\end_inset
 
+.
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -351,7 +864,35 @@ x\in L\iff M\text{ accepts }w\iff\left\langle M,w\right\rangle \in A_{TM}
 \end_inset
 
 .
- כעת, 
+ הרדוקציה 
+\begin_inset Formula $x\to w$
+\end_inset
+
+ גם חשיבה ומקיימת כי 
+\begin_inset Formula 
+\[
+x\in L\iff M\text{ accepts }w
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $L_{M,w}\leq L\left(M\right)$
+\end_inset
+
+, משמע 
+\begin_inset Formula $L\in\text{coRE}$
+\end_inset
+
+ אם 
+\begin_inset Formula $L\left(M\right)\in\text{coRE}$
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -443,8 +984,399 @@ w\to\left\langle M,w\right\rangle
 \end_inset
 
 .
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A,B$
+\end_inset
+
+ שתי שפות זרות.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $A,B\in\text{coRE}$
+\end_inset
+
+.
+ נבנה 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט מכריע שמקיים 
+\begin_inset Formula $A\subseteq L\left(M\right)$
+\end_inset
+
+, 
+\begin_inset Formula $L\left(M\right)\cap B=\varnothing$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $M_{1},M_{2}$
+\end_inset
+
+ המ"ט שמזהים את 
+\begin_inset Formula $\overline{A},\overline{B}$
+\end_inset
+
+ בהתאמה.
+ בהינתן מילה 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+ תריץ במקביל את 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ ראשית, נשים לב כי 
+\begin_inset Formula $M$
+\end_inset
+
+ תמיד עוצרת וזאת מכך ש-
+\begin_inset Formula 
+\[
+A\cap B=\varnothing\Rightarrow\overline{A}\cup\overline{B}=\Sigma^{*}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $w\in\overline{A}$
+\end_inset
+
+ או 
+\begin_inset Formula $w\in\overline{B}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ יקבלו אותה.
+ כעת, נחליט לפי המכונה הראשונה שעוצרת האם לקבל או לדחות כך: 
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+חלוקה למקרים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+דחתה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+קיבלה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מכונה
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{acc}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{rej}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{rej}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{acc}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+לכאורה יש סכנה שהמכונה לא מוגדרת באופן דטרמיניסטי, אבל כיוון שתמיד יקח למכונה
+ אותו מספר צעדים לרוץ על קלט מסוים אותה מכונה תעצור ראשונה תמיד ולכן זה
+ מוגדר היטב.
+ אזי לכל 
+\begin_inset Formula $w\in A$
+\end_inset
+
+, 
+\begin_inset Formula $w\in\overline{B}$
+\end_inset
+
+ ו-
+\begin_inset Formula $w\notin\overline{A}$
+\end_inset
+
+ לכן בכל מקרה המכונה הראשונה שתעצור תגרום לכך ש-
+\begin_inset Formula $M$
+\end_inset
+
+ תקבל את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $w\in B$
+\end_inset
+
+, 
+\begin_inset Formula $w\in\overline{A}$
+\end_inset
+
+ ו-
+\begin_inset Formula $w\notin\overline{B}$
+\end_inset
+
+ ולכן שוב בכל מקרה 
+\begin_inset Formula $M$
+\end_inset
+
+ תדחה את המילה.
+\end_layout
+
+\begin_layout Enumerate
+נבחר 
+\begin_inset Formula $A=\left\{ \left\langle M,w\right\rangle \mid M\text{ accepts }w\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $B=\left\{ \left\langle M,w\right\rangle \mid M\text{ rejects }w\right\} $
+\end_inset
+
+.
+ נניח בשלילה כי יש 
+\begin_inset Formula $C\in\text{R}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $A\subseteq C$
+\end_inset
+
+, 
+\begin_inset Formula $B\subseteq\overline{C}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $K$
+\end_inset
+
+ המ"ט שמכריעה את 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $\overline{K}$
+\end_inset
+
+ המכונה המשלימה של 
+\begin_inset Formula $K$
+\end_inset
+
+ )מקבלת כש-
+\begin_inset Formula $K$
+\end_inset
+
+ דוחה ודוחה כש-
+\begin_inset Formula $K$
+\end_inset
+
+ מקבלת(.
+ אזי גם 
+\begin_inset Formula $\overline{K}$
+\end_inset
+
+ מכריעה.
+ נשאל האם 
+\begin_inset Formula $\overline{K}$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $\left\langle \overline{K},\left\langle \overline{K}\right\rangle \right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נניח כי כן.
+ אזי 
+\begin_inset Formula $\left\langle \overline{K},\left\langle \overline{K}\right\rangle \right\rangle \in\overline{C}$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $\left\langle \overline{K},\left\langle \overline{K}\right\rangle \right\rangle \notin A$
+\end_inset
+
+, משמע 
+\begin_inset Formula $\overline{K}$
+\end_inset
+
+ לא מקבלת את 
+\begin_inset Formula $\left\langle \overline{K}\right\rangle $
+\end_inset
+
+, סתירה.
+\end_layout
+
+\begin_layout Itemize
+נניח כי לא.
+ אז בהכרח 
+\begin_inset Formula $\overline{K}$
+\end_inset
+
+ דוחה את המילה.
+ אז 
+\begin_inset Formula $\left\langle \overline{K},\left\langle \overline{K}\right\rangle \right\rangle \in C$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $\left\langle \overline{K},\left\langle \overline{K}\right\rangle \right\rangle \notin B$
+\end_inset
+
+, משמע 
+\begin_inset Formula $\overline{K}$
+\end_inset
+
+ לא דוחה את 
+\begin_inset Formula $\left\langle \overline{K}\right\rangle $
+\end_inset
+
+, סתירה.
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document
