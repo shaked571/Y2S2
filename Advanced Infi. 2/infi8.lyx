@@ -1,0 +1,687 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\rightmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אינפי
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+30796048
+\end_layout
+
+\begin_layout Section*
+שאלה ראשונה
+\end_layout
+
+\begin_layout Enumerate
+נראה כי שקילות תחת העתקה צפידה הוא יחס שקילות.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+רפלקסיביות- לכל 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה, 
+\begin_inset Formula $\gamma=Id\cdot\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+סימטריה- נניח 
+\begin_inset Formula $\beta=A\gamma+b$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $b\in\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $A\in O_{3}\left(\mathbb{R}\right)$
+\end_inset
+
+.
+ אז גם 
+\begin_inset Formula $A^{-1}\in O_{3}\left(\mathbb{R}\right)$
+\end_inset
+
+ ו- 
+\begin_inset Formula 
+\[
+A\gamma=\beta-b\iff\gamma=A^{-1}\left(\beta-b\right)=A^{-1}\beta-A^{-1}b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+טרנזיטיביות- נניח 
+\begin_inset Formula $\beta=A\gamma+b$
+\end_inset
+
+, 
+\begin_inset Formula $\eta=B\beta+c$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $b,c\in\mathbb{R}^{3}$
+\end_inset
+
+ ו-
+\begin_inset Formula $A,B\in O_{3}\left(\mathbb{R}\right)$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+\eta=B\left(A\gamma+b\right)+c=BA\gamma+\left(Bb+c\right)
+\]
+
+\end_inset
+
+נשים לב כי 
+\begin_inset Formula $BA\in O_{3}\left(\mathbb{R}\right)$
+\end_inset
+
+ כי
+\begin_inset Formula 
+\[
+BA\cdot\left(BA\right)^{t}=BAA^{t}B^{t}=BIdB^{t}=Id
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset FormulaMacro
+\newcommand{\norm}[1]{\Vert#1\Vert}
+\end_inset
+
+תהי 
+\begin_inset Formula $A\in O_{3}\left(\mathbb{R}\right)$
+\end_inset
+
+ ונתון כי 
+\begin_inset Formula $u\times v=w$
+\end_inset
+
+, וגם 
+\begin_inset Formula $\left(Au\right)\times\left(Av\right)=k$
+\end_inset
+
+.
+ נזכור כי 
+\begin_inset Formula $A$
+\end_inset
+
+ איזומטריה ולכן משמרת מכפלה פנימית 
+\begin_inset Formula $\left\langle Au\mid Av\right\rangle =\left\langle u\mid v\right\rangle $
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $\norm v=\norm{Av}$
+\end_inset
+
+.
+ כעת,
+\begin_inset Formula 
+\begin{align*}
+\norm w & =\norm{u\times v}=\norm u\norm v\sin\theta_{u,v}=\norm u\norm v\sqrt{1-\cos^{2}\theta}=\\
+= & \norm{Au}\norm{Av}\sqrt{1-\frac{\left\langle u\mid v\right\rangle ^{2}}{\norm u^{2}\norm v^{2}}}=\norm{Au}\norm{Av}\sqrt{1-\frac{\left\langle Au\mid Av\right\rangle ^{2}}{\norm{Au}^{2}\norm{Av}^{2}}}=\\
+= & \norm{Au\times Av}=\norm k
+\end{align*}
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+finish the rest
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שאלה שנייה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma\left(t\right)=\left(a\cos\left(\frac{t}{c}\right),a\sin\left(\frac{t}{c}\right),b\cdot\frac{t}{c}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $c^{2}=a^{2}+b^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+צ"ל: 
+\begin_inset Formula $\norm{\gamma'\left(t\right)}=1$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\gamma'\left(t\right)=\left(-\frac{a}{c}\sin\left(\frac{t}{c}\right),\frac{a}{c}\cos\left(\frac{t}{c}\right),\frac{b}{c}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\norm{\gamma'\left(t\right)} & =\sqrt{\frac{a^{2}}{c^{2}}\sin^{2}\left(\frac{t}{c}\right)+\frac{a^{2}}{c^{2}}\cos^{2}\left(\frac{t}{c}\right)+\frac{b^{2}}{c^{2}}}=\\
+= & \sqrt{\frac{a^{2}}{c^{2}}\cdot1+\frac{b^{2}}{c^{2}}}=\sqrt{\frac{a^{2}+b^{2}}{c^{2}}}=1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+T\left(t\right)=\gamma'\left(t\right)=\left(-\frac{a}{c}\sin\left(\frac{t}{c}\right),\frac{a}{c}\cos\left(\frac{t}{c}\right),\frac{b}{c}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+N\left(t\right) & =\frac{\gamma''\left(t\right)}{\norm{\gamma''\left(t\right)}}=\frac{1}{\norm{\gamma''\left(t\right)}}\cdot\left(-\frac{a}{c^{2}}\cos\left(\frac{t}{c}\right),-\frac{a}{c^{2}}\sin\left(\frac{t}{c}\right),0\right)=\\
+= & \frac{\left(-\frac{a}{c^{2}}\cos\left(\frac{t}{c}\right),-\frac{a}{c^{2}}\sin\left(\frac{t}{c}\right),0\right)}{\frac{a}{c^{2}}}=\left(-\cos\left(\frac{t}{c}\right),-\sin\left(\frac{t}{c}\right),0\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+B\left(t\right) & =T\left(t\right)\times N\left(t\right)=\left(\frac{b}{c}\sin\left(\frac{t}{c}\right),-\frac{b}{c}\cos\left(\frac{t}{c}\right),\frac{a}{c}\sin^{2}\left(\frac{t}{c}\right)+\frac{a}{c}\cos^{2}\left(\frac{t}{c}\right)\right)=\\
+= & \left(\frac{b}{c}\sin\left(\frac{t}{c}\right),-\frac{b}{c}\cos\left(\frac{t}{c}\right),\frac{a}{c}\right)
+\end{align*}
+
+\end_inset
+
+כעת, 
+\begin_inset Formula $k\left(t\right)=\frac{a}{c^{2}}$
+\end_inset
+
+ ו-
+\begin_inset Formula 
+\[
+B'\left(t\right)=\left(\frac{b}{c^{2}}\cos\left(\frac{t}{c}\right),\frac{b}{c^{2}}\sin\left(\frac{t}{c}\right),0\right)
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\tau\left(t\right)=-\frac{b}{c^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+המישור המשיק בנק' 
+\begin_inset Formula $t$
+\end_inset
+
+ הוא 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה רביעית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k\left(t\right)$
+\end_inset
+
+ דיפרנצ'.
+ 
+\begin_inset Formula $\gamma\left(t\right)=\left(\int\cos\left(\theta\left(t\right)\right)dt+a,\int\sin\left(\theta\left(t\right)\right)dt+b\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\theta\left(t\right)=\int_{0}^{t}k\left(t\right)dt+\theta_{0}$
+\end_inset
+
+.
+ מהמשפט היסודי,
+\begin_inset Formula 
+\[
+T=\gamma'\left(t\right)=\left(\cos\left(\theta\left(t\right)\right),\sin\left(\theta\left(t\right)\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma''\left(t\right)=\left(-\sin\left(\theta\left(t\right)\right)\cdot k\left(t\right),\cos\left(\theta\left(t\right)\right)\cdot k\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\norm{\gamma''\left(t\right)} & =\left|k\left(t\right)\right|=k\left(t\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה חמישית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma\left(t\right)=\begin{cases}
+\left(t,0,e^{-\frac{1}{t^{2}}}\right) & t>0\\
+\left(t,e^{-\frac{1}{t^{2}}},0\right) & t<0\\
+\left(0,0,0\right) & t=0
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נראה כי כל קואורדינטה של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ גזירה.
+\begin_inset Formula 
+\[
+\gamma_{1}\left(t\right)=\begin{cases}
+t & t>0\\
+t & t<0\\
+0 & t=0
+\end{cases}=t
+\]
+
+\end_inset
+
+לכן גזיר
+\begin_inset Formula 
+\[
+\gamma_{2}\left(t\right)=\begin{cases}
+0 & t\geq0\\
+e^{-\frac{1}{t^{2}}} & t<0
+\end{cases}
+\]
+
+\end_inset
+
+כעת בכל 
+\begin_inset Formula $t\neq0$
+\end_inset
+
+ הפונקציה גזירה.
+ ב-
+\begin_inset Formula $t=0$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+\lim_{h\to0^{+}}\frac{\gamma_{2}\left(h\right)-\gamma_{2}\left(0\right)}{h} & =\lim_{h\to0^{+}}\frac{0-0}{h}=0\\
+\lim_{h\to0^{-}} & \frac{\gamma_{2}\left(h\right)-\gamma_{2}\left(0\right)}{h}=\lim_{h\to0^{-}}\frac{e^{-\frac{1}{h^{2}}}}{h}=0
+\end{align*}
+
+\end_inset
+
+לכן גזירה גם ב-
+\begin_inset Formula $t=0$
+\end_inset
+
+.
+ באופן דומה מראים גם כי 
+\begin_inset Formula $\gamma_{3}\left(t\right)$
+\end_inset
+
+ גזירה לכל 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\gamma'\left(t\right)=\begin{cases}
+\left(1,0,e^{-\frac{1}{t^{2}}}\cdot\frac{2}{t^{3}}\right) & t>0\\
+\left(1,e^{-\frac{1}{t^{2}}}\cdot\frac{2}{t^{3}},0\right) & t<0\\
+\left(1,0,0\right) & t=0
+\end{cases}
+\]
+
+\end_inset
+
+אז המסילה רגולרית.
+ בנוסף
+\begin_inset Formula 
+\[
+\gamma''\left(t\right)=\begin{cases}
+\left(0,0,e^{-\frac{1}{t^{2}}}\cdot\frac{4}{t^{6}}+e^{-\frac{1}{t^{2}}}\cdot-\frac{6}{t^{4}}\right) & t>0\\
+\left(0,e^{-\frac{1}{t^{2}}}\cdot\frac{4}{t^{6}}+e^{-\frac{1}{t^{2}}}\cdot-\frac{6}{t^{4}},0\right) & t<0\\
+\left(0,0,0\right) & t=0
+\end{cases}
+\]
+
+\end_inset
+
+כי
+\begin_inset Formula 
+\[
+\lim_{h\to0}\frac{\frac{2e^{-\frac{1}{t^{2}}}}{h^{3}}}{h}=\lim_{h\to0}\frac{2e^{-\frac{1}{t^{2}}}}{h^{4}}=0
+\]
+
+\end_inset
+
+כעת, 
+\begin_inset Formula 
+\[
+e^{-\frac{1}{t^{2}}}\cdot\frac{4}{t^{6}}+e^{-\frac{1}{t^{2}}}\cdot-\frac{6}{t^{4}}=e^{-\frac{1}{t^{2}}}\left(\frac{4-6t^{2}}{t^{6}}\right)
+\]
+
+\end_inset
+
+וזה שווה לאפס רק אם
+\begin_inset Formula 
+\[
+4-6t^{2}=0\iff t^{2}=\frac{2}{3}\iff t=\pm\sqrt{\frac{2}{3}}
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\sqrt{\frac{2}{3}}>t>0$
+\end_inset
+
+ המישור הנושק נפרש ע"י 
+\begin_inset Formula $T\left(t\right)=\left(1,0,e^{-\frac{1}{t^{2}}}\cdot\frac{2}{t^{3}}\right),N\left(t\right)=\left(0,0,1\right)$
+\end_inset
+
+.
+ הוקטור הניצב הוא
+\begin_inset Formula 
+\begin{align*}
+B\left(t\right) & =T\times N=\\
+= & \left(0,-1,0\right)
+\end{align*}
+
+\end_inset
+
+לכן כאשר 
+\begin_inset Formula $t\to0^{+}$
+\end_inset
+
+ המישורים מתכנסים ל-
+\begin_inset Formula $y=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכל 
+\begin_inset Formula $-\sqrt{\frac{2}{3}}<t<0$
+\end_inset
+
+, המישור הנושק נפרש ע"י 
+\begin_inset Formula $T\left(t\right)=\left(1,e^{-\frac{1}{t^{2}}}\cdot\frac{2}{t^{3}},0\right),N\left(t\right)=\left(0,1,0\right)$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+B\left(t\right)=T\times N=\left(0,0,1\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $t\to0^{-}$
+\end_inset
+
+, 
+\begin_inset Formula $B\left(t\right)\to\left(0,0,1\right)$
+\end_inset
+
+ שהוא הניצב למישור 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $B'\left(t\right)=0$
+\end_inset
+
+.
+ לכן 
+\end_layout
+
+\begin_layout Section*
+שאלה שביעית
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
