@@ -1,0 +1,867 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\rightmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תורת המשחקים - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}0 & 2\\
+4 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+כל האסט' הטהורות של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הן ביטחון מקסימלי, כולן יכולות להבטיח רק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רווח.
+ אסט' ביטחון מקסימלי של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, ומבטיחה לו רווח של 
+\numeric on
+-2
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+נחלק למקרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לשחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ כיוון שיש תמיד תשובה טובה ביותר באסט' טהורות אנחנו מחפשים למקסם את
+\begin_inset Formula 
+\[
+\min\left\{ 0\cdot p+4\left(1-p\right),2\cdot p+0\cdot\left(1-p\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אז המקסימום מתקבל בנק' בה הם שווים
+\begin_inset Formula 
+\[
+4-4p=2p\iff6p=4\iff p=\frac{2}{3}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\left[\frac{2}{3},\frac{1}{3}\right]$
+\end_inset
+
+ אסט' ביטחון מקס' של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+לשחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ שוב נחפש למזער את
+\begin_inset Formula 
+\[
+\max\left\{ 0\cdot q+2\cdot\left(1-q\right),4\cdot q+0\cdot\left(1-q\right)\right\} 
+\]
+
+\end_inset
+
+המינימום מתקבל בנק' בה הם שווים ולכןֵ
+\begin_inset Formula 
+\[
+2-2q=4q\iff q=\frac{1}{3}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\left[\frac{1}{3},\frac{2}{3}\right]$
+\end_inset
+
+ אסט' ביטחון מקס' של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+באסט' טהורות אין ערך למשחק כי
+\begin_inset Formula 
+\[
+\min_{y\in\Sigma_{2}}\max_{x\in\Sigma_{1}}u\left(x,y\right)=2
+\]
+
+\end_inset
+
+אבל
+\begin_inset Formula 
+\[
+\max_{x\in\Sigma_{1}}\min_{y\in\Sigma_{2}}u\left(x,y\right)=0
+\]
+
+\end_inset
+
+לעומת זאת באסט' מעורבות תמיד יש ערך משחק והוא 
+\begin_inset Formula $1\frac{1}{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $u_{1}\left(x,y\right)=x\begin{pmatrix}2 & 0\\
+0 & 1
+\end{pmatrix}y$
+\end_inset
+
+.
+ 
+\begin_inset Formula $u_{2}\left(x,y\right)=x\begin{pmatrix}1 & 0\\
+0 & 2
+\end{pmatrix}y$
+\end_inset
+
+.
+ אין פירוט לחישובים כיוון שהיה נראה לי יותר מעניין לכתוב תוכנת פייתון קצרה
+ שתחשב בשבילי את הפונקציה מאשר לעשות את החישובים בעצמי )ונראה לי שזה לקח
+ לי יותר זמן ממה שהיה לוקח לחשב בידיים...(
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\widetilde{x}=\begin{pmatrix}1\\
+0
+\end{pmatrix},\widetilde{y}=\begin{pmatrix}1\\
+0
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\widetilde{x}=\begin{pmatrix}\frac{1}{2}\\
+\frac{1}{2}
+\end{pmatrix},\widetilde{y}=\begin{pmatrix}\frac{1}{2}\\
+\frac{1}{2}
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\widetilde{x}=\begin{pmatrix}\frac{2}{3}\\
+\frac{1}{3}
+\end{pmatrix},\widetilde{y}=\begin{pmatrix}\frac{1}{3}\\
+\frac{2}{3}
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\widetilde{x}=\begin{pmatrix}\frac{3}{4}\\
+\frac{1}{1}
+\end{pmatrix},\widetilde{y}=\begin{pmatrix}\frac{2}{3}\\
+\frac{1}{1}
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\widetilde{x}=\begin{pmatrix}\frac{3}{5}\\
+\frac{2}{5}
+\end{pmatrix},\widetilde{y}=\begin{pmatrix}\frac{2}{5}\\
+\frac{3}{2}
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\widetilde{x}=\begin{pmatrix}\frac{3}{5}\\
+\frac{2}{5}
+\end{pmatrix},\widetilde{y}=\begin{pmatrix}\frac{2}{5}\\
+\frac{3}{2}
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\mathbb{R}_{\geq0}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=x+1$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $A$
+\end_inset
+
+ סגורה וקמורה, ו-
+\begin_inset Formula $f\left(A\right)\subseteq A$
+\end_inset
+
+ אבל 
+\begin_inset Formula 
+\[
+f\left(x\right)=x\Rightarrow x+1=x\Rightarrow1=0
+\]
+
+\end_inset
+
+מה שמוביל לסתירה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=(1,2)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(x\right)=\sqrt{x}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ חסומה וקמורה, ו-
+\begin_inset Formula $1<x<2\Rightarrow1<\sqrt{x}<\sqrt{2}$
+\end_inset
+
+ אבל
+\begin_inset Formula 
+\[
+f\left(x\right)=x\Rightarrow\sqrt{x}=x\Rightarrow\sqrt{x}\left(\sqrt{x}-1\right)=0\Rightarrow x=0,1
+\]
+
+\end_inset
+
+והם לא בתחום.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left[-2,-1\right]\cup\left[1,2\right]$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f\left(x\right)=-x$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $A$
+\end_inset
+
+ סגורה וחסומה, ו-
+\begin_inset Formula $f\left(A\right)\subseteq A$
+\end_inset
+
+ אבל 
+\begin_inset Formula 
+\[
+f\left(x\right)=x\iff-x=x\iff2x=0\Rightarrow x=0
+\]
+
+\end_inset
+
+לא בתחום.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left[0,1\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+x+\frac{1}{2} & 0\leq x\leq\frac{1}{2}\\
+x-\frac{1}{2} & \frac{1}{2}<x\leq1
+\end{cases}
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה סגורה חסומה וקמורה, ו-
+\begin_inset Formula $f\left(A\right)\subseteq A$
+\end_inset
+
+ אבל אם יש ל-
+\begin_inset Formula $f$
+\end_inset
+
+ נק' שבת 
+\begin_inset Formula $x$
+\end_inset
+
+, אז
+\begin_inset Formula 
+\begin{align*}
+0\leq x\leq\frac{1}{2} & ,\,f\left(x\right)=x\Rightarrow x+\frac{1}{2}=x\Rightarrow\frac{1}{2}=0\\
+\frac{1}{2}<x\leq1 & ,\,f\left(x\right)=x\Rightarrow x-\frac{1}{2}=x\Rightarrow\frac{1}{2}=0
+\end{align*}
+
+\end_inset
+
+בכל מקרה מגיעים לסתירה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $K$
+\end_inset
+
+ קמורה וקומפ', 
+\begin_inset Formula $A$
+\end_inset
+
+ הומיאומורפית ל-
+\begin_inset Formula $K$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $f\colon K\to A$
+\end_inset
+
+ ההומיאומורפיזם ביניהם.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $g\colon A\to A$
+\end_inset
+
+ רציפה.
+ הפונקצייה 
+\begin_inset Formula $f^{-1}\circ g\circ f\colon K\to K$
+\end_inset
+
+ רציפה כהרכבה של רציפות ותחומה קמור וקומפ'.
+ ממשפט נק' השבת של בראוור יש 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ נק' שבת של הפונקציה.
+ אזי מתקיים
+\begin_inset Formula 
+\[
+f^{-1}\circ g\circ f\left(x\right)=x
+\]
+
+\end_inset
+
+נטען כי 
+\begin_inset Formula $f\left(x\right)\in A$
+\end_inset
+
+ נק' שבת של 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ ואכן 
+\begin_inset Formula 
+\[
+f\left(f^{-1}\circ g\circ f\left(x\right)\right)=g\circ f\left(x\right)=g\left(f\left(x\right)\right)=f\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $g\left(x,y\right)=\left(-x,-y\right)$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+g\left(x,y\right)=\left(x,y\right)\Rightarrow\left(-x,-y\right)=\left(x,y\right)\Rightarrow x,y=0
+\]
+
+\end_inset
+
+לכן ל-
+\begin_inset Formula $g$
+\end_inset
+
+ אין נק' שבת ב-
+\begin_inset Formula $S$
+\end_inset
+
+, אבל ב-
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+ יש לה, משמע הם לא הומיאומורפים.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
