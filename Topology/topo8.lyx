@@ -612,5 +612,503 @@ q\in[b,c)
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מניה ראשונה - יהי 
+\begin_inset Formula $A\subset X$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ קיימת 
+\begin_inset Formula $\left\{ U_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ אוסף פתוחות המכילות את 
+\begin_inset Formula $x$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in V$
+\end_inset
+
+ פתוחה קיים 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $U_{n}\subseteq V$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $\left\{ U_{n}\cap A\right\} _{n=1}^{\infty}$
+\end_inset
+
+.
+ זהו אוסף קבוצות פתוחות ב-
+\begin_inset Formula $A$
+\end_inset
+
+ המכילות את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $U\subseteq A$
+\end_inset
+
+ פתוחה ב-
+\begin_inset Formula $A$
+\end_inset
+
+ המכילה את 
+\begin_inset Formula $x$
+\end_inset
+
+, קיימת 
+\begin_inset Formula $V$
+\end_inset
+
+ פתוחה ב-
+\begin_inset Formula $X$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $U=V\cap A$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $U_{n}\subseteq V$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+x\in U_{n}\cap A\subseteq V\cap A=U
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X=\prod_{n=1}^{\infty}X_{n}$
+\end_inset
+
+ מכפלה בת מנייה של מרחבים עם תכונת המנייה הראשונה.
+ תהי 
+\begin_inset Formula $x=\left(x_{n}\right)\in X$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, תהי 
+\begin_inset Formula $\left\{ U_{i}^{n}\right\} _{i=1}^{\infty}$
+\end_inset
+
+ אוסף הפתוחות שקיים ממניה ראשונה סביב 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+.
+ נגדיר את אוסף הקבוצות מהצורה
+\begin_inset Formula 
+\[
+\prod_{j=1}^{\infty}V_{j},\,\,\,i_{1},...,i_{k}\in\mathbb{N},\,\,\,\begin{cases}
+V_{j}\in\left\{ U_{i}^{j}\right\} _{i=1}^{\infty} & j=i_{1},...,i_{k}\\
+X_{j} & \text{else}
+\end{cases}
+\]
+
+\end_inset
+
+אלו קבוצות פתוחות ואוסף קבוצות זה הוא בן מנייה )כי הוא מתאים לאוסף תתי הקבוצות
+ הסופיות של הקבוצה 
+\begin_inset Formula $\mathbb{N\times N}$
+\end_inset
+
+(.
+ כעת, אם 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ פתוחה ב-
+\begin_inset Formula $X$
+\end_inset
+
+, אז יש מספר סופי של קבוצות 
+\begin_inset Formula $S_{i_{1}},...,S_{i_{k}}$
+\end_inset
+
+ במכפלה של 
+\begin_inset Formula $S$
+\end_inset
+
+ ששונות ממרחב המקור שלהן.
+ לכל 
+\begin_inset Formula $S_{i_{j}}$
+\end_inset
+
+ כזו, יש 
+\begin_inset Formula $U_{k}^{i_{j}}\subseteq X_{i_{j}}$
+\end_inset
+
+ באוסף שקיים ממניה ראשונה.
+ מכיוון שיש מספר סופי, המכפלה של ה-
+\begin_inset Formula $U_{k}^{i_{j}}$
+\end_inset
+
+ מוכל באוסף הקבוצות שהגדרנו קודם, ומוכל ב-
+\begin_inset Formula $S$
+\end_inset
+
+, כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ספרביליות - דוגמה נגדית לתת מרחב: 
+\begin_inset Formula $X=\mathbb{R}$
+\end_inset
+
+ עם הטופולוגיה 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה אם"ם 
+\begin_inset Formula $U=\varnothing$
+\end_inset
+
+ או 
+\begin_inset Formula $0\in U$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+ קבוצה צפופה ובת מניה ב-
+\begin_inset Formula $X$
+\end_inset
+
+, אבל תת המרחב 
+\begin_inset Formula $\mathbb{R}\backslash\left\{ 0\right\} $
+\end_inset
+
+ מקבל את הטופולוגיה הדיסקרטית, ומכיוון שאינו בן מנייה לא יכולה להיות בו
+ קבוצה צפופה בת מניה.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+גנבתי לקרגילה, לנסות לחשוב על משהו אחר
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מכפלה בת מנייה- יהי 
+\begin_inset Formula $X=\prod_{n=1}^{\infty}X_{n}$
+\end_inset
+
+ מכפלה ב"מ של מרחבים ספרביליים.
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ תהי 
+\begin_inset Formula $\left\{ d_{j}^{n}\right\} _{j=1}^{\infty}$
+\end_inset
+
+ הקבוצה הצפופה והב"מ ב-
+\begin_inset Formula $X_{n}$
+\end_inset
+
+.
+ נגדיר את הקבוצה
+\begin_inset Formula 
+\[
+S=\left\{ \left(d_{j_{n}}^{n}\right)_{n=1}^{\infty}\mid\exists N\in\mathbb{N}\,\,\forall n>N\,\,j_{n}=1\right\} 
+\]
+
+\end_inset
+
+זו קבוצה ב"מ כי היא מתאימה לקבוצה של סדרות סופיות של מספרים טבעיים.
+ כעת, לכל 
+\begin_inset Formula $V=\prod_{i=1}^{\infty}V_{i}\subseteq X$
+\end_inset
+
+ פתוחה, בה"כ היא בסיסית )אחרת מכילה כזו(.
+ יש קיים 
+\begin_inset Formula $N$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+ 
+\begin_inset Formula $V_{n}=X_{n}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $n\leq N$
+\end_inset
+
+, יש 
+\begin_inset Formula $j_{n}\in\mathbb{N}$
+\end_inset
+
+ כך ש- 
+\begin_inset Formula $d_{j_{n}}^{n}\in V_{n}$
+\end_inset
+
+ )מחיתוך בקבוצה הצפופה(.
+ לכן 
+\begin_inset Formula $\left(d_{j_{1}}^{1},...,d_{j_{N}}^{N},d_{1}^{N+1},...\right)\in V$
+\end_inset
+
+ וגם שייך ל-
+\begin_inset Formula $S$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+לינדלף - דוגמה נגדית לתת מרחב: 
+\begin_inset Formula $\left\langle \overline{\Omega},<\right\rangle $
+\end_inset
+
+ לינדלף, אבל 
+\begin_inset Formula $\left\langle \Omega,<\right\rangle $
+\end_inset
+
+ ת"מ ולא לינדלף.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+דוגמה נגדית למכפלה: ראינו כי 
+\begin_inset Formula $\mathbb{R}_{l}$
+\end_inset
+
+ לינדלף.
+ יהי 
+\begin_inset Formula $X=\mathbb{R}^{2}$
+\end_inset
+
+ עם הטופולוגיה המתקבלת ממכפלה של 
+\begin_inset Formula $\mathbb{R}_{l}$
+\end_inset
+
+.
+ נשתמש בטענה כי קבוצה סגורה במרחב לינדלף היא גם לינדלף )ההוכחה זהה להוכחה
+ במקרה של קומפקטיות(.
+ נשים לב כי הקבוצה 
+\begin_inset Formula $D=\left\{ \left(x,-x\right)\mid x\in\mathbb{R}\right\} $
+\end_inset
+
+ סגורה כי המשלים פתוח.
+ לכל 
+\begin_inset Formula $\left(x,y\right)\notin D$
+\end_inset
+
+, אם 
+\begin_inset Formula $x+y<0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(x,y\right)\in[x,x-\frac{\left(x+y\right)}{2})\times[y,y-\frac{\left(x+y\right)}{2})$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+ בפתוחה 
+\begin_inset Formula $x'+y'=x+i+y+j<x+y+2\frac{-\left(x+y\right)}{2}=0$
+\end_inset
+
+ ולכן זר ל-
+\begin_inset Formula $D$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $x+y>0$
+\end_inset
+
+ אז שוב 
+\begin_inset Formula $\left(x,y\right)\in[x,x+1)\times[y,y+1)$
+\end_inset
+
+ שזר ל-
+\begin_inset Formula $D$
+\end_inset
+
+ כי אם 
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+ בפתוחה אז
+\begin_inset Formula 
+\[
+x'+y'>x+y>0
+\]
+
+\end_inset
+
+כעת הטופ' המושרית על 
+\begin_inset Formula $D$
+\end_inset
+
+ היא הטופ' הדיסקרטית כי 
+\begin_inset Formula $\left\{ \left(x,-x\right)\right\} =[x,x+1)\times[-x,-x+1)\cap D$
+\end_inset
+
+ )כל נק' במלבן שאינה ממש 
+\begin_inset Formula $\left(x,-x\right)$
+\end_inset
+
+ סכום הקואורדינטות שלה גדול ממש מ-
+\numeric on
+0
+\numeric off
+(.
+ מרחב שאינו בן מנייה עם הטופ' הדיסקרטית אינו לינדלף ולכן גם 
+\begin_inset Formula $X$
+\end_inset
+
+ אינו לינדלף.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מניה שנייה - יהי 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $\left\{ B_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ בסיס בן מנייה של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left\{ B_{n}\cap A\right\} _{n=1}^{\infty}$
+\end_inset
+
+ בסיס בן מנייה של 
+\begin_inset Formula $A$
+\end_inset
+
+, כי לכל 
+\begin_inset Formula $V\cap A$
+\end_inset
+
+ פתוחה ב-
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $V\cap A=\left(\bigcup_{k=1}^{\infty}B_{n_{k}}\right)\cap A=\bigcup_{k=1}^{\infty}\left(B_{n_{k}}\cap A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח 
+\begin_inset Formula $X=\prod_{n=1}^{\infty}X_{n}$
+\end_inset
+
+ מכפלה של מרחבי מניה שנייה.
+ לכל 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ יש בסיס בן מנייה 
+\begin_inset Formula $\left\{ B_{j}^{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+, והקבוצה
+\begin_inset Formula 
+\[
+B=\bigcup_{n=1}^{\infty}\left\{ \left(\prod_{i=1}^{n}B_{j_{i}}^{i}\right)\times\left(\prod_{i=n+1}^{\infty}X_{i}\right)\mid j_{1},...,j_{n}\in\mathbb{N}\right\} 
+\]
+
+\end_inset
+
+איחוד בן מנייה של קבוצות בנות מנייה ולכן בן מנייה.
+ בנוסף זה בסיס לטופולוגית המכפלה כי כל קבוצה בסיסית שלה היא מהצורה 
+\begin_inset Formula 
+\[
+V=\left(\prod_{i=1}^{n}V_{i}\right)\times\prod_{i=n+1}^{\infty}X_{i}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ כלשהו, ולכן 
+\begin_inset Formula $V$
+\end_inset
+
+ תתקבל מאיחוד של קבוצות מ-
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document
