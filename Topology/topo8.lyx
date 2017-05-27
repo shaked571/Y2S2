@@ -265,7 +265,100 @@ status open
 \end_inset
 
  מרחב לינדלף.
- נבחר
+ נקבע נק' 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ במרחב.
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נגדיר כיסוי 
+\begin_inset Formula $\left\{ U_{x}^{n}\right\} _{x\in X}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall x\in X,\,U_{x}=B_{\frac{1}{n}}\left(x\right)
+\]
+
+\end_inset
+
+יהי 
+\begin_inset Formula $\left\{ U_{j}\right\} _{j=1}^{\infty}$
+\end_inset
+
+ תת כיסוי בן מנייה, ותהי 
+\begin_inset Formula $\left(x_{j}^{n}\right)_{j=1}^{\infty}$
+\end_inset
+
+ סדרת מרכזי הכדורים בתת הכיסוי.
+ נגדיר 
+\begin_inset Formula $D=\left\{ x_{j}^{n}\mid j,n\in\mathbb{N}\right\} $
+\end_inset
+
+, קבוצת כל איברי הסדרות, היא גם בת מנייה.
+ נטען כי זו קבוצה צפופה.
+ תהי 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה.
+ יהי 
+\begin_inset Formula $x\in U$
+\end_inset
+
+.
+ קיים 
+\begin_inset Formula $r>0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $B_{r}\left(x\right)\subseteq U$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\frac{1}{n}<\frac{r}{2}$
+\end_inset
+
+.
+ כיוון ש-
+\begin_inset Formula $\left\{ U_{j}^{n}\right\} _{j=1}^{\infty}$
+\end_inset
+
+ כיסוי בן מנייה, קיים 
+\begin_inset Formula $x_{j}^{n}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x\in B_{\frac{1}{n}}\left(x_{j}^{n}\right)$
+\end_inset
+
+.
+ אבל מכך נובע כי 
+\begin_inset Formula 
+\[
+B_{\frac{1}{n}}\left(x_{j}^{n}\right)\subseteq B_{r}\left(x\right)\subseteq U
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $x_{j}^{n}\in U$
+\end_inset
+
+, משמע 
+\begin_inset Formula $D\cap U\neq\varnothing$
+\end_inset
+
+ כנדרש.
 \end_layout
 
 \begin_layout Itemize
@@ -278,7 +371,7 @@ status open
 
  ספרבילי.
  תהי קבוצה צפופה בת מנייה 
-\begin_inset Formula $\left\{ x_{n}\mid n\in\mathbb{N}\right\} $
+\begin_inset Formula $D=\left\{ x_{n}\mid n\in\mathbb{N}\right\} $
 \end_inset
 
 .
@@ -316,12 +409,16 @@ B=\bigcup_{n=1}^{\infty}B_{n}
 \end_inset
 
 .
- מצפיפות קיים 
+ מצפיפות 
+\begin_inset Formula $D$
+\end_inset
+
+ קיים 
 \begin_inset Formula $n$
 \end_inset
 
  כך ש-
-\begin_inset Formula $x_{n}\in B_{\frac{r}{4}}\left(x\right)$
+\begin_inset Formula $x_{n}\in B_{\frac{r}{2}}\left(x\right)$
 \end_inset
 
 , וקיים 
@@ -332,18 +429,19 @@ B=\bigcup_{n=1}^{\infty}B_{n}
 \begin_inset Formula $\frac{1}{k}<\frac{r}{2}$
 \end_inset
 
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-TBD
-\end_layout
+, לכן
+\begin_inset Formula 
+\[
+B_{\frac{1}{k}}\left(x_{n}\right)\subseteq B_{r}\left(x\right)\subseteq U
+\]
 
 \end_inset
 
+משמע 
+\begin_inset Formula $B$
+\end_inset
 
+ בסיס.
 \end_layout
 
 \end_deeper
@@ -524,19 +622,62 @@ TBD
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
+\begin_inset Formula $X=\left(\overline{\Omega},<\right)$
+\end_inset
 
-\begin_layout Plain Layout
-
-omega bar
+.
 \end_layout
+
+\begin_layout Itemize
+מנייה ראשונה - אם 
+\begin_inset Formula $\alpha=\Omega$
+\end_inset
+
+, לא נוכל למצוא לו אוסף כנדרש, כי אחרת תהיה 
+\begin_inset Formula $\left\{ U_{n}\right\} $
+\end_inset
+
+ האוסף.
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ יהיה 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ המינימלי ב-
+\begin_inset Formula $U_{n}$
+\end_inset
+
+.
+ אז בהכרח
+\begin_inset Formula 
+\[
+\bigcup_{n=1}^{\infty}x_{n}=\alpha
+\]
 
 \end_inset
 
+אחרת אין לקטע הפתוח 
+\begin_inset Formula $(\bigcup_{n=1}^{\infty},\Omega]$
+\end_inset
 
+ קבוצה באוסף שמוכלת בו ונקבל סתירה.
+ אבל כעת קיבלנו ש-
+\begin_inset Formula $\Omega$
+\end_inset
+
+ איחוד בן מנייה של סודרים בני מנייה, בסתירה לכך שהוא לא בן מנייה.
+ 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+לכל שאר האקסיומות הנימוקים זהים.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $X=\mathbb{R}_{l}$
@@ -609,6 +750,218 @@ q\in[b,c)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+לינדלף - נטען כי מספיק להראות את הטענה לכיסוים בסיסיים.
+ ואכן, בהינתן כיסוי פתוח 
+\begin_inset Formula $\left\{ U_{\alpha}\right\} _{\alpha\in J}$
+\end_inset
+
+, נחליף אותו בכיסוי 
+\begin_inset Formula $\left\{ B_{\beta}\right\} _{\beta\in J'}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $U_{\alpha}$
+\end_inset
+
+ כל הקבוצות הבסיסיות שמוכלות בו נמצאות ב-
+\begin_inset Formula $\left\{ B_{\beta}\right\} $
+\end_inset
+
+.
+ כעת, בהינתן תת-כיסוי בן מנייה 
+\begin_inset Formula $\left\{ B_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+, לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\alpha\in J$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $B_{n}\subseteq U_{\alpha}$
+\end_inset
+
+.
+ אז נחליף את 
+\begin_inset Formula $B_{n}$
+\end_inset
+
+ ב-
+\begin_inset Formula $U_{\alpha}$
+\end_inset
+
+ ונקבל תת-כיסוי של הכיסוי המקורי 
+\begin_inset Formula $\left\{ U_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+.
+ כעת, נשים לב כי מתקיים
+\begin_inset Formula 
+\[
+X=\bigcup_{n=1}^{\infty}B_{n}\subseteq\bigcup_{n=1}^{\infty}U_{n}\subseteq X
+\]
+
+\end_inset
+
+לכן זהו כיסוי כנדרש.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אז יהי 
+\begin_inset Formula $\left\{ [a_{\alpha},b_{\alpha})\right\} _{\alpha\in J}$
+\end_inset
+
+ כיסוי ע"י קבוצות בסיס.
+ נגדיר 
+\begin_inset Formula $C=\bigcup_{\alpha}\left(a_{\alpha},b_{\alpha}\right)$
+\end_inset
+
+.
+ אם נסתכל על 
+\begin_inset Formula $C$
+\end_inset
+
+ כתת מרחב של 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ נבחין כי הוא לינדלף )כי הוא מטרי ומניה שנייה כתת מרחב של מניה שנייה(.
+ ולכן יש כיסוי ב"מ 
+\begin_inset Formula $\left\{ \left(a_{n},b_{n}\right)\mid n\in\mathbb{N}\right\} $
+\end_inset
+
+ של 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ בפרט גם 
+\begin_inset Formula $\left\{ [a_{n},b_{n})\mid n\in\mathbb{N}\right\} $
+\end_inset
+
+ כיסוי של 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ נתבונן ב-
+\begin_inset Formula $S=\mathbb{R}\backslash C$
+\end_inset
+
+.
+ נטען כי היא בת מניה.
+ יהי 
+\begin_inset Formula $x\in S$
+\end_inset
+
+.
+ אזי קיים 
+\begin_inset Formula $\alpha\in J$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x=a_{\alpha}$
+\end_inset
+
+.
+ בנוסף 
+\begin_inset Formula $S\cap[a_{\alpha},b_{\alpha})=\left\{ a_{\alpha}\right\} $
+\end_inset
+
+.
+ נתאים ל-
+\begin_inset Formula $x$
+\end_inset
+
+ רציונלי 
+\begin_inset Formula $a_{\alpha}<q_{x}<b_{\alpha}$
+\end_inset
+
+ בקטע.
+ נטען כי 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=q_{x}$
+\end_inset
+
+ חח"ע.
+ נניח כי 
+\begin_inset Formula $x_{1}\neq x_{2}\in S$
+\end_inset
+
+ ו-
+\begin_inset Formula $f\left(x_{1}\right)=f\left(x_{2}\right)$
+\end_inset
+
+.
+ נניח 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+.
+ אז אם 
+\begin_inset Formula $x_{1}=a_{\alpha_{1}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $q_{x_{1}}\in[a_{\alpha_{1}},b_{\alpha_{1}})$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $x_{2}\in[a_{\alpha_{1}},q_{x_{1}}=q_{x_{2}})\subseteq[a_{\alpha_{1}},b_{\alpha_{1}})$
+\end_inset
+
+ אבל ראינו קודם ש-
+\begin_inset Formula $S\cap[a_{\alpha_{1}},b_{\alpha_{1}})=\left\{ a_{\alpha_{1}}\right\} =\left\{ x_{1}\right\} $
+\end_inset
+
+ משמע 
+\begin_inset Formula $x_{1}=x_{2}$
+\end_inset
+
+, סתירה.
+ לכן 
+\begin_inset Formula $\left|S\right|=\aleph_{0}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ נבחר קטע שמכיל אותו ונקבל כיסוי בן מנייה של 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ אז איחוד שני הכיסויים ייתן כיסוי בן מנייה ל-
+\begin_inset Formula $C\cup S=\mathbb{R}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מניה שנייה - בהמשך אני נותן כדוגמה נגדית למכפלה של לינדלף היא לינדלף את
+ המרחב 
+\begin_inset Formula $\mathbb{R}_{l}\times\mathbb{R}_{l}$
+\end_inset
+
+.
+ אם הוא היה מנייה שניה אז גם המכפלה היתה מניה שנייה, ולכן גם כל תת מרחב
+ היה מניה שנייה.
+ בפרט, האלכסון עם המטריקה הדיסקרטית היה, בסתירה לכך שהוא אינו בן מנייה.
 \end_layout
 
 \end_deeper
