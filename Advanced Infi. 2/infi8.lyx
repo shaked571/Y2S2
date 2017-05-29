@@ -317,15 +317,12 @@ BA\cdot\left(BA\right)^{t}=BAA^{t}B^{t}=BIdB^{t}=Id
 
 \end_inset
 
- 
-\begin_inset ERT
-status open
+ בפרט, 
+\begin_inset Formula $k=\pm Aw$
+\end_inset
 
-\begin_layout Plain Layout
-
-finish the rest
-\end_layout
-
+, כי נובע ש-
+\begin_inset Formula $Aw\perp Au,Av$
 \end_inset
 
 .
@@ -417,15 +414,104 @@ B'\left(t\right)=\left(\frac{b}{c^{2}}\cos\left(\frac{t}{c}\right),\frac{b}{c^{2
 \end_layout
 
 \begin_layout Enumerate
-המישור המשיק בנק' 
+משוואת המישור המשיק בנק' 
 \begin_inset Formula $t$
 \end_inset
 
- הוא 
-\begin_inset Formula $ $
+ היא 
+\begin_inset Formula 
+\[
+B\left(t\right)\cdot\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=0\iff\frac{b}{c}\sin\left(\frac{t}{c}\right)x-\frac{b}{c}\cos\left(\frac{t}{c}\right)y+\frac{a}{c}z=0
+\]
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $x\left(s\right)=\gamma\left(t\right)+s\cdot N\left(t\right)$
+\end_inset
+
+ הישר המכיל את 
+\begin_inset Formula $N\left(t\right)$
+\end_inset
+
+ ועובר דרך 
+\begin_inset Formula $\gamma\left(s\right)$
+\end_inset
+
+.
+ ראשית נראה כי 
+\begin_inset Formula $x\left(s\right)$
+\end_inset
+
+ חוצה את ציר ה-
+\begin_inset Formula $z$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+x\left(s\right)=\begin{pmatrix}a\cos\left(\frac{t}{c}\right)-s\cos\left(\frac{t}{c}\right)\\
+a\sin\left(\frac{t}{c}\right)-s\sin\left(\frac{t}{c}\right)\\
+b\cdot\frac{t}{c}
+\end{pmatrix}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $s=a$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+x\left(a\right)=\begin{pmatrix}0\\
+0\\
+\frac{bt}{c}
+\end{pmatrix}
+\]
+
+\end_inset
+
+כעת, הזווית ביניהם היא הזווית בין 
+\begin_inset Formula $z$
+\end_inset
+
+ לוקטור הכיוון 
+\begin_inset Formula $N\left(t\right)$
+\end_inset
+
+, לכן
+\begin_inset Formula 
+\[
+\cos\theta=\frac{\left(0,0,1\right)\cdot N\left(t\right)}{\norm{N\left(t\right)}\norm{\left(0,0,1\right)}}=\frac{0}{1\cdot1}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\theta=\frac{\pi}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\cos\theta=\frac{\gamma'\left(t\right)\cdot\left(0,0,1\right)}{1\cdot1}=\frac{b}{c}
+\]
+
+\end_inset
+
+קבוע.
 \end_layout
 
 \begin_layout Section*
@@ -668,11 +754,15 @@ B\left(t\right)=T\times N=\left(0,0,1\right)
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $B'\left(t\right)=0$
+\begin_inset Formula $\tau N=B'\left(t\right)=0$
 \end_inset
 
 .
- לכן 
+ לכן בהכרח 
+\begin_inset Formula $\tau=0$
+\end_inset
+
+ בכל נק'.
 \end_layout
 
 \begin_layout Section*
@@ -680,7 +770,55 @@ B\left(t\right)=T\times N=\left(0,0,1\right)
 \end_layout
 
 \begin_layout Standard
+בה"כ נניח כי 
+\begin_inset Formula $x_{0}=0$
+\end_inset
 
+ הראשית ו-
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה בפרמטריזציית אורך קשת.
+ אז
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=a\left(t\right)\cdot T\left(t\right)+b\left(t\right)\cdot N\left(t\right)
+\]
+
+\end_inset
+
+נגזור ונקבל
+\begin_inset Formula 
+\[
+T\left(t\right)=\gamma'\left(t\right)=a'\left(t\right)T\left(t\right)+a\left(t\right)\cdot T'\left(t\right)+b'\left(t\right)N\left(t\right)+b\left(t\right)N'\left(t\right)
+\]
+
+\end_inset
+
+מפרנה
+\begin_inset Formula 
+\begin{align*}
+0 & =\left(a'-1\right)T+a\left(kN\right)+b'N+b\left(-kT-\tau B\right)=\\
+= & \left(a'-1-bk\right)T+\left(ak+b'\right)N+\left(-b\tau\right)B
+\end{align*}
+
+\end_inset
+
+זהו בסיס אורתנורמלי לכן
+\begin_inset Formula 
+\begin{align*}
+a'-1-bk & =0\\
+ak+b' & =0\\
+-b\tau & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה שמונה
 \end_layout
 
 \end_body

@@ -1,0 +1,1175 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\rightmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+חישוביות - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Enumerate
+נראה רדוקציה מ-
+\begin_inset Formula $ALL_{TM}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט שמקבלת כל מילה.
+ בהינתן 
+\begin_inset Formula $M'$
+\end_inset
+
+ מ"ט, נגדיר 
+\begin_inset Formula $f\left(\left\langle M'\right\rangle \right)=\left\langle M,M'\right\rangle $
+\end_inset
+
+.
+ אז קל לראות שהיא חשיבה.
+ בנוסף, אם 
+\begin_inset Formula $M'\in ALL_{TM}$
+\end_inset
+
+, אז 
+\begin_inset Formula $L\left(M'\right)=L\left(M\right)\Rightarrow\left\langle M,M'\right\rangle \in EQ_{TM}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $M'\notin ALL_{TM}$
+\end_inset
+
+ אז 
+\begin_inset Formula $L\left(M'\right)\neq L\left(M\right)\Rightarrow\left\langle M,M'\right\rangle \notin EQ_{TM}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula 
+\[
+ALL_{TM}\leq EQ_{TM}
+\]
+
+\end_inset
+
+מכך נסיק כי 
+\begin_inset Formula $EQ_{TM}\notin RE\cup co-RE$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נשים לב כי התכונה 
+\begin_inset Formula $L\left(M\right)\in R$
+\end_inset
+
+ היא תכונה סמנטית, אם 
+\begin_inset Formula $L\left(M_{1}\right)=L\left(M_{2}\right)$
+\end_inset
+
+ אז שתיהן ב-
+\begin_inset Formula $R$
+\end_inset
+
+ או שתיהן לא ב-
+\begin_inset Formula $R$
+\end_inset
+
+.
+ בנוסף, אנחנו יודעים כי לא כל מ"ט ב-
+\begin_inset Formula $R$
+\end_inset
+
+ ולכן זו תכונה לא טריוויאלית.
+ ממשפט נסיק כי 
+\begin_inset Formula $R_{TM}\notin R$
+\end_inset
+
+.
+ כעת, 
+\begin_inset Formula $HALT_{TM}\leq L\left(M\right)\in R$
+\end_inset
+
+ כי בהינתן 
+\begin_inset Formula $\left\langle M,w\right\rangle $
+\end_inset
+
+ נייצר מ"ט 
+\begin_inset Formula $M'$
+\end_inset
+
+ שמתעלמת מהקלט ומסמלצת את ריצת 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ אז זו רדוקציה חשיבה ו-
+\begin_inset Formula 
+\[
+\left\langle M,w\right\rangle \in HALT_{TM}\iff L\left(M'\right)\in R
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $R_{TM}\notin co-RE$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט.
+ נגדיר מ"ט 
+\begin_inset Formula $M'$
+\end_inset
+
+ שבהינתן 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, מקבלת את 
+\begin_inset Formula $w$
+\end_inset
+
+ רק אם 
+\begin_inset Formula $w=x\#y$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $x\in\Sigma^{*}$
+\end_inset
+
+, ו-
+\begin_inset Formula $y$
+\end_inset
+
+ מילה שמתארת ריצה מקבלת של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ נטען כי 
+\begin_inset Formula $L_{2}=L\left(M'\right)\in R$
+\end_inset
+
+.
+ אז בהינתן 
+\begin_inset Formula $w$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $w$
+\end_inset
+
+ לא מהצורה 
+\begin_inset Formula $x\#y$
+\end_inset
+
+, נדחה.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $y$
+\end_inset
+
+ לא תיאור של ריצה חוקית, נדחה.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $y$
+\end_inset
+
+ לא תיאור של ריצה מקבלת על 
+\begin_inset Formula $x$
+\end_inset
+
+, נדחה.
+\end_layout
+
+\begin_layout Itemize
+אחרת נקבל.
+\end_layout
+
+\begin_layout Standard
+ברור כי נעצור בכל מקרה.
+ כעת, לכל 
+\begin_inset Formula $x\in L\left(M\right)$
+\end_inset
+
+, יש ריצה סופית מקבלת לפי הגדרת השפה של מ"ט.
+ יהיה 
+\begin_inset Formula $y$
+\end_inset
+
+ הקידוד שלה, אז 
+\begin_inset Formula $M'$
+\end_inset
+
+ תקבל את 
+\begin_inset Formula $x\#y$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $x\notin L\left(M\right)$
+\end_inset
+
+, אז לכל 
+\begin_inset Formula $y$
+\end_inset
+
+ קידוד של ריצה, זו לא תהיה ריצה מקבלת על 
+\begin_inset Formula $x$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $M'$
+\end_inset
+
+ תמיד תדחה את 
+\begin_inset Formula $x\#y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $L_{1}\in\text{RE}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט שמזהה אותה.
+ מסעיף א' יש 
+\begin_inset Formula $L_{2}\in R$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+L_{1}=L\left(M\right)=\left\{ x\colon\exists y\text{ such that }\left\langle x,y\right\rangle \in L_{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח יש 
+\begin_inset Formula $L_{2}\in R$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+L_{1}=\left\{ x\colon\exists y\text{ such that }\left\langle x,y\right\rangle \in L_{2}\right\} 
+\]
+
+\end_inset
+
+נוכל לבנות ל-
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ מכונה 
+\begin_inset Formula $M$
+\end_inset
+
+ כך שבהינתן קלט 
+\begin_inset Formula $x$
+\end_inset
+
+, תעבור בסדר 
+\begin_inset Formula $minLEX$
+\end_inset
+
+ על כל מחרוזות 
+\begin_inset Formula $y$
+\end_inset
+
+ האפשריות, ובכל שלב תכניס תבדוק האם 
+\begin_inset Formula $x\#y\in L_{2}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $x\in L_{1}$
+\end_inset
+
+, אז אחרי מספר סופי של צעדים 
+\begin_inset Formula $M$
+\end_inset
+
+ תנחש את המחרוזת כך ש-
+\begin_inset Formula $\left\langle x,y\right\rangle \in L_{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\subseteq\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $\widehat{L}=\left\{ w\in\left\{ 1\right\} ^{*}\mid b\left(w\right)\in L\right\} $
+\end_inset
+
+.
+ נניח כי 
+\begin_inset Formula $L\in\text{TIME}\left(2^{n}\right)$
+\end_inset
+
+.
+ אזי קיימת מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ עם זמן ריצה 
+\begin_inset Formula $O\left(2^{n}\right)$
+\end_inset
+
+.
+ נבנה 
+\begin_inset Formula $M'$
+\end_inset
+
+ מ"ט שמכריעה את 
+\begin_inset Formula $\widehat{L}$
+\end_inset
+
+ ב-
+\begin_inset Formula $O\left(n\log n\right)$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $x=1^{n}$
+\end_inset
+
+, נמיר אותו לייצוג הבינארי שלו 
+\begin_inset Formula $b\left(x\right)$
+\end_inset
+
+, נריץ את 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $b\left(x\right)$
+\end_inset
+
+ ונחזיר תשובה לפי 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ ננתח זמן ריצה:
+\end_layout
+
+\begin_layout Itemize
+המרה לייצוג בינארי - נוכל לעשות זאת ב-
+\begin_inset Formula $n\log n$
+\end_inset
+
+ צעדים, כל פעם נעבור על הקלט ונמחק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ אחד כן אחד לא, ולפי זה נרשום 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בייצוג הבינארי שאנו יוצרים )אם מחקנו בצעד האחרון, נרשום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, אחרת נרשום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+(.
+ בסוף התהליך נקבל ייצוג בינארי הפוך.
+\end_layout
+
+\begin_layout Itemize
+הרצה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $b\left(x\right)$
+\end_inset
+
+ - ל-
+\begin_inset Formula $M$
+\end_inset
+
+ יקח 
+\begin_inset Formula $O\left(2^{\left(\log n\right)}\right)=O\left(n\right)$
+\end_inset
+
+ צעדים )כי גודל הקלט שנשלח ל-
+\begin_inset Formula $M$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\log n$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+סה"כ 
+\begin_inset Formula $O\left(n\log n\right)$
+\end_inset
+
+ צעדים כנדרש.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף.
+\end_layout
+
+\begin_layout Enumerate
+צ"ל: 
+\begin_inset Formula $\text{IS\in NP}$
+\end_inset
+
+ עם 
+\begin_inset Formula $\text{NTM}$
+\end_inset
+
+.
+ בהינתן קלט 
+\begin_inset Formula $\left\langle G,k\right\rangle $
+\end_inset
+
+ המכונה תעבור על כל הקודקודקודים, כאשר כל קודקוד נבחר או לא נבחר באופן לא
+ דטרמיניסטי.
+ אם הקבוצה שהתקבלה קטנה או גדולה מ-
+\begin_inset Formula $k$
+\end_inset
+
+ נפסול.
+ אחרת, נבדוק האם הקבוצה בת"ל.
+ זמן ריצה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ייצור קבוצה - 
+\begin_inset Formula $O\left(\left|V\right|\right)$
+\end_inset
+
+.
+ עוברים על כל הקודקודים פעם אחת.
+\end_layout
+
+\begin_layout Itemize
+בדיקת אי תלות - בעזרת מטריצת שכנויות אפשר ב-
+\begin_inset Formula $O\left(\left|V\right|^{2}\right)$
+\end_inset
+
+, עם רשימות מקושרות אפשר ב-
+\begin_inset Formula $O\left(\left|E\right|\left|V\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיבלנו סה"כ 
+\begin_inset Formula $O\left(\left|V\right|^{3}\right)$
+\end_inset
+
+, פולינומי בגודל הקלט כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+צ"ל: 
+\begin_inset Formula $\text{IS\in NP}$
+\end_inset
+
+ עם מוודא.
+ בהינתן 
+\begin_inset Formula $\left\langle G,k\right\rangle \#S$
+\end_inset
+
+, פשוט נבדוק האם הקבוצה בת"ל.
+ כמו שראינו בסעיף הקודם, ניתן לבצע ב-
+\begin_inset Formula $O\left(\left|V\right|^{3}\right)$
+\end_inset
+
+, פולינומי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+נגדיר את 
+\begin_inset Formula $N'$
+\end_inset
+
+ כך: בהינתן 
+\begin_inset Formula $x$
+\end_inset
+
+, נסמלץ ריצה של 
+\begin_inset Formula $N$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+ למשך 
+\begin_inset Formula $\left|x\right|^{2017}$
+\end_inset
+
+ צעדים.
+ אם במהלך הריצה 
+\begin_inset Formula $N$
+\end_inset
+
+ קיבלה גם 
+\begin_inset Formula $N'$
+\end_inset
+
+ תקבל, אחרת נדחה.
+ אז 
+\begin_inset Formula $L\left(N'\right)\in R$
+\end_inset
+
+ כי אורך הריצות חסום.
+ בנוסף 
+\begin_inset Formula $L\left(N\right)=L\left(N'\right)$
+\end_inset
+
+ כי מהנתון אם 
+\begin_inset Formula $x\in L\left(N\right)$
+\end_inset
+
+ אז יש ריצה מקבלת שאורכה לכל היותר 
+\begin_inset Formula $\left|x\right|^{2017}$
+\end_inset
+
+ צעדים לכן 
+\begin_inset Formula $N'$
+\end_inset
+
+ תקבל כשתסמלך ריצה זו.
+ אם 
+\begin_inset Formula $x\notin L\left(N\right)$
+\end_inset
+
+ אז אין כלל ריצה מקבלת ולכן 
+\begin_inset Formula $N'$
+\end_inset
+
+ תדחה בכל הריצות שלה.
+ היא פולינומיאלית כי זמן של הריצה הכי ארוכה היא 
+\begin_inset Formula $\left|x\right|^{2017}$
+\end_inset
+
+, משמע 
+\begin_inset Formula $L\left(N'\right)\in NTIME\left(n^{2017}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+.
+ אז קיימת מ"ט אי דטרמיניסטית 
+\begin_inset Formula $N$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L\left(N\right)=L$
+\end_inset
+
+, וזמן הריצה של 
+\begin_inset Formula $N$
+\end_inset
+
+ פולינומיאלי, משמע 
+\begin_inset Formula $L\in NTIME(n^{k})$
+\end_inset
+
+.
+ ראינו בכיתה כי ניתן לסמלץ מ"ט אי דטרמיניסטי ע"י מ"ט דטרמיניסטי ב-
+\begin_inset Formula $2^{O\left(t\left(n\right)\right)}$
+\end_inset
+
+, משמע יש 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט שמסמלצת את 
+\begin_inset Formula $N$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $L=L\left(M\right)\in TIME\left(2^{O\left(n^{k}\right)}\right)$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $L\in\text{EXP}$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
