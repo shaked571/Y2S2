@@ -1518,6 +1518,326 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+אסט'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שולטת חזק על אסט'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן אפשר למחוק אותה.
+ נשאר עם
+\begin_inset Formula 
+\[
+\begin{bmatrix}3,0 & 1,1\end{bmatrix}
+\]
+
+\end_inset
+
+כעת אסט'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שולטת חזק על אסט'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן אפשר למחוק אותה.
+ קיבלנו כי 
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+ נק' שיווי משקל יחידה.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset ERT
@@ -1746,10 +2066,7 @@ x_{n}
 \noun default
 \color inherit
 אסט מנצחת אבל אין זוג עצים עם צלע משותפת אחת.
-\end_layout
 
-\begin_layout Enumerate
-דוגמא למשחק בו אין עץ פורש עם צלע אחת משותפת אבל יש אסט' מנצחת לשחקן
 \family roman
 \series medium
 \shape up
@@ -1762,28 +2079,50 @@ x_{n}
 \noun off
 \color none
  
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-1
-\numeric off
-:
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
+\align center
+
+\lang english
 \begin_inset CommandInset include
 LatexCommand input
+preview true
 filename "game9graph1.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+הסיבה שהתעקשנו לבחור את הצלע המשותפת היא שבכך כפינו על השחקן החותך לבחור
+ צלע שנמצאת רק באחד מהעצים, מה שגורר מהלמה ששוב קיים זוג עצים שיש להם רק
+ צלע מחודשת אחת.
+ חזרנו על התהליך שוב ושוב עד שלמעשה קיבלנו עץ פורש שכל צלעותיו מחוזקות,
+ בפרט יש מסלול מ-
+\begin_inset Formula $A$
+\end_inset
+
+ ל-
+\begin_inset Formula $B$
+\end_inset
+
+.
+ דוגמה למשחק שבו כל מהלך שלא בוחר את הצלע המשותפת גורר הפסד:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset CommandInset include
+LatexCommand input
+preview true
+filename "game9graph2.tex"
 
 \end_inset
 
@@ -1809,7 +2148,7 @@ filename "game9graph1.tex"
 
 \begin_deeper
 \begin_layout Enumerate
-כיוון המטריצה אנטי סימטרית, ערך המשחק הוא
+כיוון שהמטריצה אנטי סימטרית, ערך המשחק הוא
 \family roman
 \series medium
 \shape up
@@ -1977,10 +2316,118 @@ filename "game9graph1.tex"
 
 \end_deeper
 \begin_layout Enumerate
-נניח שכולם מערבים.
- אז על
+נניח שכולם מערבים בהסתברויות 
+\begin_inset Formula $\left(p,q,s\right)$
+\end_inset
+
+ בהתאמה.
+ אז מאדישות חייבות להתקיים שלוש המשוואות הבאות:
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+8q+8p-26pq-2=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+8p+12s-24ps-4=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+6q+12s-24qs-3=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת אם 
+\begin_inset Formula $p\neq\frac{1}{2}$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+s\left(12-24p\right)=4-8p\iff s=\frac{4-8p}{12-24p}=\frac{1}{3}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $s=\frac{1}{3}$
+\end_inset
+
+, משמע
+\begin_inset Formula 
+\[
+6q+12\cdot\frac{1}{3}-24q\cdot\frac{1}{3}-3=0\iff-2q+1=0\iff q=\frac{1}{2}
+\]
+
+\end_inset
+
+לכן, 
+\begin_inset Formula $q=\frac{1}{2}$
+\end_inset
+
+ ו-
+\begin_inset Formula 
+\[
+8\cdot\frac{1}{2}+8p-26p\frac{1}{2}-2=0\iff-5p=-2\iff p=\frac{2}{5}
+\]
+
+\end_inset
+
+לכן כאשר 
+\begin_inset Formula $\left(p,q,s\right)=\left(\frac{2}{5},\frac{1}{2},\frac{1}{3}\right)$
+\end_inset
+
+ מתקבלת נק' שיווי משקל.
+ לחילופין אם 
+\begin_inset Formula $p=\frac{1}{2}$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+8q+8\cdot\frac{1}{2}-26\frac{1}{2}q-2=0\iff q=\frac{2}{5}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+6\cdot\frac{2}{5}+12s-24\cdot\frac{2}{5}s-3=0\iff s=\frac{1}{4}
+\]
+
+\end_inset
+
+משמע גם 
+\begin_inset Formula $\left(\frac{1}{2},\frac{2}{5},\frac{1}{4}\right)$
+\end_inset
+
+ נק' שיווי משקל.
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document

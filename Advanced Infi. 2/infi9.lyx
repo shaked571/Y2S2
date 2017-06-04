@@ -199,6 +199,42 @@ filename "../math-macros.lyx"
 שאלה שנייה
 \end_layout
 
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $u,v\in C^{\infty}\left(\R^{2}\right)$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $P=-u\cdot\frac{\partial v}{\partial y}$
+\end_inset
+
+, 
+\begin_inset Formula $Q=u\cdot\frac{\partial v}{\partial x}$
+\end_inset
+
+.
+ אז הפונקציות מקיימות את הנדרש ולכן אפשר להשתמש במשפט גרין.
+ אז
+\begin_inset Formula 
+\[
+\iint_{D}\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}dA=\iint_{D}\frac{\partial u}{\partial x}\frac{\partial v}{\partial x}+u\cdot\frac{\partial v}{\partial x^{2}}+\frac{\partial u}{\partial y}\frac{\partial v}{\partial y}+u\frac{\partial v}{\partial y^{2}}dA=\iint_{D}\ip{\nabla u}{\nabla v}+u\cdot\triangle vdA
+\]
+
+\end_inset
+
+לעומת זאת
+\begin_inset Formula 
+\begin{align*}
+\int_{\partial D}Pdx+Qdy & =\int_{\partial D}-u\frac{\partial v}{\partial y}\cdot x'+u\frac{\partial v}{\partial x}y'dt=\int_{\partial D}\ip{u\nabla y}{\left(y',-x'\right)}\frac{1}{\sqrt{x'^{2}\left(t\right)+y'^{2}\left(t\right)}}\cdot\sqrt{x'^{2}\left(t\right)+y'^{2}\left(t\right)}dt=\\
+= & \int_{\partial D}\left\langle u\nabla y\mid\hat{n}\right\rangle d\gamma
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 שאלה חמישית
 \end_layout
@@ -229,7 +265,7 @@ t\cdot y_{i+1}+\left(1-t\right)y_{i}
 \end_inset
 
 .
- ראינו כי אינטגרל קווי של על שפה של תחום ייתן את שטח התחום, לכן נחשב את
+ ראינו כי אינטגרל קווי על שפה של תחום ייתן את שטח התחום, לכן נחשב את
 \begin_inset Formula 
 \[
 \ointop_{P}\overline{f}d\gamma
@@ -608,9 +644,12 @@ r\sin\theta
 אז
 \begin_inset Formula 
 \begin{align*}
- & =\frac{2}{r^{2}\pi}\left(\left[M_{1}r\sin\theta-M_{2}r\cos\theta+\frac{D_{11}r^{2}\left(\frac{\cos2\theta}{4}+\frac{1}{2}\theta\right)+\left(D_{12}+D_{21}\right)r^{2}\frac{1}{2}\sin^{2}\theta+D_{22}r^{2}\left(\frac{1}{2}\theta-\frac{\cos2\theta}{4}\right)}{2}\right]_{0}^{2\pi}+\int_{0}^{2\pi}R\left(\begin{pmatrix}r\cos\theta\\
+ & =\frac{2}{r^{2}\pi}\left(\substack{\left[M_{1}r\sin\theta-M_{2}r\cos\theta+\frac{D_{11}r^{2}\left(\frac{\cos2\theta}{4}+\frac{1}{2}\theta\right)+\left(D_{12}+D_{21}\right)r^{2}\frac{1}{2}\sin^{2}\theta+D_{22}r^{2}\left(\frac{1}{2}\theta-\frac{\cos2\theta}{4}\right)}{2}\right]_{0}^{2\pi}\\
++\int_{0}^{2\pi}R\left(\begin{pmatrix}r\cos\theta\\
 r\sin\theta
-\end{pmatrix}\right)d\theta\right)=\\
+\end{pmatrix}\right)d\theta
+}
+\right)=\\
 = & \frac{2}{r^{2}\pi}\left(\frac{D_{11}r^{2}\pi+D_{22}r^{2}\pi}{2}+\int_{0}^{2\pi}R\left(\begin{pmatrix}r\cos\theta\\
 r\sin\theta
 \end{pmatrix}\right)d\theta\right)=\frac{\partial f}{\partial x^{2}}\left(0\right)+\frac{\partial f}{\partial y^{2}}\left(0\right)+\frac{2}{r^{2}\pi}\int_{0}^{2\pi}R\left(\begin{pmatrix}r\cos\theta\\
