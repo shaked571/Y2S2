@@ -1,0 +1,549 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\rightmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אינפי
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Author
+עופר יהודה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\numeric off
+ 
+\numeric on
+307960468
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "../math-macros.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה שנייה
+\end_layout
+
+\begin_layout Section*
+שאלה חמישית
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\gamma_{i}\left(t\right)=\begin{pmatrix}t\cdot x_{i+1}+\left(1-t\right)x_{i}\\
+t\cdot y_{i+1}+\left(1-t\right)y_{i}
+\end{pmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $t\in\left[0,1\right]$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\gamma=\gamma_{0}*\gamma_{1}*...*\gamma_{n-1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\gamma\left(\left[0,n\right]\right)=P$
+\end_inset
+
+.
+ נשתמש בפונקציה מהתרגול, 
+\begin_inset Formula $\overline{f}\left(x,y\right)=\left(0,x\right)$
+\end_inset
+
+.
+ ראינו כי אינטגרל קווי של על שפה של תחום ייתן את שטח התחום, לכן נחשב את
+\begin_inset Formula 
+\[
+\ointop_{P}\overline{f}d\gamma
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+\ointop_{P}\overline{f}d\gamma=\int_{0}^{n}\left\langle f\left(\gamma\left(t\right)\right)\mid\gamma'\left(t\right)\right\rangle dt=\sum_{i=0}^{n-1}\int_{0}^{1}\left\langle f\left(\gamma_{i}\left(t\right)\right)\mid\gamma_{i}'\left(t\right)\right\rangle dt
+\]
+
+\end_inset
+
+כעת,
+\begin_inset Formula 
+\[
+\gamma_{i}'\left(t\right)=\begin{pmatrix}x_{i+1}-x_{i}\\
+y_{i+1}-y_{i}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(\gamma_{i}\left(t\right)\right)=\begin{pmatrix}0\\
+t\cdot x_{i+1}+\left(1-t\right)x_{i}
+\end{pmatrix}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\begin{align*}
+ & =\sum_{i=0}^{n-1}\int_{0}^{1}\left(t\cdot x_{i+1}+\left(1-t\right)x_{i}\right)\left(y_{i+1}-y_{i}\right)dt=\\
+= & \sum_{i=0}^{n-1}\left(y_{i+1}-y_{i}\right)\int_{0}^{1}t\left(x_{i+1}-x_{i}\right)+x_{i}dt=\\
+= & \sum_{i=0}^{n-1}\left(y_{i+1}-y_{i}\right)\left[\frac{t^{2}}{2}\left(x_{i+1}-x_{i}\right)+t\cdot x_{i}\right]_{0}^{1}=\\
+= & \sum_{i=0}^{n-1}\left(y_{i+1}-y_{i}\right)\left(\frac{1}{2}\left(x_{i+1}-x_{i}\right)+x_{i}\right)=\\
+=\frac{1}{2} & \sum_{i=0}^{n-1}\left(y_{i+1}-y_{i}\right)\left(x_{i+1}+x_{i}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה שישית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\colon\left(a,b\right)\to\mathbb{R}$
+\end_inset
+
+ גזירה, ו-
+\begin_inset Formula $f\left(x\right)\neq0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שאלה שביעית
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+צ"ל:
+\series default
+ 
+\begin_inset Formula $\gamma\left(t\right)=\gamma\left(0\right)+t\cdot\overline{l}$
+\end_inset
+
+ איננו משטח רגולרי.
+ נניח בשלילה שכן.
+ אזי יש כדור 
+\begin_inset Formula $B_{r}\left(0\right)$
+\end_inset
+
+ סביב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וסביבה 
+\begin_inset Formula $U\subseteq\R^{2}$
+\end_inset
+
+ עם 
+\begin_inset Formula $f\colon U\to B_{r}\left(0\right)\cap\gamma\left(\R\right)$
+\end_inset
+
+ הומומורפיזם רגולרי.
+ נניח כי 
+\begin_inset Formula $U$
+\end_inset
+
+ היא דיסק פתוח )אחרת נצמצם את 
+\begin_inset Formula $f$
+\end_inset
+
+ אליו(.
+ נזכור כי ישר במרחב הומאומורפי ל-
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, ולכן יש 
+\begin_inset Formula $g$
+\end_inset
+
+ העתקה כך ש-
+\begin_inset Formula $g\circ f\colon U\to g\left(B_{r}\left(0\right)\cap\gamma\left(\R\right)\right)$
+\end_inset
+
+ הומיאומורפיזם בין 
+\begin_inset Formula $U$
+\end_inset
+
+ לקבוצה פתוחה ב-
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ קיבלנו שדיסק פתוח ב-
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ הומיאומורפי לקבוצה פתוחה ב-
+\begin_inset Formula $\R$
+\end_inset
+
+, וזו סתירה )למשל, נוריד נקודה מ-
+\begin_inset Formula $U$
+\end_inset
+
+ הוא עדיין יהיה קשיר מסילתית, אבל בקבוצה פתוחה ב-
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ זה אינו נכון, בסתירה להומיאומורפיזם ששומר על תכונות אלו(.
+\end_layout
+
+\begin_layout Section*
+שאלה שמינית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\colon\R^{2}\to\R$
+\end_inset
+
+, 
+\begin_inset Formula $f\in C^{2}$
+\end_inset
+
+.
+ פיתוח טיילור מסדר שני של 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+P_{f,0,2}\left(x\right)=f\left(0\right)+M\left(x\right)+\frac{\left(x\right)^{t}D\left(x\right)}{2}+R\left(x\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $M=Df\left(0\right)=\begin{pmatrix}\frac{\partial f}{\partial x}\left(0\right) & \frac{\partial f}{\partial y}\left(0\right)\end{pmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $D=D^{2}f\left(0\right)$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+\frac{2}{r^{3}\pi}\int_{\norm x=r}f\left(x\right)-f\left(0\right)d\gamma=\frac{2}{r^{3}\pi}\int_{0}^{2\pi}\left(M\begin{pmatrix}r\cos\theta\\
+r\sin\theta
+\end{pmatrix}+\frac{\begin{pmatrix}r\cos\theta, & r\sin\theta\end{pmatrix}D\begin{pmatrix}r\cos\theta\\
+r\sin\theta
+\end{pmatrix}}{2}+R\left(\begin{pmatrix}r\cos\theta\\
+r\sin\theta
+\end{pmatrix}\right)\right)\cdot rd\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M\cdot\begin{pmatrix}r\cos\theta\\
+r\sin\theta
+\end{pmatrix}=M_{1}r\cos\theta+M_{2}r\sin\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\begin{pmatrix}r\cos\theta, & r\sin\theta\end{pmatrix}D\begin{pmatrix}r\cos\theta\\
+r\sin\theta
+\end{pmatrix}}{2}=\frac{D_{11}r^{2}\cos^{2}\theta+\left(D_{12}+D_{21}\right)r^{2}\sin\theta\cos\theta+D_{22}r^{2}\sin^{2}\theta}{2}
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\begin{align*}
+ & =\frac{2}{r^{2}\pi}\left(\left[M_{1}r\sin\theta-M_{2}r\cos\theta+\frac{D_{11}r^{2}\left(\frac{\cos2\theta}{4}+\frac{1}{2}\theta\right)+\left(D_{12}+D_{21}\right)r^{2}\frac{1}{2}\sin^{2}\theta+D_{22}r^{2}\left(\frac{1}{2}\theta-\frac{\cos2\theta}{4}\right)}{2}\right]_{0}^{2\pi}+\int_{0}^{2\pi}R\left(\begin{pmatrix}r\cos\theta\\
+r\sin\theta
+\end{pmatrix}\right)d\theta\right)=\\
+= & \frac{2}{r^{2}\pi}\left(\frac{D_{11}r^{2}\pi+D_{22}r^{2}\pi}{2}+\int_{0}^{2\pi}R\left(\begin{pmatrix}r\cos\theta\\
+r\sin\theta
+\end{pmatrix}\right)d\theta\right)=\frac{\partial f}{\partial x^{2}}\left(0\right)+\frac{\partial f}{\partial y^{2}}\left(0\right)+\frac{2}{r^{2}\pi}\int_{0}^{2\pi}R\left(\begin{pmatrix}r\cos\theta\\
+r\sin\theta
+\end{pmatrix}\right)d\theta
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $R$
+\end_inset
+
+ רציפה בכדור הסגור 
+\begin_inset Formula $\hat{B_{1}}\left(0\right)$
+\end_inset
+
+ ולכן אפשר לחסום את האינטגרל 
+\begin_inset Formula $\int_{0}^{2\pi}R\left(\begin{pmatrix}r\cos\theta\\
+r\sin\theta
+\end{pmatrix}\right)d\theta$
+\end_inset
+
+ ע"י קבוע.
+ לכן כאשר 
+\begin_inset Formula $r\to0$
+\end_inset
+
+ הביטוי 
+\begin_inset Formula $\frac{2}{r^{2}\pi}\int_{0}^{2\pi}R\left(\begin{pmatrix}r\cos\theta\\
+r\sin\theta
+\end{pmatrix}\right)d\theta$
+\end_inset
+
+ משמע נשארים עם 
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x^{2}}\left(0\right)+\frac{\partial f}{\partial y^{2}}\left(0\right)=\triangle f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,15 @@
+\tikzstyle{vertex}=[circle, draw, inner sep=0pt, minimum size=6pt]
+\begin{tikzpicture}[shorten >=2pt,node distance=4cm,on grid,auto] 
+    \node[vertex] (q_0)   {A};
+    \node[vertex] (q_1) [below=of q_0] {};
+    \node[vertex] (q_2) [left=of q_1] {};
+    \node[vertex] (q_3) [below=of q_2] {B};
+    \node[vertex] (q_4) [below=of q_1] {B};
+    
+    \path[-] 
+    (q_0) edge  node {} (q_1)
+          edge  node {} (q_2)
+    (q_1) edge  node {} (q_3)
+          edge  node {} (q_4)
+    (q_2) edge  node {} (q_3);
+\end{tikzpicture}
