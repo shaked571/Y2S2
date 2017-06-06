@@ -99,7 +99,39 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\ip}{\left\langle #1\mid#2\right\rangle }
+\newcommand{\ip}[2]{\left\langle #1\mid#2\right\rangle }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\a}{\alpha}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\b}{\beta}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\d}{\delta}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\g}{\gamma}
 \end_inset
 
 

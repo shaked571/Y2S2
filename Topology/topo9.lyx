@@ -1,0 +1,646 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding cp1255
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\rightmargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+טופולוגיה - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "/cs/usr/ofer1992/safe/Y2S2/math-macros.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ קומפ' מקומית והאוסדורף ונניח כי 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $A$
+\end_inset
+
+ פתוחה.
+ כיוון ש-
+\begin_inset Formula $X$
+\end_inset
+
+ האוסדורף וקומפ' מקומית, מתקיים כי לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ ו-
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה כך ש-
+\begin_inset Formula $x\in U$
+\end_inset
+
+, קיימת 
+\begin_inset Formula $V$
+\end_inset
+
+ סביבה כך ש-
+\begin_inset Formula $\overline{V}$
+\end_inset
+
+ קומפקטית ו-
+\begin_inset Formula $\overline{V}\subseteq U$
+\end_inset
+
+.
+ לכן, בהינתן 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, יש 
+\begin_inset Formula 
+\[
+a\in V\subseteq\overline{V}\subseteq A
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $V$
+\end_inset
+
+ פתוחה ב-
+\begin_inset Formula $A$
+\end_inset
+
+ ו-
+\begin_inset Formula $\overline{V}$
+\end_inset
+
+ קבוצה קומפ' ב-
+\begin_inset Formula $A$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $A$
+\end_inset
+
+ סגורה.
+ תהי 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ ו-
+\begin_inset Formula $U,K$
+\end_inset
+
+ מקומ' מקומית.
+ אז 
+\begin_inset Formula $K\cap A$
+\end_inset
+
+ קומפ' כתת קבוצה סגורה של 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ 
+\begin_inset Formula $U\cap A$
+\end_inset
+
+ פתוחה בתת המרחב 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $K'=K\cap A$
+\end_inset
+
+ ו-
+\begin_inset Formula $U'=U\cap A$
+\end_inset
+
+ מקיימות את הנדרש ו-
+\begin_inset Formula 
+\[
+x\in U'\subseteq K'
+\]
+
+\end_inset
+
+משמע 
+\begin_inset Formula $A$
+\end_inset
+
+ קומפ' מקומית.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ אינו קומפ' מקומית.
+ ניקח את הנק' 
+\begin_inset Formula $0=\left(0,0,0,...\right)$
+\end_inset
+
+.
+ נניח בשלילה שיש 
+\begin_inset Formula $K$
+\end_inset
+
+ קומפ' ו-
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה כך ש-
+\begin_inset Formula 
+\[
+0\in U\subseteq K
+\]
+
+\end_inset
+
+ בפרט קיים 
+\begin_inset Formula $r>0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $0\in B_{r}\left(0\right)\subseteq U$
+\end_inset
+
+.
+ כיוון שהמרחב 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ מטרי גם 
+\begin_inset Formula $K$
+\end_inset
+
+ מטרי כתת-מרחב, משמע קומפקטיות שקולה לקומפ' סדרתית.
+ כעת, הסדרה
+\begin_inset Formula 
+\[
+\left(\frac{r}{2}e_{n}\right)_{n=1}^{\infty}\subseteq B_{r}\left(0\right)\subseteq U\subseteq K
+\]
+
+\end_inset
+
+אבל היא לא סדרת קושי ולכן לא מתכנסת.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\colon X\to Y$
+\end_inset
+
+ רציפה, 
+\begin_inset Formula $X$
+\end_inset
+
+ קומפ' מקומית.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(X\right)$
+\end_inset
+
+ לא בהכרח קומפ' מקומית.
+ הוכחה: נגדיר 
+\begin_inset Formula $X=\mathbb{N}\cup\left\{ 0\right\} \times\mathbb{N}$
+\end_inset
+
+ עם הטופ' הדיסקרטית, 
+\begin_inset Formula $Y=l_{2}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $X$
+\end_inset
+
+ לא קומפ' אבל הוא כן קומפ' מקומית כי לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $x\in\left\{ x\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $\left\{ x\right\} $
+\end_inset
+
+ פתוח וקומפ'.
+ ההעתקה
+\begin_inset Formula 
+\[
+f\left(0,m\right)=0,\,f\left(n,m\right)=\frac{e_{n}}{m}
+\]
+
+\end_inset
+
+ההעתקה רציפה מכך שהטופ' דיסקרטית.
+ כעת, נוכל לחזור על אותו טיעון מהשאלה הקודמת, רק שהפעם נבחר 
+\begin_inset Formula $r$
+\end_inset
+
+ רציונלי.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ופתוחה, אז מתקיים כי לכל 
+\begin_inset Formula $f\left(x\right)\in f\left(X\right)$
+\end_inset
+
+, קיימת ל-
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ ו-
+\begin_inset Formula $K$
+\end_inset
+
+.
+ כעת
+\begin_inset Formula 
+\[
+x\in U\subseteq K\Rightarrow f\left(x\right)\in f\left(U\right)\subseteq f\left(K\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $f\left(U\right)$
+\end_inset
+
+-פתוחה כי 
+\begin_inset Formula $f$
+\end_inset
+
+ פתוחה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $f\left(K\right)$
+\end_inset
+
+- קומפקטית כי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ X_{\alpha}\right\} _{\alpha\in A}$
+\end_inset
+
+ מ"טים לא ריקים.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נניח כי 
+\begin_inset Formula $\prod_{\alpha\in A}X_{\a}$
+\end_inset
+
+ קומפ' מקומית.
+ אז לכל 
+\begin_inset Formula $\a\in A$
+\end_inset
+
+, ההטלה 
+\begin_inset Formula $\pi_{\a}\colon\prod_{\a\in A}X_{\a}\to X_{\a}$
+\end_inset
+
+ רציפה פתוחה ועל, ולכן מהסעיף הקודם 
+\begin_inset Formula $X_{\a}$
+\end_inset
+
+ קומפ' מקומית.
+ כעת, תהי 
+\begin_inset Formula $x\in\prod_{\a\in A}X_{\a}$
+\end_inset
+
+.
+ מקומפ' מקומית קיימות 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה ו-
+\begin_inset Formula $K$
+\end_inset
+
+ קומפ' כך ש-
+\begin_inset Formula 
+\[
+x\in U\subseteq K
+\]
+
+\end_inset
+
+מהגדרת טופו' המכפלה, למעט מספר סופי של אינדקסים 
+\begin_inset Formula $\left\{ \a_{1},...,\a_{n}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\pi_{\a}\left(U\right)=X_{\a}$
+\end_inset
+
+.
+ לכן בפרט 
+\begin_inset Formula $\pi_{\a}\left(K\right)=X_{\a}$
+\end_inset
+
+.
+ אבל מכך שההטלה רציפה ו-
+\begin_inset Formula $K$
+\end_inset
+
+ קומפ' נסיק כי 
+\begin_inset Formula $X_{\a}$
+\end_inset
+
+ קומפ'.
+\end_layout
+
+\begin_layout Enumerate
+נניח כי 
+\begin_inset FormulaMacro
+\newcommand{\X}{\prod_{\a\in A}X_{\a}}
+\end_inset
+
+ 
+\begin_inset Formula $X_{\a}$
+\end_inset
+
+ קומפ' מקומית לכל 
+\begin_inset Formula $\a$
+\end_inset
+
+, ו-
+\begin_inset Formula $X_{\a}$
+\end_inset
+
+ קומפ' לכל 
+\begin_inset Formula $\a$
+\end_inset
+
+למעט מס' סופי של אינדקסים 
+\begin_inset Formula $\left\{ \a_{1},...,\a_{n}\right\} $
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $x\in\X$
+\end_inset
+
+.
+ כעת, לכל 
+\begin_inset Formula $\a_{i}\in\left\{ \a_{1},...,\a_{n}\right\} $
+\end_inset
+
+ יהיו 
+\begin_inset Formula $U_{\a_{i}},K_{\a_{i}}$
+\end_inset
+
+ הקבוצות הקיימות מקומפ' מקומית ב-
+\begin_inset Formula $X_{\a_{1}},...,X_{\a_{n}}$
+\end_inset
+
+ ומקיימות
+\begin_inset Formula 
+\[
+x_{\a_{i}}\in\underset{{\scriptscriptstyle \text{open}}}{U_{\a_{i}}}\subseteq\underset{{\scriptscriptstyle \text{compact}}}{K_{\a_{i}}}
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula 
+\[
+K=\prod_{\a\in A}K_{\a}
+\]
+
+\end_inset
+
+כאשר אם 
+\begin_inset Formula $\a\notin\left\{ \a_{1},...,\a_{n}\right\} $
+\end_inset
+
+ אז 
+\begin_inset Formula $K_{\a}=X_{\a}$
+\end_inset
+
+.
+ זוהי מכפלה של מרחבים קומפ' ולכן ממשפט טיכונוף זוהי קבוצה קומפקטית.
+ נגדיר
+\begin_inset Formula 
+\[
+U=\prod_{\a\in A}U_{\a}
+\]
+
+\end_inset
+
+כאשר אם 
+\begin_inset Formula $\a\notin\left\{ \a_{1},...,\a_{n}\right\} $
+\end_inset
+
+ אז 
+\begin_inset Formula $U_{\a}=X_{\a}$
+\end_inset
+
+.
+ מהגדרת טופ' המכפלה זוהי קבוצה פתוחה ב-
+\begin_inset Formula $\X$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+x\in U\subseteq K
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
