@@ -154,6 +154,225 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+נראה כי 
+\begin_inset Formula $X=\overline{\Omega}$
+\end_inset
+
+ קומפקטי והאוסדורף, ומכך נסיק כי הוא הקח"נ של 
+\begin_inset Formula $\O$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+האוסדורף- בהינתן 
+\begin_inset Formula $\a,\b\in X$
+\end_inset
+
+, בה"כ 
+\begin_inset Formula $\a<\b$
+\end_inset
+
+, אז הקבוצות 
+\begin_inset Formula $[0,\a+1)$
+\end_inset
+
+ ו-
+\begin_inset Formula $(\a+1,\O]$
+\end_inset
+
+ מפרידות אותם וזרות.
+ )אם 
+\begin_inset Formula $\b=\a+1$
+\end_inset
+
+ אז ניקח את 
+\begin_inset Formula $(\a,\Omega]$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Description
+קומפקטי- בה"כ יהיה 
+\begin_inset Formula $\left\{ U_{j}\right\} _{j\in I}$
+\end_inset
+
+ כיסוי של 
+\begin_inset Formula $X$
+\end_inset
+
+ ע"י קבוצות בסיסיות )בתרגיל קודם הראנו שזה אכן בה"כ(.
+ נבנה סדרה יורדת ממש של סודרים ונסיק מכך שהיא סופית.
+ יש קבוצה בכיסוי מהצורה 
+\begin_inset Formula $(\a,\Omega]$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\a$
+\end_inset
+
+ מינימלי.
+ נבחר את 
+\begin_inset Formula $U_{1}=(\a,\O]$
+\end_inset
+
+ ואת 
+\begin_inset Formula $x_{1}=\a$
+\end_inset
+
+.
+ כעת, בהינתן 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+, תהי קבוצה בכיסוי שמכילה את 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ אם היא מהצורה 
+\begin_inset Formula $[0,\g)$
+\end_inset
+
+ נבחר את 
+\begin_inset Formula $U_{i+1}=[0,\g)$
+\end_inset
+
+, 
+\begin_inset Formula $x_{i+1}=0$
+\end_inset
+
+ וסיימנו, אחרת היא מהצורה 
+\begin_inset Formula $\left(\b,\g\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\b<x_{i}$
+\end_inset
+
+.
+ נגדיר את 
+\begin_inset Formula $x_{i+1}=\b,\,\,U_{i+1}=\left(\b,\g\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהליך זה חייב להסתיים אחרי מספר סופי של צעדים.
+ בפרט האיבר האחרון שנבחר יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ נראה כי 
+\begin_inset Formula $U_{1},...,U_{n}$
+\end_inset
+
+ כיסוי.
+ לכל 
+\begin_inset Formula $0,\O\neq\a\in X$
+\end_inset
+
+, קיים 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $x_{i+1}\leq\a\leq x_{i}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\a\in U_{i+1}\cup U_{i}$
+\end_inset
+
+ )אם 
+\begin_inset Formula $\a=x_{i+1}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\a\in U_{i+1}$
+\end_inset
+
+, אחרת 
+\begin_inset Formula $\a>x_{i+1}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\a\in(x_{i+1},x_{i}]\subseteq U_{i}$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כיוון ש-
+\begin_inset Formula $\O$
+\end_inset
+
+ ת"מ של 
+\begin_inset Formula $\overline{\O}$
+\end_inset
+
+, 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא קומפקטיפיקציה.
+ כעת, נשים לב כי 
+\begin_inset Formula $\overline{\O}\backslash\O=\left\{ \O\right\} $
+\end_inset
+
+, לכן זוהי קומפק' חד נקודתית כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נטען כי 
+\begin_inset Formula $X=\left\{ 0\right\} \cup\left\{ \frac{1}{n}\right\} $
+\end_inset
+
+ הוא הקומפקטיפיקציה החד נק' של 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $X$
 \end_inset
