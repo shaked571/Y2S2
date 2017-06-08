@@ -147,7 +147,23 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\s}{\sigma}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \renewcommand{\O}{\Omega}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\S}{\Sigma}
 \end_inset
 
 

@@ -1,0 +1,1894 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding cp1255
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\rightmargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+חישוביות - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+\begin_inset CommandInset include
+LatexCommand include
+filename "/cs/usr/ofer1992/safe/Y2S2/math-macros.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+\begin_inset FormulaMacro
+\newcommand{\P}{}
+{\text{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\NP}{}
+{\text{NP}}
+\end_inset
+
+
+\numeric off
+
+\begin_inset FormulaMacro
+\newcommand{\CONP}{}
+{\text{coNP}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\NPH}{}
+{\text{NP-hard}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נניח כי 
+\begin_inset Formula $L_{1}\leq_{p}L_{2}$
+\end_inset
+
+ ו-
+\begin_inset Formula $L_{2}\in\text{NP}$
+\end_inset
+
+.
+ נבנה מ"ט אי-דטרמיניסטית 
+\begin_inset Formula $N$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ בזמן פולינומיאלי.
+ תהי 
+\begin_inset Formula $N'$
+\end_inset
+
+ ה-
+\begin_inset Formula $\text{NTM}$
+\end_inset
+
+ של 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+.
+ אז
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $N$
+\end_inset
+
+="על קלט 
+\begin_inset Formula $w$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+חשב את 
+\begin_inset Formula $f\left(w\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+תדמה ריצה של 
+\begin_inset Formula $N'$
+\end_inset
+
+ על 
+\begin_inset Formula $f\left(w\right)$
+\end_inset
+
+ באופן לא דטרמיניסטי"
+\end_layout
+
+\begin_layout Standard
+כיוון ש-
+\begin_inset Formula $f\left(w\right)$
+\end_inset
+
+ פולינומיאלי ב-
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+, נקבל כי ריצת 
+\begin_inset Formula $N'$
+\end_inset
+
+ על 
+\begin_inset Formula $f\left(w\right)$
+\end_inset
+
+ פולינומיאלית ב-
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+ ולכן גם 
+\begin_inset Formula $N$
+\end_inset
+
+ פולינומיאלית ב-
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $A,B,C\subseteq\Sigma^{*}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $A\leq_{p}B$
+\end_inset
+
+ ו-
+\begin_inset Formula $B\leq_{p}C$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ הרדוקציות הפול' בהתאמה.
+ נטען כי 
+\begin_inset Formula $f_{2}\circ f_{1}$
+\end_inset
+
+ רדוקציה פולינומיאלית של 
+\begin_inset Formula $A$
+\end_inset
+
+ ל-
+\begin_inset Formula $C$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $x$
+\end_inset
+
+, נסמלץ את חישוב 
+\begin_inset Formula $f_{1}\left(x\right)$
+\end_inset
+
+ ולאחר מכן את חישוב 
+\begin_inset Formula $f_{2}\left(f_{1}\left(x\right)\right)$
+\end_inset
+
+.
+ ברור שהיא חשיבה, היא רדוקציה כי
+\begin_inset Formula 
+\[
+x\in A\iff f_{1}\left(x\right)\in B\iff f_{2}\circ f_{1}\left(x\right)\in C
+\]
+
+\end_inset
+
+היא פולינומיאלית כי הרכבה של פולינומים ב-
+\begin_inset Formula $n$
+\end_inset
+
+ היא עדיין פולינום.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+צ"ל:
+\series default
+ 
+\begin_inset Formula $A_{TM}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\text{NP-Hard}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $L\in\text{NP}$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $L\in\text{R}$
+\end_inset
+
+ ולכן יש מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שמכריע אותה.
+ נגדיר את הרדוקציה 
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\langle M,x\right\rangle 
+\]
+
+\end_inset
+
+אז ברור ש-
+\begin_inset Formula 
+\[
+x\in L\iff\left\langle M,x\right\rangle \in A_{TM}
+\]
+
+\end_inset
+
+היא פולינומית כי ע"מ לחשב את 
+\begin_inset Formula $f$
+\end_inset
+
+ צריך רק לעשות מספר קבוע של פעולות, הוספת הקידוד של 
+\begin_inset Formula $M$
+\end_inset
+
+, ואולי קידוד נוסף לפורמט של 
+\begin_inset Formula $A_{TM}$
+\end_inset
+
+, שניתן לעשות בזמן פולינומי.
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $\text{P=NP}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $L\subseteq\S^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $L\neq\varnothing,\S^{*}$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $w_{1}\in L$
+\end_inset
+
+, 
+\begin_inset Formula $w_{2}\notin L$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $L'\in\text{NP}$
+\end_inset
+
+.
+ מההנחה 
+\begin_inset Formula $L'\in\text{P}$
+\end_inset
+
+ ולכן יש 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט המכריע אותה בזמן פולינומי.
+ נגדיר את הרדוקציה
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+w_{1} & x\in L'\\
+w_{2} & x\notin L'
+\end{cases}
+\]
+
+\end_inset
+
+ברור שזו רדוקציה.
+ היא חשיבה כי בהינתן 
+\begin_inset Formula $x$
+\end_inset
+
+, נסמלץ את ריצה 
+\begin_inset Formula $M$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+, ובהתאם לתשובתה נכתוב 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ או 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+ על סרט הקלט.
+ כיוון ש-
+\begin_inset Formula $M$
+\end_inset
+
+ רצה בזמן פולינומיאלי הרדוקציה פולינומיאלית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+ פונקציית זמן הריצה של מ"ט של 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+.
+ נעשה זאת בעזרת אלגוריתם דינאמי.
+ בהינתן 
+\begin_inset Formula $w=w_{1}...w_{n}$
+\end_inset
+
+, נבנה טבלה בגודל 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ כך שבתא ה-
+\begin_inset Formula $i,j$
+\end_inset
+
+ יופיע 
+\begin_inset Formula $T$
+\end_inset
+
+ אמ"מ 
+\begin_inset Formula $w_{i}...w_{j}\in L_{1}^{*}$
+\end_inset
+
+.
+ נראה כמה עולה מילוי תא:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בשלב הראשון נמלא את האלכסון 
+\begin_inset Formula $i=j$
+\end_inset
+
+.
+ כל תא ממלאים ב-
+\begin_inset Formula $O\left(p\left(1\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+בשלב ה-
+\begin_inset Formula $k$
+\end_inset
+
+ נמלא את האלכסון 
+\begin_inset Formula $j-i=k$
+\end_inset
+
+.
+ כדי למלא את התא ה-
+\begin_inset Formula $i,j$
+\end_inset
+
+, נבדוק האם 
+\begin_inset Formula $w_{i}...w_{j}\in L_{1}$
+\end_inset
+
+.
+ אם לא, נשים לב כי 
+\begin_inset Formula $w_{i}...w_{j}\in L_{1}^{*}$
+\end_inset
+
+ אם"ם קיים 
+\begin_inset Formula $l$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $w_{i}...w_{l}\in L_{1}^{*}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $w_{l}...w_{j}\in L_{1}^{*}$
+\end_inset
+
+.
+ לכן נבדוק את כל 
+\begin_inset Formula $j-i-1$
+\end_inset
+
+ האפשרויות לחלוקות כאלה בטבלה )כבר מילאנו את תאים אלו(.
+ 
+\end_layout
+
+\begin_layout Itemize
+אם בתא 
+\begin_inset Formula $\left(1,n\right)$
+\end_inset
+
+ מופיע 
+\begin_inset Formula $T$
+\end_inset
+
+, נקבל, אחרת נדחה.
+\end_layout
+
+\begin_layout Standard
+ננתח את זמן הריצה: ישנם 
+\begin_inset Formula $\frac{n^{2}}{2}$
+\end_inset
+
+ תאים למלא.
+ מילוי כל תא נעשה ב-
+\begin_inset Formula $O\left(p\left(n\right)\right)$
+\end_inset
+
+ לבדיקה האם המילה שייכת ל-
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+ לבדיקה האם יש פיצול לתתי מילים ב-
+\begin_inset Formula $L_{1}^{*}$
+\end_inset
+
+.
+ סה"כ 
+\begin_inset Formula $O\left(p\left(n\right)\right)$
+\end_inset
+
+.
+ לכן מילוי כל הטבלה לוקח 
+\begin_inset Formula $O\left(n^{2}p\left(n\right)\right)$
+\end_inset
+
+, פולינומיאלי כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+צ"ל:
+\series default
+ 
+\begin_inset Formula $L_{2}^{*}\in\NP$
+\end_inset
+
+.
+ נראה מוודא פולינומיאלי.
+ בהינתן 
+\begin_inset Formula $w$
+\end_inset
+
+ מילה, נקבל בתור עד 
+\begin_inset Formula $c$
+\end_inset
+
+ את החלוקה של 
+\begin_inset Formula $w$
+\end_inset
+
+ לתתי מילים ב-
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ ואת העדים לתתי מילים אלו 
+\begin_inset Formula $c_{1},...,c_{k}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left|c\right|<\left|w\right|$
+\end_inset
+
+ כי יש 
+\begin_inset Formula $\left|w\right|-1$
+\end_inset
+
+ מקומות "לחתוך" בהן את המילים.
+ 
+\begin_inset Formula $c_{1},...,c_{k}$
+\end_inset
+
+ פולינומיאלים ב-
+\begin_inset Formula $\left|w_{1}\right|,...,\left|w_{k}\right|$
+\end_inset
+
+ ולכן ב-
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+ו-
+\begin_inset Formula $k\leq\left|w\right|$
+\end_inset
+
+.
+ לכן זמן הריצה של המוודא הוא 
+\begin_inset Formula $\left|w\right|\cdot O\left(\left|w\right|^{l}\right)$
+\end_inset
+
+ שזה פולינומיאלי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Enumerate
+ראינו בכיתה כי 
+\begin_inset Formula $\text{COMPOSITE}=\left\{ n\mid\text{n is not prime}\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ ביצוג בינארי היא 
+\begin_inset Formula $\text{NP}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\text{PRIME}$
+\end_inset
+
+ ב-
+\begin_inset Formula $\text{coNP}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $\text{P=NP}$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $L\in\text{NP}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+L\in\text{P}\Rightarrow\overline{L}\in\text{P}\Rightarrow\overline{L}\in\text{NP}
+\]
+
+\end_inset
+
+כי 
+\begin_inset Formula $\text{P}$
+\end_inset
+
+ סגורה להשלמה.
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $\text{NP\subseteq coNP}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $L\in\text{coNP}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\overline{L}\in\text{NP}$
+\end_inset
+
+, ומההנחה 
+\begin_inset Formula $\overline{L}\in\text{coNP}$
+\end_inset
+
+, משמע 
+\begin_inset Formula $\overline{\overline{L}}=L\in\text{NP}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $A,B\subseteq\S^{*}$
+\end_inset
+
+ ו-
+\begin_inset Formula $A\leq_{p}B$
+\end_inset
+
+.
+ בנוסף, 
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $\text{NP}$
+\end_inset
+
+-שלמה ו-
+\begin_inset Formula $B\in\text{coNP}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in\NP$
+\end_inset
+
+.
+ נרצה להראות כי 
+\begin_inset Formula $\overline{L}\in\NP$
+\end_inset
+
+ משמע 
+\begin_inset Formula $L\in\CONP$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\NP\subseteq\CONP$
+\end_inset
+
+.
+ מסעיף קודם נקבל את הדרוש.
+ אז
+\end_layout
+
+\begin_layout Enumerate
+יש 
+\begin_inset Formula $f$
+\end_inset
+
+ רדוקציה פול' מ-
+\begin_inset Formula $L$
+\end_inset
+
+ ל-
+\begin_inset Formula $A$
+\end_inset
+
+ כי 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\NPH$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\leq_{p}B$
+\end_inset
+
+ ולכן יש 
+\begin_inset Formula $g$
+\end_inset
+
+ רדוקציה פול' מ-
+\begin_inset Formula $A$
+\end_inset
+
+ ל-
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B\in\CONP\Rightarrow\overline{B}\in\NP$
+\end_inset
+
+ ולכן יש 
+\begin_inset Formula $h$
+\end_inset
+
+ רדוקציה פול' מ-
+\begin_inset Formula $\overline{B}$
+\end_inset
+
+ ל-
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אז מתקיים
+\begin_inset Formula 
+\[
+x\in\overline{L}\iff x\notin L\iff f\left(x\right)\notin A\iff g\left(f\left(x\right)\right)\notin B\iff g\left(f\left(x\right)\right)\in\overline{B}\iff h\left(g\left(f\left(x\right)\right)\right)\in A
+\]
+
+\end_inset
+
+בפרט משאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $h\circ g\circ f$
+\end_inset
+
+ רדוקציה פולינומית, לכן 
+\begin_inset Formula $\overline{L}\leq_{p}A$
+\end_inset
+
+.
+ לבסוף, 
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $\NP$
+\end_inset
+
+ שלמה ולכן בפרט 
+\begin_inset Formula $A\in\NP$
+\end_inset
+
+, משמע 
+\begin_inset Formula $\overline{L}\in\NP$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{SPATH}\in\P$
+\end_inset
+
+.
+ נבנה מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שתכריע את 
+\begin_inset Formula $\text{SPATH}$
+\end_inset
+
+ בזמן פולינומיאלי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $M$
+\end_inset
+
+="בהינתן קלט 
+\begin_inset Formula $\left\langle G,u,v,k\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נריץ 
+\begin_inset Formula $\text{BFS}$
+\end_inset
+
+ מקודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ עד לעומק 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נבדוק האם 
+\begin_inset Formula $v$
+\end_inset
+
+ מופיע ברשימת הקודקודים שביקרנו בהם."
+\end_layout
+
+\begin_layout Standard
+אז 
+\begin_inset Formula $M\in\text{R}$
+\end_inset
+
+ ו-
+\begin_inset Formula $L\left(M\right)=\text{SPATH}$
+\end_inset
+
+ כי אם יש מסלול שאורכו לכל היותר 
+\begin_inset Formula $k$
+\end_inset
+
+, נמצא אותו ב-
+\begin_inset Formula $\text{BFS}$
+\end_inset
+
+.
+ זמן הריצה פולינומיאלי כי שני הצעדים פולינומיאלים בקלט, 
+\begin_inset Formula $\text{BFS}$
+\end_inset
+
+ רץ ב-
+\begin_inset Formula $O\left(\left|V\right|+\left|E\right|\right)=O\left(\left|w\right|\right)$
+\end_inset
+
+, ואת הבדיקה ניתן לעשות ב-
+\begin_inset Formula $O\left(\left|V\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{LPATH\in NP}$
+\end_inset
+
+: נבנה מוודא פולי'.
+ נקבל בתור עד 
+\begin_inset Formula $c$
+\end_inset
+
+ מסלול ב-
+\begin_inset Formula $u$
+\end_inset
+
+ ל-
+\begin_inset Formula $v$
+\end_inset
+
+ באורך גדול שווה ל-
+\begin_inset Formula $k$
+\end_inset
+
+.
+ ניתן לעשות זאת בזמן פול' כי אורך המסלול חסום ע"י 
+\begin_inset Formula $\left|V\right|$
+\end_inset
+
+, ורק נדרש לבדוק האם המסלול מתחיל ב-
+\begin_inset Formula $u$
+\end_inset
+
+, הוא אכן מסלול חוקי )לכל היותר 
+\begin_inset Formula $O\left(\left|E\right|^{2}\right)$
+\end_inset
+
+(, נגמר ב-
+\begin_inset Formula $v$
+\end_inset
+
+ ואורכו גדול שווה ל-
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\text{LPATH}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\NPH$
+\end_inset
+
+: נבנה רדוקציה מ-
+\begin_inset Formula $\text{UHAMILTON}$
+\end_inset
+
+ )ראינו בתרגול כי הוא ב-
+\begin_inset Formula $\NP$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $\left\langle G,u,v\right\rangle $
+\end_inset
+
+, נסמן 
+\begin_inset Formula $k=\left|V\right|-1$
+\end_inset
+
+ ונחזיר 
+\begin_inset Formula $\left\langle G,u,v,k\right\rangle $
+\end_inset
+
+.
+ ברור כי זה חשיב ופולינומיאלי.
+ כעת, אם יש ב-
+\begin_inset Formula $G$
+\end_inset
+
+ מסלול המילטוני, אז הוא עובר על כל הקודקודים פעם אחת בדיוק, משמע אורכו בדיוק
+ 
+\begin_inset Formula $\left|V\right|-1=k$
+\end_inset
+
+ כנדרש.
+ באופן דומה, אם יש מסלול פשוט שאורכו 
+\begin_inset Formula $k=\left|V\right|-1$
+\end_inset
+
+ הוא חייב לעבור על כל הקודקודים אחרת בהכרח יש חזרה על קודקוד, ולכן הוא גם
+ המילטוני.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{SUBSET-SUM}\in\NP$
+\end_inset
+
+.
+ נבנה מוודא פולינומיאלי 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $V$
+\end_inset
+
+="בהינתן קלט 
+\begin_inset Formula $\left\langle A,s\right\rangle \#c$
+\end_inset
+
+, )
+\begin_inset Formula $c$
+\end_inset
+
+ העד(:
+\end_layout
+
+\begin_layout Enumerate
+נבדוק האם 
+\begin_inset Formula $c$
+\end_inset
+
+ ייצוג של תת קבוצה.
+\end_layout
+
+\begin_layout Enumerate
+נסכום את האיברים ב-
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נבדוק האם 
+\begin_inset Formula $c$
+\end_inset
+
+ אכן תת קבוצה.
+\end_layout
+
+\begin_layout Enumerate
+אם כל השלבים עברו בהצלחה נקבל."
+\end_layout
+
+\begin_layout Standard
+נכונות ברורה.
+ זמן הריצה פולינומי כי סכימה של 
+\begin_inset Formula $O\left(\left|\left\langle A,s\right\rangle \right|\right)$
+\end_inset
+
+ מספרים ניתן לעשיה בזמן פולינומי.
+ בדיקה האם אכן 
+\begin_inset Formula $c$
+\end_inset
+
+ תת קבוצה ניתנת לעשייה ב-
+\begin_inset Formula $O\left(\left|\left\langle A,s\right\rangle \right|^{2}\right)$
+\end_inset
+
+ צעדים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נבנה רדוקציה פולי' מ-
+\begin_inset Formula $\text{SUBSET-SUM}$
+\end_inset
+
+ ל-
+\begin_inset Formula $\text{PARTITION}$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $\left\langle A,s\right\rangle $
+\end_inset
+
+ מולטיסט ומספר, נחשב את 
+\begin_inset Formula 
+\[
+k=\sum_{a\in A}a
+\]
+
+\end_inset
+
+ונגדיר 
+\begin_inset Formula $B=A\cup\left\{ 2s-k\right\} $
+\end_inset
+
+, ונתאים את 
+\begin_inset Formula $\left\langle B\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נכונות: נניח כי 
+\begin_inset Formula $\left\langle A,s\right\rangle \in\text{SUBSET-SUM}$
+\end_inset
+
+.
+ אז קיימת 
+\begin_inset Formula $A'\subseteq A$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+\sum_{a\in A'}a=s
+\]
+
+\end_inset
+
+בפרט,
+\begin_inset Formula 
+\[
+\sum_{a\in A\backslash A'}a=k-s
+\]
+
+\end_inset
+
+נשים לב כי 
+\begin_inset Formula $B\backslash A'=\left(A\backslash A'\right)\cup\left\{ 2s-k\right\} $
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+\sum_{a\in B\backslash A'}a=\sum_{a\in A\backslash A'}a+2s-k=k-s+2s-k=s=\sum_{a\in A'}a
+\]
+
+\end_inset
+
+כנדרש.
+ בכיוון השני, אם 
+\begin_inset Formula $\left\langle B\right\rangle \in\text{PARTITION}$
+\end_inset
+
+ אז קיימות 
+\begin_inset Formula $B_{1},B_{2}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $B_{1}\cup B_{2}=B$
+\end_inset
+
+ ו-
+\begin_inset Formula 
+\[
+\sum_{b\in B_{1}}b=\sum_{b\in B_{2}}b
+\]
+
+\end_inset
+
+בהכרח 
+\begin_inset Formula $2s-k$
+\end_inset
+
+ שייך לאחת הקבוצות ורק לאחת מהן, בה"כ נניח 
+\begin_inset Formula $2s-k\in B_{1}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $B_{2}\subseteq A$
+\end_inset
+
+.
+ בנוסף
+\begin_inset Formula 
+\[
+2\sum_{b\in B_{2}}b=\sum_{b\in B_{1}}b+\sum_{b\in B_{2}}b=\sum_{b\in B}b=\sum_{a\in A}a+2s-k=k+2s-k=2s
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\sum_{b\in B_{2}}b=s
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_layout Itemize
+חשיב: ברור, רק הוספנו איבר ל-
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+פולינומי: כנ"ל.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+צ"ל:
+\series default
+ 
+\begin_inset Formula $\text{SET-COVER}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\NP$
+\end_inset
+
+-שלם.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{SET-COVER}\in\NP$
+\end_inset
+
+: יש מוודא פול'.
+ בהינתן 
+\begin_inset Formula $\left\langle U,S,k\right\rangle $
+\end_inset
+
+ ניקח בתור עד 
+\begin_inset Formula $S'$
+\end_inset
+
+ ונבדוק שהוא תת-קבוצה של 
+\begin_inset Formula $S$
+\end_inset
+
+, שגודלו קטן מ-
+\begin_inset Formula $k$
+\end_inset
+
+ ושאיחודו הוא 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ את הכל ניתן לעשות ב-
+\begin_inset Formula $O\left(2^{U}\right)=O\left(S\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{SET-COVER}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\NPH$
+\end_inset
+
+.
+ נבנה רדוקציה מ-
+\begin_inset Formula $\text{VERTEX-COVER}$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $\left\langle G,k\right\rangle $
+\end_inset
+
+ גרף ומספר, נגדיר 
+\begin_inset Formula $\left\langle U,S,k\right\rangle $
+\end_inset
+
+ כך:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $U=E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S=\left\{ E_{v}\mid v\in V\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $E_{v}=\left\{ e\in E\mid v\in e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k=k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אז אם יש כיסוי קודקודים בגודל קטן מ-
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ v_{1},...,v_{j}\right\} $
+\end_inset
+
+, הקבוצה 
+\begin_inset Formula $\left\{ E_{1},...,E_{j}\right\} $
+\end_inset
+
+ מכסה את כל הצלעות בגרף ולהפך, אם יש קבוצה כזו נבחר את הקודקודים המתאימים
+ ונקבל כיסוי קודקודים.
+ הרדוקציה פולינומיאלית כי את השלב הראשון ניתן לבצע ב-
+\begin_inset Formula $O\left(\left|E\right|\right)$
+\end_inset
+
+ ואת השלב השני ב-
+\begin_inset Formula $O\left(\left|V\right|\cdot\left|E\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+נראה כי ניתן להפוך כל נוסחה מוצרה 
+\begin_inset Formula $\text{CNF-SAT}$
+\end_inset
+
+ לצורת 
+\begin_inset Formula $\text{3-SAT}$
+\end_inset
+
+ שקולה.
+ בהינתן
+\begin_inset Formula 
+\[
+\theta=\bigwedge_{i=1}^{n}\left(l_{i}^{1}\vee...\vee l_{i}^{m_{i}}\right)
+\]
+
+\end_inset
+
+נראה כי אפשר להמיר כל פסוקית 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ לאיווי פסוקיות 
+\begin_inset Formula $\text{3-SAT}$
+\end_inset
+
+.
+ אם ב-
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ יש מספר קטן מ-
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ליטרלים, פשוט נוסיף את האחרון כמה דרוש.
+ ברור נקבל פסוקית שקולה.
+ אחרת יש מספר גדול של ליטרלים.
+ נגדיר את הפסוק הבא
+\begin_inset Formula 
+\[
+\a=\left(l_{i}^{1}\vee l_{i}^{2}\vee z_{1}\right)\wedge\left(\overline{z_{1}}\vee l_{i}^{3}\vee z_{2}\right)\wedge...\wedge\left(\overline{z_{m_{i}-3}}\vee l_{i}^{m_{i}-1}\vee l_{i}^{m_{i}}\right)
+\]
+
+\end_inset
+
+נטען כי בעזרת 
+\begin_inset Formula $z$
+\end_inset
+
+ ניתן להבטיח תמיד בדיוק סיפוק של 
+\begin_inset Formula $m_{i}-3$
+\end_inset
+
+ פסוקיות לבחירתנו )אחת פחות מן הנדרש(.
+ נניח כי 
+\begin_inset Formula $\phi\left(z_{1}\right)=T$
+\end_inset
+
+.
+ אז כדי להבטיח כי הפסוקית השניה היא גם 
+\begin_inset Formula $T$
+\end_inset
+
+, על 
+\begin_inset Formula $\phi\left(z_{2}\right)=T$
+\end_inset
+
+ וכן הלאה.
+ נקבל כי בהכרח כל 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $T$
+\end_inset
+
+, משמע הפסוקית האחרונה יכולה להיות 
+\begin_inset Formula $F$
+\end_inset
+
+ )תלוי בליטרלים האחרים(.
+ אם 
+\begin_inset Formula $\phi\left(z_{1}\right)=F$
+\end_inset
+
+ אז ברור.
+ נשים לב גם כי השמה של 
+\begin_inset Formula $T$
+\end_inset
+
+ לכולם מבטיחה סיפוק של 
+\begin_inset Formula $m_{i}-3$
+\end_inset
+
+ פסוקיות.
+ מכך נסיק כי אם 
+\begin_inset Formula $\phi\left(\a\right)=T$
+\end_inset
+
+ בהכרח אחד הליטרלים מקבל 
+\begin_inset Formula $T$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\phi\left(c_{i}\right)=T$
+\end_inset
+
+.
+ בכיוון השני אם 
+\begin_inset Formula $\phi\left(c_{i}\right)=T$
+\end_inset
+
+ אז לפחות אחד מהפסוקיות ב-
+\begin_inset Formula $\a$
+\end_inset
+
+ מסופקת ע"י ליטרל, ולכן את שאר הפסוקיות נוכל לספק ע"י בחירה של השמה ל-
+\begin_inset Formula $z_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ההמרה היא פולינומיאלית כי מספר המשתנים החדשים שהוספנו חסום ע"י מספר הליטרלים
+ בנוסחה.
+\end_layout
+
+\end_body
+\end_document

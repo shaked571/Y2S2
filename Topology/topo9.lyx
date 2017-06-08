@@ -370,6 +370,55 @@ status open
 \end_inset
 
 .
+ ראשית נשים לב כי 
+\begin_inset Formula $X$
+\end_inset
+
+ קומפקטי, כי הוא סגור וחסום ותת מרחב של 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ )סגור כי בהינתן סדרה מתכנסת, או שהיא מתכנסת לאפס או שהיא חסומה ע"י מספר
+ חיובי ממש, משמע יש מספר סופי של איברים שונים ולכן החל ממקום מסויים היא
+ קבועה(.
+ בנוסף הוא האוסדרוף כתת מרחב של האוסדורף.
+ נראה שיש הומיאומורפיזם בין 
+\begin_inset Formula $\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} $
+\end_inset
+
+ ל-
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f\left(n\right)=\frac{1}{n}$
+\end_inset
+
+.
+ על 
+\begin_inset Formula $\N$
+\end_inset
+
+ יש את הטופ' הדיסקרטית ולכן 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה.
+ גם על 
+\begin_inset Formula $\left\{ \frac{1}{n}\mid n\in\mathbb{N}\right\} $
+\end_inset
+
+ יש את הטופ' הדיסקרטית ולכן 
+\begin_inset Formula $f$
+\end_inset
+
+ פתוחה.
+ לבסוף, ברור כי 
+\begin_inset Formula $f$
+\end_inset
+
+ חח"על.
 \end_layout
 
 \end_deeper
