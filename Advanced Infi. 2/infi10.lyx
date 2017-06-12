@@ -1,0 +1,595 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אינפי
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ראשונה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנצ' ברציפות, 
+\begin_inset Formula $\nabla f\left(x_{0},y_{0},z_{0}\right)\neq0$
+\end_inset
+
+.
+ נניח כי 
+\begin_inset Formula $f\left(x_{0},y_{0},z_{0}\right)=0$
+\end_inset
+
+.
+ אזי ממשפט הפונקציות הסתומות )הדרגה של 
+\begin_inset Formula $Df$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+( אז בה"כ יש פתוחות 
+\begin_inset Formula $\left(x_{0},y_{0},z_{0}\right)\in U\subseteq\mathbb{R}^{3}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left(x_{0},y_{0}\right)\in V\subseteq\mathbb{R}^{2}$
+\end_inset
+
+ ופונקציה גזירה ברציפות 
+\begin_inset Formula $g\colon V\to\mathbb{R}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+f^{-1}\left(0\right)\cap U=\left\{ \left(x,y,g\left(x,y\right)\right)\colon\left(x,y\right)\in V\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+זו סביבה המכילה את 
+\begin_inset Formula $\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+, ובפרט מהסעיף הבא נובע כי קבוצה זו היא משטח רגולרי עם פרמטריזציה 
+\begin_inset Formula $h\left(x,y\right)=\left(x,y,g\left(x,y\right)\right)$
+\end_inset
+
+.
+ נשים לב כי מהמשפט נובע גם כי 
+\begin_inset Formula 
+\[
+Dg\left(x_{0},y_{0}\right)=\left(-\frac{\partial f}{\partial z}\left(x_{0},y_{0},z_{0}\right)^{-1}\cdot\frac{\partial f}{\partial x}\left(x_{0},y_{0},z_{0}\right),-\frac{\partial f}{\partial z}\left(x_{0},y_{0},z_{0}\right)^{-1}\cdot\frac{\partial f}{\partial y}\left(x_{0},y_{0},z_{0}\right)\right)
+\]
+
+\end_inset
+
+נחשב את הניצב למישור ב-
+\begin_inset Formula $\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+:
+\begin_inset FormulaMacro
+\newcommand{\vec}[3]{\begin{bmatrix}#1\\
+#2\\
+#3
+\end{bmatrix}}
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial h}{\partial x}\left(x_{0},y_{0},z_{0}\right)\times\frac{\partial h}{\partial y}\left(x_{0},y_{0},z_{0}\right) & = & \vec 10{-\frac{\partial f}{\partial z}\left(x_{0},y_{0}\right)^{-1}\cdot\frac{\partial f}{\partial x}\left(x_{0},y_{0}\right)}\times\vec 01{-\frac{\partial f}{\partial z}\left(x_{0},y_{0}\right)^{-1}\cdot\frac{\partial f}{\partial y}\left(x_{0},y_{0}\right)}=\\
+\vec{-\left(-\frac{\partial f}{\partial z}\left(x_{0},y_{0}\right)^{-1}\cdot\frac{\partial f}{\partial x}\left(x_{0},y_{0}\right)\right)}{-\left(-\frac{\partial f}{\partial z}\left(x_{0},y_{0}\right)^{-1}\cdot\frac{\partial f}{\partial y}\left(x_{0},y_{0}\right)\right)}1
+\end{eqnarray*}
+
+\end_inset
+
+לכן ע"מ שוקטור 
+\begin_inset Formula $\vec xyz$
+\end_inset
+
+ יהיה במישור המשיק נדרוש כי
+\begin_inset Formula 
+\[
+\vec{\frac{\partial f}{\partial z}\left(x_{0},y_{0}\right)^{-1}\cdot\frac{\partial f}{\partial x}\left(x_{0},y_{0}\right)}{\frac{\partial f}{\partial z}\left(x_{0},y_{0}\right)^{-1}\cdot\frac{\partial f}{\partial y}\left(x_{0},y_{0}\right)}1\cdot_{\mbox{scalar}}\vec{x-x_{0}}{y-y_{0}}{z-z_{0}}=0
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+\left(\frac{\partial f}{\partial z}\left(x_{0},y_{0}\right)^{-1}\cdot\frac{\partial f}{\partial x}\left(x_{0},y_{0}\right)\right)\cdot\left(x-x_{0}\right)+\left(\frac{\partial f}{\partial z}\left(x_{0},y_{0}\right)^{-1}\cdot\frac{\partial f}{\partial y}\left(x_{0},y_{0}\right)\right)\cdot\left(y-y_{0}\right)+\left(z-z_{0}\right)=0
+\]
+
+\end_inset
+
+נכפול ונקבל
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x}\left(x_{0},y_{0}\right)\cdot\left(x-x_{0}\right)+\frac{\partial f}{\partial y}\left(x_{0},y_{0}\right)\cdot\left(y-y_{0}\right)+\frac{\partial f}{\partial z}\left(x_{0},y_{0}\right)\cdot\left(z-z_{0}\right)=0
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית.
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ שנייה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ברציפות.
+\end_layout
+
+\begin_layout Enumerate
+נניח כי 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $h\colon\mathbb{R}^{2}\backslash\left\{ 0\right\} \to\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(x,y\right)=\left(x,y,xf\left(\frac{y}{x}\right)\right)$
+\end_inset
+
+.
+ ברור כי 
+\begin_inset Formula 
+\[
+\mbox{Im}h=\left\{ \left(x,y,z\right)\mid z=xf\left(\frac{y}{x}\right)\right\} 
+\]
+
+\end_inset
+
+נראה כי 
+\begin_inset Formula $h$
+\end_inset
+
+ פרמטריזציה.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $h$
+\end_inset
+
+ דיפרנצ' ברציפות כי 
+\begin_inset Formula $x,y$
+\end_inset
+
+ לינאריות ואם 
+\begin_inset Formula $g\left(x,y\right)=xf\left(\frac{y}{x}\right)$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $\left(x,y\right)\neq0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial g}{\partial x}\left(x,y\right)=f\left(\frac{y}{x}\right)+xf'\left(\frac{y}{x}\right)\cdot\frac{y}{-x^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial g}{\partial y}\left(x,y\right)=xf'\left(\frac{y}{x}\right)\cdot\frac{1}{x}=f'\left(\frac{y}{x}\right)
+\]
+
+\end_inset
+
+הנגזרות החלקיות רציפות ולכן גם 
+\begin_inset Formula $g$
+\end_inset
+
+ דיפ' ברציפות.
+\end_layout
+
+\begin_layout Enumerate
+ראינו כי 
+\begin_inset Formula $h$
+\end_inset
+
+ על, וברור שהיא חח"ע )כי הקואורדינטות הראשונות הן הזהות(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Dh$
+\end_inset
+
+ מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)שוב כי שתי הקואורדינטות הראשונות הן הזהות(.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+.
+ נחשב את הניצב למישור המשיק:
+\begin_inset Formula 
+\[
+\vec 10{f\left(\frac{y}{x}\right)+xf'\left(\frac{y}{x}\right)\cdot\frac{y}{-x^{2}}}\times\vec 01{f'\left(\frac{y}{x}\right)}=\vec{-\left(f\left(\frac{y}{x}\right)+xf'\left(\frac{y}{x}\right)\cdot\frac{y}{-x^{2}}\right)}{-\left(f'\left(\frac{y}{x}\right)\right)}1
+\]
+
+\end_inset
+
+כעת נרצה לראות כי
+\begin_inset Formula 
+\[
+\vec{-\left(f\left(\frac{y}{x}\right)+xf'\left(\frac{y}{x}\right)\cdot\frac{y}{-x^{2}}\right)}{-\left(f'\left(\frac{y}{x}\right)\right)}1\cdot_{\mbox{scalar}}\begin{bmatrix}0-x\\
+0-y\\
+0-z
+\end{bmatrix}=0
+\]
+
+\end_inset
+
+נקבל כי
+\begin_inset Formula 
+\[
+xf\left(\frac{y}{x}\right)-yf'\left(\frac{y}{x}\right)+yf'\left(\frac{y}{x}\right)-z=0
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $z=xf\left(\frac{y}{x}\right)$
+\end_inset
+
+ ולכן יש שיוויון כנדרש.
+\end_layout
+
+\begin_layout Section*
+שאלה שישית
+\end_layout
+
+\begin_layout Standard
+יהי הקונוס 
+\begin_inset Formula $\left\{ \left(x,y,z\right)\mid z^{2}=x^{2}+y^{2},z\geq0\right\} $
+\end_inset
+
+.
+ תהי הספירה המוגדרת ע"י 
+\begin_inset Formula $x^{2}+y^{2}+z^{2}=2Rz$
+\end_inset
+
+ עבור 
+\begin_inset Formula $R>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}+z^{2}=2Rz\iff x^{2}+y^{2}+\left(z-R\right)^{2}=R^{2}
+\]
+
+\end_inset
+
+לכן הספירה היא ספירה ברדיוס 
+\begin_inset Formula $R$
+\end_inset
+
+ שמרכזה 
+\begin_inset Formula $\left(0,0,R\right)$
+\end_inset
+
+.
+ אז שטח הקונוס שמוכל בתוך הספירה הוא אוסף הנק' שמקיים
+\begin_inset Formula 
+\begin{eqnarray}
+x^{2}+y^{2}+\left(\sqrt{x^{2}+y^{2}}-R\right)^{2} & \leq & R^{2}\\
+2\left(x^{2}+y^{2}\right) & \leq & 2R\sqrt{x^{2}+y^{2}}\\
+\sqrt{x^{2}+y^{2}} & \leq & R
+\end{eqnarray}
+
+\end_inset
+
+נבחר פרמטריזציה לקונוס )למעט הנק' 
+\begin_inset Formula $\left(0,0,0\right)$
+\end_inset
+
+ אבל היא זניחה כי ממידה אפס(,
+\begin_inset Formula 
+\[
+g\left(r,\theta\right)=\left(r\cos\theta,r\sin\theta,r\right)
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+Area=\int_{0}^{R}\int_{0}^{2\pi}1\cdot\Vert\frac{\partial g}{\partial r}\times\frac{\partial g}{\partial\theta}\Vert d\theta dr
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\Vert\frac{\partial g}{\partial r}\times\frac{\partial g}{\partial\theta}\Vert & = & \Vert\vec{\cos\theta}{\sin\theta}1\times\vec{-r\sin}{r\cos\theta}0\Vert=\Vert\vec{-r\cos\theta}{-\left(-r\sin\theta\right)}{r\cos^{2}\theta+r\sin^{2}\theta}\Vert=\\
+ & = & \sqrt{r^{2}\cos^{2}\theta+r^{2}\sin^{2}\theta+r^{2}}=\sqrt{2}r
+\end{eqnarray*}
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+Area=\int_{0}^{R}\int_{0}^{2\pi}\sqrt{2}rd\theta dr=\sqrt{2}\cdot\pi\cdot R^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
