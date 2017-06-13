@@ -1,0 +1,612 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+טופולוגיה - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+, אז גבול של סדרה הוא יחיד כיוון שבהינתן שני גבולות שונים של סדרה, נפריד
+ ביניהם ע"י פתוחות זרות.
+ מההגדרה של נק' גבול, עבור 
+\begin_inset Formula $N$
+\end_inset
+
+ מסוים ומעלה הסדרה צריכה להיות מוכלת בשתי הפתוחות, בסתירה לזרות.
+ כעת, נגדיר 
+\begin_inset Formula $X=\mathbb{R}$
+\end_inset
+
+ עם הטופ' הקו-סופית.
+ אז 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+.
+ ניקח את הסדרה 
+\begin_inset Formula $a_{n}=n$
+\end_inset
+
+.
+ אז נשים לב כי כל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ הוא נק' גבול שלה, כיוון שלכל 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה מכילה אותו, יש מספר סופי של נק' שלא מוכלות בה, ולכן יש 
+\begin_inset Formula $N$
+\end_inset
+
+ גדול מספיק כך שלכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}\in U$
+\end_inset
+
+.
+ בפרט יש יותר מגבול אחד.
+\end_layout
+
+\begin_layout Enumerate
+ראינו כי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה שקול לכך ש-
+\begin_inset Formula $f\left(\overline{A}\right)\subseteq\overline{f\left(A\right)}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(A\right)=\left\{ y\right\} $
+\end_inset
+
+ יחידון, ויחידון סגור ב-
+\begin_inset Formula $T_{1}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\overline{\left\{ y\right\} }=y$
+\end_inset
+
+, משמע 
+\begin_inset Formula $f\left(\overline{A}\right)=y$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\geq1$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $T_{0}$
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב מטרי.
+ יהיו 
+\begin_inset Formula $A,B\subseteq X$
+\end_inset
+
+ סגורות וזרות.
+ לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $r_{a}=d\left(a,B\right)>0$
+\end_inset
+
+ כי 
+\begin_inset Formula $B$
+\end_inset
+
+ פתוחה ולא מכילה את 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $B_{r_{a}}\left(a\right)$
+\end_inset
+
+ זר ל-
+\begin_inset Formula $B$
+\end_inset
+
+.
+ באופן דומה ניתן להגדיר לכל איבר ב-
+\begin_inset Formula $B$
+\end_inset
+
+ כדור זר ל-
+\begin_inset Formula $A$
+\end_inset
+
+ סביבו.
+ נגדיר
+\begin_inset Formula 
+\[
+U=\bigcup_{a\in A}B_{\nicefrac{r_{a}}{2}}\left(a\right),\,\,V=\bigcup_{b\in B}B_{\nicefrac{r_{b}}{2}}\left(b\right)
+\]
+
+\end_inset
+
+אז ברור כי הן פתוחות ומכילות את 
+\begin_inset Formula $A,B$
+\end_inset
+
+ בהתאמה.
+ נראה כי הן זרות.
+ נניח בשלילה שלא, אז קיים 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ כך ש-
+\begin_inset Formula 
+\[
+B_{\nicefrac{r_{a}}{2}}\left(a\right)\cap B_{\nicefrac{r_{b}}{2}}\left(b\right)\neq\varnothing
+\]
+
+\end_inset
+
+יהי 
+\begin_inset Formula $c$
+\end_inset
+
+ האיבר בחיתוך.
+ נובע כי
+\begin_inset Formula 
+\[
+d\left(a,b\right)\leq d\left(a,c\right)+d\left(c,b\right)<\frac{r_{a}}{2}+\frac{r_{b}}{2}
+\]
+
+\end_inset
+
+נניח בה"כ כי 
+\begin_inset Formula $r_{a}\leq r_{b}$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+d\left(A,b\right)\leq d\left(a,b\right)<\frac{r_{a}}{2}+\frac{r_{b}}{2}\leq r_{b}=d\left(A,b\right)
+\]
+
+\end_inset
+
+קיבלנו סתירה ולכן 
+\begin_inset Formula $U,V$
+\end_inset
+
+ זרות.
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left(X,<\right)$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $c\in X$
+\end_inset
+
+ נק' ו-
+\begin_inset Formula $A$
+\end_inset
+
+ סגורה שלא מכילה את 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ נגדיר
+\begin_inset Formula 
+\[
+A_{<c}=\left\{ a\in A\mid a<c\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{>c}=\left\{ a\in A\mid a>c\right\} 
+\]
+
+\end_inset
+
+נניח בה"כ כי שתיהן לא ריקות.
+ ל-
+\begin_inset Formula $A_{<c}$
+\end_inset
+
+ יש חסם עליון 
+\begin_inset Formula $s$
+\end_inset
+
+ כי הוא חסומה מלעיל.
+ ל-
+\begin_inset Formula $A_{>c}$
+\end_inset
+
+ יש חסם תחתון 
+\begin_inset Formula $l$
+\end_inset
+
+ כי היא חסומה מלרע.
+ כיוון ש-
+\begin_inset Formula $c\notin A$
+\end_inset
+
+ יש קטע פתוח סביב 
+\begin_inset Formula $c$
+\end_inset
+
+ וזר ל-
+\begin_inset Formula $A$
+\end_inset
+
+ לכן 
+\begin_inset Formula $s<c<l$
+\end_inset
+
+.
+ מצפיפות נבחר 
+\begin_inset Formula $x_{1},x_{2}\in X$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+s<x_{1}<c<x_{2}<l
+\]
+
+\end_inset
+
+ אז הקטעים 
+\begin_inset Formula $\left(x_{1},x_{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(-\infty,x_{1}\right)\cup\left(x_{2},\infty\right)$
+\end_inset
+
+ זרים, פתוחים ומכילים את 
+\begin_inset Formula $c$
+\end_inset
+
+ ואת 
+\begin_inset Formula $A$
+\end_inset
+
+ בהתאמה.
+ אם אחת מהן ריקה )
+\begin_inset Formula $A_{<c}$
+\end_inset
+
+ או 
+\begin_inset Formula $A_{>c}$
+\end_inset
+
+( נבחר רק אחד מהקטעים.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\colon X\to Y$
+\end_inset
+
+ רציפה, סגורה, על ומקיימת 
+\begin_inset Formula $p^{-1}\left(\left\{ y\right\} \right)$
+\end_inset
+
+ קומפ' לכל 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נניח כי 
+\begin_inset Formula $X$
+\end_inset
+
+ האוסדורף.
+ יהיו 
+\begin_inset Formula $y_{1},y_{2}\in Y$
+\end_inset
+
+ שונות.
+ אז 
+\begin_inset Formula $p^{-1}\left(\left\{ y_{1}\right\} \right)\cap p^{-1}\left(\left\{ y_{2}\right\} \right)=\varnothing$
+\end_inset
+
+.
+ כיוון שאלו קבוצות קומפ' ו-
+\begin_inset Formula $X$
+\end_inset
+
+ האוסדורף, יש 
+\begin_inset Formula $U,V$
+\end_inset
+
+ פתוחות וזרות שמכילות אותן בהתאמה.
+ כעת, תהי 
+\begin_inset Formula $x\in p^{-1}\left(\left\{ y_{1}\right\} \right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $x'\in U\backslash p^{-1}\left(\left\{ y_{1}\right\} \right)$
+\end_inset
+
+ )אם אין כזה אז 
+\begin_inset Formula $\left\{ y_{1}\right\} $
+\end_inset
+
+ פתוחה(.
+ כיוון ש-
+\begin_inset Formula $X$
+\end_inset
+
+ האוסדורף יש 
+\begin_inset Formula $x\in S$
+\end_inset
+
+, 
+\begin_inset Formula $x\in S'$
+\end_inset
+
+ פתוחות וזרות.
+ בפרט 
+\begin_inset Formula $S\cap U$
+\end_inset
+
+ פתוחה, ו-
+\begin_inset Formula $y_{1}\in p\left(S\cap U\right)$
+\end_inset
+
+ )אם 
+\begin_inset Formula $U=p^{-1}\left\{ y_{1}\right\} $
+\end_inset
+
+ אז נבחר את 
+\begin_inset Formula $S=U$
+\end_inset
+
+(.
+ באופן דומה יש 
+\begin_inset Formula $T\subseteq V$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $y_{2}\in p\left(T\right)$
+\end_inset
+
+.
+ הן פתוחות ולכן התמונה שלהן פתוחה, וזרות כי 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+not good!!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"ט קומפ' מקומית והאוסדורף.
+ תהי 
+\begin_inset Formula $c$
+\end_inset
+
+ נק', 
+\begin_inset Formula $A$
+\end_inset
+
+ סגורה שלא מכילה את 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $Y$
+\end_inset
+
+ הקומפקטיפיקציה החד נק' של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

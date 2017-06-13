@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass heb-article
 \begin_preamble
 
@@ -12,16 +14,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -31,21 +33,33 @@
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1in
+\rightmargin 1in
+\bottommargin 1.5in
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -142,6 +156,45 @@
 10
 \end_layout
 
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "../math-macros.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 שאלה
 \family roman
@@ -224,6 +277,10 @@ f^{-1}\left(0\right)\cap U=\left\{ \left(x,y,g\left(x,y\right)\right)\colon\left
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -252,8 +309,8 @@ Dg\left(x_{0},y_{0}\right)=\left(-\frac{\partial f}{\partial z}\left(x_{0},y_{0}
 :
 \begin_inset FormulaMacro
 \newcommand{\vec}[3]{\begin{bmatrix}#1\\
-#2\\
-#3
+ #2\\
+ #3 
 \end{bmatrix}}
 \end_inset
 
@@ -300,10 +357,79 @@ Dg\left(x_{0},y_{0}\right)=\left(-\frac{\partial f}{\partial z}\left(x_{0},y_{0}
 \end_deeper
 \begin_layout Enumerate
 תהי 
-\begin_inset Formula $f$
+\begin_inset Formula $f\colon\mathbb{R}^{2}\to\R$
 \end_inset
 
  דיפרנציאבילית.
+ נגדיר 
+\begin_inset Formula $h\left(u,v\right)=\left(u,v,f\left(u,v\right)\right)$
+\end_inset
+
+.
+ נשים לב כי
+\begin_inset Formula 
+\[
+\text{Im}h=\text{graph}\left(f\right)
+\]
+
+\end_inset
+
+נטען כי 
+\begin_inset Formula $h$
+\end_inset
+
+ גם פרמטריזציה.
+ אז 
+\begin_inset Formula $h$
+\end_inset
+
+ דיפרנצ' כשרשור של דיפרנצ' והעתקות לינאריות.
+ 
+\begin_inset Formula $\text{rank}\left(Dh\right)=2$
+\end_inset
+
+ כי 
+\begin_inset Formula 
+\[
+Dh=\begin{array}{cc}
+1 & 0\\
+0 & 1\\
+\frac{\partial f}{\partial u} & \frac{\partial f}{\partial v}
+\end{array}
+\]
+
+\end_inset
+
+ולבסוף היא הומיאומורפיזם כי לכל פתוחה 
+\begin_inset Formula $B\subseteq\R^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $h^{-1}\left(\left\{ B\right\} \right)=\pi_{\left[xy\right]}\left(B\right)$
+\end_inset
+
+ והטלה היא העתקה פתוחה.
+ כעת, הניצב למישור בכל נק 
+\begin_inset Formula $\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula 
+\[
+\normal huv=\vec{-\frac{\partial f}{\partial u}}{-\frac{\partial f}{\partial v}}1
+\]
+
+\end_inset
+
+ולכן משוואת המישור המשיק היא
+\begin_inset Formula 
+\[
+\vec{-\frac{\partial f}{\partial u}}{-\frac{\partial f}{\partial v}}1\cdot\vec{x_{0}-x}{y_{0}-y}{z_{0}-z}=0r
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -357,6 +483,10 @@ Dg\left(x_{0},y_{0}\right)=\left(-\frac{\partial f}{\partial z}\left(x_{0},y_{0}
 \end_inset
 
  פרמטריזציה.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -584,6 +714,107 @@ Area=\int_{0}^{R}\int_{0}^{2\pi}1\cdot\Vert\frac{\partial g}{\partial r}\times\f
 \begin_inset Formula 
 \[
 Area=\int_{0}^{R}\int_{0}^{2\pi}\sqrt{2}rd\theta dr=\sqrt{2}\cdot\pi\cdot R^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה שמינית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{f}=\vec 11{z\left(x^{2}+y^{2}\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $S=\left\{ \left(x,y,z\right)\mid x^{2}+y^{2}=1,\,z\in\left[0,1\right]\right\} $
+\end_inset
+
+.
+ נחשב את 
+\begin_inset Formula $\iint_{S}\overline{f}dS$
+\end_inset
+
+.
+ נשתמש בפרמטריזציה 
+\begin_inset Formula 
+\[
+g\left(\theta,z\right)=\left(\cos\theta,\sin\theta,z\right)
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+\normal g{\theta}z=\vec{-\sin\theta}{\cos\theta}0\times\vec 001=\vec{\cos\theta}{\sin\theta}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\iint_{S}\overline{f}dS & =\int_{0}^{1}\int_{0}^{2\pi}\vec 11{z\left(\cos^{2}\theta+\sin^{2}\theta\right)}\cdot_{\text{scalar}}\vec{\cos\theta}{\sin\theta}0d\theta dz=\\
+= & \int_{0}^{1}\int_{0}^{2\pi}\cos\theta+\sin\theta d\theta dz=0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה עשירית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\subseteq\R^{2}\subseteq\R^{3}$
+\end_inset
+
+ פתוחה ומשטח רגולרי המשוכנת בתוך המישור 
+\begin_inset Formula $\left[xy\right]$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $p\left(u,v\right)\to D$
+\end_inset
+
+ פרמטריזציה של 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $\pi\left(x,y,z\right)=\left(x,y\right)$
+\end_inset
+
+ ההטלה למישור 
+\begin_inset Formula $\left[xy\right]$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\pi\circ p$
+\end_inset
+
+ עדיין חח"על 
+\begin_inset Formula $D$
+\end_inset
+
+ ודיפרנצ' ברציפות.
+ לכן ממשפט החלפת המשתנה אנחנו יודעים כי כקבוצה ב-
+\begin_inset Formula $\R^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Area\left(D\right)=\iint_{D}1dA=\iint_{p^{-1}\left(D\right)}1\cdot\norm{J_{p}\left(u,v\right)}dudv
 \]
 
 \end_inset

@@ -79,91 +79,63 @@
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\N}{\mathbb{N}}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\norm}[1]{\Vert#1\Vert}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\ip}[2]{\left\langle #1\mid#2\right\rangle }
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\a}{\alpha}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\b}{\beta}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\d}{\delta}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\g}{\gamma}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\o}{\omega}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\s}{\sigma}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \renewcommand{\O}{\Omega}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\S}{\Sigma}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\normal}[3]{\frac{\partial#1}{\partial#2}\times\frac{\partial#1}{\partial#3}}
 \end_inset
 
 
