@@ -1,0 +1,15 @@
+\tikzstyle{vertex}=[circle, fill, inner sep=0pt, outer sep=0pt, minimum size=4pt]
+\begin{tikzpicture}[shorten >=2pt,node distance=3cm,on grid,auto] 
+    \node[vertex] (1)   [label=left:1]{};
+    \node[vertex] (2) [right=of 1,label=right:2] {};
+    \node[vertex] (4) [above=of 1, label=above:4] {};
+    \node[vertex] (3) [right=of 4, label=above:3] {};
+
+    
+    \path[->] 
+    (1) edge  node {} (4)
+    (4) edge  node {} (2)
+    (2) edge  node {} (3)
+    (3) edge  node {} (4);
+\end{tikzpicture}
+

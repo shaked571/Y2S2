@@ -1,0 +1,1032 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning,arrows}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding cp1255
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\rightmargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+חישוביות - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Subsection*
+שאלה ראשונה
+\end_layout
+
+\begin_layout Standard
+נגדיר את 
+\begin_inset Formula $f\colon\Sigma^{*}\to\Sigma^{*}$
+\end_inset
+
+ כך:
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+ גרף לא מכוון, נגדיר גרף לא מכוון חדש 
+\begin_inset Formula $G'=\left\langle V',E'\right\rangle $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V'=V\cup\left\{ v\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E'=E\cup\left\{ \left\{ v,u\right\} \mid u\in V\right\} 
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $v$
+\end_inset
+
+ קודקוד חדש שלא שייך ל-
+\begin_inset Formula $V$
+\end_inset
+
+.
+ כעת, בהינתן קליקה 
+\begin_inset Formula $U$
+\end_inset
+
+ מגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ ב-
+\begin_inset Formula $G$
+\end_inset
+
+, הקבוצה 
+\begin_inset Formula $U\cup\left\{ v\right\} $
+\end_inset
+
+ היא קליקה מגודל 
+\begin_inset Formula $k+1$
+\end_inset
+
+ ב-
+\begin_inset Formula $G'$
+\end_inset
+
+, כי לכל 
+\begin_inset Formula $u_{1},u_{2}\in U\cup\left\{ v\right\} $
+\end_inset
+
+, אם 
+\begin_inset Formula $u_{1},u_{2}\in U$
+\end_inset
+
+ אז יש ביניהם צלע ב-
+\begin_inset Formula $G'$
+\end_inset
+
+ כי יש ביניהם צלע ב-
+\begin_inset Formula $G$
+\end_inset
+
+, ואם בה"כ 
+\begin_inset Formula $u_{1}=v$
+\end_inset
+
+ אז הוספנו ל-
+\begin_inset Formula $G'$
+\end_inset
+
+ את הצלע 
+\begin_inset Formula $\left\{ v,u_{2}\right\} $
+\end_inset
+
+.
+ בכיוון השני, אם 
+\begin_inset Formula $U$
+\end_inset
+
+ קליקה בגודל 
+\begin_inset Formula $k+1$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $G'$
+\end_inset
+
+, אם 
+\begin_inset Formula $v\notin U$
+\end_inset
+
+ אז 
+\begin_inset Formula $U$
+\end_inset
+
+ גם קליקה ב-
+\begin_inset Formula $G$
+\end_inset
+
+, ובפרט אם נסיר ממנה קודקוד נקבל קליקה בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ אחרת, 
+\begin_inset Formula $v\in U$
+\end_inset
+
+, לכן פשוט נסיר את 
+\begin_inset Formula $v$
+\end_inset
+
+ ונקבל קליקה בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה שנייה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{D-HAMPATH}$
+\end_inset
+
+: נבנה רדוקציה מ-
+\begin_inset Formula $\text{D-ST-HAMPATH}$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $\left\langle G,s,t\right\rangle $
+\end_inset
+
+ גרף מכוון, נגדיר את הגרף הבא 
+\begin_inset Formula $G'$
+\end_inset
+
+ כאשר נוסיף לו שני קודקודים חדשים 
+\begin_inset Formula $v_{start},v_{end}$
+\end_inset
+
+, וצלעות 
+\begin_inset Formula $\left(v_{start},s\right),\left(t,v_{end}\right)$
+\end_inset
+
+.
+ ברור כי ניתן לעשות זאת בזמן פולינומיאלי.
+ כעת, אם ב-
+\begin_inset Formula $G$
+\end_inset
+
+ יש מסלול המילטוני מ-
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $t$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s,v_{1},v_{2},\dotsc,v_{n},t
+\]
+
+\end_inset
+
+אז המסלול
+\begin_inset Formula 
+\[
+v_{start},s,v_{1},\dotsc,v_{n},t,v_{end}
+\]
+
+\end_inset
+
+הוא מסלול המילטוני ב-
+\begin_inset Formula $G'$
+\end_inset
+
+ )כל קודקוד מופיע בו ללא חזרות(.
+ לחילופין, נניח כי יש מסלול המילטוני ב-
+\begin_inset Formula $G'$
+\end_inset
+
+.
+ נטען כי הקודקוד הראשון במסלול חייב להיות 
+\begin_inset Formula $v_{start}$
+\end_inset
+
+ )כי אין לו צלעות נכנסות( והקודקוד האחרון יהיה 
+\begin_inset Formula $v_{end}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ )כי אין לו צלעות יוצאות(.
+ לכן המסלול נראה כך
+\begin_inset Formula 
+\[
+v_{start},v_{0},...,v_{n+1},v_{end}
+\]
+
+\end_inset
+
+בפרט, 
+\begin_inset Formula $v_{0}=s$
+\end_inset
+
+ ו-
+\begin_inset Formula $v_{n+1}=t$
+\end_inset
+
+ כי אלו הקודקודים היחידים שמחוברים ל-
+\begin_inset Formula $v_{start},v_{end}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $s,v_{1},\dotsc,v_{n},t$
+\end_inset
+
+ מסלול המילטוני בגרף המקורי 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{U-HAMPATH}$
+\end_inset
+
+: נבנה רדוקציה מ-
+\begin_inset Formula $\text{U-ST-HAMPATH}$
+\end_inset
+
+.
+ הרעיון זהה לסעיף הקודם.
+ אם ב-
+\begin_inset Formula $G$
+\end_inset
+
+ יש מסלול המילטוני מ-
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $t$
+\end_inset
+
+, פשוט נוסיף בקצוות המתאימים את 
+\begin_inset Formula $v_{start},v_{end}$
+\end_inset
+
+.
+ אם ב-
+\begin_inset Formula $G'$
+\end_inset
+
+ יש מסלול המילטוני, אז מאותו טיעון 
+\begin_inset Formula $v_{start},v_{end}$
+\end_inset
+
+ חייבים להופיע בקצוות )הפעם אין התחלה וסוף כי המסלול לא מכוון(, ולידם יופיעו
+ 
+\begin_inset Formula $s$
+\end_inset
+
+ ו-
+\begin_inset Formula $t$
+\end_inset
+
+ )כי הם היחידים שמחוברים אליהם( לכן אם נסיר את 
+\begin_inset Formula $v_{start},v_{end}$
+\end_inset
+
+ נקבל מסלול המילטוני בגרף המקורי.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{D-HAMCYCLE}$
+\end_inset
+
+: נבנה רדוקציה מ-
+\begin_inset Formula $\text{D-ST-HAMPATH}$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $\left\langle G,s,t\right\rangle $
+\end_inset
+
+ גרף מכוון, נגדיר את הגרף הבא 
+\begin_inset Formula $G'$
+\end_inset
+
+ כאשר נוסיף לו קודקוד חדש 
+\begin_inset Formula $v_{circle}$
+\end_inset
+
+ וצלעות 
+\begin_inset Formula $\left(v_{circle},s\right),\left(t,v_{circle}\right)$
+\end_inset
+
+.
+ אז הרדוקציה פולינומיאלית.
+ כעת, עם ב-
+\begin_inset Formula $G'$
+\end_inset
+
+ יש מסלול המילטוני מ-
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $t$
+\end_inset
+
+, נוסיף לו את הקודקוד 
+\begin_inset Formula $v_{circle}$
+\end_inset
+
+ בהתחלה ובסוף ונקבל מעגל המילטוני ב-
+\begin_inset Formula $G'$
+\end_inset
+
+.
+ לחילופין, אם ב-
+\begin_inset Formula $G'$
+\end_inset
+
+ מעגל המילטוני, אז 
+\begin_inset Formula $v_{circle}$
+\end_inset
+
+ מופיע בו, והקודקוד לפניו חייב להיות 
+\begin_inset Formula $t$
+\end_inset
+
+ ואחריו 
+\begin_inset Formula $s$
+\end_inset
+
+, לכן אם נסיר את 
+\begin_inset Formula $v_{circle}$
+\end_inset
+
+ נקבל מסלול המילטוני מ-
+\begin_inset Formula $s$
+\end_inset
+
+ ל-
+\begin_inset Formula $t$
+\end_inset
+
+ ב-
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{U-HAMCYCLE}$
+\end_inset
+
+: נבנה רדוקציה מ-
+\begin_inset Formula $\text{U-ST-HAMPATH}$
+\end_inset
+
+.
+ שוב, אותו רעיון יעבוד.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה שלישית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{DS=}\left\{ \left\langle G,k\right\rangle \mid G\text{ has a dominating set of size \leq k}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{DS\in NP}$
+\end_inset
+
+: נראה מוודא פולינומיאלי.
+ בתור עד ניקח 
+\begin_inset Formula $D$
+\end_inset
+
+ קבוצת קודקודים.
+ נבדוק האם 
+\begin_inset Formula $\left|D\right|\leq k$
+\end_inset
+
+, נבדוק שכל הקודקודים ב-
+\begin_inset Formula $D$
+\end_inset
+
+ אכן שייכים ל-
+\begin_inset Formula $G$
+\end_inset
+
+ ונמחק אותם מ-
+\begin_inset Formula $G$
+\end_inset
+
+.
+ כעת, לקודקודים שנותרו ב-
+\begin_inset Formula $G$
+\end_inset
+
+, נעבור על הצלעות שלהם ונבדוק האם הם מחוברים לקודקוד ב-
+\begin_inset Formula $D$
+\end_inset
+
+.
+ זמן הריצה הוא 
+\begin_inset Formula $O\left(\left|V\right|\log k\right)$
+\end_inset
+
+ לשלב הראשון, 
+\begin_inset Formula $O\left(\left|V\right|^{2}\right)$
+\end_inset
+
+ לשלב השני )כי 
+\begin_inset Formula $\left|D\right|\leq\left|V\right|$
+\end_inset
+
+ ועושים 
+\begin_inset Formula $\left|D\right|$
+\end_inset
+
+ בדיקות( , ו-
+\begin_inset Formula $O\left(\left|E\right|\cdot\left|V\right|\right)$
+\end_inset
+
+ לשלב השני )כל צלע אנחנו בודקים לכל היותר פעמיים אם אחד הקודקודים שלה ב-
+\begin_inset Formula $D$
+\end_inset
+
+(.
+ לכן פולינומיאלי בקלט.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{DS\in NP-hard}$
+\end_inset
+
+: נראה רדוקציה מ-
+\begin_inset Formula $\text{VC}$
+\end_inset
+
+.
+ בהינתן 
+\begin_inset Formula $\left\langle G,k\right\rangle $
+\end_inset
+
+, נייצר את 
+\begin_inset Formula $\left\langle G',k\right\rangle $
+\end_inset
+
+ ע"י כך שנמחק מ-
+\begin_inset Formula $G$
+\end_inset
+
+ את כל הקודקודים המבודדים ולכל 
+\begin_inset Formula $\left\{ u,v\right\} =e\in E$
+\end_inset
+
+ נוסיף קודקוד חדש 
+\begin_inset Formula $v_{e}$
+\end_inset
+
+ ונחבר אותו ל-
+\begin_inset Formula $u$
+\end_inset
+
+ ו-
+\begin_inset Formula $v$
+\end_inset
+
+.
+ מחיקת כל הקודקודים היא 
+\begin_inset Formula $O\left(\left|V\right|\cdot\left|E\right|\right)$
+\end_inset
+
+ והוספת קודקודים לוקחת 
+\begin_inset Formula $O\left(\left|E\right|\right)$
+\end_inset
+
+ לכן הרדוקציה פולינומיאלית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כעת, אם ב-
+\begin_inset Formula $G$
+\end_inset
+
+ יש 
+\begin_inset Formula $C\subseteq V$
+\end_inset
+
+ כיסוי קודקודים, נטען כי הוא גם קבוצה שולטת.
+ לכל 
+\begin_inset Formula $v\in V'$
+\end_inset
+
+, אם 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ אז הוא מחובר לצלע כלשהי 
+\begin_inset Formula $e\in E$
+\end_inset
+
+, וכיוון ש-
+\begin_inset Formula $\left\{ u,v\right\} =e\cap C\neq\varnothing$
+\end_inset
+
+, או ש-
+\begin_inset Formula $v\in C$
+\end_inset
+
+ או ש-
+\begin_inset Formula $u\in C$
+\end_inset
+
+ כנדרש.
+ אם 
+\begin_inset Formula $v\notin V$
+\end_inset
+
+ אז הוא מהצורה 
+\begin_inset Formula $v_{e}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\left\{ u,v\right\} =e\in E$
+\end_inset
+
+ כלשהי.
+ שוב כיוון ש-
+\begin_inset Formula $e\cap C\neq\varnothing$
+\end_inset
+
+, 
+\begin_inset Formula $u\in V$
+\end_inset
+
+ או 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ ולכן יש ל-
+\begin_inset Formula $v_{e}$
+\end_inset
+
+ שכן ב-
+\begin_inset Formula $C$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Standard
+בכיוון השני, נניח 
+\begin_inset Formula $D\subseteq V'$
+\end_inset
+
+ קבוצה שולטת.
+ נגדיר 
+\begin_inset Formula $D'$
+\end_inset
+
+ ע"י כך שנחליף כל קודקוד ב-
+\begin_inset Formula $D$
+\end_inset
+
+ מהצורה 
+\begin_inset Formula $v_{e}$
+\end_inset
+
+ בקודקוד 
+\begin_inset Formula $v\in e$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $D'\subseteq V$
+\end_inset
+
+.
+ כעת נראה שהיא כיסוי קודקודים.
+ לכל 
+\begin_inset Formula $e\in E$
+\end_inset
+
+, אם 
+\begin_inset Formula $v_{e}\in D$
+\end_inset
+
+ אז החלפנו אותו בקודקוד מהצלע ולכן כיסינו אותה.
+ לחילופין 
+\begin_inset Formula $v_{e}\notin D$
+\end_inset
+
+ אז יש לו שכן 
+\begin_inset Formula $v\in D$
+\end_inset
+
+.
+ מהגדרת 
+\begin_inset Formula $v_{e}$
+\end_inset
+
+, השכנים היחידים שלו הם 
+\begin_inset Formula $\left\{ u,v\right\} =e$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $v\in D'$
+\end_inset
+
+ משמע 
+\begin_inset Formula $e$
+\end_inset
+
+ מכוסה כנדרש.
+\end_layout
+
+\begin_layout Standard
+לבסוף, נשים לב שבשני המקרים גודל הקבוצה קטן או שווה ל-
+\begin_inset Formula $k$
+\end_inset
+
+ כי לא הגדלנו את מספר הקודקודים בקבוצה.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+שאלה רביעית
+\end_layout
+
+\begin_layout Standard
+נראה דוגמה נגדית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset CommandInset include
+LatexCommand input
+filename "compu10graph1.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגרף המקורי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset CommandInset include
+LatexCommand input
+filename "compu10graph2.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגרף שיוצר מהרדוקציה.
+\end_layout
+
+\begin_layout Standard
+כעת 
+\begin_inset Formula $\left\langle G,1,4\right\rangle \notin\text{D-ST-HAMPATH}$
+\end_inset
+
+ אבל 
+\begin_inset Formula $\left\langle G',1_{in},4_{out}\right\rangle \in\text{U-ST-HAMPATH}$
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה חמישית
+\end_layout
+
+\begin_layout Enumerate
+נבנה ברקורסיה סדרת קודקודים אינסופית שמהווה ענף בעץ.
+ את האיבר הראשון 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ נבחר להיות השורש.
+ נשים לב כי ל-
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ יש אינסוף צאצאים )קודקודים שיש אליהם מסלול(, כי יש אינסוף קודקודים וכל
+ אחד מהם צאצא של 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ נניח שבחרנו את 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ ויש לו אינסוף צאצאים.
+ כיוון שמספר הבנים שלו סופי, בהכרח גם לאחד מהבנים שלו יש אינסוף צאצאים )כי
+ כל צאצא של 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ הוא צאצא של אחד מבניו(.
+ נבחר את 
+\begin_inset Formula $x_{n+1}$
+\end_inset
+
+ להיות בן כזה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בנינו ברקורסיה סדרה 
+\begin_inset Formula $\left(x_{n}\right)_{n=0}^{\infty}$
+\end_inset
+
+ המקיימת את הדרישות מענף.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+הכשל יתרחש בשלב כתיבת המספר 
+\begin_inset Formula $n$
+\end_inset
+
+ על הסרט.
+ לא משנה איך נקודד את 
+\begin_inset Formula $n$
+\end_inset
+
+ על הסרט, לא נוכל לחסום את מספר הקונפיגורציות השונות שיתאימו לכתיבת מספר
+ טבעי כלשהו )אם היינו יכולים, היינו מקבלים התאמה חח"ע מקבוצה סופית לטבעיים(.
+ בנוסף, מכל קונפיגורציה יש מספר סופי של קונפיגורציות אליהן ניתן לעבור.
+ לכן מהלמה של קניג על עץ הקונפיגורציות, יש ריצה של 
+\begin_inset Formula $N'$
+\end_inset
+
+ שלא עוצרת בשלב כתיבת המספר על הסרט.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה שישית
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{CircuitSAT\in NP}$
+\end_inset
+
+.
+ נראה מוודא פולינומיאלי.
+ נקבל בתור עד השמה 
+\begin_inset Formula $\phi$
+\end_inset
+
+ ל-
+\begin_inset Formula $\left(x_{1},...,x_{n}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בשלב הראשון, נשמור את כל הקודקודים שהם מקורות ב-
+\begin_inset Formula $U$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

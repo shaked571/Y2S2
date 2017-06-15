@@ -1,0 +1,23 @@
+\tikzstyle{vertex}=[circle, fill, inner sep=0pt, outer sep=0pt, minimum size=4pt]
+\begin{tikzpicture}[shorten >=2pt,node distance=3cm,on grid,auto] 
+    \node[vertex] (1in)   [label=below:$1_{in}$]{};
+    \node[vertex] (1out)   [right=of 1in,label=below:$1_{out}$]{};
+    \node[vertex] (2in) [right=of 1out,label=below:$2_{in}$] {};
+    \node[vertex] (2out) [right=of 2in,label=below:$2_{out}$] {};
+    \node[vertex] (3in) [above=of 1in,label=above:$3_{in}$] {};
+    \node[vertex] (3out) [above=of 1out,label=above:$3_{out}$] {};
+    \node[vertex] (4in) [above=of 2in,label=above:$4_{in}$] {};
+    \node[vertex] (4out) [above=of 2out,label=above:$4_{out}$] {};
+    
+    \path[-] 
+    (1in) edge  node {} (1out)
+    (2in) edge node {} (2out)
+    (3in) edge node {} (3out)
+    (4in) edge node {} (4out)
+    
+    (1out) edge node {} (4in)
+    (2out) edge node {} (3in)
+    (3out) edge node {} (4in)
+    (4out) edge node {} (2in);
+\end{tikzpicture}
+
