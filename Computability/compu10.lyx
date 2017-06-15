@@ -1015,16 +1015,486 @@ filename "compu10graph2.tex"
 \end_inset
 
 .
+ נבצע מיון טופולוגי לקודקודים, נעבור עליהם ולכל אחד נחשב את הערך שההשמה
+ נותנת לנוסחה שהוא מייצג.
+ לקודקודים שהם מקורות וקיבלו תווית של משתנה פשוט נבדוק את ערך ההשמה, לקודקודים
+ שהם שלילה נמצא את הערך שחישבנו לבן ונרשום את השלילה, ולקודקודי איווי נמצא
+ את הערך של שני הבנים ונחשב את האיווי.
+ כיוון שאנחנו עוברים בסדר טופולוגי מובטח כי לא נגיע לקודקוד שעוד לא חישבנו
+ את ערך בניו.
+ נשים לב כי הזמן פולינומיאלי כי מיון טופולוגי ניתן לעשייה בזמן פולינומיאלי,
+ ולכל קודקוד מספר הצעדים שנדרשים לבדיקה הם 
+\begin_inset Formula $O\left(\left|V\right|\right)$
+\end_inset
+
+, לכן סה"כ הזמן הוא 
+\begin_inset Formula $O\left(\left|V\right|^{2}\right)$
+\end_inset
+
+.
+ בסוף התהליך נבדוק האם הקודקוד 
+\begin_inset Formula $output$
+\end_inset
+
+ קיבל 
+\begin_inset Formula $\mathbb{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נראה משפחה של גרפים שהנוסחה שלהם אקספוננציאלית בגודל התיאור.
+ )בציור דוגמה ל-
+\begin_inset Formula $n=6$
+\end_inset
+
+(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset CommandInset include
+LatexCommand input
+filename "compu10graph3.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ נשים לב ש-
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מופיע בנוסחה כ-
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ מספר האיווים.
+ מספר הקודקודים והצלעות בגרף זה הוא 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+ אבל אורך הנוסחא הוא 
+\begin_inset Formula $\Omega\left(2^{n}\right)$
+\end_inset
+
+, משמע זמן הריצה של הרדוקציה חייב להיות אקספוננציאלי באורך הקלט ע"מ לייצר
+ נוסחה כזו.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נפעל לפי העצה הנהדרת שקיבלנו.
+ לכל קודקוד 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ שקיבל תווית 
+\begin_inset Formula $\vee,\neg$
+\end_inset
+
+ נתאים משתנה חדש 
+\begin_inset Formula $y_{v}$
+\end_inset
+
+.
+ כעת, נעבור קודקוד קודקוד ונוסיף פסוקיות כך:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-בשלב הראשון, נשמור את כל הקודקודים שהם מקורות ב-
-\begin_inset Formula $U$
+עבור 
+\begin_inset Formula $v=output\left(C\right)$
+\end_inset
+
+, אם 
+\begin_inset Formula $l\left(v\right)=\neg$
+\end_inset
+
+ נכניס את הפסוקית 
+\begin_inset Formula $\left(\overline{u}\right)$
+\end_inset
+
+, ואם 
+\begin_inset Formula $l\left(v\right)=\vee$
+\end_inset
+
+ נכניס את הפסוקית 
+\begin_inset Formula $\left(u_{1},u_{2}\right)$
+\end_inset
+
+ )
+\begin_inset Formula $u$
+\end_inset
+
+-ים הם השכנים הנכנסים(.
+ ניתן להרחיב את הנוסחה ל-
+\begin_inset Formula $\text{3-CNF}$
+\end_inset
+
+.
+ אחרת נוסיף את הפסוקית 
+\begin_inset Formula $\left(l\left(v\right)\right)$
+\end_inset
+
+ )למעשה במקרה זה פה סיימנו את הרדוקציה(.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $l\left(v\right)=\neg$
+\end_inset
+
+ ו-
+\begin_inset Formula $u$
+\end_inset
+
+ השכן הנכנס שלו, נוסיף את הפסוקית 
+\begin_inset Formula $\left(y_{u}\vee y_{v}\vee y_{v}\right)\wedge\left(\overline{y_{u}}\vee\overline{y_{v}}\vee\overline{y_{v}}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $l\left(v\right)=\vee$
+\end_inset
+
+ ו-
+\begin_inset Formula $u_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ השכנים הנכנסים שלו נוסיף את הנוסחה
+\begin_inset Formula 
+\[
+\left(y_{v}\vee y_{u_{1}}\vee\overline{y_{u_{2}}}\right)\wedge\left(y_{v}\vee\overline{y_{u_{1}}}\vee y_{u_{2}}\right)\wedge\left(y_{v}\vee\overline{y_{u_{1}}}\vee\overline{y_{u_{2}}}\right)\wedge\left(\overline{y_{v}}\vee y_{u_{1}}\vee y_{u_{2}}\right)
+\]
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+)אם 
+\begin_inset Formula $l\left(u\right)=x_{i},0,1$
+\end_inset
+
+ אז במקום לרשום 
+\begin_inset Formula $y_{u}$
+\end_inset
+
+ נרשום את התווית(.
+ אז הרדוקציה בזמן פולינומי כי לכל קודקוד, ייצור הפסוקיות המתאימות לו נעשה
+ בזמן פולינומיאלי בקלט )בדיקה מה התווית שלו ב-
+\begin_inset Formula $O\left(\left|V\right|\right)$
+\end_inset
+
+, בדיקה מי השכנים הנכנסים לו ב-
+\begin_inset Formula $O\left(\left|E\right|\right)$
+\end_inset
+
+( ויש 
+\begin_inset Formula $\left|V\right|$
+\end_inset
+
+ קודקודים.
+\end_layout
+
+\begin_layout Standard
+נראה כי זו אכן רדוקציה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\phi_{output}$
+\end_inset
+
+ ספיק, יש השמה 
+\begin_inset Formula $\rho$
+\end_inset
+
+ ל-
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ המספקת אותו.
+ אז ההשמה שנותנת לכל 
+\begin_inset Formula $y_{v}$
+\end_inset
+
+ את 
+\begin_inset Formula $\rho\left(\phi_{v}\right)$
+\end_inset
+
+ תספק את הפסוק שהרכבנו.
+ נראה לפי סוגי הפסוקיות:
+\end_layout
+
+\begin_layout Itemize
+עבור פסוקית הפלט כיוון ש-
+\begin_inset Formula $\rho\left(\phi_{output}\right)=\mathbb{T}$
+\end_inset
+
+ והגדרנו את הפסוקית שתהיה נכונה מתי שהתווית המתאימה נכונה כפונקציה לוגית,
+ הפסוקית גם מקבלת ערך אמת.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $l\left(v\right)=\neg$
+\end_inset
+
+ ו-
+\begin_inset Formula $u$
+\end_inset
+
+ השכן ה
+\end_layout
+
+\begin_layout Itemize
+נכנס שלו, אז הפסוקית 
+\begin_inset Formula $\rho\left(\phi_{v}\right)=\rho\left(\neg\phi_{u}\right)=\overline{\rho\left(\phi_{u}\right)}\iff y_{v}=\overline{y_{u}}\iff\left(y_{u}\vee y_{v}\vee y_{v}\right)\wedge\left(\overline{y_{u}}\vee\overline{y_{v}}\vee\overline{y_{v}}\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $l\left(v\right)=\vee$
+\end_inset
+
+ ו-
+\begin_inset Formula $u_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ השכנים הנכנסים שלו אז הנוסחה
+\begin_inset Formula 
+\[
+\left(y_{v}\vee y_{u_{1}}\vee\overline{y_{u_{2}}}\right)\wedge\left(y_{v}\vee\overline{y_{u_{1}}}\vee y_{u_{2}}\right)\wedge\left(y_{v}\vee\overline{y_{u_{1}}}\vee\overline{y_{u_{2}}}\right)\wedge\left(\overline{y_{v}}\vee y_{u_{1}}\vee y_{u_{2}}\right)
+\]
+
+\end_inset
+
+נכונה אם"ם 
+\begin_inset Formula $y_{v}=y_{u_{1}}\vee y_{u_{2}}$
+\end_inset
+
+ וכיוון שהגדרנו את הערך הניתן לפי ההשמה לנוסחאות, זה מתקיים.
+\end_layout
+
+\begin_layout Standard
+אם הנוסחה שבנינו ספיקה, נטען כי צמצום ההשמה 
+\begin_inset Formula $\tau$
+\end_inset
+
+ המספקת למשתנים 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ לה נקרא 
+\begin_inset Formula $\rho$
+\end_inset
+
+ מקיימת כי לכל 
+\begin_inset Formula $v\in V$
+\end_inset
+
+, 
+\begin_inset Formula $\rho\left(\phi_{v}\right)=\tau\left(y_{v}\right)$
+\end_inset
+
+.
+ באינדוקציה על 
+\begin_inset Formula $\left|\phi_{v}\right|$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Description
+בסיס: אם 
+\begin_inset Formula $\left|\phi_{v}\right|=1$
+\end_inset
+
+ אז 
+\begin_inset Formula $l\left(v\right)=x_{i},0,1$
+\end_inset
+
+, ולכן ברור שמתקיים שיוויון.
+\end_layout
+
+\begin_layout Description
+הנחה: נניח כי הטענה נכונה לנוסחות מאורך קטן מ-
+\begin_inset Formula $n$
+\end_inset
+
+ ונראה ל-
+\begin_inset Formula $n$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Description
+שלב: יהי 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left|\phi_{v}\right|=n$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $l\left(v\right)=\neg$
+\end_inset
+
+ אז 
+\begin_inset Formula $\phi_{v}=\neg\phi_{u}$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+\rho\left(\phi_{v}\right)=\neg\rho\left(\phi_{u}\right)=\overline{\tau\left(y_{u}\right)}
+\]
+
+\end_inset
+
+אבל אנחנו יודעים כי הפסוקית
+\begin_inset Formula 
+\[
+\left(y_{u}\vee y_{v}\vee y_{v}\right)\wedge\left(\overline{y_{u}}\vee\overline{y_{v}}\vee\overline{y_{v}}\right)
+\]
+
+\end_inset
+
+מסופקת לכן אם 
+\begin_inset Formula $\tau\left(y_{v}\right)\neq\overline{\tau\left(y_{u}\right)}\Rightarrow\tau\left(y_{v}\right)=\tau\left(y_{u}\right)$
+\end_inset
+
+ נקבל כי
+\begin_inset Formula 
+\[
+\tau\left(\left(y_{u}\vee y_{v}\vee y_{v}\right)\wedge\left(\overline{y_{u}}\vee\overline{y_{v}}\vee\overline{y_{v}}\right)\right)=\tau\left(y_{u}\right)\wedge\tau\overline{\left(y_{u}\right)}
+\]
+
+\end_inset
+
+שזהו פסוק שקר, סתירה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $l\left(v\right)=\vee$
+\end_inset
+
+ אז 
+\begin_inset Formula $\phi_{v}=\phi_{u_{1}}\vee\phi_{u_{2}}$
+\end_inset
+
+.
+ שוב מהנחת האינדוקציה 
+\begin_inset Formula 
+\[
+\rho\left(\phi_{u_{1}}\right)=\tau\left(y_{u_{1}}\right),\rho\left(\phi_{u_{2}}\right)=\tau\left(y_{u_{2}}\right)
+\]
+
+\end_inset
+
+שוב חייב להתקיים כי 
+\begin_inset Formula $\rho\left(\phi_{v}\right)=\tau\left(y_{v}\right)$
+\end_inset
+
+ אחרת נקבל סתירה לכך ש-
+\begin_inset Formula $\tau$
+\end_inset
+
+ מספק את 
+\begin_inset Formula 
+\[
+\left(y_{v}\vee y_{u_{1}}\vee\overline{y_{u_{2}}}\right)\wedge\left(y_{v}\vee\overline{y_{u_{1}}}\vee y_{u_{2}}\right)\wedge\left(y_{v}\vee\overline{y_{u_{1}}}\vee\overline{y_{u_{2}}}\right)\wedge\left(\overline{y_{v}}\vee y_{u_{1}}\vee y_{u_{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+בפרט, כמסקנה מהטענה נסיק כי 
+\begin_inset Formula 
+\[
+\rho\left(\phi_{output}\right)=\begin{cases}
+\rho\left(\phi_{u_{1}}\right)\vee\rho\left(\phi_{u_{2}}\right)=\tau\left(y_{u_{1}}\right)\vee\tau\left(y_{u_{2}}\right) & l\left(output\left(C\right)\right)=\vee\\
+\neg\rho\left(\phi_{u}\right) & l\left(output\left(C\right)\right)=\neg\\
+\phi\left(l\left(output\left(C\right)\right)\right) & l\left(output\left(C\right)\right)=0,1,x_{i}
+\end{cases}
+\]
+
+\end_inset
+
+בכל מקרה הנוסחה שהוספנו במיוחד ל-
+\begin_inset Formula $output$
+\end_inset
+
+ מבטיחה כי נקבל אמת.
+ 
 \end_layout
 
 \end_deeper

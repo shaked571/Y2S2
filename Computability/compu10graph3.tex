@@ -1,0 +1,30 @@
+\tikzstyle{vertex}=[circle, fill, inner sep=0pt, outer sep=1pt, minimum size=4pt]
+\begin{tikzpicture}[shorten >=2pt,node distance=1cm,on grid,auto] 
+    \node[vertex] (1)   [label=left:output]{};
+    \node[vertex] (2) [below=of 1,label=right:$\vee$] {};
+    \node[vertex] (3) [below=of 2, label=right:$\vee$] {};
+    \node[vertex] (4) [below=of 3, label=right:$\vee$] {};
+    \node[vertex] (5) [below=of 4,label=right:$\vee$] {};
+    \node[vertex] (6) [below=of 5,label=right:$\vee$] {};
+    \node[vertex] (7) [below=of 6,label=right:$\vee$] {};
+    \node[vertex] (8) [below=of 7,label=right:0] {};
+
+
+    
+    \path[<-]    
+   (1) edge  node {} (2)
+   (2) edge [bend left] node {} (3)
+   (2) edge [bend right] node {} (3)
+   (3) edge [bend left] node {} (4)
+   (3) edge [bend right] node {} (4)
+   (4) edge [bend left] node {} (5)
+   (4) edge [bend right] node {} (5)
+   (5) edge [bend left] node {} (6)
+   (5) edge [bend right] node {} (6)
+   (6) edge [bend left] node {} (7)
+   (6) edge [bend right] node {} (7)
+   (7) edge [bend left] node {} (8)
+   (7) edge [bend right] node {} (8);
+
+\end{tikzpicture}
+
