@@ -511,7 +511,7 @@ p-1 & =p+\left(1-p\right)\cdot\left(-a\right)\iff p-\left(1+a\right)p=1-a\\
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -826,7 +826,178 @@ T
 \end_layout
 
 \begin_layout Enumerate
-שני השחקנים מערבים רק בין שתי אסט'
+שני השחקנים מערבים רק בין שתי אסט': ישנם שישה מקרים )השאר סימטרים(:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(L,S\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(p,1-p,0\right)$
+\end_inset
+
+, אז מטריצת הרווח של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נראת כך:
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+\left(1-\frac{p}{2}\right)l & \left(\frac{p+1}{2}\right)s & t\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אחד מערב בין שלוש אסט' ואחד בין שתיים:
+\end_layout
+
+\begin_layout Enumerate
+שני השחקנים מערבים לגמרי: אז אם שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק עם 
+\begin_inset Formula $\left(p,q,1-p-q\right)$
+\end_inset
+
+ הוא צריך לקיים את עקרון האדישות
+\begin_inset Formula 
+\begin{align*}
+p\cdot\frac{l}{2}+q\cdot l+\left(1-p-q\right)\cdot l & =p\cdot s+q\cdot\frac{s}{2}+\left(1-p-q\right)s=p\cdot t+q\cdot t+\left(1-p-q\right)\cdot\frac{t}{2}\\
+l\left(1-\frac{p}{2}\right) & =s\left(1-\frac{q}{2}\right)=\left(\frac{1+p+q}{2}\right)t
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
