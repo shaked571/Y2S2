@@ -139,6 +139,14 @@
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\v}[3]{\begin{bmatrix}#1\\
+#2\\
+#3
+\end{bmatrix}}
+\end_inset
+
+
 \end_layout
 
 \end_body

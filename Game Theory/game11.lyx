@@ -866,7 +866,87 @@ T
 \begin_inset Formula $\left(p,1-p,0\right)$
 \end_inset
 
-, אז מטריצת הרווח של שחקן
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(L,S\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(q,1-q,0\right)$
+\end_inset
+
+.
+ אז אם הרווח של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+l\left(1-\frac{q}{2}\right)\\
+s\left(\frac{q+1}{2}\right)\\
+t
+\end{array}
+\]
+
+\end_inset
+
+שחקן
 \family roman
 \series medium
 \shape up
@@ -916,25 +996,62 @@ T
 \uwave default
 \noun default
 \color inherit
-נראת כך:
+צריך לקיים 
 \begin_inset Formula 
 \[
-\begin{array}{ccc}
-\left(1-\frac{p}{2}\right)l & \left(\frac{p+1}{2}\right)s & t\end{array}
+l\left(1-\frac{q}{2}\right)=s\left(\frac{q+1}{2}\right)\iff q=\frac{2l-s}{s+l}
 \]
 
 \end_inset
 
+ולכן מתקיים שהרווח של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
 
-\end_layout
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\frac{3sl}{2s+2l}\\
+\frac{3sl}{2s+2l}\\
+t
+\end{array}
+\]
 
-\end_deeper
-\begin_layout Enumerate
-אחד מערב בין שלוש אסט' ואחד בין שתיים:
-\end_layout
+\end_inset
 
-\begin_layout Enumerate
-שני השחקנים מערבים לגמרי: אז אם שחקן
+אבל מהנתון
+\begin_inset Formula 
+\[
+\frac{l}{2}\left(\frac{2l-s}{s+l}\right)+s\left(\frac{2l-s}{s+l}\right)<t\iff\frac{3sl+2l^{2}-2s^{2}}{2s+2l}=\frac{3sl}{2s+2l}+l-s<t
+\]
+
+\end_inset
+
+לכן משתלם לשחקן
 \family roman
 \series medium
 \shape up
@@ -984,20 +1101,1794 @@ T
 \uwave default
 \noun default
 \color inherit
-משחק עם 
+לא לשחק בהסתברות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+את השורה 
+\begin_inset Formula $T$
+\end_inset
+
+, סתירה.
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(L,T\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(q,0,q-1\right)$
+\end_inset
+
+.
+ אז אם הרווח של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\begin{array}{c}
+l\left(1-\frac{q}{2}\right)\\
+s\\
+t\left(\frac{q+1}{2}\right)
+\end{array}
+\]
+
+\end_inset
+
+שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לקיים
+\begin_inset Formula 
+\[
+l\left(1-\frac{q}{2}\right)=s\iff q=\frac{2l-2s}{l}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $q$
+\end_inset
+
+ חוקי כי
+\begin_inset Formula 
+\[
+0=\frac{2l-2l}{l}<\frac{2l-2s}{l}<\frac{2l-l}{l}=1
+\]
+
+\end_inset
+
+ולכן מתקיים שהרווח של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\numeric on
+1
+\begin_inset Formula 
+\[
+\begin{array}{c}
+s\\
+s\\
+t\left(\frac{3l-2s}{2l}\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\numeric off
+בפרט
+\begin_inset Formula 
+\[
+t\left(\frac{3l-2s}{2l}\right)<t\cdot\left(\frac{3l-l}{2l}\right)=t<s
+\]
+
+\end_inset
+
+כנדרש.
+ כעת, אם הרווח עבור שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\begin{array}{c}
+l\left(1-\frac{p}{2}\right)\\
+s\left(\frac{p+1}{2}\right)\\
+t
+\end{array}
+\]
+
+\end_inset
+
+שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לקיים
+\begin_inset Formula 
+\[
+l\left(1-\frac{p}{2}\right)=t\iff p=\frac{2l-2t}{l}
+\]
+
+\end_inset
+
+ולכן מתקיים שהרווח של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+t\\
+s\left(\frac{3l-2t}{2l}\right)\\
+t
+\end{array}
+\]
+
+\end_inset
+
+לבסוף צריך להתקיים 
+\begin_inset Formula 
+\[
+s\left(\frac{3l-2t}{2l}\right)\leq t\iff\frac{3sl}{2l+2s}\leq t
+\]
+
+\end_inset
+
+ראינו מהנתון כי זה מתקיים ולכן מצאנו נק' שיווי משקל.
+\end_layout
+
+\begin_layout Itemize
+שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ משחק בהסתברות 
+\begin_inset Formula $\left(0,q,1-q\right)$
+\end_inset
+
+.
+ אז וקטור הרווח של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\begin{array}{c}
+l\\
+s\left(1-\frac{q}{2}\right)\\
+t\left(\frac{q+1}{2}\right)
+\end{array}
+\]
+
+\end_inset
+
+שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לוודא כי
+\begin_inset Formula 
+\[
+l=s\left(1-\frac{q}{2}\right)
+\]
+
+\end_inset
+
+אבל קל לראות שזה לא יכול להתקיים כי 
+\begin_inset Formula $l>s>s\left(1-\frac{q}{2}\right)$
+\end_inset
+
+ לכן אין נק' שיווי משקל.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(L,T\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(p,0,1-p\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(L,T\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(q,0,1-q\right)$
+\end_inset
+
+.
+ אז אם הרווח של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\begin{array}{c}
+l\left(1-\frac{q}{2}\right)\\
+s\\
+t\left(\frac{q+1}{2}\right)
+\end{array}
+\]
+
+\end_inset
+
+אבל כבר ניתן לראות כי לשחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תמיד ישתלם לא לשחק 
+\begin_inset Formula $S$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $0$
+\end_inset
+
+ כי
+\begin_inset Formula 
+\[
+s>t\geq t\cdot\left(\frac{q+1}{2}\right)
+\]
+
+\end_inset
+
+לכן לא תיתכן נק' שיווי משקל.
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(0,q,1-q\right)$
+\end_inset
+
+.
+ אז אם הרווח של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\begin{array}{c}
+l\\
+s\left(1-\frac{q}{2}\right)\\
+t\left(\frac{q+1}{2}\right)
+\end{array}
+\]
+
+\end_inset
+
+שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לוודא כי
+\begin_inset Formula 
+\[
+l=t\left(\frac{q+1}{2}\right)
+\]
+
+\end_inset
+
+שוב זה לא אפשרי לכן אין נק' שיווי משקל.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(0,p,1-p\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(0,q,1-q\right)$
+\end_inset
+
+.
+ אז אם הרווח של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\begin{array}{c}
+l\\
+s\left(1-\frac{q}{2}\right)\\
+t\left(\frac{q+1}{2}\right)
+\end{array}
+\]
+
+\end_inset
+
+תמיד ישתלם לשחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לברוח לאסטרטגיה 
+\begin_inset Formula $L$
+\end_inset
+
+ ולכן אין נק' שיווי משקל.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+אחד מערב בין שלוש אסט' ואחד בין שתיים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(L,S,T\right)$
+\end_inset
+
+ בהסתברות 
 \begin_inset Formula $\left(p,q,1-p-q\right)$
 \end_inset
 
- הוא צריך לקיים את עקרון האדישות
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(L,S\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(q,1-q,0\right)$
+\end_inset
+
+.
+ אם וקטור התשלומים של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
 \begin_inset Formula 
-\begin{align*}
-p\cdot\frac{l}{2}+q\cdot l+\left(1-p-q\right)\cdot l & =p\cdot s+q\cdot\frac{s}{2}+\left(1-p-q\right)s=p\cdot t+q\cdot t+\left(1-p-q\right)\cdot\frac{t}{2}\\
-l\left(1-\frac{p}{2}\right) & =s\left(1-\frac{q}{2}\right)=\left(\frac{1+p+q}{2}\right)t
-\end{align*}
+\[
+\begin{array}{c}
+l\left(1-\frac{q}{2}\right)\\
+s\left(\frac{q+1}{2}\right)\\
+t
+\end{array}
+\]
 
 \end_inset
 
+צריך להתקיים
+\begin_inset Formula 
+\[
+l\left(1-\frac{q}{2}\right)=s\left(\frac{q+1}{2}\right)=t
+\]
 
+\end_inset
+
+ראינו כבר כי השיוויון השמאלי גורר ששתי הכניסות העליונות שוות 
+\begin_inset Formula $\frac{3sl}{2l+2s}<t$
+\end_inset
+
+ לכן המצב בלתי אפשרי.
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(L,T\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(q,0,1-q\right)$
+\end_inset
+
+.
+ אם וקטור התשלומים של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\begin{array}{c}
+l\left(1-\frac{q}{2}\right)\\
+s\\
+t\left(\frac{q+1}{2}\right)
+\end{array}
+\]
+
+\end_inset
+
+שוב לא יכול להתקיים שיוויון 
+\begin_inset Formula $s=t\left(\frac{q+1}{2}\right)$
+\end_inset
+
+ לכן אין נק' שיווי משקל.
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $\left(0,q,1-q\right)$
+\end_inset
+
+.
+ אם וקטור התשלומים של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\begin{array}{c}
+l\\
+s\left(1-\frac{q}{2}\right)\\
+t\left(\frac{q+1}{2}\right)
+\end{array}
+\]
+
+\end_inset
+
+לא יכול להתקיים שיוויון, משמע עיקרון האדישות לא מתקיים ולכן אין נק' שיווי
+ משקל.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+שני השחקנים מערבים לגמרי: שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק בהסתברות 
+\begin_inset Formula $\left(p_{1},p_{2},1-p_{1}-p_{2}\right)$
+\end_inset
+
+, שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משחק בהסתברות 
+\begin_inset Formula $\left(q_{1},q_{2},1-q_{1}-q_{2}\right)$
+\end_inset
+
+.
+ אז אם וקטור התשלומים של שחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נראה כך
+\begin_inset Formula 
+\[
+\begin{array}{c}
+l\left(1-\frac{q_{1}}{2}\right)\\
+s\left(1-\frac{q_{2}}{2}\right)\\
+t\left(\frac{1+q_{1}+q_{2}}{2}\right)
+\end{array}
+\]
+
+\end_inset
+
+צריך להתקיים שיוויון בין הכניסות.
+ לכן
+\begin_inset Formula 
+\[
+l\left(1-\frac{q_{1}}{2}\right)=s\left(1-\frac{q_{2}}{2}\right)\iff q_{1}=\frac{2l-2s+sq_{2}}{l}
+\]
+
+\end_inset
+
+ואז
+\begin_inset Formula 
+\[
+s\left(1-\frac{q_{2}}{2}\right)=t\left(\frac{1+\frac{2l-2s+sq_{2}}{l}+q_{2}}{2}\right)\iff q_{2}=\frac{2sl-3tl+2st}{sl+st+tl}
+\]
+
+\end_inset
+
+מפה אפשר למצוא את הנק' הקואורדינטות הספצפיות.
+ מסימטריות אותה נק' תעבוד גם לשחקן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
 \end_layout
 
 \end_deeper

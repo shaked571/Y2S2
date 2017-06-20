@@ -1,0 +1,595 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding cp1255
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\rightmargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אינפי
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Subsection*
+שאלה שנייה
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset CommandInset include
+LatexCommand input
+filename "/cs/usr/ofer1992/safe/Y2S2/math-macros.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\widetilde{M}=\text{Int}M$
+\end_inset
+
+.
+ נרצה להראות שהיא בעלת נפח, משמע האינטגרל
+\begin_inset Formula 
+\[
+\iiint_{\widetilde{M}}1dV
+\]
+
+\end_inset
+
+קיים.
+ נשים לב כי 
+\begin_inset Formula $1=\frac{\nabla\cdot\begin{bmatrix}x\\
+y\\
+z
+\end{bmatrix}}{3}$
+\end_inset
+
+.
+ בנוסף 
+\begin_inset Formula $\widetilde{M}$
+\end_inset
+
+ סגורה וחסומה, לכן קומפקטית.
+ לכן ממשפט הדיברגנץ
+\begin_inset Formula 
+\[
+\iiint_{\widetilde{M}}1dV=\frac{1}{3}\varoiint_{M}\begin{bmatrix}x\\
+y\\
+z
+\end{bmatrix}dS
+\]
+
+\end_inset
+
+האינטגרל בצד ימין קיים כי האינטגרנד רציף )מכפלה סקלרית של רציפות( כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+שאלה שלישית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{f}\left(x,y,z\right)=\left(x^{2}y,-x,1\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $M=\left\{ \left(x,y,z\right)\mid z=x^{2}+y^{2},x^{2}+y^{2}\leq1\right\} $
+\end_inset
+
+.
+ נחשב את 
+\begin_inset Formula $\varoiint_{M}\overline{f}dS$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+באופן ישיר: נגדיר פרמטריזציה 
+\begin_inset Formula $p\left(x,y\right)=\left(x,y,x^{2}+y^{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $p\colon A\to M$
+\end_inset
+
+, 
+\begin_inset Formula $A=\left\{ \left(x,y\right)\mid x^{2}+y^{2}<1\right\} $
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $p$
+\end_inset
+
+ פרמטריזציה כי היא גזירה ברציפות, חח"ע ודרגה של הנגזרת היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ למרות שהיא לא פרמטריזציה ל-
+\begin_inset Formula $M$
+\end_inset
+
+ )חסרה השפה 
+\begin_inset Formula $\left(x,y,1\right),x^{2}+y^{2}=1$
+\end_inset
+
+ ומכיוון שהיא ממידה אפס זה זניח לאינטגרל(.
+ נחשב
+\begin_inset Formula 
+\[
+\normal puv=\v 10{2x}\times\v 01{2y}=\v{-2x}{-2y}1
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\begin{align*}
+\varoiint_{M}\overline{f}dS & =\int_{-1}^{1}\int_{-\sqrt{1-x^{2}}}^{\sqrt{1-x^{2}}}\v{x^{2}y}{-x}1\cdot\v{-2x}{-2y}1dydx=\\
+= & \int_{-1}^{1}\int_{-\sqrt{1-x^{2}}}^{\sqrt{1-x^{2}}}-2x^{3}y+2xy+1dydx=\\
+= & \int_{-1}^{1}\left(-2x^{3}+2x\right)\int_{-1}^{1}ydy+2\sqrt{1-x^{2}}dx=\\
+= & \int_{-1}^{1}2\sqrt{1-x^{2}}dx=\pi
+\end{align*}
+
+\end_inset
+
+בחרנו את הנורמל שפונה פנימה לכן נהפוך את הסימן ונקבל 
+\begin_inset Formula $-\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+עם משפט הדיברגנץ.
+ 
+\begin_inset Formula $div\overline{F}=2xy$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $M^{\circ}$
+\end_inset
+
+ הפנים של הגוף עם המכסה 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ ממשפט הדיברגנץ
+\begin_inset Formula 
+\[
+\varoiint_{M}\overline{f}dS=\iiint_{M^{\circ}}div\overline{f}\,dV-\varoiint_{S}\overline{f}dS
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $S=\left\{ \left(x,y,z\right)\mid z=1,x^{2}+y^{2}=1\right\} $
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\iiint_{M^{\circ}}div\overline{f}\,dV & =\iiint_{M^{\circ}}xydV=\\
+= & \int_{0}^{1}\int_{0}^{\sqrt{z}}\int_{0}^{2\pi}r^{2}\sin\theta\cos\theta\cdot rd\theta drdz=\\
+= & \int_{0}^{1}\int_{0}^{\sqrt{z}}\int_{0}^{2\pi}r^{3}\frac{\sin2\theta}{2}d\theta drdz=\\
+= & 0
+\end{align*}
+
+\end_inset
+
+כי 
+\begin_inset Formula $\int_{0}^{2\pi}\sin2\theta=0$
+\end_inset
+
+.
+ כעת ניקח פרמטריזציה 
+\begin_inset Formula $p\left(x,y\right)=\left(x,y,1\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\normal sxy=\v 001$
+\end_inset
+
+ לכן
+\begin_inset Formula 
+\begin{align*}
+\varoiint_{S}\overline{f}dS & =\int_{-1}^{1}\int_{-\sqrt{1-x^{2}}}^{\sqrt{1-x^{2}}}\v{x^{2}y}{-x}1\cdot\v 001dydx\\
+= & \int_{-1}^{1}\int_{-\sqrt{1-x^{2}}}^{\sqrt{1-x^{2}}}1dydx=\\
+= & \pi
+\end{align*}
+
+\end_inset
+
+כי זה שטח המעגל.
+ לכן קיבלנו סה"כ שוב כי שווה ל-
+\begin_inset Formula $-\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+שאלה רביעית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{f}=\left(2x^{2}+2z^{10},2xy+x,8z-y\right)$
+\end_inset
+
+.
+ ממשפט הדיברגנץ השטף של השדה על על השפה של התחום שווה לאינטגרל המשולש על
+ התחום של הדיברגנץ.
+ 
+\begin_inset Formula $div\overline{F}=4x+2x+8=6x+8$
+\end_inset
+
+.
+ נשתמש בקואורדינטות צילינדריות ונקבל
+\begin_inset Formula 
+\begin{align*}
+\iiint_{M}div\overline{f}dV & =\int_{0}^{2}\int_{0}^{4-r^{2}}\int_{0}^{2\pi}\left(6r\cos\theta+8\right)rd\theta dzdr=\\
+= & \int_{0}^{2}\int_{0}^{4-r^{2}}\int_{0}^{2\pi}6r^{2}\cos\theta d\theta+\int_{0}^{2\pi}8rd\theta dzdr=\\
+= & \int_{0}^{2}\int_{0}^{4-r^{2}}0+2\pi8rdzdr=\\
+= & \int_{0}^{2}16\pi r\cdot\left(4-r^{2}\right)dr=\\
+= & 16\pi\left[4\frac{r^{2}}{2}-\frac{r^{4}}{4}\right]_{0}^{2}=\\
+= & 16\pi\left[2\cdot4-4\right]=64\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה חמישית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{f}$
+\end_inset
+
+ שדה וקטורי 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+.
+ 
+\series bold
+צ"ל: 
+\begin_inset Formula $\lim_{r\to0}\frac{1}{\text{Vol}\left(B_{r}\left(p\right)\right)}\varoiint_{v\in\partial B_{r}\left(p\right)}\overline{f}dS=\text{div}\left(\overline{f}\right)$
+\end_inset
+
+.
+ 
+\series default
+ממשפט גאוס
+\begin_inset Formula 
+\[
+\varoiint_{v\in\partial B_{r}\left(p\right)}\overline{f}dS=\iiint_{B_{r}\left(p\right)}\text{div}\left(\overline{f}\right)dV
+\]
+
+\end_inset
+
+נשים לב כי 
+\begin_inset Formula $\text{div}\left(\overline{f}\right)=\sum_{i=1}^{n}\frac{\partial f}{\partial x_{i}}$
+\end_inset
+
+ גזירה ברציפות.
+ לכן היא מקבלת מינ' ומקס על הכדור הסגור 
+\begin_inset Formula $B_{r}\left(p\right)$
+\end_inset
+
+.
+ משמע
+\begin_inset Formula 
+\[
+\text{Vol}\left(B_{r}\left(p\right)\right)\min div\left(\overline{f}\right)\leq\iiint_{B_{r}\left(p\right)}\text{div}\left(\overline{f}\right)dV\leq\text{Vol}\left(B_{r}\left(p\right)\right)\max div\left(\overline{f}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\min div\left(\overline{f}\right)\leq\frac{1}{\text{Vol}\left(B_{r}\left(p\right)\right)}\iiint_{B_{r}\left(p\right)}\text{div}\left(\overline{f}\right)dV\leq\max div\left(\overline{f}\right)
+\]
+
+\end_inset
+
+כעת מרציפות כאשר 
+\begin_inset Formula $r\to0$
+\end_inset
+
+ המקס' והמינ' מתכנסים ל-
+\begin_inset Formula $div\left(\overline{f}\right)$
+\end_inset
+
+ ב-
+\begin_inset Formula $p$
+\end_inset
+
+ ולכן מסנדוויץ גם הביטוי באמצע כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+שאלה שישית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\subseteq\R^{3}$
+\end_inset
+
+ משטח רגולרי סגור.
+ 
+\begin_inset Formula $\overline{f}\colon\R^{3}\to\R^{3}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\overline{f}\vert_{S}=\normal puv$
+\end_inset
+
+ 
+\series bold
+צ"ל:
+\series default
+ 
+\begin_inset Formula $\iiint_{R}div\left(\overline{f}\right)dV\neq0$
+\end_inset
+
+.
+ ממשפט הדיברגנץ
+\begin_inset Formula 
+\begin{align*}
+\iiint_{R}div\left(\overline{f}\right)dV & =\varoiint_{S}\overline{f}dS=\varoiint_{p^{-1}\left(S\right)}\normal puv\cdot\normal puvdA=\\
+= & \varoiint_{p^{-1}\left(S\right)}\norm{\normal puv}^{2}dA
+\end{align*}
+
+\end_inset
+
+כיוון שהמשטח רגולרי הנורמל שונה מאפס לכל נק', משמע זה אינטגרל של פונקציה
+ רציפה וחיובית ממש לכן גדול ממש באפס.
+ בפרט חייבת להיות נק' בה 
+\begin_inset Formula $div\left(\overline{f}\right)>0$
+\end_inset
+
+.
+ אם הייתה 
+\begin_inset Formula $\overline{g}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $curl\left(\overline{g}\right)=\overline{f}$
+\end_inset
+
+, ממשפט סטוקס היינו מקבלים כי
+\begin_inset Formula 
+\[
+\varoiint_{S}curl\left(\overline{g}\right)dS=0
+\]
+
+\end_inset
+
+כי 
+\begin_inset Formula $S$
+\end_inset
+
+ משטח סגור.
+ אבל
+\begin_inset Formula 
+\[
+\varoiint_{S}curl\left(\overline{g}\right)dS=\varoiint_{S}\overline{f}dS>0
+\]
+
+\end_inset
+
+וקיבלנו סתירה.
+\end_layout
+
+\end_body
+\end_document
