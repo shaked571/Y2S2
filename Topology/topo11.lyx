@@ -667,5 +667,40 @@ status open
 
 \end_deeper
 \end_deeper
+\begin_layout Enumerate
+דוגמה לקבוצת כוכבית שאינה קמורה: 
+\begin_inset Formula $X=\R^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $A=\left\{ \left(x,y\right)\mid y=\pm x\right\} $
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $x_{0}=\left(0,0\right)\in A$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ הקטע 
+\begin_inset Formula $\left[0,x\right]\subseteq$
+\end_inset
+
+ כי הוא חלק מהישר.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $A$
+\end_inset
+
+ כוכבית.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
