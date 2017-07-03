@@ -1,0 +1,526 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding cp1255
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\rightmargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+טופולוגיה
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - תרגיל 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\end_layout
+
+\begin_layout Author
+עופר יהודה -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+307960468
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "../math-macros.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הטורוס הוא 
+\begin_inset Formula $S^{1}\times S^{1}$
+\end_inset
+
+ לכן החבורה היסודית שלו היא 
+\begin_inset Formula $\mathbb{Z}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $A$
+\end_inset
+
+ רטרקט של 
+\begin_inset Formula $D^{2}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $f\colon A\to A$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $g\colon D^{2}\to A$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $g\vert_{A}\equiv id_{A}$
+\end_inset
+
+.
+ אזי ההרכבה
+\begin_inset Formula 
+\[
+f\circ g\colon D^{2}\to A
+\]
+
+\end_inset
+
+היא העתקה רציפה מ-
+\begin_inset Formula $D^{2}$
+\end_inset
+
+ ל-
+\begin_inset Formula $D^{2}$
+\end_inset
+
+, ולכן ממשפט בראוור יש נק' שבת 
+\begin_inset Formula $x\in D^{2}$
+\end_inset
+
+, כך ש-
+\begin_inset Formula 
+\[
+x=f\circ g\left(x\right)\in A
+\]
+
+\end_inset
+
+כי התמונה של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב-
+\begin_inset Formula $A$
+\end_inset
+
+, לכן 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ אבל
+\begin_inset Formula 
+\[
+x\in A\Rightarrow g\left(x\right)=x
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula 
+\[
+x=f\circ g\left(x\right)=f\left(g\left(x\right)\right)=f\left(x\right)
+\]
+
+\end_inset
+
+משמע 
+\begin_inset Formula $x$
+\end_inset
+
+ נק' שבת של 
+\begin_inset Formula $f$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $f\colon S^{1}\to\mathbb{R}$
+\end_inset
+
+ רציפה.
+ נגדיר 
+\begin_inset Formula $g\left(x\right)=f\left(x\right)-f\left(-x\right)$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $x\in S^{1}$
+\end_inset
+
+.
+ נניח בה"כ 
+\begin_inset Formula 
+\[
+g\left(x\right)>0
+\]
+
+\end_inset
+
+)אם =
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אז סיימנו(.
+ אזי
+\begin_inset Formula 
+\[
+g\left(-x\right)=f\left(-x\right)-\left(f-\left(-x\right)\right)=-\left(f\left(x\right)-f\left(-x\right)\right)=-g\left(x\right)
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula 
+\[
+g\left(-x\right)<0
+\]
+
+\end_inset
+
+כיוון ש-
+\begin_inset Formula $S^{1}$
+\end_inset
+
+ קשיר ו-
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה, ממשפט ערך הביניים יש 
+\begin_inset Formula $x_{0}\in S^{1}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $g\left(x_{0}\right)=0$
+\end_inset
+
+, משמע
+\begin_inset Formula 
+\[
+f\left(x_{0}\right)-f\left(-x_{0}\right)=0\iff f\left(x_{0}\right)=f\left(-x_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $h\colon S^{1}\to S^{1}$
+\end_inset
+
+ נול-הומוטופית.
+ מהטענה בתרגול, יש הרחבה 
+\begin_inset Formula $k\colon D^{2}\to S^{1}$
+\end_inset
+
+ רציפה כך ש-
+\begin_inset Formula 
+\[
+k\vert_{S^{1}}\equiv h
+\]
+
+\end_inset
+
+כיוון ש-
+\begin_inset Formula $S^{1}\subseteq D^{2}$
+\end_inset
+
+, נשתמש בבראוור.
+ יש 
+\begin_inset Formula $x\in D^{2}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $k\left(x\right)=x$
+\end_inset
+
+.
+ שוב כיוון ש-
+\begin_inset Formula $\text{Im}\left(k\right)\subseteq S^{1}$
+\end_inset
+
+ נובע כי 
+\begin_inset Formula 
+\[
+x\in S^{1}
+\]
+
+\end_inset
+
+משמע
+\begin_inset Formula 
+\[
+x=k\left(x\right)=h\left(x\right)
+\]
+
+\end_inset
+
+כעת נגדיר 
+\begin_inset Formula $\hat{h}\left(x\right)=-h\left(x\right)$
+\end_inset
+
+.
+ נטען כי גם 
+\begin_inset Formula $\hat{h}$
+\end_inset
+
+ נול-הומוטופית.
+ תהי 
+\begin_inset Formula $H\colon S^{1}\times I\to S^{1}$
+\end_inset
+
+ הומוטופיה בין 
+\begin_inset Formula $h$
+\end_inset
+
+ ל-
+\begin_inset Formula $x_{0}\in S^{1}$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+\hat{H}\left(x,t\right)=-H\left(x,t\right)
+\]
+
+\end_inset
+
+גם הומוטופיה כי רציפה, ונשים לב כי 
+\begin_inset Formula 
+\[
+\text{Im}\left(\hat{H}\right)\subseteq S^{1}
+\]
+
+\end_inset
+
+כי אם 
+\begin_inset Formula $x\in S^{1}$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $-x\in S^{1}$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $\hat{H}$
+\end_inset
+
+ הומוטופיה בין 
+\begin_inset Formula $\hat{h}$
+\end_inset
+
+ ל-
+\begin_inset Formula $-x_{0}$
+\end_inset
+
+.
+ לכן ממה שהוכחנו קודם יש ל-
+\begin_inset Formula $\hat{h}$
+\end_inset
+
+ נק' שבת, משמע
+\begin_inset Formula 
+\[
+x=\hat{h}\left(x\right)=-h\left(x\right)\iff h\left(x\right)=-x
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\end_body
+\end_document
