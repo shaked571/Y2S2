@@ -134,7 +134,7 @@
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "/cs/usr/ofer1992/safe/Y2S2/math-macros.lyx"
+filename "../math-macros.lyx"
 
 \end_inset
 
@@ -699,6 +699,222 @@ status open
 \end_inset
 
  כוכבית.
+ ראשית, 
+\begin_inset Formula $A$
+\end_inset
+
+ קשירה מסילתית כי לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, יש מסילה מ-
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ל-
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(t\right)=t\cdot x_{0}+\left(1-t\right)\cdot x$
+\end_inset
+
+.
+ מסימטריה וטרנזיטביות יש מסילה בין כל שני קודקודים.
+ שנית, מרחב פשוט קשר שקול לכך שהחבורה היסודית היא החבורה הטריוויאלית.
+ לכן מספיק שנראה כי כל לולאה שמתחילה ונגמרת ב-
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ הומוטופית לנק'.
+ תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ מסילה כזו.
+ נגדיר את ההומוטופיה
+\begin_inset Formula 
+\[
+H\left(x,t\right)=t\cdot f\left(x\right)+\left(1-t\right)x_{0}
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $H\left(x,0\right)=x_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $H\left(x,1\right)=1\cdot f\left(x\right)=f\left(x\right)$
+\end_inset
+
+.
+ רציפות נובעת מכך ש-
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ רציפה ו-
+\begin_inset Formula $H$
+\end_inset
+
+ מתקבלת מחיבור וכפל של רציפות.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ אינה על אז יש נק 
+\begin_inset Formula $x\in S^{n}$
+\end_inset
+
+ שאינה בתמונה שלה.
+ לכן 
+\begin_inset Formula $\text{Im}f\subseteq S^{n}\backslash\left\{ x\right\} $
+\end_inset
+
+, משמע יש לולאה מקבילה ב-
+\begin_inset Formula $\R^{n}$
+\end_inset
+
+ מההומיאומורפיזם.
+ 
+\begin_inset Formula $\R^{n}$
+\end_inset
+
+ פשוט קשר ולכן היא הומוטופית לנק', משמע 
+\begin_inset Formula $f$
+\end_inset
+
+ הומוטופית לנק'.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $U$
+\end_inset
+
+ ו-
+\begin_inset Formula $L$
+\end_inset
+
+ כיסוי של פתוח של 
+\begin_inset Formula $S^{n}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $f^{-1}\left(U\right),f^{-1}\left(L\right)$
+\end_inset
+
+ כיסוי פתוח של 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ מקומפ' 
+\begin_inset Formula $I$
+\end_inset
+
+, יש 
+\begin_inset Formula $\delta'$
+\end_inset
+
+ מספר לבג' כך שלכל 
+\begin_inset Formula $\left(x-\delta',x+\delta\right)\subseteq f^{-1}\left(U\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $f^{-1}\left(L\right)$
+\end_inset
+
+.
+ בפרט נגדיר 
+\begin_inset Formula $\delta=\frac{d'}{2}$
+\end_inset
+
+ ונקבל כי
+\begin_inset Formula 
+\[
+f\left(\left[x,x+\d\right]\right)\subseteq L
+\]
+
+\end_inset
+
+או
+\begin_inset Formula 
+\[
+f\left(\left[x,x+\d\right]\right)\subseteq U
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נטען כי 
+\begin_inset Formula $f$
+\end_inset
+
+ לא על.
+ תמונה של 
+\begin_inset Formula $f$
+\end_inset
+
+ מוכלת באיחוד סופי של תתי מרחב ממש של 
+\begin_inset Formula $\R^{n+1}$
+\end_inset
+
+.
+ לכן בפרט האיחוד הזה שונה מ-
+\begin_inset Formula $\R^{n+1}$
+\end_inset
+
+ ולכן אפשר למצוא וקטור שאינו באיחוד, ואם ננרמל אותו נקבל וקטור שאינו ב-
+\begin_inset Formula $S^{n}$
+\end_inset
+
+.
+ מסעיף ב' נסיק כי 
+\begin_inset Formula $f$
+\end_inset
+
+ הומוטו[ית לנק'.
 \end_layout
 
 \end_deeper
